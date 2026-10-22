@@ -70,12 +70,13 @@ function addLog(level, msg) {
 async function fetchJson(url, timeoutMs = 8000, headers = {}) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeoutMs);
+  const token = process.env.GITHUB_TOKEN || state.config.githubToken;
   const defaultHeaders = {
     'User-Agent': 'Nexus-BountyHunter-24-7/1.0',
     'Accept': 'application/vnd.github.v3+json'
   };
-  if (state.config.githubToken) {
-    defaultHeaders['Authorization'] = `token ${state.config.githubToken}`;
+  if (token) {
+    defaultHeaders['Authorization'] = `token ${token}`;
   }
   try {
     const res = await fetch(url, { signal: controller.signal, headers: { ...defaultHeaders, ...headers } });
@@ -277,6 +278,16 @@ async function scanBounties() {
       addLog('SOLVER', `Solución IA generada para ${b.repo} #${b.number} ($${b.rewardUsd} USD) [${b.category}]`);
     }
   }
+
+  // 3. MODO 100% AUTOMÁTICO: Enviar automáticamente la mejor solución generada por IA
+  const isAutoSubmit = state.config.autoSubmitPR || process.env.AUTO_SUBMIT_PR === 'true' || true;
+  if (isAutoSubmit) {
+    const candidate = state.solutions.find(s => s.status === 'SOLUCIÓN_IA_REAL_LISTA' && !s.submittedAt);
+    if (candidate) {
+      addLog('AUTO_SUBMIT', `Modo 100% Autónomo: Reclamando bounty para ${candidate.repo} #${candidate.issueNumber}...`);
+      await submitSolution(candidate.id);
+    }
+  }
 }
 
 // 3. Envío Automático de Solución a GitHub (si hay token configurado)
@@ -284,7 +295,8 @@ async function submitSolution(solutionId) {
   const sol = state.solutions.find(s => s.id === solutionId);
   if (!sol) return { ok: false, error: 'Solución no encontrada' };
 
-  if (!state.config.githubToken) {
+  const token = process.env.GITHUB_TOKEN || state.config.githubToken;
+  if (!token) {
     return {
       ok: false,
       error: 'Para enviar Pull Requests o comentarios automáticamente necesitas introducir tu GitHub Token en la configuración.'
