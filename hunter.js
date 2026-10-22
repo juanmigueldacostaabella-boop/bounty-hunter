@@ -209,9 +209,34 @@ Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
   };
 }
 
+// Filtro de Seguridad Estricto: Ignora mineros, faucets, scripts sospechosos y promociones
+function isSafeBounty(title, body, repo) {
+  const full = (title + ' ' + (body || '') + ' ' + repo).toLowerCase();
+  const blacklist = [
+    'quickstart',
+    'miner',
+    'mining',
+    'faucet',
+    'run the 3-second',
+    'run this script',
+    'curl -s',
+    'terminal quickstart',
+    'doomsday',
+    'airdrop claim',
+    'join discord',
+    'follow twitter',
+    'retweet',
+    'giveaway'
+  ];
+  for (const term of blacklist) {
+    if (full.includes(term)) return false;
+  }
+  return true;
+}
+
 // 1. Escaneo 24/7 de Bounties en GitHub y Plataformas Asociadas
 async function scanBounties() {
-  addLog('INFO', 'Iniciando escaneo 24/7 de bounties abiertos...');
+  addLog('INFO', 'Iniciando escaneo 24/7 de bounties abiertos y seguros...');
   const searchQueries = [
     'is:issue is:open label:bounty',
     'is:issue is:open "bounty" "$"',
@@ -222,7 +247,9 @@ async function scanBounties() {
 
   const foundMap = new Map();
   for (const b of state.activeBounties) {
-    foundMap.set(b.id, b);
+    if (isSafeBounty(b.title, b.bodyPreview, b.repo)) {
+      foundMap.set(b.id, b);
+    }
   }
 
   for (const q of searchQueries) {
@@ -235,6 +262,11 @@ async function scanBounties() {
 
           const repoMatch = item.html_url.match(/github\.com\/([^/]+)\/([^/]+)\/issues/);
           const repo = repoMatch ? `${repoMatch[1]}/${repoMatch[2]}` : 'open-source/project';
+
+          // Aplicar filtro de seguridad estricto
+          if (!isSafeBounty(item.title, item.body, repo)) {
+            continue;
+          }
 
           const rewardUsd = extractBountyValue(item.title + ' ' + (item.body || ''));
           const { category, difficulty } = categorizeBounty(item.title, item.body);
