@@ -67,19 +67,24 @@ function addLog(level, msg) {
   console.log(`[${entry.time}] [${level}] ${msg}`);
 }
 
-async function fetchJson(url, timeoutMs = 8000, headers = {}) {
+async function fetchJson(url, timeoutMs = 8000, options = {}) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeoutMs);
   const token = process.env.GITHUB_TOKEN || state.config.githubToken;
   const defaultHeaders = {
     'User-Agent': 'Nexus-BountyHunter-24-7/1.0',
-    'Accept': 'application/vnd.github.v3+json'
+    'Accept': 'application/vnd.github.v3+json',
+    'Content-Type': 'application/json'
   };
   if (token) {
     defaultHeaders['Authorization'] = `token ${token}`;
   }
   try {
-    const res = await fetch(url, { signal: controller.signal, headers: { ...defaultHeaders, ...headers } });
+    const res = await fetch(url, {
+      ...options,
+      signal: controller.signal,
+      headers: { ...defaultHeaders, ...(options.headers || {}) }
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
     return await res.json();
   } finally {
@@ -179,10 +184,10 @@ Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
     }
   }
 
-  const prTitle = `fix: resolve issue #${number} - ${title.slice(0, 50)}`;
-  const prBody = `## 🤖 Propuesta de Solución para Bounty #${number}\n\n` +
-    `### Análisis Técnico\n${explanation}\n\n` +
-    `### Código / Solución Propuesta\n\`\`\`\n${proposedCode}\n\`\`\`\n\n` +
+  const prTitle = `fix: resolve issue #${number} - ${title.slice(0, 50).replace(/[^\x00-\x7F]/g, "")}`;
+  const prBody = `## [Nexus AI] Propuesta de Solucion para Bounty #${number}\n\n` +
+    `### Analisis Tecnico\n${explanation}\n\n` +
+    `### Codigo / Solucion Propuesta\n\`\`\`\n${proposedCode}\n\`\`\`\n\n` +
     `---\n` +
     `*Recompensa Bounty:* **$${rewardUsd}**\n` +
     `*Cuenta Beneficiaria:* \`${payout}\` (${payoutType})`;
