@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-22T19:39:18.739Z",
-  "scanCount": 51,
+  "lastScanAt": "2026-10-22T20:09:07.239Z",
+  "scanCount": 52,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 45,
-    "totalBountyPoolUsd": 4685,
-    "solutionsGenerated": 12,
-    "potentialEarningsUsd": 3035,
-    "prsSubmitted": 5
+    "totalBountiesDetected": 46,
+    "totalBountyPoolUsd": 4872,
+    "solutionsGenerated": 13,
+    "potentialEarningsUsd": 3222,
+    "prsSubmitted": 6
   },
   "activeBounties": [
     {
@@ -29,6 +29,19 @@
       "createdAt": "2026-10-22T19:11:38Z",
       "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1600261\tmath\t2\t2441\t1000\t6\t2.8\t48657\t16270\trecent@math|top@math\tOPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP\t[Math Puzzle] Sequence of Square Pairs\n```",
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1600261 math 2 2441 1000 6 2.8 48657 16270 recent@math|top@math OPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP [Math Puzzle] Sequence of Square Pairs ```"
+    },
+    {
+      "id": 5986552924,
+      "number": 4080,
+      "title": "[Bounty] 📋 2 open bounties right now",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4080",
+      "rewardUsd": 187,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-22T20:02:23Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/habibdxb01/bounty-watcher/issues/8\n\n### 漏洞描述 / Description\n📋 2 open bounties right now\n\nBounties that were already open when the watcher started. From now on, each new one gets its own issue.\n\n- 🔴 **$150** · [📱 Epic: BAWES Universe Mobile App (Android + iOS)](https://github.com/BAWES-Universe/workadventure-universe/issues/1)\n- 🔴 **$50** · [BOUNTY: integrate AWS Comprehend as a utility to redact data](https://github.com/arakoodev/EdgeChains/issues/290)\n\ncc @habibdxb01\n<!-- algora:gh-5878910962 -->\n<!-- algora:gh-5878910737 -->\n<!-- algora:gh-5878910506 -->\n<!-- algora:gh-5878909731 -->\n<!-- algora:gh-5878909492 -->\n<!-- algora:gh-5878908647 -->\n<!-- algora:gh-4455330769 -->\n<!-- algora:gh-4166244335 -->\n<!-- algora:gh-4043764365 -->\n<!-- algora:gh-2873015698 -->\n<!-- algora:gh-2843240829 -->\n<!-- algora:gh-2843218346 -->\n<!-- algora:gh-2567881942 -->\n<!-- algora:gh-2022440514 -->\n<!-- algora:gh-2018290060 -->\n<!-- algora:gh-2011168530 -->\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/habibdxb01/bounty-watcher/issues/8 ### 漏洞描述 / Description 📋 2 open bounties right now Bounties that were already open when the watcher started. From now on, each new one gets its own issue. - 🔴 **$150** · ["
     },
     {
       "id": 5981846324,
@@ -487,22 +500,25 @@
       "createdAt": "2026-10-22T19:05:43Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-22 19:05 UTC\n\n#### 1. [Blacksite build plan (epic)](https://github.com/Thiesi/Blacksite/issues/34)\n- **Repository:** [Thiesi/Blacksite](https://github.com/Thiesi/Blacksite)\n- **Comments:** 3\n- **Last Updated:** 2026-10-22T19:02:13Z\n\n#### 2. [Design session: barbarians + goodie huts — early-game bounty, a reason to keep soldiers home and to explore](https://github.com/Apelsinmack/Civulator/issues/129)\n- **Repository:** [Apelsinmack/Civulator](https://github.com/Apelsinmack/Civulator)\n- **Comments:** 1\n- **Last Updated:** 2026-10-22T19:00:12Z\n\n#### 3. [Surface the auto-relock heartbeat](https://github.com/hemilabs/ui-monorepo/issues/2538)\n- **Repository:** [hemilabs/ui-monorepo](https://github.com/hemilabs/ui-monorepo)\n- **Comments:** 0\n- **Last Updated:** 2026-10-22T18:57:50Z\n\n#### 4. [[Bug bounty] Native getTransferableAmount subtracts existential deposit twice](https://github.com/paraspell/xcm-tools/issues/2176)\n- **Repository:** [paraspell/xcm-tools](https://github.com/paraspell/xcm-tools)\n- **Comments:** 6\n- **Last Updated:** 2026-10-22T18:54:32Z\n\n#### 5. [feat(proposals): quadratic funding rounds for research proposals](https://github.com/QMeshPy/distributed-quantum/issues/17)\n- **Repository:** [QMeshPy/distributed-quantum](https://github.com/QMeshPy/distributed-quantum)\n- **Comments:** 1\n- **Last Updated:** 2026-10-22T19:01:23Z\n\n#### 6. [Solidity build helper includes excluded contracts on Windows and leaves cwd changed on failure](https://github.com/cosmos/evm/issues/1318)\n- **Repository:** [cosmos/evm](https://github.com/cosmos/evm)\n- **Comments:** 1\n- **Last Updated:** 2026-10-22T18:50:35Z\n\n#### 7. [Maintainer notice: execute autonomous-v2 planner output end to end, and round-trip v2 events through Postgres](https://github.com/NSPG13/agent-bounties/issues/1588)\n- **Repository:** [NSPG13/agent-bounties](https://github.com/NSPG13/agent-bounties)\n- **Comments:** 2\n- **Last Updated:** 2026-10-22T18:45:03Z\n\n#### 8. [[Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/3728)\n- **Repository:** [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet)\n- **Comments:** 2\n- **Last Updated:** 2026-10-22T18:09:52Z\n\n",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-22 19:05 UTC #### 1. [Blacksite build plan (epic)](https://github.com/Thiesi/Blacksite/issues/34) - **Repository:** [Thiesi/Blacksite](https://github.com/Thiesi/Blacksite) - **Comments:** 3 - **Last Updated:** 2026-10-22T19:"
-    },
-    {
-      "id": 5985620527,
-      "number": 2538,
-      "title": "Surface the auto-relock heartbeat",
-      "repo": "hemilabs/ui-monorepo",
-      "htmlUrl": "https://github.com/hemilabs/ui-monorepo/issues/2538",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-22T18:57:50Z",
-      "fullBody": "### Feature or change description\n\nA position with auto-relock on has to call `refreshAutoRelock` at least every 60 epochs (365.25 days), counted from the arm or from the last refresh. The UI needs to show the time left, offer the refresh, and warn as the horizon gets close.\n\nRelated to #2481, which covers the three parts Max specified and predates the heartbeat.\n\n### Problem or use case addressed\n\nAuto-relock freezes a position's weight, so on chain an abandoned wallet and a patient holder are the same observation. The heartbeat is how the contract tells them apart: miss it and anyone may call `retireStaleAutoRelock`, which turns auto-relock off and lets the position decay again. No principal is lost. Without this in the UI someone arms a position, never hears about it again, and loses it a year later without knowing why.\n\n### Proposed implementation\n\nDesign to be defined. There are three states and not two: on and current, on but past the horizon, and off. The middle one is still rescuable, since `refreshAutoRelock` does not check staleness and nothing happens until someone actually sends `retireStaleAutoRelock`, which pays no bounty, so in practice that would be a keeper or us. It is a race rather than a deadline. The reads are `isAutoRelockEnabled`, `autoRelockRefreshedAt` and `autoRelockStaleAt`, and the write is `refreshAutoRelock`. Note that `autoRelockStaleAt` reverts for an unarmed id, so a batched read has to gate on `isAutoRelockEnabled` or allow failure.\n",
-      "bodyPreview": "### Feature or change description A position with auto-relock on has to call `refreshAutoRelock` at least every 60 epochs (365.25 days), counted from the arm or from the last refresh. The UI needs to show the time left, offer the refresh, and warn as the horizon gets close. Rel"
     }
   ],
   "solutions": [
+    {
+      "id": "762bf877-6adb-497d-a740-0e3f2d95e269",
+      "bountyId": 5986552924,
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "issueNumber": 4080,
+      "issueUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4080",
+      "rewardUsd": 187,
+      "prTitle": "fix: resolve issue #4080 - [Bounty]  2 open bounties right now",
+      "prBody": "## Proposed Solution for Issue #4080\n\n### Root Cause Analysis & Fix\nThe watcher was creating issues for all existing open bounties on startup because it lacked a persistent record of which bounties had already been processed, causing duplicate issue creation for pre‑existing bounties. By persisting processed bounty IDs to a state file and checking against it before creating an issue, the script now only generates issues for newly opened bounties.\n\n### Proposed Code Patch\n```\n--- a/watcher.js\n+++ b/watcher.js\n@@\n-const openBounties = await fetchOpenBounties();\n-openBounties.forEach(bounty => createIssueForBounty(bounty));\n+const path = require('path');\n+const fs = require('fs');\n+const statePath = path.resolve(__dirname, 'bounty_state.json');\n+let processed = new Set();\n+if (fs.existsSync(statePath)) {\n+  try {\n+    processed = new Set(JSON.parse(fs.readFileSync(statePath, 'utf8')));\n+  } catch (_) {}\n+}\n+const openBounties = await fetchOpenBounties();\n+openBounties.forEach(bounty => {\n+  if (processed.has(bounty.id)) return; // Skip already handled bounties\n+  createIssueForBounty(bounty);\n+  processed.add(bounty.id);\n+});\n+fs.writeFileSync(statePath, JSON.stringify([...processed]));\n\n```\n\n---\n*Bounty Reward:* **$187**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "--- a/watcher.js\n+++ b/watcher.js\n@@\n-const openBounties = await fetchOpenBounties();\n-openBounties.forEach(bounty => createIssueForBounty(bounty));\n+const path = require('path');\n+const fs = require('fs');\n+const statePath = path.resolve(__dirname, 'bounty_state.json');\n+let processed = new Set();\n+if (fs.existsSync(statePath)) {\n+  try {\n+    processed = new Set(JSON.parse(fs.readFileSync(statePath, 'utf8')));\n+  } catch (_) {}\n+}\n+const openBounties = await fetchOpenBounties();\n+openBounties.forEach(bounty => {\n+  if (processed.has(bounty.id)) return; // Skip already handled bounties\n+  createIssueForBounty(bounty);\n+  processed.add(bounty.id);\n+});\n+fs.writeFileSync(statePath, JSON.stringify([...processed]));\n",
+      "explanation": "The watcher was creating issues for all existing open bounties on startup because it lacked a persistent record of which bounties had already been processed, causing duplicate issue creation for pre‑existing bounties. By persisting processed bounty IDs to a state file and checking against it before creating an issue, the script now only generates issues for newly opened bounties.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-22T20:09:11.748Z",
+      "submittedAt": "2026-10-22T20:09:12.402Z",
+      "commentUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4080#issuecomment-6350215881"
+    },
     {
       "id": "62971920-48fd-4142-9286-2dd24454341b",
       "bountyId": 5985824260,
@@ -684,6 +700,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "548b26ab-403b-44d5-a2b8-98c5e4934022",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "issueNumber": 4080,
+      "rewardUsd": 187,
+      "commentUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4080#issuecomment-6350215881",
+      "submittedAt": "2026-10-22T20:09:12.402Z"
+    },
+    {
       "id": "a4576938-20c4-4b27-b150-f846e5560cd5",
       "repo": "relayhop/sn-monetization-runtime",
       "issueNumber": 1326,
@@ -725,6 +749,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-22T20:09:12.403Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a zhangjiayang6835-cyber/bounty-plaza #4080! Recompensa en juego: $187"
+    },
+    {
+      "time": "2026-10-22T20:09:11.748Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para zhangjiayang6835-cyber/bounty-plaza #4080..."
+    },
+    {
+      "time": "2026-10-22T20:09:11.748Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para zhangjiayang6835-cyber/bounty-plaza #4080 ($187 USD) [Bug Fix / Código]"
+    },
+    {
+      "time": "2026-10-22T20:09:09.820Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $4,872 USD."
+    },
+    {
+      "time": "2026-10-22T20:09:07.239Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-22T20:09:07.237Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-22T19:39:24.465Z",
       "level": "CLAIM",
@@ -1192,36 +1246,6 @@
     },
     {
       "time": "2026-10-22T17:53:56.535Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:53:26.834Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 38 bounties activos con un pozo total de $2,350 USD."
-    },
-    {
-      "time": "2026-10-22T17:53:21.530Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:52:49.542Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 38 bounties activos con un pozo total de $2,350 USD."
-    },
-    {
-      "time": "2026-10-22T17:52:46.518Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:52:15.879Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 38 bounties activos con un pozo total de $2,350 USD."
-    },
-    {
-      "time": "2026-10-22T17:52:11.516Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
     }
