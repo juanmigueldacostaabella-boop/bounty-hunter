@@ -141,8 +141,8 @@ async function generateAutomatedSolution(bounty) {
   const payoutType = state.config.payoutType || 'GITHUB_REWARD_ACCOUNT';
   const groqKey = process.env.GROQ_API_KEY || state.config.groqApiKey || '';
 
-  let explanation = `Análisis técnico y resolución propuesta para ${repo} #${number}.`;
-  let proposedCode = `// Revisar implementación específica en ${repo} #${number}`;
+  let explanation = `Technical analysis and proposed resolution for ${repo} #${number}.`;
+  let proposedCode = `// Review specific implementation in ${repo} #${number}`;
 
   if (groqKey) {
     try {
