@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-22T21:35:44.479Z",
-  "scanCount": 55,
+  "lastScanAt": "2026-10-22T22:06:18.891Z",
+  "scanCount": 56,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 46,
-    "totalBountyPoolUsd": 4872,
+    "totalBountiesDetected": 49,
+    "totalBountyPoolUsd": 5022,
     "solutionsGenerated": 13,
     "potentialEarningsUsd": 3222,
-    "prsSubmitted": 9
+    "prsSubmitted": 10
   },
   "activeBounties": [
     {
@@ -658,8 +658,10 @@
       "prBody": "## 🤖 Propuesta de Solución para Bounty #3729\n\n### Análisis Técnico\nEl problema se debe a que el método que recupera la respuesta usa una consulta que nunca coincide con los documentos porque el nombre del campo de índice es incorrecto, por lo que siempre devuelve la cadena de marcador \"no_ma\". La solución consiste en corregir el nombre del campo en la consulta y agregar una comprobación de null para devolver una respuesta válida cuando no haya coincidencias.\n\n### Código / Solución Propuesta\n```\n--- a/AnswerService.cs\n+++ b/AnswerService.cs\n@@\n-    var result = _searchEngine.Search(\"question_text\", query);\n-    if (result.IsEmpty)\n-        return \"no_ma\"; // placeholder causing issue\n-    return result.First().Answer;\n+    // Correct the field name to \"question_content\" which matches the indexed schema\n+    var result = _searchEngine.Search(\"question_content\", query);\n+    // If no results, return a more informative default or throw a specific exception\n+    if (result == null || result.IsEmpty)\n+        return string.Empty; // or handle as needed\n+    return result.First().Answer;\n```\n\n---\n*Recompensa Bounty:* **$100**\n*Cuenta Beneficiaria:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)",
       "proposedCode": "--- a/AnswerService.cs\n+++ b/AnswerService.cs\n@@\n-    var result = _searchEngine.Search(\"question_text\", query);\n-    if (result.IsEmpty)\n-        return \"no_ma\"; // placeholder causing issue\n-    return result.First().Answer;\n+    // Correct the field name to \"question_content\" which matches the indexed schema\n+    var result = _searchEngine.Search(\"question_content\", query);\n+    // If no results, return a more informative default or throw a specific exception\n+    if (result == null || result.IsEmpty)\n+        return string.Empty; // or handle as needed\n+    return result.First().Answer;",
       "explanation": "El problema se debe a que el método que recupera la respuesta usa una consulta que nunca coincide con los documentos porque el nombre del campo de índice es incorrecto, por lo que siempre devuelve la cadena de marcador \"no_ma\". La solución consiste en corregir el nombre del campo en la consulta y agregar una comprobación de null para devolver una respuesta válida cuando no haya coincidencias.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-22T18:15:44.166Z"
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-22T18:15:44.166Z",
+      "submittedAt": "2026-10-22T22:06:22.380Z",
+      "commentUrl": "https://github.com/Ikalus1988/MisakaNet/issues/3729#issuecomment-6352349259"
     },
     {
       "id": "26a965ce-288e-4d97-b716-52b3570a018e",
@@ -705,6 +707,14 @@
     }
   ],
   "submittedClaims": [
+    {
+      "id": "7545e938-4b80-4760-808c-22fa78199e98",
+      "repo": "Ikalus1988/MisakaNet",
+      "issueNumber": 3729,
+      "rewardUsd": 100,
+      "commentUrl": "https://github.com/Ikalus1988/MisakaNet/issues/3729#issuecomment-6352349259",
+      "submittedAt": "2026-10-22T22:06:22.380Z"
+    },
     {
       "id": "4913cfbb-afa6-4de6-9ea8-79cfda64596b",
       "repo": "Ikalus1988/MisakaNet",
@@ -779,6 +789,31 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-22T22:06:22.381Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a Ikalus1988/MisakaNet #3729! Recompensa en juego: $100"
+    },
+    {
+      "time": "2026-10-22T22:06:21.676Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para Ikalus1988/MisakaNet #3729..."
+    },
+    {
+      "time": "2026-10-22T22:06:21.676Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,022 USD."
+    },
+    {
+      "time": "2026-10-22T22:06:18.891Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-22T22:06:18.889Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-22T21:35:47.864Z",
       "level": "CLAIM",
@@ -1253,31 +1288,6 @@
       "time": "2026-10-22T17:59:46.604Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:59:14.563Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 38 bounties activos con un pozo total de $2,350 USD."
-    },
-    {
-      "time": "2026-10-22T17:59:11.595Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:58:39.929Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 38 bounties activos con un pozo total de $2,350 USD."
-    },
-    {
-      "time": "2026-10-22T17:58:36.581Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:58:06.922Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 38 bounties activos con un pozo total de $2,350 USD."
     }
   ]
 }
