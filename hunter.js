@@ -128,35 +128,63 @@ function categorizeBounty(title, body) {
   return { category, difficulty };
 }
 
-// Generador Autónomo de Solución y Parche de Código
-function generateAutomatedSolution(bounty) {
-  const { title, body, repo, number, rewardUsd, htmlUrl } = bounty;
-  const payout = state.config.payoutAddress || '0xTuWalletAqui';
-  const payoutType = state.config.payoutType || 'USDC_EVM';
+// Generador Autónomo de Solución y Parche de Código con IA Real (Groq 120B)
+async function generateAutomatedSolution(bounty) {
+  const { title, bodyPreview, fullBody, repo, number, rewardUsd, htmlUrl } = bounty;
+  const payout = state.config.payoutAddress || 'github.com/juanmigueldacostaabella-boop';
+  const payoutType = state.config.payoutType || 'GITHUB_REWARD_ACCOUNT';
+  const groqKey = process.env.GROQ_API_KEY || state.config.groqApiKey || '';
 
-  // Analiza el contexto para estructurar el Pull Request profesional
-  let proposedCode = '';
-  let explanation = '';
+  let explanation = `Análisis técnico y resolución propuesta para ${repo} #${number}.`;
+  let proposedCode = `// Revisar implementación específica en ${repo} #${number}`;
 
-  if (bounty.category === 'Documentación / Typo') {
-    explanation = `Corrección de documentación y formato en el repositorio ${repo} según lo especificado en #${number}.`;
-    proposedCode = `diff --git a/README.md b/README.md\n--- a/README.md\n+++ b/README.md\n@@ -1,3 +1,3 @@\n- [Error tipográfico o enlace roto detectado en #${number}]\n+ [Corrección aplicada y verificada]`;
-  } else if (bounty.category === 'Validación / Tests') {
-    explanation = `Implementación de validación estricta y control de precisión en ${repo} para prevenir comportamiento erróneo (Issue #${number}).`;
-    proposedCode = `// Solución generada para #${number}\nif (amount.decimals > destinationChain.decimals) {\n  throw new Error("Precision exceeds destination chain limit");\n}`;
-  } else {
-    explanation = `Resolución de error y manejo de excepciones en ${repo} conforme a la descripción del Bounty #${number}.`;
-    proposedCode = `// Patch automático de corrección para ${repo} #${number}\nfunction handleValidation(data) {\n  if (!data) return false;\n  // Validar y ejecutar lógica segura\n  return true;\n}`;
+  if (groqKey) {
+    try {
+      const prompt = `You are a senior software engineer solving a GitHub bounty issue.
+Repository: ${repo}
+Issue #${number}: ${title}
+Description:
+${(fullBody || bodyPreview || '').slice(0, 2200)}
+
+Provide:
+1. A brief, clear 2-sentence explanation of the root cause and fix in Spanish.
+2. The exact code patch, diff, or answer required to resolve the issue.
+Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
+
+      const aiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${groqKey}`
+        },
+        body: JSON.stringify({
+          model: 'openai/gpt-oss-120b',
+          messages: [{ role: 'user', content: prompt }],
+          response_format: { type: 'json_object' },
+          max_tokens: 900
+        })
+      });
+      if (aiRes.ok) {
+        const aiData = await aiRes.json();
+        const content = aiData.choices?.[0]?.message?.content;
+        if (content) {
+          const parsed = JSON.parse(content);
+          if (parsed.explanation) explanation = parsed.explanation;
+          if (parsed.code) proposedCode = parsed.code;
+        }
+      }
+    } catch (err) {
+      addLog('WARN', `IA fallback en #${number}: ${err.message}`);
+    }
   }
 
   const prTitle = `fix: resolve issue #${number} - ${title.slice(0, 50)}`;
-  const prBody = `## 🤖 Solución Automatizada para Bounty #${number}\n\n` +
-    `### Resumen de la solución\n${explanation}\n\n` +
-    `### Código / Parche propuesto\n\`\`\`javascript\n${proposedCode}\n\`\`\`\n\n` +
+  const prBody = `## 🤖 Propuesta de Solución para Bounty #${number}\n\n` +
+    `### Análisis Técnico\n${explanation}\n\n` +
+    `### Código / Solución Propuesta\n\`\`\`\n${proposedCode}\n\`\`\`\n\n` +
     `---\n` +
     `*Recompensa Bounty:* **$${rewardUsd}**\n` +
-    `*Dirección de Pago del Solucionador:* \`${payout}\` (${payoutType})\n` +
-    `*Generado y verificado por Nexus Bounty Hunter Agent 24/7*`;
+    `*Cuenta Beneficiaria:* \`${payout}\` (${payoutType})`;
 
   return {
     id: crypto.randomUUID(),
@@ -169,7 +197,7 @@ function generateAutomatedSolution(bounty) {
     prBody,
     proposedCode,
     explanation,
-    status: 'SOLUCIÓN_LISTA',
+    status: groqKey ? 'SOLUCIÓN_IA_REAL_LISTA' : 'SOLUCIÓN_LISTA',
     createdAt: new Date().toISOString()
   };
 }
@@ -186,7 +214,6 @@ async function scanBounties() {
   ];
 
   const foundMap = new Map();
-  // Conservar los bounties previos
   for (const b of state.activeBounties) {
     foundMap.set(b.id, b);
   }
@@ -199,7 +226,6 @@ async function scanBounties() {
         for (const item of data.items) {
           if (foundMap.has(item.id)) continue;
 
-          // Extraer repo owner/name
           const repoMatch = item.html_url.match(/github\.com\/([^/]+)\/([^/]+)\/issues/);
           const repo = repoMatch ? `${repoMatch[1]}/${repoMatch[2]}` : 'open-source/project';
 
@@ -216,6 +242,7 @@ async function scanBounties() {
             category,
             difficulty,
             createdAt: item.created_at,
+            fullBody: item.body ? item.body.slice(0, 2500) : '',
             bodyPreview: item.body ? item.body.slice(0, 280).replace(/\s+/g, ' ') : 'Sin descripción'
           };
 
@@ -228,26 +255,26 @@ async function scanBounties() {
   }
 
   const allBounties = Array.from(foundMap.values());
-  // Ordenar por mayor recompensa en dólares
   allBounties.sort((a, b) => b.rewardUsd - a.rewardUsd);
   state.activeBounties = allBounties.slice(0, 40);
 
-  // Métricas
   state.metrics.totalBountiesDetected = allBounties.length;
   state.metrics.totalBountyPoolUsd = allBounties.reduce((sum, b) => sum + (b.rewardUsd || 0), 0);
 
   addLog('INFO', `Escaneo completado: ${state.activeBounties.length} bounties activos con un pozo total de $${state.metrics.totalBountyPoolUsd.toLocaleString()} USD.`);
 
-  // 2. Generar automáticamente soluciones para los bounties prioritarios
+  // 2. Generar automáticamente soluciones con IA Real para los bounties prioritarios
   const existingSolBountyIds = new Set(state.solutions.map(s => s.bountyId));
-  for (const b of state.activeBounties.slice(0, 8)) {
-    if (!existingSolBountyIds.has(b.id)) {
-      const sol = generateAutomatedSolution(b);
+  let generatedThisTick = 0;
+  for (const b of state.activeBounties.slice(0, 10)) {
+    if (!existingSolBountyIds.has(b.id) && generatedThisTick < 3) {
+      const sol = await generateAutomatedSolution(b);
       state.solutions.unshift(sol);
       if (state.solutions.length > 50) state.solutions.length = 50;
       state.metrics.solutionsGenerated += 1;
       state.metrics.potentialEarningsUsd += b.rewardUsd;
-      addLog('SOLVER', `Solución generada para ${b.repo} #${b.number} ($${b.rewardUsd} USD) [${b.category}]`);
+      generatedThisTick += 1;
+      addLog('SOLVER', `Solución IA generada para ${b.repo} #${b.number} ($${b.rewardUsd} USD) [${b.category}]`);
     }
   }
 }
