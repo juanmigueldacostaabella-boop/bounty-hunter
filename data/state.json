@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-22T18:28:21.919Z",
-  "scanCount": 49,
+  "lastScanAt": "2026-10-22T19:09:08.990Z",
+  "scanCount": 50,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -12,9 +12,9 @@
   "metrics": {
     "totalBountiesDetected": 42,
     "totalBountyPoolUsd": 2559,
-    "solutionsGenerated": 10,
-    "potentialEarningsUsd": 959,
-    "prsSubmitted": 3
+    "solutionsGenerated": 11,
+    "potentialEarningsUsd": 1009,
+    "prsSubmitted": 4
   },
   "activeBounties": [
     {
@@ -113,18 +113,6 @@
       "createdAt": "2026-10-22T18:08:54Z",
       "fullBody": "## Brand Mentions Scan - October 22, 2026\n\n**New mentions found:** 42\n**Above notify threshold (55):** 22\n**Highlights (75+):** 0\n\n[View full report](https://sbc1-code.github.io/brand-monitor/)\n\n---\n## Notable Mentions\n\n### [Someone hacked the Switch 2 by using an old game and AI](https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai)\n**Brand:** OpenAI | **Product:** OpenAI (general)\n**Source:** The Verge (Trade Publication) | **Published:** 2026-10-22\n**Signal Score:** 70 | **Sentiment:** negative (!)\n\n> The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailb\n\n### [OpenAI says ChatGPT Sol helped uncover critical PHP flaws that could affect 70% of websites — AI-assisted researchers turned a two-year-old bug that stumped human developers into working exploits in two weeks](https://news.google.com/rss/articles/CBMigwNBVV95cUxQbnQxa0JIbmEwejlMbmREUDMzeGF6WWJUX1M4U3VsZlRzaHBVeUhoT3piQl81UDVUUXJDaUhQSURZc3RDSnpXQTZvWFVXTlhIdE9hSGpJVFZIZWxiN3BBOE9WUUVpajVXMG1JbnY5Q2VlZE9icmRnVHNlRWFaSGlYOUE0SzNiVDZERHJQQU5VeVpxSG5hZ1hiMnNzZ0lfQnJ1czR2X2MwdzF2VVdWeFJXYnZDTVhOVTcycDFYNWxRR3B2ZVkxSXZhN1NqX0pIcjQ3UzhzRDZEZXlGYjBZdDhPblJZMTlzMkk4VVB3a3g2d1VKNjRtS2QwODJUUzFLcF9xcEMtbEZDSmd2VXdmLWdULWZtcVVVY3laRDM3RzFBMURhM0otZV9MZzIzdWY5ak9zMXNZbUxCcGR1dGFpWmc0YVV5UjE2VjZNTzExYkdCSjBkWE0tRmE1SEVCRUotWVZaQWJTTVYwMTgweWRZYVJ5SFYxOUZCUUliVzBObXl3NlVuM28?oc=5)\n**Brand:** OpenAI | **Product:** ChatGPT\n**Source:** Tom's Hardware (News Article) | **Published:** 2026-10-22\n**Signal Score:** 60 | **Sentiment:** negative (!)\n\n> OpenAI says ChatGPT Sol helped uncover critical PHP flaws that could affect 70% of websites — AI-assisted researchers turned a two-year-old bug that stumped human developers into working exploits in two weeks  Tom's Hardware\n\n### [Uber puts all 30,000 employees on ChatGPT Work](https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/)\n**Brand:** OpenAI | **Product:** ChatGPT\n**Source:** TechCrunch (Trade Publication) | **Published:** 2026-10-22\n**Signal Score:** 60 | **Sentiment:** neutral (~)\n\n> The ride-share giant previously deployed a much smaller pilot for ChatGPT Work but is now taking the enterprise agent company-wide.\n\n### [Crypto Security Alert: PHP Exploits, LiteLLM Backdoor And Ne",
       "bodyPreview": "## Brand Mentions Scan - October 22, 2026 **New mentions found:** 42 **Above notify threshold (55):** 22 **Highlights (75+):** 0 [View full report](https://sbc1-code.github.io/brand-monitor/) --- ## Notable Mentions ### [Someone hacked the Switch 2 by using an old game and AI"
-    },
-    {
-      "id": 5980596564,
-      "number": 4,
-      "title": "[BOUNTY] ⚡ 500–1,000 DOOM ($wDOOM on Base) — Run the 3-Second Terminal Quickstart or GPU Miner & Post Output",
-      "repo": "doomsday-network/doomsday",
-      "htmlUrl": "https://github.com/doomsday-network/doomsday/issues/4",
-      "rewardUsd": 50,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-22T13:46:58Z",
-      "bodyPreview": "## ⚡ Earn 500–1,000 Free DOOM (`$wDOOM` on Base Mainnet) in 30 Seconds! We are building a public hardware benchmark table for **DoomHash** (our 64-bit golden-ratio matrix + SHA-256 Proof-of-Idle-Work algorithm) and onboarding new miners into our **Top-10 Miner Leaderboard** (Slo"
     },
     {
       "id": 5964033913,
@@ -463,18 +451,6 @@
       "bodyPreview": " <!-- POLAR PLEDGE BADGE START --> ## Funding * You can sponsor this specific effort via a [Polar.sh](https://polar.sh) pledge below * We receive the pledge once the issue is completed & verified <a href=\"https://polar.sh/birkjernstrom/bp-demo/issues/4\"> <picture> <source med"
     },
     {
-      "id": 5984493531,
-      "number": 7,
-      "title": "[BOUNTY] 🏆 2,500 DOOM ($wDOOM on Base) — Mine 10 Pool Shares on GPU & Claim Rank #4 on the Live Leaderboard",
-      "repo": "doomsday-network/doomsday",
-      "htmlUrl": "https://github.com/doomsday-network/doomsday/issues/7",
-      "rewardUsd": 50,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-22T17:42:47Z",
-      "bodyPreview": "## 🏆 Claim an Open Top-10 Network Miner Leaderboard Slot (2,500 DOOM / wDOOM Reward!) **Doomsday Network** ([`https://doomsday.network`](https://doomsday.network)) has a live **0%-Fee PPLNS Mining Pool** paying **50 DOOM per block** (~12s block time) directly on-chain, plus an "
-    },
-    {
       "id": 5984601582,
       "number": 2,
       "title": "Free private tools/list baseline for your agent-facing endpoint",
@@ -487,19 +463,62 @@
       "bodyPreview": "Hi - I run Dominion Observatory (https://dominionobservatory.com), which checks MCP tool manifests for changes. An agent builds against the tool description and input schema it last read. If either changes silently, its calls start failing or return something different, and it ha"
     },
     {
-      "id": 5980597213,
-      "number": 1,
-      "title": "[BOUNTY] 🛡️ 500 DOOM ($wDOOM on Base) — Report a Fake GitHub Bounty Repo or Run the 3-Second DOOM Quickstart",
-      "repo": "doomsday-network/bounty-guard",
-      "htmlUrl": "https://github.com/doomsday-network/bounty-guard/issues/1",
+      "id": 5985735989,
+      "number": 1641,
+      "title": "🎯 Bounty Alert: 8 New Opportunityies found",
+      "repo": "dev-kp-eloper/BountyScout",
+      "htmlUrl": "https://github.com/dev-kp-eloper/BountyScout/issues/1641",
+      "rewardUsd": 50,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-22T19:05:43Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-22 19:05 UTC\n\n#### 1. [Blacksite build plan (epic)](https://github.com/Thiesi/Blacksite/issues/34)\n- **Repository:** [Thiesi/Blacksite](https://github.com/Thiesi/Blacksite)\n- **Comments:** 3\n- **Last Updated:** 2026-10-22T19:02:13Z\n\n#### 2. [Design session: barbarians + goodie huts — early-game bounty, a reason to keep soldiers home and to explore](https://github.com/Apelsinmack/Civulator/issues/129)\n- **Repository:** [Apelsinmack/Civulator](https://github.com/Apelsinmack/Civulator)\n- **Comments:** 1\n- **Last Updated:** 2026-10-22T19:00:12Z\n\n#### 3. [Surface the auto-relock heartbeat](https://github.com/hemilabs/ui-monorepo/issues/2538)\n- **Repository:** [hemilabs/ui-monorepo](https://github.com/hemilabs/ui-monorepo)\n- **Comments:** 0\n- **Last Updated:** 2026-10-22T18:57:50Z\n\n#### 4. [[Bug bounty] Native getTransferableAmount subtracts existential deposit twice](https://github.com/paraspell/xcm-tools/issues/2176)\n- **Repository:** [paraspell/xcm-tools](https://github.com/paraspell/xcm-tools)\n- **Comments:** 6\n- **Last Updated:** 2026-10-22T18:54:32Z\n\n#### 5. [feat(proposals): quadratic funding rounds for research proposals](https://github.com/QMeshPy/distributed-quantum/issues/17)\n- **Repository:** [QMeshPy/distributed-quantum](https://github.com/QMeshPy/distributed-quantum)\n- **Comments:** 1\n- **Last Updated:** 2026-10-22T19:01:23Z\n\n#### 6. [Solidity build helper includes excluded contracts on Windows and leaves cwd changed on failure](https://github.com/cosmos/evm/issues/1318)\n- **Repository:** [cosmos/evm](https://github.com/cosmos/evm)\n- **Comments:** 1\n- **Last Updated:** 2026-10-22T18:50:35Z\n\n#### 7. [Maintainer notice: execute autonomous-v2 planner output end to end, and round-trip v2 events through Postgres](https://github.com/NSPG13/agent-bounties/issues/1588)\n- **Repository:** [NSPG13/agent-bounties](https://github.com/NSPG13/agent-bounties)\n- **Comments:** 2\n- **Last Updated:** 2026-10-22T18:45:03Z\n\n#### 8. [[Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/3728)\n- **Repository:** [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet)\n- **Comments:** 2\n- **Last Updated:** 2026-10-22T18:09:52Z\n\n",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-22 19:05 UTC #### 1. [Blacksite build plan (epic)](https://github.com/Thiesi/Blacksite/issues/34) - **Repository:** [Thiesi/Blacksite](https://github.com/Thiesi/Blacksite) - **Comments:** 3 - **Last Updated:** 2026-10-22T19:"
+    },
+    {
+      "id": 5985620527,
+      "number": 2538,
+      "title": "Surface the auto-relock heartbeat",
+      "repo": "hemilabs/ui-monorepo",
+      "htmlUrl": "https://github.com/hemilabs/ui-monorepo/issues/2538",
       "rewardUsd": 50,
       "category": "Validación / Tests",
       "difficulty": "Fácil",
-      "createdAt": "2026-10-22T13:47:01Z",
-      "bodyPreview": "## 🛡️ Real On-Chain Bounties for Bounty Hunters (`500 DOOM / wDOOM` on Base Mainnet) Unlike the fake engagement-farming bounty repos exposed by `bounty-guard` (`UnsafeLabs`, `bounty-plaza`, `aquarium-of-gullibles`), **Doomsday Network** pays out 100% verifiable on-chain rewards"
+      "createdAt": "2026-10-22T18:57:50Z",
+      "fullBody": "### Feature or change description\n\nA position with auto-relock on has to call `refreshAutoRelock` at least every 60 epochs (365.25 days), counted from the arm or from the last refresh. The UI needs to show the time left, offer the refresh, and warn as the horizon gets close.\n\nRelated to #2481, which covers the three parts Max specified and predates the heartbeat.\n\n### Problem or use case addressed\n\nAuto-relock freezes a position's weight, so on chain an abandoned wallet and a patient holder are the same observation. The heartbeat is how the contract tells them apart: miss it and anyone may call `retireStaleAutoRelock`, which turns auto-relock off and lets the position decay again. No principal is lost. Without this in the UI someone arms a position, never hears about it again, and loses it a year later without knowing why.\n\n### Proposed implementation\n\nDesign to be defined. There are three states and not two: on and current, on but past the horizon, and off. The middle one is still rescuable, since `refreshAutoRelock` does not check staleness and nothing happens until someone actually sends `retireStaleAutoRelock`, which pays no bounty, so in practice that would be a keeper or us. It is a race rather than a deadline. The reads are `isAutoRelockEnabled`, `autoRelockRefreshedAt` and `autoRelockStaleAt`, and the write is `refreshAutoRelock`. Note that `autoRelockStaleAt` reverts for an unarmed id, so a batched read has to gate on `isAutoRelockEnabled` or allow failure.\n",
+      "bodyPreview": "### Feature or change description A position with auto-relock on has to call `refreshAutoRelock` at least every 60 epochs (365.25 days), counted from the arm or from the last refresh. The UI needs to show the time left, offer the refresh, and warn as the horizon gets close. Rel"
+    },
+    {
+      "id": 5985513056,
+      "number": 129,
+      "title": "Design session: barbarians + goodie huts — early-game bounty, a reason to keep soldiers home and to explore",
+      "repo": "Apelsinmack/Civulator",
+      "htmlUrl": "https://github.com/Apelsinmack/Civulator/issues/129",
+      "rewardUsd": 50,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-22T18:50:28Z",
+      "fullBody": "**Erik, 2026-10-22 evening:** barbarians are not in the game yet and are 'kind of needed': it takes time before the civs meet each other; barbarians are good bounty in the early game; and they demand protection, so they are an incentive to keep at least some soldiers at home.\n\n## What this design must settle\n1. **What a barbarian is in the engine.** A non-scoring, non-eliminable player index with a scripted policy (an engine default in the `defaults.py` sense: deterministic, draws only from the engine RNG), or a separate entity kind. The first reuses every seam (units, combat, masks see 'enemy'); victory, loyalty pressure, trade, religion and the potential reward must then exclude it explicitly.\n2. **Outposts.** Where they appear (world generation after starts, with a minimum distance from every start — the start-placement authority `mapgen/starts.py` owns the distances), when new ones spawn (a round-end phase, hidden-tile rule as Civ 6?), what clears one (a land unit entering it) and what clearing pays — Erik's **bounty**: Civ 5 pays gold per outpost, Civ 6 pays nothing but XP. Gold fits our economy (maintenance, purchasing).\n3. **What they do.** Civ 6: a scout finds a city, then raiders come; they pillage improvements and districts and capture civilians. **Pillaging does not exist here** (the Encampment design declared 'no pillaged state'); barbarians need something to take: capture Workers/Settlers (civilian capture exists), damage cities (city combat exists), or pillage as a new mechanic (improvement removed / district disabled for N turns — a design in itself).\n4. **Scaling.** Barbarian unit types follow the era of the strongest player (Civ 6) or a fixed early roster that becomes irrelevant — Erik's 'early game' reading suggests the latter plus a stop rule.\n5. **Dropped Civ 6 content that returns with them** (`docs/civ6_progression_reference.md`): Discipline (+5 vs barbarians), Survey, Initiation Rites, God of War, Bronze Working's eureka.\n6. **Agents.** The encoder's owner channels need a barbarian value (#111); the potential reward (#124) must not count barbarian value as opponent value; barbarian kills are a true-reward question, not shaping.\n7. **Determinism.** Every spawn and move from the engine RNG in a fixed phase order; same seed → same barbarians.\n\nOpen for Erik: before or after the 0.9 bump? (The tracker #128 has Q0–Q9 plus embarkation and fair starts queued before 0.9.)",
+      "bodyPreview": "**Erik, 2026-10-22 evening:** barbarians are not in the game yet and are 'kind of needed': it takes time before the civs meet each other; barbarians are good bounty in the early game; and they demand protection, so they are an incentive to keep at least some soldiers at home. ##"
     }
   ],
   "solutions": [
+    {
+      "id": "7a10d8d7-2aac-48a8-b5a6-3c5cba126156",
+      "bountyId": 5964033652,
+      "repo": "amiller/bounty-arcade",
+      "issueNumber": 11,
+      "issueUrl": "https://github.com/amiller/bounty-arcade/issues/11",
+      "rewardUsd": 50,
+      "prTitle": "fix: resolve issue #11 - [routes] Gain/loss threshold",
+      "prBody": "## Proposed Solution for Issue #11\n\n### Root Cause Analysis & Fix\nThe gain/loss logic compared the threshold values as strings, causing lexical rather than numeric comparison which broke the route‑selection when the thresholds crossed 9 (e.g., \"10\" < \"9\" evaluates true). Converting the inputs to numbers before the comparison fixes the threshold handling and restores correct route selection.\n\n### Proposed Code Patch\n```\n--- a/apps/routes/gainLoss.js\n+++ b/apps/routes/gainLoss.js\n@@\n-  const { gainThreshold, lossThreshold } = req.body;\n-  // thresholds were used directly, leading to string comparison\n-  if (gainThreshold && currentGain >= gainThreshold) {\n-    return routeGain();\n-  }\n-  if (lossThreshold && currentLoss <= lossThreshold) {\n-    return routeLoss();\n-  }\n+  // Ensure thresholds are treated as numbers\n+  const gainThreshold = Number(req.body.gainThreshold);\n+  const lossThreshold = Number(req.body.lossThreshold);\n+\n+  // Use numeric comparison to correctly evaluate thresholds\n+  if (!Number.isNaN(gainThreshold) && currentGain >= gainThreshold) {\n+    return routeGain();\n+  }\n+  if (!Number.isNaN(lossThreshold) && currentLoss <= lossThreshold) {\n+    return routeLoss();\n+  }\n*** End of File ***\n```\n\n---\n*Bounty Reward:* **$50**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "--- a/apps/routes/gainLoss.js\n+++ b/apps/routes/gainLoss.js\n@@\n-  const { gainThreshold, lossThreshold } = req.body;\n-  // thresholds were used directly, leading to string comparison\n-  if (gainThreshold && currentGain >= gainThreshold) {\n-    return routeGain();\n-  }\n-  if (lossThreshold && currentLoss <= lossThreshold) {\n-    return routeLoss();\n-  }\n+  // Ensure thresholds are treated as numbers\n+  const gainThreshold = Number(req.body.gainThreshold);\n+  const lossThreshold = Number(req.body.lossThreshold);\n+\n+  // Use numeric comparison to correctly evaluate thresholds\n+  if (!Number.isNaN(gainThreshold) && currentGain >= gainThreshold) {\n+    return routeGain();\n+  }\n+  if (!Number.isNaN(lossThreshold) && currentLoss <= lossThreshold) {\n+    return routeLoss();\n+  }\n*** End of File ***",
+      "explanation": "The gain/loss logic compared the threshold values as strings, causing lexical rather than numeric comparison which broke the route‑selection when the thresholds crossed 9 (e.g., \"10\" < \"9\" evaluates true). Converting the inputs to numbers before the comparison fixes the threshold handling and restores correct route selection.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-22T19:09:13.367Z",
+      "submittedAt": "2026-10-22T19:09:14.208Z",
+      "commentUrl": "https://github.com/amiller/bounty-arcade/issues/11#issuecomment-6349045471"
+    },
     {
       "id": "79d602cf-30b5-4b2f-9d3a-58bca1837e0b",
       "bountyId": 5964033913,
@@ -649,6 +668,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "aa633843-caa0-4543-9e62-7cfeb6ead042",
+      "repo": "amiller/bounty-arcade",
+      "issueNumber": 11,
+      "rewardUsd": 50,
+      "commentUrl": "https://github.com/amiller/bounty-arcade/issues/11#issuecomment-6349045471",
+      "submittedAt": "2026-10-22T19:09:14.208Z"
+    },
+    {
       "id": "703ae805-faf0-4bc1-8d9d-4a1256f72e30",
       "repo": "sbc1-code/brand-monitor",
       "issueNumber": 139,
@@ -674,6 +701,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-22T19:09:14.209Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a amiller/bounty-arcade #11! Recompensa en juego: $50"
+    },
+    {
+      "time": "2026-10-22T19:09:13.367Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para amiller/bounty-arcade #11..."
+    },
+    {
+      "time": "2026-10-22T19:09:13.367Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para amiller/bounty-arcade #11 ($50 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-22T19:09:12.016Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $2,559 USD."
+    },
+    {
+      "time": "2026-10-22T19:09:08.991Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-22T19:09:08.989Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-22T18:28:25.280Z",
       "level": "CLAIM",
@@ -1141,36 +1198,6 @@
     },
     {
       "time": "2026-10-22T17:50:26.485Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:49:54.883Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 37 bounties activos con un pozo total de $2,300 USD."
-    },
-    {
-      "time": "2026-10-22T17:49:51.472Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:49:20.664Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 37 bounties activos con un pozo total de $2,300 USD."
-    },
-    {
-      "time": "2026-10-22T17:49:16.458Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:48:44.588Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 37 bounties activos con un pozo total de $2,300 USD."
-    },
-    {
-      "time": "2026-10-22T17:48:41.443Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
     }
