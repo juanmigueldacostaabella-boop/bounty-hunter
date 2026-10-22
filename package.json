@@ -1,0 +1,13 @@
+{
+  "name": "nexus-bounty-hunter-24-7",
+  "version": "1.0.0",
+  "description": "Agente Autonomo 24/7 Cazador de Bounties y Recompensas de Codigo en GitHub, Algora y Polar",
+  "main": "hunter.js",
+  "scripts": {
+    "start": "node hunter.js",
+    "cloud-tick": "node hunter.js --single-tick"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
