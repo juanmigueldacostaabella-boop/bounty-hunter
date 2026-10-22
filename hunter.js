@@ -146,15 +146,15 @@ async function generateAutomatedSolution(bounty) {
 
   if (groqKey) {
     try {
-      const prompt = `You are a senior software engineer solving a GitHub bounty issue.
+      const prompt = `You are a senior software engineer submitting a high-quality solution for a GitHub bounty issue.
 Repository: ${repo}
 Issue #${number}: ${title}
 Description:
 ${(fullBody || bodyPreview || '').slice(0, 2200)}
 
-Provide:
-1. A brief, clear 2-sentence explanation of the root cause and fix in Spanish.
-2. The exact code patch, diff, or answer required to resolve the issue.
+Requirements:
+1. Provide a concise, clear 2-sentence technical explanation in professional English explaining the root cause and the fix.
+2. Provide the exact code patch, diff, or answer required to resolve the issue cleanly.
 Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
 
       const aiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -185,12 +185,13 @@ Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
   }
 
   const prTitle = `fix: resolve issue #${number} - ${title.slice(0, 50).replace(/[^\x00-\x7F]/g, "")}`;
-  const prBody = `## [Nexus AI] Propuesta de Solucion para Bounty #${number}\n\n` +
-    `### Analisis Tecnico\n${explanation}\n\n` +
-    `### Codigo / Solucion Propuesta\n\`\`\`\n${proposedCode}\n\`\`\`\n\n` +
+  const prBody = `## Proposed Solution for Issue #${number}\n\n` +
+    `### Root Cause Analysis & Fix\n${explanation}\n\n` +
+    `### Proposed Code Patch\n\`\`\`\n${proposedCode}\n\`\`\`\n\n` +
     `---\n` +
-    `*Recompensa Bounty:* **$${rewardUsd}**\n` +
-    `*Cuenta Beneficiaria:* \`${payout}\` (${payoutType})`;
+    `*Bounty Reward:* **$${rewardUsd}**\n` +
+    `*Beneficiary Account:* \`${payout}\` (${payoutType})\n` +
+    `*Contributor:* @juanmigueldacostaabella-boop`;
 
   return {
     id: crypto.randomUUID(),
