@@ -1,0 +1,38 @@
+name: NEXUS 24/7 Bounty Hunter
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Execute 24/7 Autonomous Bounty Scan & Solve
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          PAYOUT_ADDRESS: ${{ secrets.PAYOUT_ADDRESS }}
+          PAYOUT_TYPE: ${{ secrets.PAYOUT_TYPE }}
+        run: node hunter.js --single-tick
+
+      - name: Persist Ledger & State
+        run: |
+          git config user.name "nexus-bounty-bot"
+          git config user.email "nexus-bounty-bot@users.noreply.github.com"
+          git add data/state.json
+          git diff --staged --quiet || git commit -m "chore(hunter): update 24/7 bounties and solutions [skip ci]"
+          git push
