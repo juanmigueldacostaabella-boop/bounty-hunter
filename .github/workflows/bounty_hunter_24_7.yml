@@ -25,6 +25,7 @@ jobs:
       - name: Execute 24/7 Autonomous Bounty Scan & Solve
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           PAYOUT_ADDRESS: ${{ secrets.PAYOUT_ADDRESS }}
           PAYOUT_TYPE: ${{ secrets.PAYOUT_TYPE }}
         run: node hunter.js --single-tick
