@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-22T18:20:40.825Z",
-  "scanCount": 47,
+  "lastScanAt": "2026-10-22T18:26:51.959Z",
+  "scanCount": 48,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -14,7 +14,7 @@
     "totalBountyPoolUsd": 2559,
     "solutionsGenerated": 10,
     "potentialEarningsUsd": 959,
-    "prsSubmitted": 1
+    "prsSubmitted": 2
   },
   "activeBounties": [
     {
@@ -527,8 +527,10 @@
       "prBody": "## 🤖 Propuesta de Solución para Bounty #4\n\n### Análisis Técnico\nEl problema se debe a que el script `quickstart.sh` usa una ruta relativa fija (`./target/release/doomsday`) que solo funciona cuando se ejecuta desde la raíz del proyecto, provocando el error \"No such file or directory\" al lanzar el quick‑start desde cualquier otro directorio. La solución consiste en calcular la ruta del binario respecto al directorio del propio script y compilar automáticamente si el binario no existe.\n\n### Código / Solución Propuesta\n```\n--- a/quickstart.sh\n+++ b/quickstart.sh\n@@\n-#!/usr/bin/env bash\n-\n-# Run the quick‑start example\n-\n-./target/release/doomsday --quick-start\n+#!/usr/bin/env bash\n+\n+# Run the quick‑start example (fixed to work from any location)\n+\n+# Directory where this script resides\n+SCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\n+\n+# Expected binary path relative to the repository root\n+BIN_PATH=\"$SCRIPT_DIR/../target/release/doomsday\"\n+\n+# Build the binary if it does not exist\n+if [[ ! -x \"$BIN_PATH\" ]]; then\n+  echo \"Compilando doomsday en modo release...\"\n+  (cd \"$SCRIPT_DIR/..\" && cargo build --release)\n+fi\n+\n+# Ejecutar el binario\n+\"$BIN_PATH\" --quick-start\n\n```\n\n---\n*Recompensa Bounty:* **$50**\n*Cuenta Beneficiaria:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)",
       "proposedCode": "--- a/quickstart.sh\n+++ b/quickstart.sh\n@@\n-#!/usr/bin/env bash\n-\n-# Run the quick‑start example\n-\n-./target/release/doomsday --quick-start\n+#!/usr/bin/env bash\n+\n+# Run the quick‑start example (fixed to work from any location)\n+\n+# Directory where this script resides\n+SCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\n+\n+# Expected binary path relative to the repository root\n+BIN_PATH=\"$SCRIPT_DIR/../target/release/doomsday\"\n+\n+# Build the binary if it does not exist\n+if [[ ! -x \"$BIN_PATH\" ]]; then\n+  echo \"Compilando doomsday en modo release...\"\n+  (cd \"$SCRIPT_DIR/..\" && cargo build --release)\n+fi\n+\n+# Ejecutar el binario\n+\"$BIN_PATH\" --quick-start\n",
       "explanation": "El problema se debe a que el script `quickstart.sh` usa una ruta relativa fija (`./target/release/doomsday`) que solo funciona cuando se ejecuta desde la raíz del proyecto, provocando el error \"No such file or directory\" al lanzar el quick‑start desde cualquier otro directorio. La solución consiste en calcular la ruta del binario respecto al directorio del propio script y compilar automáticamente si el binario no existe.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-22T18:19:47.092Z"
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-22T18:19:47.092Z",
+      "submittedAt": "2026-10-22T18:26:55.347Z",
+      "commentUrl": "https://github.com/doomsday-network/doomsday/issues/4#issuecomment-6348172799"
     },
     {
       "id": "c97319e0-8c74-4af0-ab30-5b41787dfe87",
@@ -645,6 +647,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "3452f1c4-6320-4666-a9a5-20c9747213e1",
+      "repo": "doomsday-network/doomsday",
+      "issueNumber": 4,
+      "rewardUsd": 50,
+      "commentUrl": "https://github.com/doomsday-network/doomsday/issues/4#issuecomment-6348172799",
+      "submittedAt": "2026-10-22T18:26:55.348Z"
+    },
+    {
       "id": "cf268c59-8bae-4731-bf51-06ca9e3fa8fe",
       "repo": "amiller/bounty-arcade",
       "issueNumber": 12,
@@ -654,6 +664,31 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-22T18:26:55.348Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a doomsday-network/doomsday #4! Recompensa en juego: $50"
+    },
+    {
+      "time": "2026-10-22T18:26:54.506Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para doomsday-network/doomsday #4..."
+    },
+    {
+      "time": "2026-10-22T18:26:54.505Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $2,559 USD."
+    },
+    {
+      "time": "2026-10-22T18:26:51.959Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
+    },
+    {
+      "time": "2026-10-22T18:26:51.957Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-22T18:20:46.145Z",
       "level": "CLAIM",
@@ -1128,31 +1163,6 @@
       "time": "2026-10-22T17:46:58.068Z",
       "level": "INFO",
       "msg": "Escaneo completado: 37 bounties activos con un pozo total de $2,300 USD."
-    },
-    {
-      "time": "2026-10-22T17:46:56.418Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:46:21.951Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 37 bounties activos con un pozo total de $2,300 USD."
-    },
-    {
-      "time": "2026-10-22T17:46:21.408Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
-    },
-    {
-      "time": "2026-10-22T17:45:48.012Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 37 bounties activos con un pozo total de $2,300 USD."
-    },
-    {
-      "time": "2026-10-22T17:45:46.396Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos..."
     }
   ]
 }
