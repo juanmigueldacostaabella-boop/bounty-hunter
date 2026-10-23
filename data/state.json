@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T16:49:49.581Z",
-  "scanCount": 89,
+  "lastScanAt": "2026-10-23T17:18:02.151Z",
+  "scanCount": 90,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 18365,
+    "totalBountiesDetected": 60,
+    "totalBountyPoolUsd": 18115,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 24
@@ -1154,6 +1154,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T17:18:09.964Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 500: Internal Server Error"
+    },
+    {
+      "time": "2026-10-23T17:18:05.265Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para airdropia/earn-ops #10..."
+    },
+    {
+      "time": "2026-10-23T17:18:05.264Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,115 USD."
+    },
+    {
+      "time": "2026-10-23T17:18:02.151Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T17:18:02.150Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T16:49:53.445Z",
       "level": "CLAIM",
       "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13537! Recompensa en juego: $800"
@@ -1627,31 +1652,6 @@
       "time": "2026-10-23T07:28:29.527Z",
       "level": "SOLVER",
       "msg": "Solución IA generada para limitlessprojects/Go-Hybrid #1259 ($250 USD) [Documentación / Typo]"
-    },
-    {
-      "time": "2026-10-23T07:28:28.239Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,634 USD."
-    },
-    {
-      "time": "2026-10-23T07:28:25.324Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T07:28:25.322Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T06:42:23.088Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T06:42:22.577Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
     }
   ]
 }
