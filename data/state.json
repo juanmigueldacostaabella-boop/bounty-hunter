@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T17:49:06.795Z",
-  "scanCount": 91,
+  "lastScanAt": "2026-10-23T18:11:21.398Z",
+  "scanCount": 92,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -1164,6 +1164,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T18:11:24.403Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T18:11:23.696Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T18:11:23.696Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,365 USD."
+    },
+    {
+      "time": "2026-10-23T18:11:21.398Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T18:11:21.397Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T17:49:09.973Z",
       "level": "CLAIM",
       "msg": "¡Solución enviada con éxito a airdropia/earn-ops #10! Recompensa en juego: $500"
@@ -1635,31 +1660,6 @@
     },
     {
       "time": "2026-10-23T08:38:26.710Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T08:38:26.709Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T08:06:32.286Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a limitlessprojects/Go-Hybrid #1259! Recompensa en juego: $250"
-    },
-    {
-      "time": "2026-10-23T08:06:31.646Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para limitlessprojects/Go-Hybrid #1259..."
-    },
-    {
-      "time": "2026-10-23T08:06:31.646Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,634 USD."
-    },
-    {
-      "time": "2026-10-23T08:06:28.858Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
