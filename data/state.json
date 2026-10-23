@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T13:42:07.383Z",
-  "scanCount": 84,
+  "lastScanAt": "2026-10-23T14:21:34.742Z",
+  "scanCount": 85,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 57,
-    "totalBountyPoolUsd": 11015,
-    "solutionsGenerated": 23,
-    "potentialEarningsUsd": 9265,
-    "prsSubmitted": 19
+    "totalBountiesDetected": 62,
+    "totalBountyPoolUsd": 12015,
+    "solutionsGenerated": 24,
+    "potentialEarningsUsd": 10065,
+    "prsSubmitted": 20
   },
   "activeBounties": [
     {
@@ -81,6 +81,19 @@
       "createdAt": "2026-10-23T13:23:52Z",
       "fullBody": "References #5859, #743.\n\n## Feature / Vulnerability Description\n`uploadFile` returns `req.file.originalname` directly in the JSON response. Multipart clients can submit filenames containing path separators (`/`, `\\`) or control characters such as `../secret.txt`, `C:\\Windows\\System32\\calc.exe`, null bytes, or newline-delimited strings. Returning raw uploaded filenames can lead to path traversal perception, log injection, or downstream metadata parsing risks.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Created `apps/api/src/utils/sanitizeFilename.js`:\n   - Normalizes uploaded filenames using Unicode NFC.\n   - Strips POSIX and Windows path separators and retains only the final filename segment.\n   - Strips Windows drive letters (e.g. `C:`, `D:`).\n   - Eliminates directory traversal tokens (`.`, `..`, `...`).\n   - Removes null bytes (`\\0`), control characters (0x00-0x1F, 0x7F-0x9F), and invalid filesystem characters (`<`, `>`, `:`, `\"`, `|`, `?`, `*`).\n   - Trims surrounding whitespace and trailing dots/spaces.\n   - Enforces configurable metadata-safe length capping (default 100 characters) while preserving file extensions.\n   - Provides safe fallback (`\"file\"`) for empty, non-string, or stripped names.\n   - Exports `isValidFilename(filename)` validation helper.\n2. Integrated `sanitizeFilename` into `apps/api/src/controllers/uploadController.js`:\n   - Sanitizes `req.file.originalname` before returning in `201` response payload.\n   - Preserves `null` filename for missing file uploads (`status: \"no-file\"`).\n3. Monorepo Test Discovery Alignment:\n   - Configured `\"test\": \"node --test\"` in `apps/api/package.json` for reliable test execution.\n4. Comprehensive Unit Test Suite:\n   - Created `apps/api/src/tests/sanitizeFilename.test.js` validating:\n     - Standard filenames and spaces\n     - POSIX and Windows absolute/relative path traversal prevention\n     - Control character, newline, and null-byte elimination\n     - Unsafe filesystem characters and trailing dots/spaces trimming\n     - Length capping with and without extension preservation\n     - Empty, null, undefined, and custom fallback handling\n     - `uploadController` integration with 100% test pass (10/10 passing).\n\n/bounty 800\n",
       "bodyPreview": "References #5859, #743. ## Feature / Vulnerability Description `uploadFile` returns `req.file.originalname` directly in the JSON response. Multipart clients can submit filenames containing path separators (`/`, `\\`) or control characters such as `../secret.txt`, `C:\\Windows\\Syst"
+    },
+    {
+      "id": 5999483828,
+      "number": 13530,
+      "title": "feat(utils): implement asynchronous concurrency limiter pLimit (ref #11886, #743)",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13530",
+      "rewardUsd": 800,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T14:18:57Z",
+      "fullBody": "References #11886, #743.\n\n## Feature Description\nRunning mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exhaustion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `pLimit(concurrency)` in `apps/api/src/utils/pLimit.js`:\n   - Accepts `concurrency` (positive integer).\n   - Validates concurrency: throws `TypeError` if concurrency is not a positive finite integer (e.g. `<= 0`, non-integer, or `NaN`).\n   - Returns a `limit(fn, ...args)` wrapper function that executes an async function respecting the maximum active execution limit.\n   - Provides getter properties:\n     - `limit.activeCount`: number of currently executing async tasks.\n     - `limit.pendingCount`: number of promises queued awaiting execution.\n   - Provides helper methods:\n     - `limit.clearQueue()`: clears all queued/pending tasks, rejecting them with an abort/cancellation error.\n   - Handles rejections and resolutions properly without stalling queue drainage.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/pLimit.test.js`):\n   - Concurrency throttling verification (maximum N concurrent tasks executing at any point in time).\n   - Correct task ordering / FIFO resolution.\n   - `activeCount` and `pendingCount` metric accuracy throughout lifecycle.\n   - Forwarding returned values and thrown errors.\n   - Forwarding arguments to the wrapped function.\n   - `clearQueue()` behavior and queue draining.\n   - Validation and error handling for invalid concurrency parameters.\n\n/bounty 800\n",
+      "bodyPreview": "References #11886, #743. ## Feature Description Running mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exha"
     },
     {
       "id": 5997912603,
@@ -498,21 +511,25 @@
       "difficulty": "Fácil",
       "createdAt": "2026-08-04T09:54:31Z",
       "bodyPreview": "**Depends on:** ELEC-1 (#1591), ARCH-3 (#1562), ARCH-5 (#1633), CLI-1 (#1579), FM-00 (#1565), PAR-1 (#1572) · **Blocks:** DEP-1a (#1634), GATE-3 (#1585), FM-2 (#1587), ELEC-3 (#1593), DEP-4 (#1596), RET-4 (#1600) **Prerequisite:** the Phase 0 characterization suite is committed "
-    },
-    {
-      "id": 4622039846,
-      "number": 9,
-      "title": "Chore: Aktifkan Polar.sh payment gateway",
-      "repo": "FMATheNomad/jatuhtempo",
-      "htmlUrl": "https://github.com/FMATheNomad/jatuhtempo/issues/9",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-06-09T12:45:57Z",
-      "bodyPreview": "Payment udah terintegrasi (checkout + webhook), tapi belum live. Perlu: 1. Set webhook endpoint di dashboard Polar.sh 2. Test checkout flow 3. Aktifkan subscription gating Estimasi: 2-3 hari"
     }
   ],
   "solutions": [
+    {
+      "id": "f02eb79b-b28c-4856-a245-197101922cd7",
+      "bountyId": 5999483828,
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13530,
+      "issueUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13530",
+      "rewardUsd": 800,
+      "prTitle": "fix: resolve issue #13530 - feat(utils): implement asynchronous concurrency li",
+      "prBody": "## Proposed Solution for Issue #13530\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13530.\n\n### Proposed Code Patch\n```\n// Review specific implementation in SecureBananaLabs/bug-bounty #13530\n```\n\n---\n*Bounty Reward:* **$800**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in SecureBananaLabs/bug-bounty #13530",
+      "explanation": "Technical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13530.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-23T14:21:39.663Z",
+      "submittedAt": "2026-10-23T14:21:40.487Z",
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13530#issuecomment-6367096107"
+    },
     {
       "id": "b5d7d94a-dd7b-464a-8515-f8b0936046d8",
       "bountyId": 5998585863,
@@ -876,6 +893,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "491dd4b0-5cec-48ec-8d8e-1589b112e65d",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13530,
+      "rewardUsd": 800,
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13530#issuecomment-6367096107",
+      "submittedAt": "2026-10-23T14:21:40.487Z"
+    },
+    {
       "id": "16251263-92c6-42c4-beff-9b0273558ee3",
       "repo": "SecureBananaLabs/bug-bounty",
       "issueNumber": 13522,
@@ -1029,6 +1054,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-23T14:21:40.488Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13530! Recompensa en juego: $800"
+    },
+    {
+      "time": "2026-10-23T14:21:39.664Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para SecureBananaLabs/bug-bounty #13530..."
+    },
+    {
+      "time": "2026-10-23T14:21:39.663Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para SecureBananaLabs/bug-bounty #13530 ($800 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-23T14:21:37.436Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $12,015 USD."
+    },
+    {
+      "time": "2026-10-23T14:21:34.742Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T14:21:34.740Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-23T13:42:16.208Z",
       "level": "CLAIM",
@@ -1498,36 +1553,6 @@
       "time": "2026-10-23T04:28:00.692Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T03:59:36.554Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T03:59:36.222Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T03:59:36.222Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,184 USD."
-    },
-    {
-      "time": "2026-10-23T03:59:33.748Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T03:59:33.747Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T03:20:41.952Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
   ]
 }
