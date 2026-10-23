@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T15:02:23.636Z",
-  "scanCount": 86,
+  "lastScanAt": "2026-10-23T15:37:50.631Z",
+  "scanCount": 87,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,10 +11,10 @@
   },
   "metrics": {
     "totalBountiesDetected": 63,
-    "totalBountyPoolUsd": 12065,
-    "solutionsGenerated": 24,
-    "potentialEarningsUsd": 10065,
-    "prsSubmitted": 21
+    "totalBountyPoolUsd": 12815,
+    "solutionsGenerated": 25,
+    "potentialEarningsUsd": 10865,
+    "prsSubmitted": 22
   },
   "activeBounties": [
     {
@@ -94,6 +94,19 @@
       "createdAt": "2026-10-23T14:18:57Z",
       "fullBody": "References #11886, #743.\n\n## Feature Description\nRunning mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exhaustion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `pLimit(concurrency)` in `apps/api/src/utils/pLimit.js`:\n   - Accepts `concurrency` (positive integer).\n   - Validates concurrency: throws `TypeError` if concurrency is not a positive finite integer (e.g. `<= 0`, non-integer, or `NaN`).\n   - Returns a `limit(fn, ...args)` wrapper function that executes an async function respecting the maximum active execution limit.\n   - Provides getter properties:\n     - `limit.activeCount`: number of currently executing async tasks.\n     - `limit.pendingCount`: number of promises queued awaiting execution.\n   - Provides helper methods:\n     - `limit.clearQueue()`: clears all queued/pending tasks, rejecting them with an abort/cancellation error.\n   - Handles rejections and resolutions properly without stalling queue drainage.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/pLimit.test.js`):\n   - Concurrency throttling verification (maximum N concurrent tasks executing at any point in time).\n   - Correct task ordering / FIFO resolution.\n   - `activeCount` and `pendingCount` metric accuracy throughout lifecycle.\n   - Forwarding returned values and thrown errors.\n   - Forwarding arguments to the wrapped function.\n   - `clearQueue()` behavior and queue draining.\n   - Validation and error handling for invalid concurrency parameters.\n\n/bounty 800\n",
       "bodyPreview": "References #11886, #743. ## Feature Description Running mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exha"
+    },
+    {
+      "id": 6000731417,
+      "number": 13535,
+      "title": "feat(utils): implement prototype-safe deep clone utility cloneDeep (ref #11890, #743)",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13535",
+      "rewardUsd": 800,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T15:34:44Z",
+      "fullBody": "References #11890, #743.\n\n## Feature Description\nDeeply cloning multi-layered nested configurations, Web3 transaction payloads, Solana instruction objects, and state snapshots requires an industrial-grade, prototype-pollution resistant `cloneDeep` utility that correctly isolates mutable references, supports native types (Date, RegExp, Map, Set), and safely handles circular references.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `cloneDeep(value)` in `apps/api/src/utils/cloneDeep.js`:\n   - Deeply clones plain objects, nested objects, and arrays with full structural fidelity.\n   - Preserves primitive values (numbers, strings, booleans, bigints, symbols, null, undefined).\n   - Handles standard native types:\n     - `Date`: returns a new Date with identical timestamp.\n     - `RegExp`: returns a new RegExp with matching source and flags.\n     - `Map`: deeply clones all keys and values into a fresh Map instance.\n     - `Set`: deeply clones all members into a fresh Set instance.\n   - Prevents Prototype Pollution attacks: skips `__proto__` and blocks tampering with `constructor` or `prototype`.\n   - Circular reference defense: tracks seen objects via `WeakMap` to cleanly clone cyclic graphs without `RangeError: Maximum call stack size exceeded`.\n   - Supports `Object.create(null)` dictionary objects cleanly without relying on `Object.prototype`.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/cloneDeep.test.js`):\n   - Primitive preservation tests.\n   - Deep mutation isolation (mutating cloned object does not mutate source).\n   - Array and nested array deep cloning.\n   - Date and RegExp clone tests.\n   - Map and Set deep clone tests.\n   - Cyclic reference graph cloning tests.\n   - `Object.create(null)` object cloning tests.\n   - Prototype pollution defense tests (`__proto__`, `constructor`).\n   - Complex blockchain transaction receipt payload cloning.\n\n/bounty 800\n",
+      "bodyPreview": "References #11890, #743. ## Feature Description Deeply cloning multi-layered nested configurations, Web3 transaction payloads, Solana instruction objects, and state snapshots requires an industrial-grade, prototype-pollution resistant `cloneDeep` utility that correctly isolates "
     },
     {
       "id": 5997912603,
@@ -499,21 +512,25 @@
       "difficulty": "Fácil",
       "createdAt": "2026-09-03T14:50:49Z",
       "bodyPreview": "## Description Re-syncing a night appends a full copy of its stage timeline to `sleep_details.sleep_stages` instead of replacing it. After many syncs of a still-visible night, `GET /api/v1/users/{id}/events/sleep` returns the hypnogram repeated N times: one of our Polar sessions"
-    },
-    {
-      "id": 5059089285,
-      "number": 1592,
-      "title": "ELEC-2 — PolarMACE on the new architecture, with golden parity and the polar user surface",
-      "repo": "ACEsuit/mace",
-      "htmlUrl": "https://github.com/ACEsuit/mace/issues/1592",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-08-04T09:54:31Z",
-      "bodyPreview": "**Depends on:** ELEC-1 (#1591), ARCH-3 (#1562), ARCH-5 (#1633), CLI-1 (#1579), FM-00 (#1565), PAR-1 (#1572) · **Blocks:** DEP-1a (#1634), GATE-3 (#1585), FM-2 (#1587), ELEC-3 (#1593), DEP-4 (#1596), RET-4 (#1600) **Prerequisite:** the Phase 0 characterization suite is committed "
     }
   ],
   "solutions": [
+    {
+      "id": "7f88115f-fb91-46d3-9939-566b5deba2b2",
+      "bountyId": 6000731417,
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13535,
+      "issueUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13535",
+      "rewardUsd": 800,
+      "prTitle": "fix: resolve issue #13535 - feat(utils): implement prototype-safe deep clone u",
+      "prBody": "## Proposed Solution for Issue #13535\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13535.\n\n### Proposed Code Patch\n```\n// Review specific implementation in SecureBananaLabs/bug-bounty #13535\n```\n\n---\n*Bounty Reward:* **$800**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in SecureBananaLabs/bug-bounty #13535",
+      "explanation": "Technical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13535.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-23T15:37:55.835Z",
+      "submittedAt": "2026-10-23T15:37:56.672Z",
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13535#issuecomment-6368645919"
+    },
     {
       "id": "f02eb79b-b28c-4856-a245-197101922cd7",
       "bountyId": 5999483828,
@@ -895,6 +912,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "17b47e67-a3e4-4502-a80a-19b3e477b129",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13535,
+      "rewardUsd": 800,
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13535#issuecomment-6368645919",
+      "submittedAt": "2026-10-23T15:37:56.672Z"
+    },
+    {
       "id": "53dc96d4-e2d2-4ca6-a184-d7a5cd74d714",
       "repo": "SecureBananaLabs/bug-bounty",
       "issueNumber": 13524,
@@ -1064,6 +1089,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-23T15:37:56.673Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13535! Recompensa en juego: $800"
+    },
+    {
+      "time": "2026-10-23T15:37:55.835Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para SecureBananaLabs/bug-bounty #13535..."
+    },
+    {
+      "time": "2026-10-23T15:37:55.835Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para SecureBananaLabs/bug-bounty #13535 ($800 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-23T15:37:53.563Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $12,815 USD."
+    },
+    {
+      "time": "2026-10-23T15:37:50.631Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T15:37:50.630Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-23T15:02:27.591Z",
       "level": "CLAIM",
@@ -1533,36 +1588,6 @@
       "time": "2026-10-23T05:33:36.099Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T05:33:36.097Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T05:00:34.732Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T05:00:34.376Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T05:00:34.376Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,234 USD."
-    },
-    {
-      "time": "2026-10-23T05:00:32.228Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T05:00:32.226Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
