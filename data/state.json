@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T18:54:36.856Z",
-  "scanCount": 93,
+  "lastScanAt": "2026-10-23T19:24:56.637Z",
+  "scanCount": 94,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 64,
-    "totalBountyPoolUsd": 18415,
+    "totalBountyPoolUsd": 18485,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 25
@@ -505,6 +505,19 @@
       "bodyPreview": "Automated digest 2026-10-23T11:37:14.961Z ## pool payment state - asi: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active - canonry: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused - darling-arm64: paymentMode=disabled committed=0 cap=$0 ch"
     },
     {
+      "id": 6003832923,
+      "number": 1,
+      "title": "USDC-quoted pairs not having the correct marketcap displayed in tools",
+      "repo": "blake-guthrie/GLASS",
+      "htmlUrl": "https://github.com/blake-guthrie/GLASS/issues/1",
+      "rewardUsd": 100,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-23T19:03:20Z",
+      "fullBody": "Fix this problem to get paid in fees of $100",
+      "bodyPreview": "Fix this problem to get paid in fees of $100"
+    },
+    {
       "id": 5989002106,
       "number": 4081,
       "title": "[Bounty] Задача: Дописать тесты",
@@ -516,19 +529,6 @@
       "createdAt": "2026-10-22T23:17:32Z",
       "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/vlad441/ncpp/issues/1\n\n### 漏洞描述 / Description\nЗадача: Дописать тесты\n\n## Задача: Дописать тесты\n\nНужно дописать тесты для непокрытых функций и методов для модулей которые зафиксированы документацией (например, парсеры JSON/BSON/CBOR, криптографические алгоритмы, структуры данных, системные модули, сеть и т.д.). \n\nВ рамках существующей инфраструктуры тестирования ([tests.cpp](https://github.com/vlad441/ncpp/blob/dev/tests/tests.cpp) в `dev` ветке, можете следовать этому референсу).\n\n🔗 [Документация](https://github.com/vlad441/ncpp/blob/dev/docs/ru/introduction.md)\n\n## Требования к реализации\n\n### Среда\n   - Использовать существующую реализацию тестового раннера (`tests.cpp`).\n   - Применять существующие макросы и функции логирования/проверок (`NextTest()`, `TEST_EQ()`, `TEST_NE()`, и др.).\n\n### Критерии качества\n   - Каждая функция должна быть протестирована как минимум на 1 положительный и 1 негативный сценарий. (Опционально сценарии с обработкой ошибок / краевыми условиями (`edge cases`, невалидные данные, выход за границы)).\n   - Все тесты должны успешно проходить компиляцию в `СI/CD`.\n   - *Примечание:* Если в процессе написания тестов обнаружился баг в самой функции (из-за чего тест падает), **не нужно подгонять тест под ошибку**. Зафиксируйте корректное поведение в тесте и оформите `issue` (или предложите исправление в коде функции).\n   - Запрещено скрывать предупреждения компилятора или подавлять ошибки без веских архитектурных оснований.\n\n#### 🛡️ Минимальное вмешательство и изоляция кода\n- PR должен содержать **только** тесты (в рамках существующего раннера `tests/tests.cpp` и/или соответствующих файлов в `tests/units/`), за исключением исправления багов.\n- **Обнаружение багов:** Если в процессе написания тестов вы обнаружили баг в коде библиотеки, **не исправляйте его молча** в том же PR. Зафиксируйте ошибочное поведение в тесте (или создайте отдельный `issue`).\n\n### Ограничение на использование ИИ (AI Policy)\n   - **Запрещено**: генерация PR целиком с помощью AI-агентов/ботов, автогенерация комментариев, а также слепой копипа\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/vlad441/ncpp/issues/1 ### 漏洞描述 / Description Задача: Дописать тесты ## Задача: Дописать тесты Нужно дописать тесты для непокрытых функций и методов для модулей которые зафиксированы документацией (например, п"
-    },
-    {
-      "id": 5984887578,
-      "number": 139,
-      "title": "Brand Mentions: 2026-10-22 (22 worthy, 0 highlights)",
-      "repo": "sbc1-code/brand-monitor",
-      "htmlUrl": "https://github.com/sbc1-code/brand-monitor/issues/139",
-      "rewardUsd": 59,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-22T18:08:54Z",
-      "fullBody": "## Brand Mentions Scan - October 22, 2026\n\n**New mentions found:** 42\n**Above notify threshold (55):** 22\n**Highlights (75+):** 0\n\n[View full report](https://sbc1-code.github.io/brand-monitor/)\n\n---\n## Notable Mentions\n\n### [Someone hacked the Switch 2 by using an old game and AI](https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai)\n**Brand:** OpenAI | **Product:** OpenAI (general)\n**Source:** The Verge (Trade Publication) | **Published:** 2026-10-22\n**Signal Score:** 70 | **Sentiment:** negative (!)\n\n> The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailb\n\n### [OpenAI says ChatGPT Sol helped uncover critical PHP flaws that could affect 70% of websites — AI-assisted researchers turned a two-year-old bug that stumped human developers into working exploits in two weeks](https://news.google.com/rss/articles/CBMigwNBVV95cUxQbnQxa0JIbmEwejlMbmREUDMzeGF6WWJUX1M4U3VsZlRzaHBVeUhoT3piQl81UDVUUXJDaUhQSURZc3RDSnpXQTZvWFVXTlhIdE9hSGpJVFZIZWxiN3BBOE9WUUVpajVXMG1JbnY5Q2VlZE9icmRnVHNlRWFaSGlYOUE0SzNiVDZERHJQQU5VeVpxSG5hZ1hiMnNzZ0lfQnJ1czR2X2MwdzF2VVdWeFJXYnZDTVhOVTcycDFYNWxRR3B2ZVkxSXZhN1NqX0pIcjQ3UzhzRDZEZXlGYjBZdDhPblJZMTlzMkk4VVB3a3g2d1VKNjRtS2QwODJUUzFLcF9xcEMtbEZDSmd2VXdmLWdULWZtcVVVY3laRDM3RzFBMURhM0otZV9MZzIzdWY5ak9zMXNZbUxCcGR1dGFpWmc0YVV5UjE2VjZNTzExYkdCSjBkWE0tRmE1SEVCRUotWVZaQWJTTVYwMTgweWRZYVJ5SFYxOUZCUUliVzBObXl3NlVuM28?oc=5)\n**Brand:** OpenAI | **Product:** ChatGPT\n**Source:** Tom's Hardware (News Article) | **Published:** 2026-10-22\n**Signal Score:** 60 | **Sentiment:** negative (!)\n\n> OpenAI says ChatGPT Sol helped uncover critical PHP flaws that could affect 70% of websites — AI-assisted researchers turned a two-year-old bug that stumped human developers into working exploits in two weeks  Tom's Hardware\n\n### [Uber puts all 30,000 employees on ChatGPT Work](https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/)\n**Brand:** OpenAI | **Product:** ChatGPT\n**Source:** TechCrunch (Trade Publication) | **Published:** 2026-10-22\n**Signal Score:** 60 | **Sentiment:** neutral (~)\n\n> The ride-share giant previously deployed a much smaller pilot for ChatGPT Work but is now taking the enterprise agent company-wide.\n\n### [Crypto Security Alert: PHP Exploits, LiteLLM Backdoor And Ne",
-      "bodyPreview": "## Brand Mentions Scan - October 22, 2026 **New mentions found:** 42 **Above notify threshold (55):** 22 **Highlights (75+):** 0 [View full report](https://sbc1-code.github.io/brand-monitor/) --- ## Notable Mentions ### [Someone hacked the Switch 2 by using an old game and AI"
     }
   ],
   "solutions": [
@@ -1165,6 +1165,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T19:25:00.059Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T19:24:59.467Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T19:24:59.467Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,485 USD."
+    },
+    {
+      "time": "2026-10-23T19:24:56.637Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T19:24:56.635Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T18:54:39.391Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1636,31 +1661,6 @@
     },
     {
       "time": "2026-10-23T09:48:33.655Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T09:48:33.654Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T09:13:19.025Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T09:13:18.631Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T09:13:18.631Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,684 USD."
-    },
-    {
-      "time": "2026-10-23T09:13:16.183Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
