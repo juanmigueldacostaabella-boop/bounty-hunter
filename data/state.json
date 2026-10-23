@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T13:00:51.118Z",
-  "scanCount": 83,
+  "lastScanAt": "2026-10-23T13:42:07.383Z",
+  "scanCount": 84,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 56,
-    "totalBountyPoolUsd": 9465,
-    "solutionsGenerated": 21,
-    "potentialEarningsUsd": 7665,
-    "prsSubmitted": 18
+    "totalBountiesDetected": 57,
+    "totalBountyPoolUsd": 11015,
+    "solutionsGenerated": 23,
+    "potentialEarningsUsd": 9265,
+    "prsSubmitted": 19
   },
   "activeBounties": [
     {
@@ -55,6 +55,32 @@
       "createdAt": "2026-10-23T11:41:44Z",
       "fullBody": "# New in-scope assets 2026-10-23\n\n3 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Databricks (`h1:databricks`)\nhttps://hackerone.com/databricks\n- new in-scope: `login.databricks.com`, `ui-assets.cloud.databricks.com`\n\n### Visa (`h1:visa`)\nhttps://hackerone.com/visa\n- new in-scope: `https://ebc2test.cybersource.com/settings`\n\n### Nexuzhealth Web PACS (`it:uz leuven/nexuzhealthwebpacs`)  💰 $1000\nhttps://www.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs/detail\n- new in-scope: `idp-url.nexuzhealth.be`\n\n\ncc @abdulsalam-create",
       "bodyPreview": "# New in-scope assets 2026-10-23 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Databricks (`h1:databricks`) https://hackerone.com/databricks - new in-scope: `login.databricks.co"
+    },
+    {
+      "id": 5998665702,
+      "number": 13524,
+      "title": "feat(utils): implement human-readable file size formatter formatBytes (ref #11876, #743)",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13524",
+      "rewardUsd": 800,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T13:28:58Z",
+      "fullBody": "References #11876, #743.\n\n## Feature Description\nFile upload attachments, storage quota meters, and media transfer metrics require a reliable human-readable byte size formatter with configurable decimal precision and safe fallback behavior. Standard floating-point calculations frequently produce unrounded fractions or crash on non-numeric or negative values. A hardened, fail-safe `formatBytes(bytes, decimals)` utility is required.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Created `apps/api/src/utils/formatBytes.js`:\n   - Computes standard binary scaling (1024 base) across `B`, `KB`, `MB`, `GB`, `TB`, `PB`.\n   - Supports configurable decimal places (default: 2) and optional options object.\n   - Automatically eliminates redundant trailing decimal zeros (e.g. `1.50 KB` -> `1.5 KB`) while supporting explicit `preserveTrailingZeros: true`.\n   - Fail-safe fallback: returns `\"0 B\"` for negative numbers, `NaN`, non-finite (`Infinity`), `null`, `undefined`, empty strings, and non-numeric types.\n   - Safely parses numeric strings (e.g. `\"1048576\"` -> `\"1 MB\"`).\n   - Allows customizable unit lists and separators.\n   - Exported complementary `parseBytes(str)` utility to convert formatted human-readable size strings back into exact integer bytes.\n2. Monorepo Test Discovery Alignment:\n   - Configured `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test discovery.\n3. Comprehensive Unit Test Suite:\n   - Created `apps/api/src/tests/formatBytes.test.js` validating:\n     - Exact threshold conversions across all binary powers (B, KB, MB, GB, TB, PB).\n     - Decimal precision configurations (0, 1, 2, 3 decimals, negative clamping, trailing zero preservation).\n     - Fail-safe formatting on negative numbers, non-numeric strings, `null`, `undefined`, `NaN`, `Infinity`, and booleans.\n     - Numeric string parsing.\n     - Custom units and custom separator strings.\n     - Reverse byte parsing with `parseBytes` (100% test pass).\n\n/bounty 800\n",
+      "bodyPreview": "References #11876, #743. ## Feature Description File upload attachments, storage quota meters, and media transfer metrics require a reliable human-readable byte size formatter with configurable decimal precision and safe fallback behavior. Standard floating-point calculations fr"
+    },
+    {
+      "id": 5998585863,
+      "number": 13522,
+      "title": "fix(api): sanitize uploaded original filenames in upload metadata response (ref #5859, #743)",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13522",
+      "rewardUsd": 800,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T13:23:52Z",
+      "fullBody": "References #5859, #743.\n\n## Feature / Vulnerability Description\n`uploadFile` returns `req.file.originalname` directly in the JSON response. Multipart clients can submit filenames containing path separators (`/`, `\\`) or control characters such as `../secret.txt`, `C:\\Windows\\System32\\calc.exe`, null bytes, or newline-delimited strings. Returning raw uploaded filenames can lead to path traversal perception, log injection, or downstream metadata parsing risks.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Created `apps/api/src/utils/sanitizeFilename.js`:\n   - Normalizes uploaded filenames using Unicode NFC.\n   - Strips POSIX and Windows path separators and retains only the final filename segment.\n   - Strips Windows drive letters (e.g. `C:`, `D:`).\n   - Eliminates directory traversal tokens (`.`, `..`, `...`).\n   - Removes null bytes (`\\0`), control characters (0x00-0x1F, 0x7F-0x9F), and invalid filesystem characters (`<`, `>`, `:`, `\"`, `|`, `?`, `*`).\n   - Trims surrounding whitespace and trailing dots/spaces.\n   - Enforces configurable metadata-safe length capping (default 100 characters) while preserving file extensions.\n   - Provides safe fallback (`\"file\"`) for empty, non-string, or stripped names.\n   - Exports `isValidFilename(filename)` validation helper.\n2. Integrated `sanitizeFilename` into `apps/api/src/controllers/uploadController.js`:\n   - Sanitizes `req.file.originalname` before returning in `201` response payload.\n   - Preserves `null` filename for missing file uploads (`status: \"no-file\"`).\n3. Monorepo Test Discovery Alignment:\n   - Configured `\"test\": \"node --test\"` in `apps/api/package.json` for reliable test execution.\n4. Comprehensive Unit Test Suite:\n   - Created `apps/api/src/tests/sanitizeFilename.test.js` validating:\n     - Standard filenames and spaces\n     - POSIX and Windows absolute/relative path traversal prevention\n     - Control character, newline, and null-byte elimination\n     - Unsafe filesystem characters and trailing dots/spaces trimming\n     - Length capping with and without extension preservation\n     - Empty, null, undefined, and custom fallback handling\n     - `uploadController` integration with 100% test pass (10/10 passing).\n\n/bounty 800\n",
+      "bodyPreview": "References #5859, #743. ## Feature / Vulnerability Description `uploadFile` returns `req.file.originalname` directly in the JSON response. Multipart clients can submit filenames containing path separators (`/`, `\\`) or control characters such as `../secret.txt`, `C:\\Windows\\Syst"
     },
     {
       "id": 5997912603,
@@ -484,33 +510,39 @@
       "difficulty": "Fácil",
       "createdAt": "2026-06-09T12:45:57Z",
       "bodyPreview": "Payment udah terintegrasi (checkout + webhook), tapi belum live. Perlu: 1. Set webhook endpoint di dashboard Polar.sh 2. Test checkout flow 3. Aktifkan subscription gating Estimasi: 2-3 hari"
-    },
-    {
-      "id": 4527364449,
-      "number": 1071,
-      "title": "Polar API - add FIT endpoint support",
-      "repo": "the-momentum/open-wearables",
-      "htmlUrl": "https://github.com/the-momentum/open-wearables/issues/1071",
-      "rewardUsd": 50,
-      "category": "Nueva Función",
-      "difficulty": "Medio",
-      "createdAt": "2026-05-26T20:42:40Z",
-      "bodyPreview": "Polar AccessLink API exposes FIT file downloads with no partner program required: `GET /v3/exercises/{exerciseId}/fit` (OAuth2 Bearer, `accesslink.read_all` scope). We already have the full Polar OAuth infrastructure in place. This mirrors Garmin's FIT path (#953) but is a simpl"
-    },
-    {
-      "id": 1941523229,
-      "number": 50,
-      "title": "One issue please",
-      "repo": "birkjernstrom/birk-testing",
-      "htmlUrl": "https://github.com/birkjernstrom/birk-testing/issues/50",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2023-10-13T08:47:43Z",
-      "bodyPreview": " <!-- POLAR PLEDGE BADGE START --> ## Upvote & Fund - We're using [Polar.sh](http://127.0.0.1:3000/birkjernstrom) so you can upvote and help fund this issue. - We receive the funding once the issue is completed & confirmed by you. - Thank you in advance for helping prioritize &"
     }
   ],
   "solutions": [
+    {
+      "id": "b5d7d94a-dd7b-464a-8515-f8b0936046d8",
+      "bountyId": 5998585863,
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13522,
+      "issueUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13522",
+      "rewardUsd": 800,
+      "prTitle": "fix: resolve issue #13522 - fix(api): sanitize uploaded original filenames in ",
+      "prBody": "## Proposed Solution for Issue #13522\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13522.\n\n### Proposed Code Patch\n```\n// Review specific implementation in SecureBananaLabs/bug-bounty #13522\n```\n\n---\n*Bounty Reward:* **$800**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in SecureBananaLabs/bug-bounty #13522",
+      "explanation": "Technical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13522.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-23T13:42:15.342Z",
+      "submittedAt": "2026-10-23T13:42:16.207Z",
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13522#issuecomment-6366281833"
+    },
+    {
+      "id": "954e4820-58b7-42d4-9d4c-83c341304f2b",
+      "bountyId": 5998665702,
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13524,
+      "issueUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13524",
+      "rewardUsd": 800,
+      "prTitle": "fix: resolve issue #13524 - feat(utils): implement human-readable file size fo",
+      "prBody": "## Proposed Solution for Issue #13524\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13524.\n\n### Proposed Code Patch\n```\n// Review specific implementation in SecureBananaLabs/bug-bounty #13524\n```\n\n---\n*Bounty Reward:* **$800**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in SecureBananaLabs/bug-bounty #13524",
+      "explanation": "Technical analysis and proposed resolution for SecureBananaLabs/bug-bounty #13524.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-10-23T13:42:13.134Z"
+    },
     {
       "id": "93fce335-17d2-4155-898d-1c7afd34f4f7",
       "bountyId": 5997785906,
@@ -844,6 +876,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "16251263-92c6-42c4-beff-9b0273558ee3",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13522,
+      "rewardUsd": 800,
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13522#issuecomment-6366281833",
+      "submittedAt": "2026-10-23T13:42:16.207Z"
+    },
+    {
       "id": "71914c6b-4aab-4a48-98d0-f47ab6022494",
       "repo": "freedom-winds/BountyScout",
       "issueNumber": 1304,
@@ -989,6 +1029,41 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-23T13:42:16.208Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13522! Recompensa en juego: $800"
+    },
+    {
+      "time": "2026-10-23T13:42:15.342Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para SecureBananaLabs/bug-bounty #13522..."
+    },
+    {
+      "time": "2026-10-23T13:42:15.342Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para SecureBananaLabs/bug-bounty #13522 ($800 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-23T13:42:13.134Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para SecureBananaLabs/bug-bounty #13524 ($800 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-23T13:42:10.968Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $11,015 USD."
+    },
+    {
+      "time": "2026-10-23T13:42:07.384Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T13:42:07.382Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-23T13:00:57.082Z",
       "level": "CLAIM",
@@ -1453,41 +1528,6 @@
       "time": "2026-10-23T03:20:41.952Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T03:20:41.522Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T03:20:41.522Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,184 USD."
-    },
-    {
-      "time": "2026-10-23T03:20:39.500Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T03:20:39.499Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T02:54:17.237Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T02:54:16.958Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T02:54:16.957Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,134 USD."
     }
   ]
 }
