@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T19:53:21.846Z",
-  "scanCount": 95,
+  "lastScanAt": "2026-10-23T20:16:10.890Z",
+  "scanCount": 96,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 18506,
+    "totalBountyPoolUsd": 18526,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 25
@@ -518,17 +518,17 @@
       "bodyPreview": "Fix this problem to get paid in fees of $100"
     },
     {
-      "id": 5989002106,
-      "number": 4081,
-      "title": "[Bounty] Задача: Дописать тесты",
-      "repo": "zhangjiayang6835-cyber/bounty-plaza",
-      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4081",
-      "rewardUsd": 62,
+      "id": 6004722681,
+      "number": 3,
+      "title": "First-Dollar Mission: qualify and complete the first paid AI-assisted repair",
+      "repo": "Ledgercorp/BountyForge",
+      "htmlUrl": "https://github.com/Ledgercorp/BountyForge/issues/3",
+      "rewardUsd": 70,
       "category": "Documentación / Typo",
       "difficulty": "Fácil",
-      "createdAt": "2026-10-22T23:17:32Z",
-      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/vlad441/ncpp/issues/1\n\n### 漏洞描述 / Description\nЗадача: Дописать тесты\n\n## Задача: Дописать тесты\n\nНужно дописать тесты для непокрытых функций и методов для модулей которые зафиксированы документацией (например, парсеры JSON/BSON/CBOR, криптографические алгоритмы, структуры данных, системные модули, сеть и т.д.). \n\nВ рамках существующей инфраструктуры тестирования ([tests.cpp](https://github.com/vlad441/ncpp/blob/dev/tests/tests.cpp) в `dev` ветке, можете следовать этому референсу).\n\n🔗 [Документация](https://github.com/vlad441/ncpp/blob/dev/docs/ru/introduction.md)\n\n## Требования к реализации\n\n### Среда\n   - Использовать существующую реализацию тестового раннера (`tests.cpp`).\n   - Применять существующие макросы и функции логирования/проверок (`NextTest()`, `TEST_EQ()`, `TEST_NE()`, и др.).\n\n### Критерии качества\n   - Каждая функция должна быть протестирована как минимум на 1 положительный и 1 негативный сценарий. (Опционально сценарии с обработкой ошибок / краевыми условиями (`edge cases`, невалидные данные, выход за границы)).\n   - Все тесты должны успешно проходить компиляцию в `СI/CD`.\n   - *Примечание:* Если в процессе написания тестов обнаружился баг в самой функции (из-за чего тест падает), **не нужно подгонять тест под ошибку**. Зафиксируйте корректное поведение в тесте и оформите `issue` (или предложите исправление в коде функции).\n   - Запрещено скрывать предупреждения компилятора или подавлять ошибки без веских архитектурных оснований.\n\n#### 🛡️ Минимальное вмешательство и изоляция кода\n- PR должен содержать **только** тесты (в рамках существующего раннера `tests/tests.cpp` и/или соответствующих файлов в `tests/units/`), за исключением исправления багов.\n- **Обнаружение багов:** Если в процессе написания тестов вы обнаружили баг в коде библиотеки, **не исправляйте его молча** в том же PR. Зафиксируйте ошибочное поведение в тесте (или создайте отдельный `issue`).\n\n### Ограничение на использование ИИ (AI Policy)\n   - **Запрещено**: генерация PR целиком с помощью AI-агентов/ботов, автогенерация комментариев, а также слепой копипа\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/vlad441/ncpp/issues/1 ### 漏洞描述 / Description Задача: Дописать тесты ## Задача: Дописать тесты Нужно дописать тесты для непокрытых функций и методов для модулей которые зафиксированы документацией (например, п"
+      "createdAt": "2026-10-23T20:10:32Z",
+      "fullBody": "## Objective\nGet BountyForge's **first legitimately paid AI-assisted coding repair**, then repeat toward a **$2,000/month gross** target. This is a private income-generation operator, **not a SaaS to sell**. Optimize for accepted work and net receipts, not developmental test counts.\n\n## Constraints\n- $0 additional spending; no paid APIs, runners, infrastructure, application credits, or subscriptions.\n- Never use the owner's Mac; don't interfere with Phase 15 or either existing draft PR.\n- No Reddit and no phone-dependent outreach.\n- Do not accept third-party code, tokens, personal information or customer credentials into the public runner or current unadmitted sandbox.\n- Do not submit bids, send messages, claim bounties, accept terms, deliver external work, enable scheduled inference, collect money, or promise results without the owner's explicit approval.\n- Respect venue rules on automation and AI use, US eligibility, funding, and payout/KYC. A posting is not an offer or escrow.\n\n## Live research checkpoint, 2026-10-23\n1. **Upwork candidate A (research only): $70 fixed**: [Improve existing Python AI document-extraction tool](https://www.upwork.com/freelance-jobs/apply/Python-Developer-Improve-Existing-Document-Extraction-Tool_~022111905971757282297/). Published Oct 18; PDF→JSON extraction, missed fields/layout differences and inconsistent structure. Potentially bounded if sample PDFs, expected outputs and tests are supplied. Current bidding availability, client reliability, AI-use permission and external execution safety **unverified**. Public page direct fetch blocked with 403.\n2. **Upwork candidate B (research only): $200 fixed**: [Flask + Airtable authentication fix](https://www.upwork.com/freelance-jobs/apply/Python-Flask-Airtable-Developer-Needed-Urgent-Authentication-Fix_~022104776202067289136/). Published Sep 29; login/signup, Airtable lookups, session/auth. Requires private code/credential-safe test harness; current bidding availability, AI permission and source custody **unverified**. Public page direct fetch blocked with 403.\n3. **Reject**: [tscircuit/dsn-converter#54](https://github.com/tscircuit/dsn-converter/issues/54). Algora shows several nominal open bounty amounts, but original issue was **closed** when checked Oct 23.\n4. **Reject**: [tscircuit/jlcsearch#92](https://github.com/tscircuit/jlcsearch/issues/92). Algora still lists it, but original issue was **closed** when checked Oct 23.\n5. **Reject for now**: [tenstorrent/tt-metal#59732](ht",
+      "bodyPreview": "## Objective Get BountyForge's **first legitimately paid AI-assisted coding repair**, then repeat toward a **$2,000/month gross** target. This is a private income-generation operator, **not a SaaS to sell**. Optimize for accepted work and net receipts, not developmental test coun"
     }
   ],
   "solutions": [
@@ -1165,6 +1165,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T20:16:14.156Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T20:16:13.769Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T20:16:13.769Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,526 USD."
+    },
+    {
+      "time": "2026-10-23T20:16:10.890Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T20:16:10.889Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T19:53:24.362Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1638,31 +1663,6 @@
       "time": "2026-10-23T10:17:35.642Z",
       "level": "CLAIM",
       "msg": "¡Solución enviada con éxito a dev-kp-eloper/BountyScout #1644! Recompensa en juego: $2026"
-    },
-    {
-      "time": "2026-10-23T10:17:34.836Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para dev-kp-eloper/BountyScout #1644..."
-    },
-    {
-      "time": "2026-10-23T10:17:34.836Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $7,765 USD."
-    },
-    {
-      "time": "2026-10-23T10:17:32.119Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T10:17:32.118Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T09:48:40.959Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a GaspardCoche/agent-system #261! Recompensa en juego: $155"
     }
   ]
 }
