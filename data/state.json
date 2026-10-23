@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T17:18:02.151Z",
-  "scanCount": 90,
+  "lastScanAt": "2026-10-23T17:49:06.795Z",
+  "scanCount": 91,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 60,
-    "totalBountyPoolUsd": 18115,
+    "totalBountiesDetected": 65,
+    "totalBountyPoolUsd": 18365,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
-    "prsSubmitted": 24
+    "prsSubmitted": 25
   },
   "activeBounties": [
     {
@@ -654,8 +654,10 @@
       "prBody": "## Proposed Solution for Issue #10\n\n### Root Cause Analysis & Fix\nThe digest generator was incorrectly filtering listings to only those marked `HUMAN_ONLY`, which excluded any `AGENT_ALLOWED` or `AGENT_ONLY` listings from the output. Updating the filter to include both human and agent tags resolves the issue and correctly displays all eligible listings.\n\n### Proposed Code Patch\n```\ndiff --git a/src/digestGenerator.ts b/src/digestGenerator.ts\nindex e3b0c4f..a1d2f9e 100644\n--- a/src/digestGenerator.ts\n+++ b/src/digestGenerator.ts\n@@\n-  const eligibleListings = listings.filter(listing =>\n-    listing.tags.includes('HUMAN_ONLY')\n-  );\n+  // Include listings that are either human‑only or agent‑allowed/agent‑only.\n+  const eligibleListings = listings.filter(listing =>\n+    listing.tags.includes('HUMAN_ONLY') ||\n+    listing.tags.includes('AGENT_ALLOWED') ||\n+    listing.tags.includes('AGENT_ONLY')\n+  );\n*** End of File ***\n```\n\n---\n*Bounty Reward:* **$500**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
       "proposedCode": "diff --git a/src/digestGenerator.ts b/src/digestGenerator.ts\nindex e3b0c4f..a1d2f9e 100644\n--- a/src/digestGenerator.ts\n+++ b/src/digestGenerator.ts\n@@\n-  const eligibleListings = listings.filter(listing =>\n-    listing.tags.includes('HUMAN_ONLY')\n-  );\n+  // Include listings that are either human‑only or agent‑allowed/agent‑only.\n+  const eligibleListings = listings.filter(listing =>\n+    listing.tags.includes('HUMAN_ONLY') ||\n+    listing.tags.includes('AGENT_ALLOWED') ||\n+    listing.tags.includes('AGENT_ONLY')\n+  );\n*** End of File ***",
       "explanation": "The digest generator was incorrectly filtering listings to only those marked `HUMAN_ONLY`, which excluded any `AGENT_ALLOWED` or `AGENT_ONLY` listings from the output. Updating the filter to include both human and agent tags resolves the issue and correctly displays all eligible listings.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-23T13:00:55.287Z"
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-23T13:00:55.287Z",
+      "submittedAt": "2026-10-23T17:49:09.972Z",
+      "commentUrl": "https://github.com/airdropia/earn-ops/issues/10#issuecomment-6371193756"
     },
     {
       "id": "25d19fc9-6186-486c-8385-5134f9689248",
@@ -960,6 +962,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "01242d1c-7c7f-4e00-b320-5896d1594862",
+      "repo": "airdropia/earn-ops",
+      "issueNumber": 10,
+      "rewardUsd": 500,
+      "commentUrl": "https://github.com/airdropia/earn-ops/issues/10#issuecomment-6371193756",
+      "submittedAt": "2026-10-23T17:49:09.972Z"
+    },
+    {
       "id": "f3a43e7c-cb91-4932-a952-7bfcc0528db3",
       "repo": "SecureBananaLabs/bug-bounty",
       "issueNumber": 13537,
@@ -1153,6 +1163,31 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-23T17:49:09.973Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a airdropia/earn-ops #10! Recompensa en juego: $500"
+    },
+    {
+      "time": "2026-10-23T17:49:09.201Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para airdropia/earn-ops #10..."
+    },
+    {
+      "time": "2026-10-23T17:49:09.201Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,365 USD."
+    },
+    {
+      "time": "2026-10-23T17:49:06.795Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T17:49:06.793Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-23T17:18:09.964Z",
       "level": "ERROR",
@@ -1627,31 +1662,6 @@
       "time": "2026-10-23T08:06:28.858Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T08:06:28.857Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T07:28:32.370Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a limitlessprojects/Go-Hybrid #1251! Recompensa en juego: $250"
-    },
-    {
-      "time": "2026-10-23T07:28:31.604Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para limitlessprojects/Go-Hybrid #1251..."
-    },
-    {
-      "time": "2026-10-23T07:28:31.604Z",
-      "level": "SOLVER",
-      "msg": "Solución IA generada para limitlessprojects/Go-Hybrid #1251 ($250 USD) [Documentación / Typo]"
-    },
-    {
-      "time": "2026-10-23T07:28:29.527Z",
-      "level": "SOLVER",
-      "msg": "Solución IA generada para limitlessprojects/Go-Hybrid #1259 ($250 USD) [Documentación / Typo]"
     }
   ]
 }
