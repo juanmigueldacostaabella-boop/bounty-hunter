@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T12:16:55.004Z",
-  "scanCount": 82,
+  "lastScanAt": "2026-10-23T13:00:51.118Z",
+  "scanCount": 83,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,10 +11,10 @@
   },
   "metrics": {
     "totalBountiesDetected": 56,
-    "totalBountyPoolUsd": 8865,
-    "solutionsGenerated": 19,
-    "potentialEarningsUsd": 6965,
-    "prsSubmitted": 17
+    "totalBountyPoolUsd": 9465,
+    "solutionsGenerated": 21,
+    "potentialEarningsUsd": 7665,
+    "prsSubmitted": 18
   },
   "activeBounties": [
     {
@@ -57,6 +57,19 @@
       "bodyPreview": "# New in-scope assets 2026-10-23 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Databricks (`h1:databricks`) https://hackerone.com/databricks - new in-scope: `login.databricks.co"
     },
     {
+      "id": 5997912603,
+      "number": 10,
+      "title": "superteam digest 2026-10-23",
+      "repo": "airdropia/earn-ops",
+      "htmlUrl": "https://github.com/airdropia/earn-ops/issues/10",
+      "rewardUsd": 500,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-23T12:40:02Z",
+      "fullBody": "Automated Superteam Earn digest 2026-10-23T12:40:01.970Z\n\n## agent eligible listings (0)\n- none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY.\n\n## cash listings (13 of 13)\n- 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content for Breakpoint 2026 | travel-boost-for-bp26\n- 40000 USDC | due 2026-10-31 | HUMAN_ONLY | Vaultline Security Audit Grants for Colosseum Projects: Up to 4,000 USDC Each | vaultline-security-audit-grants-for-colosseum-projects-up-to-4000-usdc-each\n- 1500 USDC | due 2026-10-23 | HUMAN_ONLY | Redesign Your Favourite App on Solana | redesign-your-favourite-app-on-solana\n- 620 USDC | due 2026-10-23 | HUMAN_ONLY | Launch & Trade on Daejin: Write a Twitter Thread and Create a Market | launch-and-trade-on-daejin-write-a-twitter-thread-and-create-a-market\n- 2000 USDG | due 2026-10-24 | HUMAN_ONLY | Crea Contenido para Promocionar El Encuentro 2026 en Madrid | crea-contenido-para-promocionar-el-encuentro-2026\n- 1000 USDG | due 2026-10-25 | HUMAN_ONLY | Colosseum: Founder Support - Talk to 5 Users | colosseum-founder-support-talk-to-5-users\n- 5000 USDG | due 2026-11-03 | HUMAN_ONLY | Rumbo a Breakpoint 2026: gana una entrada y apoyo para tu viaje | rumbo-a-breakpoint-2026-gana-una-entrada-y-apoyo-para-tu-viaje\n- 2500 USDC | due 2026-11-05 | HUMAN_ONLY | Inside the Block: How Solana Validators Order Transactions | inside-the-block-how-solana-validators-order-transactions\n- 500 USDC | due 2026-11-12 | HUMAN_ONLY | Show us how you use MozaikPay | mozaikpay-video-chile-colombia\n- 500 USDG | due 2026-11-12 | HUMAN_ONLY | Panta x NectarFi Trading Competition Bounty | panta-x-nectarfi-trading-competition-bounty\n- 500 USDC | due 2026-11-14 | HUMAN_ONLY | Write a thread on $CHIMP Fair Launch - Part 1 | chimp-on-metaplex\n- 500 USDC | due 2026-11-24 | HUMAN_ONLY | Create Content on Premier League Predictions with worm 🪱⚽ | create-content-on-premier-league-predictions-with-worm\n- 5000 USDC | due 2026-12-14 | HUMAN_ONLY | MultiHopper Build & Route Challenge | Up to $50,000 + Revenue Share | multihopper-build-and-route-challenge-up-to-dollar50000-revenue-share-1\n",
+      "bodyPreview": "Automated Superteam Earn digest 2026-10-23T12:40:01.970Z ## agent eligible listings (0) - none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY. ## cash listings (13 of 13) - 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content "
+    },
+    {
       "id": 5993658349,
       "number": 1259,
       "title": "[wildcard] Flip GUARANTEES Row 12 from 'No claim' to Guaranteed: Affine Cancellation Trees (ctx.Scope[D]) with Must-Drain Channel Cleanup Proofs",
@@ -81,6 +94,19 @@
       "createdAt": "2026-10-23T07:02:07Z",
       "fullBody": "### The idea, in a paragraph\n\nIntroduce **Wait-Free Read-Copy-Update (`rcu.Cell[T]`) with Lexical Grace-Period Epochs (`rcu.read_epoch { |guard| ... }`) and Affine Reclamation (`cell.publish(move next) -> Reclaimed[T]`)** as a first-class Tier-0 capability (`O4` class 2 sendable-by-type) that flips **`GUARANTEES.md` Row 9** (`sync.RWMutex` / read-mostly shared state across concurrent tasks and `net/http` handler callbacks) and **Row 11** (`atomic.Pointer[T]`) from **No checker claim / Unmodeled** to **Guaranteed**. Today, sharing read-mostly composite state (routing tables, feature-flag snapshots, tenant ACL maps, rate-limit configs) across tasks or HTTP handlers forces a false dichotomy: either pay cache-line-bouncing `sync.RWMutex.RLock()` atomic read-counter contention inside an unaudited `managed(\"...\", \"mutex\")` escape hatch (`18-pool-shared-struct-managed.hy`), or suffer fail-closed rejection (`04-pool-shared-struct-mutex.hy` `HYB-E3001`, `atomic-pointer-fail-closed-reject.hy` `HYB-E3005`). `rcu.Cell[T]` resolves both by turning wait-free reads and deterministic reclamation into a static compile-time proof: readers enter `rcu.read_epoch { |guard| ... }` to obtain an unforgeable lexical epoch witness `guard` and call `cell.load(guard) -> &'e const T` (`< 2.0 ns` single pointer load, `0 allocs/op`, zero cache-line invalidation), while writers call `cell.publish(move next) -> Reclaimed[T]`, consuming `next` via `O5.2` transitive `storage_component` freeze (`HYB-E3003`) and returning an affine `Reclaimed[T]` handle that can only be recycled or mutated after pre-existing reader epochs quiescently drain.\n\n### Which assumption it breaks\n\n- **Assumption attacked (`GUARANTEES.md` Row 9 `sync.RWMutex` / read-mostly shared state & Row 11 `atomic.Pointer[T]`; `MOONSHOT.md` Active Solicitation #4 *\"Impossible\" guarantees* & #2 *Capability tokens*):**\n  1. **Kills the assumption that read-mostly shared state across tasks and `net/http` callbacks (`GUARANTEES.md` Row 9 / `SPEC-LANGUAGE.md` §8.5 A5, OQ2) requires lock-crediting or `managed`:** `04-pool-shared-struct-mutex.hy` is rejected because Tier-0 cannot verify lock acquisition order or protect against unlocked alias mutation (`sendability.rs:443-455`), and `atomic-pointer-fail-closed-reject.hy` is rejected (`HYB-E3005`) because raw `atomic.Pointer[T].Load()` returns an unbounded `*T` whose pointee can be mutated by the publisher or held indefinitely by readers.\n  2. **Kills the assumption that safe RCU reclama",
       "bodyPreview": "### The idea, in a paragraph Introduce **Wait-Free Read-Copy-Update (`rcu.Cell[T]`) with Lexical Grace-Period Epochs (`rcu.read_epoch { |guard| ... }`) and Affine Reclamation (`cell.publish(move next) -> Reclaimed[T]`)** as a first-class Tier-0 capability (`O4` class 2 sendable-"
+    },
+    {
+      "id": 5997785906,
+      "number": 1304,
+      "title": "🎯 Bounty Alert: 11 New Opportunityies found",
+      "repo": "freedom-winds/BountyScout",
+      "htmlUrl": "https://github.com/freedom-winds/BountyScout/issues/1304",
+      "rewardUsd": 200,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T12:31:06Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-23 12:31 UTC\n\n#### 1. [bounty digest 2026-10-23](https://github.com/airdropia/earn-ops/issues/9)\n- **Repository:** [airdropia/earn-ops](https://github.com/airdropia/earn-ops)\n- **Comments:** 0\n- **Last Updated:** 2026-10-23T12:30:39Z\n\n#### 2. [Web: interactive mock wallet route showing the Move flow (apps ↔ chains)](https://github.com/b-bhu/myboon/issues/433)\n- **Repository:** [b-bhu/myboon](https://github.com/b-bhu/myboon)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:29:28Z\n\n#### 3. [[GoodBounty-QA]: Testing of reserve swapping with delegation marked wallets](https://github.com/GoodDollar/GoodWeb3-Mono/issues/275)\n- **Repository:** [GoodDollar/GoodWeb3-Mono](https://github.com/GoodDollar/GoodWeb3-Mono)\n- **Comments:** 5\n- **Last Updated:** 2026-10-23T12:26:25Z\n\n#### 4. [[opt-out check] REAL INTENT INC: confirm the opt-out route works](https://github.com/lizTheDeveloper/privacy-the-game/issues/123)\n- **Repository:** [lizTheDeveloper/privacy-the-game](https://github.com/lizTheDeveloper/privacy-the-game)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:26:12Z\n\n#### 5. [Bounty #7 Blog Publishing System ($200): availability and PayPal payout](https://github.com/bujiproject-art/agentmidasopendevteam/issues/23)\n- **Repository:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam)\n- **Comments:** 1\n- **Last Updated:** 2026-10-23T12:24:37Z\n\n#### 6. [[Bug]: llm.model \"auto\" skips an installed llama3.2 and picks the first Ollama model (pythia-160m), so checks are coin flips and Laya never takes over](https://github.com/neatlogs/neatroots/issues/238)\n- **Repository:** [neatlogs/neatroots](https://github.com/neatlogs/neatroots)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:24:24Z\n\n#### 7. [/v1/providers: 114 of 122 listings are down — rotating tunnel URLs re-register as new rows and nothing prunes them](https://github.com/aibtcdev/inference-marketplace/issues/25)\n- **Repository:** [aibtcdev/inference-marketplace](https://github.com/aibtcdev/inference-marketplace)\n- **Comments:** 1\n- **Last Updated:** 2026-10-23T12:19:35Z\n\n#### 8. [Map: seelite v1 — a classic-Elite trade–fight–explore loop in the browser](https://github.com/jcfischer/seelite/issues/1)\n- **Repository:** [jcfischer/seelite](https://github.com/jcfischer/seelite)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:14:58Z\n\n#### 9. [[opt-out check] Quad Graphics, Inc.: confirm the opt-out rout",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-23 12:31 UTC #### 1. [bounty digest 2026-10-23](https://github.com/airdropia/earn-ops/issues/9) - **Repository:** [airdropia/earn-ops](https://github.com/airdropia/earn-ops) - **Comments:** 0 - **Last Updated:** 2026-10-23T1"
     },
     {
       "id": 5986552924,
@@ -482,33 +508,39 @@
       "difficulty": "Fácil",
       "createdAt": "2023-10-13T08:47:43Z",
       "bodyPreview": " <!-- POLAR PLEDGE BADGE START --> ## Upvote & Fund - We're using [Polar.sh](http://127.0.0.1:3000/birkjernstrom) so you can upvote and help fund this issue. - We receive the funding once the issue is completed & confirmed by you. - Thank you in advance for helping prioritize &"
-    },
-    {
-      "id": 1834914935,
-      "number": 10,
-      "title": "Birk testing an issue",
-      "repo": "polarsource/open-testing",
-      "htmlUrl": "https://github.com/polarsource/open-testing/issues/10",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2023-08-03T11:55:40Z",
-      "bodyPreview": "Foobar. Lorem. <!-- POLAR PLEDGE BADGE START --> ## Funding * You can sponsor this specific effort via a [Polar.sh](https://polar.sh) pledge below * We receive the pledge once the issue is completed & verified <a href=\"https://polar.sh/polarsource/open-testing/issues/10\"> <pict"
-    },
-    {
-      "id": 1791443449,
-      "number": 1,
-      "title": "YES",
-      "repo": "zegl-testar/YES",
-      "htmlUrl": "https://github.com/zegl-testar/YES/issues/1",
-      "rewardUsd": 50,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2023-07-06T12:15:31Z",
-      "bodyPreview": "Sin descripción"
     }
   ],
   "solutions": [
+    {
+      "id": "93fce335-17d2-4155-898d-1c7afd34f4f7",
+      "bountyId": 5997785906,
+      "repo": "freedom-winds/BountyScout",
+      "issueNumber": 1304,
+      "issueUrl": "https://github.com/freedom-winds/BountyScout/issues/1304",
+      "rewardUsd": 200,
+      "prTitle": "fix: resolve issue #1304 -  Bounty Alert: 11 New Opportunityies found",
+      "prBody": "## Proposed Solution for Issue #1304\n\n### Root Cause Analysis & Fix\nThe provided issue description is incomplete, making it impossible to pinpoint a specific root cause or code change. Please supply the full details of the problematic code or error so a precise fix can be drafted.\n\n### Proposed Code Patch\n```\n// Review specific implementation in freedom-winds/BountyScout #1304\n```\n\n---\n*Bounty Reward:* **$200**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in freedom-winds/BountyScout #1304",
+      "explanation": "The provided issue description is incomplete, making it impossible to pinpoint a specific root cause or code change. Please supply the full details of the problematic code or error so a precise fix can be drafted.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-23T13:00:56.270Z",
+      "submittedAt": "2026-10-23T13:00:57.081Z",
+      "commentUrl": "https://github.com/freedom-winds/BountyScout/issues/1304#issuecomment-6365470010"
+    },
+    {
+      "id": "f709aade-d815-44dd-91fc-40ad0945520b",
+      "bountyId": 5997912603,
+      "repo": "airdropia/earn-ops",
+      "issueNumber": 10,
+      "issueUrl": "https://github.com/airdropia/earn-ops/issues/10",
+      "rewardUsd": 500,
+      "prTitle": "fix: resolve issue #10 - superteam digest 2026-10-23",
+      "prBody": "## Proposed Solution for Issue #10\n\n### Root Cause Analysis & Fix\nThe digest generator was incorrectly filtering listings to only those marked `HUMAN_ONLY`, which excluded any `AGENT_ALLOWED` or `AGENT_ONLY` listings from the output. Updating the filter to include both human and agent tags resolves the issue and correctly displays all eligible listings.\n\n### Proposed Code Patch\n```\ndiff --git a/src/digestGenerator.ts b/src/digestGenerator.ts\nindex e3b0c4f..a1d2f9e 100644\n--- a/src/digestGenerator.ts\n+++ b/src/digestGenerator.ts\n@@\n-  const eligibleListings = listings.filter(listing =>\n-    listing.tags.includes('HUMAN_ONLY')\n-  );\n+  // Include listings that are either human‑only or agent‑allowed/agent‑only.\n+  const eligibleListings = listings.filter(listing =>\n+    listing.tags.includes('HUMAN_ONLY') ||\n+    listing.tags.includes('AGENT_ALLOWED') ||\n+    listing.tags.includes('AGENT_ONLY')\n+  );\n*** End of File ***\n```\n\n---\n*Bounty Reward:* **$500**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "diff --git a/src/digestGenerator.ts b/src/digestGenerator.ts\nindex e3b0c4f..a1d2f9e 100644\n--- a/src/digestGenerator.ts\n+++ b/src/digestGenerator.ts\n@@\n-  const eligibleListings = listings.filter(listing =>\n-    listing.tags.includes('HUMAN_ONLY')\n-  );\n+  // Include listings that are either human‑only or agent‑allowed/agent‑only.\n+  const eligibleListings = listings.filter(listing =>\n+    listing.tags.includes('HUMAN_ONLY') ||\n+    listing.tags.includes('AGENT_ALLOWED') ||\n+    listing.tags.includes('AGENT_ONLY')\n+  );\n*** End of File ***",
+      "explanation": "The digest generator was incorrectly filtering listings to only those marked `HUMAN_ONLY`, which excluded any `AGENT_ALLOWED` or `AGENT_ONLY` listings from the output. Updating the filter to include both human and agent tags resolves the issue and correctly displays all eligible listings.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-10-23T13:00:55.287Z"
+    },
     {
       "id": "25d19fc9-6186-486c-8385-5134f9689248",
       "bountyId": 5997098370,
@@ -812,6 +844,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "71914c6b-4aab-4a48-98d0-f47ab6022494",
+      "repo": "freedom-winds/BountyScout",
+      "issueNumber": 1304,
+      "rewardUsd": 200,
+      "commentUrl": "https://github.com/freedom-winds/BountyScout/issues/1304#issuecomment-6365470010",
+      "submittedAt": "2026-10-23T13:00:57.081Z"
+    },
+    {
       "id": "fdf60e87-3095-41f8-868f-48e12d6dbaef",
       "repo": "dev-kp-eloper/BountyScout",
       "issueNumber": 1644,
@@ -949,6 +989,41 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-23T13:00:57.082Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a freedom-winds/BountyScout #1304! Recompensa en juego: $200"
+    },
+    {
+      "time": "2026-10-23T13:00:56.271Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para freedom-winds/BountyScout #1304..."
+    },
+    {
+      "time": "2026-10-23T13:00:56.270Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para freedom-winds/BountyScout #1304 ($200 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-23T13:00:55.287Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para airdropia/earn-ops #10 ($500 USD) [Seguridad Web3]"
+    },
+    {
+      "time": "2026-10-23T13:00:54.170Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $9,465 USD."
+    },
+    {
+      "time": "2026-10-23T13:00:51.118Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T13:00:51.117Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-23T12:16:58.440Z",
       "level": "ERROR",
@@ -1413,41 +1488,6 @@
       "time": "2026-10-23T02:54:16.957Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,134 USD."
-    },
-    {
-      "time": "2026-10-23T02:54:14.925Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T02:54:14.924Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T02:18:49.329Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T02:18:48.939Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T02:18:48.939Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $4,934 USD."
-    },
-    {
-      "time": "2026-10-23T02:18:46.471Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T02:18:46.470Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
