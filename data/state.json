@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T20:16:10.890Z",
-  "scanCount": 96,
+  "lastScanAt": "2026-10-23T20:49:14.554Z",
+  "scanCount": 97,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 18526,
+    "totalBountyPoolUsd": 18601,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 25
@@ -432,6 +432,19 @@
       "bodyPreview": "Hi — I reported a Medium-severity issue privately on Oct 13 (the multi-process ledger budget bypass, fixed in 1.14.2), acknowledged in SECURITY.md on 2026-10-14. I followed up by email on Oct 18 with my payment details, but haven't heard back yet, so reposting them here: - **Ne"
     },
     {
+      "id": 6004857118,
+      "number": 4107,
+      "title": "[Bounty] USDC-quoted pairs not having the correct marketcap displayed in tools",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4107",
+      "rewardUsd": 125,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-23T20:20:52Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/blake-guthrie/GLASS/issues/1\n\n### 漏洞描述 / Description\nUSDC-quoted pairs not having the correct marketcap displayed in tools\n\nFix this problem to get paid in fees of $100\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/blake-guthrie/GLASS/issues/1 ### 漏洞描述 / Description USDC-quoted pairs not having the correct marketcap displayed in tools Fix this problem to get paid in fees of $100 ### 积分币奖励 / Coin Reward 125 coins ### 真实"
+    },
+    {
       "id": 5979160793,
       "number": 3730,
       "title": "[Bounty] Answer the 2 linked question(s)",
@@ -516,19 +529,6 @@
       "createdAt": "2026-10-23T19:03:20Z",
       "fullBody": "Fix this problem to get paid in fees of $100",
       "bodyPreview": "Fix this problem to get paid in fees of $100"
-    },
-    {
-      "id": 6004722681,
-      "number": 3,
-      "title": "First-Dollar Mission: qualify and complete the first paid AI-assisted repair",
-      "repo": "Ledgercorp/BountyForge",
-      "htmlUrl": "https://github.com/Ledgercorp/BountyForge/issues/3",
-      "rewardUsd": 70,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T20:10:32Z",
-      "fullBody": "## Objective\nGet BountyForge's **first legitimately paid AI-assisted coding repair**, then repeat toward a **$2,000/month gross** target. This is a private income-generation operator, **not a SaaS to sell**. Optimize for accepted work and net receipts, not developmental test counts.\n\n## Constraints\n- $0 additional spending; no paid APIs, runners, infrastructure, application credits, or subscriptions.\n- Never use the owner's Mac; don't interfere with Phase 15 or either existing draft PR.\n- No Reddit and no phone-dependent outreach.\n- Do not accept third-party code, tokens, personal information or customer credentials into the public runner or current unadmitted sandbox.\n- Do not submit bids, send messages, claim bounties, accept terms, deliver external work, enable scheduled inference, collect money, or promise results without the owner's explicit approval.\n- Respect venue rules on automation and AI use, US eligibility, funding, and payout/KYC. A posting is not an offer or escrow.\n\n## Live research checkpoint, 2026-10-23\n1. **Upwork candidate A (research only): $70 fixed**: [Improve existing Python AI document-extraction tool](https://www.upwork.com/freelance-jobs/apply/Python-Developer-Improve-Existing-Document-Extraction-Tool_~022111905971757282297/). Published Oct 18; PDF→JSON extraction, missed fields/layout differences and inconsistent structure. Potentially bounded if sample PDFs, expected outputs and tests are supplied. Current bidding availability, client reliability, AI-use permission and external execution safety **unverified**. Public page direct fetch blocked with 403.\n2. **Upwork candidate B (research only): $200 fixed**: [Flask + Airtable authentication fix](https://www.upwork.com/freelance-jobs/apply/Python-Flask-Airtable-Developer-Needed-Urgent-Authentication-Fix_~022104776202067289136/). Published Sep 29; login/signup, Airtable lookups, session/auth. Requires private code/credential-safe test harness; current bidding availability, AI permission and source custody **unverified**. Public page direct fetch blocked with 403.\n3. **Reject**: [tscircuit/dsn-converter#54](https://github.com/tscircuit/dsn-converter/issues/54). Algora shows several nominal open bounty amounts, but original issue was **closed** when checked Oct 23.\n4. **Reject**: [tscircuit/jlcsearch#92](https://github.com/tscircuit/jlcsearch/issues/92). Algora still lists it, but original issue was **closed** when checked Oct 23.\n5. **Reject for now**: [tenstorrent/tt-metal#59732](ht",
-      "bodyPreview": "## Objective Get BountyForge's **first legitimately paid AI-assisted coding repair**, then repeat toward a **$2,000/month gross** target. This is a private income-generation operator, **not a SaaS to sell**. Optimize for accepted work and net receipts, not developmental test coun"
     }
   ],
   "solutions": [
@@ -1165,6 +1165,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T20:49:17.210Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T20:49:16.875Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T20:49:16.875Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,601 USD."
+    },
+    {
+      "time": "2026-10-23T20:49:14.554Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T20:49:14.552Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T20:16:14.156Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1638,31 +1663,6 @@
       "time": "2026-10-23T10:50:00.885Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T10:50:00.376Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T10:50:00.375Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $7,765 USD."
-    },
-    {
-      "time": "2026-10-23T10:49:58.079Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T10:49:58.077Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T10:17:35.642Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a dev-kp-eloper/BountyScout #1644! Recompensa en juego: $2026"
     }
   ]
 }
