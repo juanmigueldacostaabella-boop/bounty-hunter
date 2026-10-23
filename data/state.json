@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T20:49:14.554Z",
-  "scanCount": 97,
+  "lastScanAt": "2026-10-23T21:15:38.796Z",
+  "scanCount": 98,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 18601,
+    "totalBountyPoolUsd": 18751,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 25
@@ -356,6 +356,19 @@
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-23 12:31 UTC #### 1. [bounty digest 2026-10-23](https://github.com/airdropia/earn-ops/issues/9) - **Repository:** [airdropia/earn-ops](https://github.com/airdropia/earn-ops) - **Comments:** 0 - **Last Updated:** 2026-10-23T1"
     },
     {
+      "id": 6005248887,
+      "number": 75,
+      "title": "Claiming Bounty #7 — Blog Publishing System ($200)",
+      "repo": "bujiproject-art/agentmidasopendevteam",
+      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/75",
+      "rewardUsd": 200,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T20:50:22Z",
+      "fullBody": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window.\n\nProposed scope:\n- self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows\n- title, slug, excerpt, Markdown body, tags, and SEO metadata\n- safe text-only Markdown preview, search and status filters, and views/reads/shares analytics\n- keyboard-accessible, mobile-first dark/gold UI with no new dependencies\n- README with a host integration checklist\n\nThe public repository is documentation-only and does not include the production app scaffold or package.json. I will submit the component as an isolated integration unit unless maintainers provide a host scaffold or different integration requirements. Please confirm that this scope fits bounty #7 and that the advertised Stripe payout and contributor eligibility are still available.\n\nI have not signed the CLA or claimed completion or payment in this issue; the account holder will complete any required legal and payout onboarding before acceptance.",
+      "bodyPreview": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window. Proposed scope: - self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows - title, slug, excerpt, Markdown body, tags, and SEO meta"
+    },
+    {
       "id": 5986552924,
       "number": 4080,
       "title": "[Bounty] 📋 2 open bounties right now",
@@ -516,19 +529,6 @@
       "createdAt": "2026-10-23T11:37:15Z",
       "fullBody": "Automated digest 2026-10-23T11:37:14.961Z\n\n## pool payment state\n- asi: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active\n- canonry: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- darling-arm64: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- delta-star: paymentMode=disabled committed=0 cap=$0 platform pool chain=null status=active\n- eliza: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active\n- feed: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=paused\n- heir-elements-sdk: paymentMode=disabled committed=0 cap=$100 chain=solana status=paused\n- nurosos: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- payzcode-ai: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- slopdotcash: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active\n- thenetwork: paymentMode=disabled committed=0 cap=$0 chain=solana status=active\n\n## elizaOS/eliza - 3 open issues\n- #36589 [iMessage] Investigate observed ten-minute gap before Blooio inbound ingestion\n- #35132 Shared iMessage: OpenRouter fallback returns 401 after Cerebras 429\n- #34820 Track Shared iMessage and Cloud launch acceptance, diagnostics, and Dedicated backups\n\n## SlopDotCash/slopdotcash - 18 open issues\n- #914 Tracking: remaining work to finish the MVP requirements\n- #913 Record the MVP completion record\n- #912 Implement the in-app notification inbox (NOT-01)\n- #911 Implement admin quarantine, project bans and reinstatement (ADM-06)\n- #910 Implement private security bounty programs (SEC-01 to SEC-18)\n- #909 Implement community project security vetting (VET-01 to VET-08)\n- #908 Re-list projects through /projects/new after the registry move\n- #906 Release the admin notification Worker and restore its Pages binding\n- #905 Release the fee-wallet stablecoin converter\n- #904 Enable mainnet payouts: attester, executor and payments worker\n- #903 Independent security audit of escrow v2 and counsel review of the identity attester\n- #902 Run escrow acceptance on all four test networks\n- #901 Upgrade the Solana mainnet escrow program to v2 and remove the upgrade key\n- #900 Deploy escrow v2 on Ethereum mainnet\n- #899 Deploy escrow v2 on Robinhood Chain mainnet\n- #898 Deploy escrow v2 on Base mainnet\n- #797 Recover qualifying reviews lost before first census when upstream PRs disappear\n- #640 Human review and QA: close the October 11 Slop product audit\n\n## our pull requests\n- #3715",
       "bodyPreview": "Automated digest 2026-10-23T11:37:14.961Z ## pool payment state - asi: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active - canonry: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused - darling-arm64: paymentMode=disabled committed=0 cap=$0 ch"
-    },
-    {
-      "id": 6003832923,
-      "number": 1,
-      "title": "USDC-quoted pairs not having the correct marketcap displayed in tools",
-      "repo": "blake-guthrie/GLASS",
-      "htmlUrl": "https://github.com/blake-guthrie/GLASS/issues/1",
-      "rewardUsd": 100,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-23T19:03:20Z",
-      "fullBody": "Fix this problem to get paid in fees of $100",
-      "bodyPreview": "Fix this problem to get paid in fees of $100"
     }
   ],
   "solutions": [
@@ -1165,6 +1165,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T21:15:41.466Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T21:15:41.080Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T21:15:41.079Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,751 USD."
+    },
+    {
+      "time": "2026-10-23T21:15:38.796Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T21:15:38.794Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T20:49:17.210Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1636,31 +1661,6 @@
     },
     {
       "time": "2026-10-23T11:16:21.763Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T11:16:21.368Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T11:16:21.367Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $7,765 USD."
-    },
-    {
-      "time": "2026-10-23T11:16:19.007Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T11:16:19.006Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T10:50:00.885Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
