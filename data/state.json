@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T18:11:21.398Z",
-  "scanCount": 92,
+  "lastScanAt": "2026-10-23T18:54:36.856Z",
+  "scanCount": 93,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 18365,
+    "totalBountiesDetected": 64,
+    "totalBountyPoolUsd": 18415,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 25
@@ -419,6 +419,19 @@
       "bodyPreview": "## Summary Audit of the Stage 1 in-scope consensus, settlement co-signing, note scan-store, and Solana bridge stack (`src/consensus/transact.rs`, `src/node/mod.rs`, `src/bridge/solana/program.rs`, `src/bridge/solana/instructions.rs`, `src/bin/init_validator_registry.rs`) uncover"
     },
     {
+      "id": 6003476725,
+      "number": 20,
+      "title": "Bounty payout status — Medium report credited 2026-10-14 (mgal.ghifari04)",
+      "repo": "hifriendbot/agentwallet-mcp",
+      "htmlUrl": "https://github.com/hifriendbot/agentwallet-mcp/issues/20",
+      "rewardUsd": 150,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-23T18:37:42Z",
+      "fullBody": "Hi — I reported a Medium-severity issue privately on Oct 13 (the multi-process ledger budget bypass, fixed in 1.14.2), acknowledged in SECURITY.md on 2026-10-14.\n\nI followed up by email on Oct 18 with my payment details, but haven't heard back yet, so reposting them here:\n\n- **Network:** Base\n- **Address:** `0x086A8184c9FbfB66D1eDf2406a5d20576911f5Fe`\n\nSince the issue is fixed and already publicly described in SECURITY.md, I hope it's OK to ask administratively: is there anything else needed from my side to process the $150 USDC payout per the published tiers? Happy to continue via email if preferred.\n\nThanks — and thanks for the quick fix turnaround.\n",
+      "bodyPreview": "Hi — I reported a Medium-severity issue privately on Oct 13 (the multi-process ledger budget bypass, fixed in 1.14.2), acknowledged in SECURITY.md on 2026-10-14. I followed up by email on Oct 18 with my payment details, but haven't heard back yet, so reposting them here: - **Ne"
+    },
+    {
       "id": 5979160793,
       "number": 3730,
       "title": "[Bounty] Answer the 2 linked question(s)",
@@ -516,18 +529,6 @@
       "createdAt": "2026-10-22T18:08:54Z",
       "fullBody": "## Brand Mentions Scan - October 22, 2026\n\n**New mentions found:** 42\n**Above notify threshold (55):** 22\n**Highlights (75+):** 0\n\n[View full report](https://sbc1-code.github.io/brand-monitor/)\n\n---\n## Notable Mentions\n\n### [Someone hacked the Switch 2 by using an old game and AI](https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai)\n**Brand:** OpenAI | **Product:** OpenAI (general)\n**Source:** The Verge (Trade Publication) | **Published:** 2026-10-22\n**Signal Score:** 70 | **Sentiment:** negative (!)\n\n> The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailb\n\n### [OpenAI says ChatGPT Sol helped uncover critical PHP flaws that could affect 70% of websites — AI-assisted researchers turned a two-year-old bug that stumped human developers into working exploits in two weeks](https://news.google.com/rss/articles/CBMigwNBVV95cUxQbnQxa0JIbmEwejlMbmREUDMzeGF6WWJUX1M4U3VsZlRzaHBVeUhoT3piQl81UDVUUXJDaUhQSURZc3RDSnpXQTZvWFVXTlhIdE9hSGpJVFZIZWxiN3BBOE9WUUVpajVXMG1JbnY5Q2VlZE9icmRnVHNlRWFaSGlYOUE0SzNiVDZERHJQQU5VeVpxSG5hZ1hiMnNzZ0lfQnJ1czR2X2MwdzF2VVdWeFJXYnZDTVhOVTcycDFYNWxRR3B2ZVkxSXZhN1NqX0pIcjQ3UzhzRDZEZXlGYjBZdDhPblJZMTlzMkk4VVB3a3g2d1VKNjRtS2QwODJUUzFLcF9xcEMtbEZDSmd2VXdmLWdULWZtcVVVY3laRDM3RzFBMURhM0otZV9MZzIzdWY5ak9zMXNZbUxCcGR1dGFpWmc0YVV5UjE2VjZNTzExYkdCSjBkWE0tRmE1SEVCRUotWVZaQWJTTVYwMTgweWRZYVJ5SFYxOUZCUUliVzBObXl3NlVuM28?oc=5)\n**Brand:** OpenAI | **Product:** ChatGPT\n**Source:** Tom's Hardware (News Article) | **Published:** 2026-10-22\n**Signal Score:** 60 | **Sentiment:** negative (!)\n\n> OpenAI says ChatGPT Sol helped uncover critical PHP flaws that could affect 70% of websites — AI-assisted researchers turned a two-year-old bug that stumped human developers into working exploits in two weeks  Tom's Hardware\n\n### [Uber puts all 30,000 employees on ChatGPT Work](https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/)\n**Brand:** OpenAI | **Product:** ChatGPT\n**Source:** TechCrunch (Trade Publication) | **Published:** 2026-10-22\n**Signal Score:** 60 | **Sentiment:** neutral (~)\n\n> The ride-share giant previously deployed a much smaller pilot for ChatGPT Work but is now taking the enterprise agent company-wide.\n\n### [Crypto Security Alert: PHP Exploits, LiteLLM Backdoor And Ne",
       "bodyPreview": "## Brand Mentions Scan - October 22, 2026 **New mentions found:** 42 **Above notify threshold (55):** 22 **Highlights (75+):** 0 [View full report](https://sbc1-code.github.io/brand-monitor/) --- ## Notable Mentions ### [Someone hacked the Switch 2 by using an old game and AI"
-    },
-    {
-      "id": 5964033913,
-      "number": 12,
-      "title": "[routes] Time, moving time and speed",
-      "repo": "amiller/bounty-arcade",
-      "htmlUrl": "https://github.com/amiller/bounty-arcade/issues/12",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-21T16:02:21Z",
-      "bodyPreview": "**App:** `apps/routes` **Amount:** not yet funded **Base commit:** `5c76d40` **Checker:** [`bounties/routes-time/check.yml`](https://github.com/amiller/bounty-arcade/blob/8232383/bounties/routes-time/check.yml) at `8232383`, run with `node check.mjs bounties/routes-time/check.yml"
     }
   ],
   "solutions": [
@@ -1164,6 +1165,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-23T18:54:39.391Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T18:54:38.978Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T18:54:38.977Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,415 USD."
+    },
+    {
+      "time": "2026-10-23T18:54:36.856Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T18:54:36.854Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-23T18:11:24.403Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1635,31 +1661,6 @@
     },
     {
       "time": "2026-10-23T09:13:16.183Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T09:13:16.181Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T08:38:29.733Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T08:38:29.341Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T08:38:29.341Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $5,634 USD."
-    },
-    {
-      "time": "2026-10-23T08:38:26.710Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
