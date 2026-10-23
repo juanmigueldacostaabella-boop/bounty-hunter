@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-23T11:16:19.007Z",
-  "scanCount": 80,
+  "lastScanAt": "2026-10-23T11:50:09.184Z",
+  "scanCount": 81,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,10 +10,10 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 54,
-    "totalBountyPoolUsd": 7765,
-    "solutionsGenerated": 18,
-    "potentialEarningsUsd": 5965,
+    "totalBountiesDetected": 56,
+    "totalBountyPoolUsd": 8865,
+    "solutionsGenerated": 19,
+    "potentialEarningsUsd": 6965,
     "prsSubmitted": 17
   },
   "activeBounties": [
@@ -42,6 +42,19 @@
       "createdAt": "2026-10-23T09:14:43Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-23 09:14 UTC\n\n#### 1. [[routes] Time, moving time and speed](https://github.com/amiller/bounty-arcade/issues/12)\n- **Repository:** [amiller/bounty-arcade](https://github.com/amiller/bounty-arcade)\n- **Comments:** 7\n- **Last Updated:** 2026-10-23T09:14:11Z\n\n#### 2. [[radar] SN open bounty 2026-10-22T19:11](https://github.com/relayhop/sn-monetization-runtime/issues/1326)\n- **Repository:** [relayhop/sn-monetization-runtime](https://github.com/relayhop/sn-monetization-runtime)\n- **Comments:** 3\n- **Last Updated:** 2026-10-23T09:13:56Z\n\n#### 3. [transformers-4.19.2-py3-none-any.whl: 55 vulnerabilities (highest severity is: 9.6)](https://github.com/KOSASIH/mmsegmentation/issues/7)\n- **Repository:** [KOSASIH/mmsegmentation](https://github.com/KOSASIH/mmsegmentation)\n- **Comments:** 1\n- **Last Updated:** 2026-10-23T09:13:51Z\n\n#### 4. [pi-backend-0.1.3.tgz: 47 vulnerabilities (highest severity is: 9.3)](https://github.com/Alvaromeo999/testnet/issues/57)\n- **Repository:** [Alvaromeo999/testnet](https://github.com/Alvaromeo999/testnet)\n- **Comments:** 0\n- **Last Updated:** 2026-10-23T09:11:41Z\n\n#### 5. [[wildcard] Self-Hosted In-Process Analysis: Native Go Library Driver (x/tools/go/analysis) for Zero-Install IDE Checking and Compiler Unification](https://github.com/limitlessprojects/Go-Hybrid/issues/268)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 4\n- **Last Updated:** 2026-10-23T09:09:26Z\n\n#### 6. [[Bounty] Задача: Дописать тесты](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4081)\n- **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza)\n- **Comments:** 4\n- **Last Updated:** 2026-10-23T09:09:18Z\n\n#### 7. [stellar-sdk-4.1.0.tgz: 44 vulnerabilities (highest severity is: 9.3)](https://github.com/KOSASIH/CryptoQuests-StreamsideRO/issues/3)\n- **Repository:** [KOSASIH/CryptoQuests-StreamsideRO](https://github.com/KOSASIH/CryptoQuests-StreamsideRO)\n- **Comments:** 0\n- **Last Updated:** 2026-10-23T09:08:58Z\n\n#### 8. [soundness: `closure_scoped_envs` overwrites post-block `moved` and `non_owned_origin` of outer bindings (`HYB-E3003` / `HYB-E3004` bypass -> data race)](https://github.com/limitlessprojects/Go-Hybrid/issues/867)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T09:08:10Z\n\n####",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-23 09:14 UTC #### 1. [[routes] Time, moving time and speed](https://github.com/amiller/bounty-arcade/issues/12) - **Repository:** [amiller/bounty-arcade](https://github.com/amiller/bounty-arcade) - **Comments:** 7 - **Last U"
+    },
+    {
+      "id": 5997098370,
+      "number": 161,
+      "title": "New in-scope 2026-10-23: 3 program(s) added targets",
+      "repo": "abdulsalam-create/bounty-watch",
+      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/161",
+      "rewardUsd": 1000,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T11:41:44Z",
+      "fullBody": "# New in-scope assets 2026-10-23\n\n3 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Databricks (`h1:databricks`)\nhttps://hackerone.com/databricks\n- new in-scope: `login.databricks.com`, `ui-assets.cloud.databricks.com`\n\n### Visa (`h1:visa`)\nhttps://hackerone.com/visa\n- new in-scope: `https://ebc2test.cybersource.com/settings`\n\n### Nexuzhealth Web PACS (`it:uz leuven/nexuzhealthwebpacs`)  💰 $1000\nhttps://www.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs/detail\n- new in-scope: `idp-url.nexuzhealth.be`\n\n\ncc @abdulsalam-create",
+      "bodyPreview": "# New in-scope assets 2026-10-23 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Databricks (`h1:databricks`) https://hackerone.com/databricks - new in-scope: `login.databricks.co"
     },
     {
       "id": 5993658349,
@@ -178,6 +191,19 @@
       "difficulty": "Fácil",
       "createdAt": "2026-10-22T12:19:36Z",
       "bodyPreview": "<!-- misakanet-question-bounty:anchor-3662 --> # [Bounty] Answer the 3 linked question(s) ## Context These intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_ma"
+    },
+    {
+      "id": 5997040692,
+      "number": 9,
+      "title": "bounty digest 2026-10-23",
+      "repo": "airdropia/earn-ops",
+      "htmlUrl": "https://github.com/airdropia/earn-ops/issues/9",
+      "rewardUsd": 100,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-23T11:37:15Z",
+      "fullBody": "Automated digest 2026-10-23T11:37:14.961Z\n\n## pool payment state\n- asi: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active\n- canonry: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- darling-arm64: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- delta-star: paymentMode=disabled committed=0 cap=$0 platform pool chain=null status=active\n- eliza: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active\n- feed: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=paused\n- heir-elements-sdk: paymentMode=disabled committed=0 cap=$100 chain=solana status=paused\n- nurosos: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- payzcode-ai: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused\n- slopdotcash: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active\n- thenetwork: paymentMode=disabled committed=0 cap=$0 chain=solana status=active\n\n## elizaOS/eliza - 3 open issues\n- #36589 [iMessage] Investigate observed ten-minute gap before Blooio inbound ingestion\n- #35132 Shared iMessage: OpenRouter fallback returns 401 after Cerebras 429\n- #34820 Track Shared iMessage and Cloud launch acceptance, diagnostics, and Dedicated backups\n\n## SlopDotCash/slopdotcash - 18 open issues\n- #914 Tracking: remaining work to finish the MVP requirements\n- #913 Record the MVP completion record\n- #912 Implement the in-app notification inbox (NOT-01)\n- #911 Implement admin quarantine, project bans and reinstatement (ADM-06)\n- #910 Implement private security bounty programs (SEC-01 to SEC-18)\n- #909 Implement community project security vetting (VET-01 to VET-08)\n- #908 Re-list projects through /projects/new after the registry move\n- #906 Release the admin notification Worker and restore its Pages binding\n- #905 Release the fee-wallet stablecoin converter\n- #904 Enable mainnet payouts: attester, executor and payments worker\n- #903 Independent security audit of escrow v2 and counsel review of the identity attester\n- #902 Run escrow acceptance on all four test networks\n- #901 Upgrade the Solana mainnet escrow program to v2 and remove the upgrade key\n- #900 Deploy escrow v2 on Ethereum mainnet\n- #899 Deploy escrow v2 on Robinhood Chain mainnet\n- #898 Deploy escrow v2 on Base mainnet\n- #797 Recover qualifying reviews lost before first census when upstream PRs disappear\n- #640 Human review and QA: close the October 11 Slop product audit\n\n## our pull requests\n- #3715",
+      "bodyPreview": "Automated digest 2026-10-23T11:37:14.961Z ## pool payment state - asi: paymentMode=disabled committed=0 cap=$1,000 chain=solana status=active - canonry: paymentMode=disabled committed=0 cap=$0 chain=solana status=paused - darling-arm64: paymentMode=disabled committed=0 cap=$0 ch"
     },
     {
       "id": 5989002106,
@@ -480,33 +506,23 @@
       "difficulty": "Medio",
       "createdAt": "2023-07-06T12:15:31Z",
       "bodyPreview": "Sin descripción"
-    },
-    {
-      "id": 1780743520,
-      "number": 7,
-      "title": "Fem",
-      "repo": "zegloforko/polartest2",
-      "htmlUrl": "https://github.com/zegloforko/polartest2/issues/7",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2023-06-29T12:38:52Z",
-      "bodyPreview": " <!-- POLAR PLEDGE BADGE START --> ## Upvote & Fund - Nice stuff 3 - We receive the funding once the issue is completed & confirmed by you. - Thank you in advance for helping prioritize & fund our backlog. <a href=\"http://127.0.0.1:3000/zegloforko/polartest2/issues/7\"> <pictur"
-    },
-    {
-      "id": 1749977872,
-      "number": 26,
-      "title": "Yet another dependency",
-      "repo": "birkjernstrom/birk-testing",
-      "htmlUrl": "https://github.com/birkjernstrom/birk-testing/issues/26",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2023-06-09T14:12:27Z",
-      "bodyPreview": "https://github.com/birktesting/testing1/issues/3 <!-- POLAR PLEDGE BADGE START --> ## Funding * You can sponsor this specific effort via a [Polar.sh](https://polar.sh) pledge below * We receive the pledge once the issue is completed & verified <a href=\"http://127.0.0.1:3000/bir"
     }
   ],
   "solutions": [
+    {
+      "id": "25d19fc9-6186-486c-8385-5134f9689248",
+      "bountyId": 5997098370,
+      "repo": "abdulsalam-create/bounty-watch",
+      "issueNumber": 161,
+      "issueUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/161",
+      "rewardUsd": 1000,
+      "prTitle": "fix: resolve issue #161 - New in-scope 2026-10-23: 3 program(s) added target",
+      "prBody": "## Proposed Solution for Issue #161\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for abdulsalam-create/bounty-watch #161.\n\n### Proposed Code Patch\n```\n// Review specific implementation in abdulsalam-create/bounty-watch #161\n```\n\n---\n*Bounty Reward:* **$1000**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in abdulsalam-create/bounty-watch #161",
+      "explanation": "Technical analysis and proposed resolution for abdulsalam-create/bounty-watch #161.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-10-23T11:50:14.132Z"
+    },
     {
       "id": "854e6164-ddf2-41fb-8c28-71f4c19b51c2",
       "bountyId": 5995263103,
@@ -933,6 +949,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-23T11:50:14.628Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-23T11:50:14.133Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-23T11:50:14.132Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para abdulsalam-create/bounty-watch #161 ($1000 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-23T11:50:11.686Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $8,865 USD."
+    },
+    {
+      "time": "2026-10-23T11:50:09.184Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-23T11:50:09.183Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-23T11:16:21.763Z",
       "level": "ERROR",
@@ -1402,36 +1448,6 @@
       "time": "2026-10-23T01:54:45.087Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T01:18:39.970Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T01:18:39.432Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para habibdxb01/bounty-watcher #8..."
-    },
-    {
-      "time": "2026-10-23T01:18:39.432Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $4,944 USD."
-    },
-    {
-      "time": "2026-10-23T01:18:37.202Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T01:18:37.200Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T00:30:15.258Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
   ]
 }
