@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T18:47:28.581Z",
-  "scanCount": 142,
+  "lastScanAt": "2026-10-24T19:12:49.568Z",
+  "scanCount": 143,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 68,
-    "totalBountyPoolUsd": 52479,
+    "totalBountiesDetected": 67,
+    "totalBountyPoolUsd": 53479,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -304,6 +304,45 @@
       "bodyPreview": "Automated Superteam Earn digest 2026-10-24T12:03:05.289Z ## agent eligible listings (0) - none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY. ## cash listings (12 of 12) - 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content "
     },
     {
+      "id": 6016401567,
+      "number": 1597,
+      "title": "[tooling] Version guard accepts stale compiler defaults when an unrelated string contains the pin (tested patch)",
+      "repo": "limitlessprojects/Go-Hybrid",
+      "htmlUrl": "https://github.com/limitlessprojects/Go-Hybrid/issues/1597",
+      "rewardUsd": 500,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T18:50:43Z",
+      "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\nThe hyb-default checks in `tools/check-versions.sh` search the entire `compiler/crates/hyb/src/main.rs` for a quoted version. They do not inspect the fallback arm of the named constant. In a temporary copy of the real input files, change `PINNED_GO`'s `None` arm from `go1.26.9` to `go1.26.8`, then append `// Previous pin: \"go1.26.9\"`. The guard still exits 0, says the default matches, and prints `versions: CONSISTENT`. The same happens for stale `PINNED_RUST` with an unrelated `\"1.99.0\"` comment. No actual drift in current main or runtime bypass is claimed: the defect is a false certification under this explicit source-edit condition.\n\nThe patch scopes the check to the existing named constant's match block and matches its exact `None` arm. It deliberately fails closed if that declaration format changes, prompting a guard update. Two tests run the real shell guard against copied files. Original: **15 pass, 2 fail**; patched: **17 tests pass**, including existing literal-version, historical PLAN, probe-status and no-toolchain controls. `bash -n` and `git diff --check` pass.\n\nDuplicate review: PR #122 fixed regex/substring boundaries and PLAN history; its hyb check remains a whole-file quoted-literal grep. PR #1066 concerns CLI flags and malformed source-of-truth pins. This report addresses constant identity rather than those behaviors. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `pins.patch`:\n```sh\ngit apply --check pins.patch\ngit apply pins.patch\npython3 -m unittest discover -s tools -p test_check_versions.py -v\nbash -n tools/check-versions.sh\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualific",
+      "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
+    },
+    {
+      "id": 6016398388,
+      "number": 1595,
+      "title": "[tooling] Example acceptance runner reports ALL PASS for an unsupported program (tested patch)",
+      "repo": "limitlessprojects/Go-Hybrid",
+      "htmlUrl": "https://github.com/limitlessprojects/Go-Hybrid/issues/1595",
+      "rewardUsd": 500,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T18:50:23Z",
+      "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\nWhen a requested directory has `program.hy` and the build exits 0, but the directory is outside the ten hardcoded acceptance cases, `tools/run_examples.sh` prints `SKIP` and then exits 0 with `examples: ALL PASS ()`. No runtime-output oracle was executed. This can mislead a contributor testing a new example. The default ten-example invocation is not alleged to hit this condition today.\n\nThe regression copies the runner into a temporary fixture repository, creates `examples/11-new-example/program.hy`, and uses a shell builder fixture that exits 0. It tests the acceptance runner, not the compiler. Original output:\n```text\n--- 11-new-example\nSKIP 11-new-example (not in the MVP-0 emittable set)\n\nexamples: ALL PASS ()\n```\nThe smallest fix changes an explicitly requested unsupported case to a named failure and sets `FAIL=1`. Existing supported cases retain their oracles. Unpatched source: **19 pass, 1 failure**; patched source: **20 tests pass**, including existing stdout, exit-status, package and timing controls. `bash -n` and `git diff --check` pass.\n\nDuplicate review: searched issue/PR references to run_examples and skipped examples. PR #258 concerns runtime exit/output checks for supported cases, not the unsupported-case branch. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `examples.patch`:\n```sh\ngit apply --check examples.patch\ngit apply examples.patch\npython3 -m unittest discover -s tools -p test_run_examples.py -v\nbash -n tools/run_examples.sh\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualification, rank and payout. If selected, USDC on Base or PayPal are my preferred options, subject to the ",
+      "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
+    },
+    {
+      "id": 6016395231,
+      "number": 1594,
+      "title": "[tooling] Conflict-marker gate skips Go bridge assembly sources (tested patch)",
+      "repo": "limitlessprojects/Go-Hybrid",
+      "htmlUrl": "https://github.com/limitlessprojects/Go-Hybrid/issues/1594",
+      "rewardUsd": 500,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T18:50:03Z",
+      "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\n`tools/check_conflict_markers.py` filters by `TEXT_EXTS`, which omits `.s`. The repository's `runtime/go/hybridge/call_amd64.s` and `call_arm64.s` are therefore skipped. In a synthetic temporary tree with the same path, a full column-zero conflict block returns exit 0 and `conflict markers: none`. This demonstrates a hole in this gate; I am not claiming an actual corrupted assembly file is currently committed or that other build checks miss it.\n\nThe patch adds `.s` to the allowlist (uppercase `.S` is covered by the existing `.lower()`). Real CLI regressions cover both cases, and a clean assembly/binary-file control preserves binary exclusion. On unpatched source the new test fails in both subcases with exit 0; with the patch all **27 tests pass**.\n\nDuplicate review: searched issues and PRs for the tool, assembly and extension coverage. PR #512 concerns YAML workflow support, not assembly; issue #1037 concerns read failures, which this patch does not change. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `assembly.patch`:\n```sh\ngit apply --check assembly.patch\ngit apply assembly.patch\npython3 -m unittest discover -s tools -p test_check_conflict_markers.py -v\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualification, rank and payout. If selected, USDC on Base or PayPal are my preferred options, subject to the program's confirmed rails; no private payout details or award are claimed.\n\n## Complete patch\n\n```diff\ndiff --git a/tools/check_conflict_markers.py b/tools/check_conflict_markers.py\nindex 641d3e7..2166fdc 100644\n--- a/tools/check_conflict_markers.py\n+++ b/tools/check_conflict_markers.py\n@@ -44,",
+      "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
+    },
+    {
       "id": 6001145823,
       "number": 55,
       "title": "Claiming Bounty #30 - Restaurant POS Interface ($400)",
@@ -497,45 +536,6 @@
       "createdAt": "2026-10-24T00:47:08Z",
       "fullBody": "Claiming **Bounty #38** (Bounty #38: i18n Framework Setup ($250)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/38-i18n-framework-setup/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
       "bodyPreview": "Claiming **Bounty #38** (Bounty #38: i18n Framework Setup ($250)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/38-i18n-framework-setup/` following the Agent Midas Black/Gold design system and 6-layer security s"
-    },
-    {
-      "id": 6007651228,
-      "number": 83,
-      "title": "Claiming Bounty #24 - Funnel Visualizer ($250)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/83",
-      "rewardUsd": 250,
-      "category": "Seguridad Web3",
-      "difficulty": "Avanzado",
-      "createdAt": "2026-10-24T00:47:01Z",
-      "fullBody": "Claiming **Bounty #24** (Bounty #24: Funnel Visualizer ($250)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/24-funnel-visualizer/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
-      "bodyPreview": "Claiming **Bounty #24** (Bounty #24: Funnel Visualizer ($250)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/24-funnel-visualizer/` following the Agent Midas Black/Gold design system and 6-layer security standar"
-    },
-    {
-      "id": 6007650298,
-      "number": 81,
-      "title": "Claiming Bounty #20 - Ticket System ($250)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/81",
-      "rewardUsd": 250,
-      "category": "Seguridad Web3",
-      "difficulty": "Avanzado",
-      "createdAt": "2026-10-24T00:46:54Z",
-      "fullBody": "Claiming **Bounty #20** (Bounty #20: Ticket System ($250)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/20-ticket-system/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
-      "bodyPreview": "Claiming **Bounty #20** (Bounty #20: Ticket System ($250)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/20-ticket-system/` following the Agent Midas Black/Gold design system and 6-layer security standards. - **"
-    },
-    {
-      "id": 6007649250,
-      "number": 79,
-      "title": "Claiming Bounty #4 - Lead Scoring Engine ($250)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/79",
-      "rewardUsd": 250,
-      "category": "Seguridad Web3",
-      "difficulty": "Avanzado",
-      "createdAt": "2026-10-24T00:46:46Z",
-      "fullBody": "Claiming **Bounty #4** (Bounty #4: Lead Scoring Engine ($250)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/04-lead-scoring-engine/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
-      "bodyPreview": "Claiming **Bounty #4** (Bounty #4: Lead Scoring Engine ($250)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/04-lead-scoring-engine/` following the Agent Midas Black/Gold design system and 6-layer security stand"
     }
   ],
   "solutions": [
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T19:12:52.823Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T19:12:52.327Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T19:12:52.327Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,479 USD."
+    },
+    {
+      "time": "2026-10-24T19:12:49.568Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T19:12:49.567Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T18:47:30.880Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1739,31 +1764,6 @@
     },
     {
       "time": "2026-10-24T10:11:28.358Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T10:11:28.358Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $21,156 USD."
-    },
-    {
-      "time": "2026-10-24T10:11:26.439Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T10:11:26.437Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T09:49:25.248Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T09:49:24.996Z",
       "level": "AUTO_SUBMIT",
       "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
     }
