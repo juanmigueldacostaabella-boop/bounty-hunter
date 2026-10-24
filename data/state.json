@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T16:01:09.033Z",
-  "scanCount": 136,
+  "lastScanAt": "2026-10-24T16:31:07.584Z",
+  "scanCount": 137,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 50579,
+    "totalBountiesDetected": 66,
+    "totalBountyPoolUsd": 51279,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -198,6 +198,19 @@
       "createdAt": "2026-10-24T12:04:53Z",
       "fullBody": "## Problem\n\nPOST /api/proposals forwards `req.body` directly to `createProposal` without schema or bounds validation. Any arbitrary JSON object is accepted into the in-memory proposals store, including negative or zero bid amounts, missing cover letters, missing jobId associations, and arbitrary injected fields. Furthermore, unhandled validation errors or malformed payloads can corrupt proposal records and lead to unexpected runtime failures.\n\n## Requested fix\n\n1. Implement a strict Zod validation schema (`createProposalSchema`) in `apps/api/src/validators/proposal.js` enforcing:\n   - `jobId`: required string with bounds (1 to 128 characters).\n   - `coverLetter`: required string with bounds (min 10 characters, max 5000 characters).\n   - `bidAmount`: positive finite number (strictly greater than 0).\n   - `estimatedDuration`: optional string with maximum 100 characters.\n   - `freelancerId`: optional string with maximum 128 characters.\n   - Rejection of unrecognized/arbitrary keys (`.strict()`).\n2. Update `apps/api/src/controllers/proposalController.js` (`postProposal`) to parse and validate `req.body` with `createProposalSchema`, returning structured HTTP 400 Bad Request error if validation fails.\n3. Add a comprehensive automated test suite (`apps/api/src/tests/proposal.test.js`) using Node's native test runner (`node:test`, `node:assert/strict`) covering:\n   - Valid proposal submission (returns 201 with generated proposal id).\n   - Rejection of missing jobId (400).\n   - Rejection of missing or too short cover letter (400).\n   - Rejection of negative or zero bid amount (400).\n   - Rejection of unknown extraneous properties (400).\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
       "bodyPreview": "## Problem POST /api/proposals forwards `req.body` directly to `createProposal` without schema or bounds validation. Any arbitrary JSON object is accepted into the in-memory proposals store, including negative or zero bid amounts, missing cover letters, missing jobId association"
+    },
+    {
+      "id": 6014847160,
+      "number": 13762,
+      "title": "[Bounty #743] Validate /api/reviews payload before persistence",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13762",
+      "rewardUsd": 700,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T16:02:39Z",
+      "fullBody": "## Problem\n\nPOST /api/reviews forwards req.body directly to createReview without schema validation. Any JSON object is accepted, including invalid rating ranges (e.g. negative numbers or numbers > 5), missing targetId, missing reviewerId, empty or excessively long comments, and prototype pollution fields. The in-memory review store then persists malformed reviews, degrading data integrity and breaking client consumers.\n\n## Requested fix\n\nAdd a strict Zod schema for review creation and validate the request in reviewController before persistence. Accept only valid rating integers between 1 and 5, require valid reviewerId and targetId strings, sanitize and bound optional comment text (1 to 2000 chars), and reject malformed payloads with a 400 Bad Request error. Add focused route/service tests for valid payload, out-of-range rating, missing required fields, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
+      "bodyPreview": "## Problem POST /api/reviews forwards req.body directly to createReview without schema validation. Any JSON object is accepted, including invalid rating ranges (e.g. negative numbers or numbers > 5), missing targetId, missing reviewerId, empty or excessively long comments, and p"
     },
     {
       "id": 5997912603,
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-23T20:50:22Z",
       "fullBody": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window.\n\nProposed scope:\n- self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows\n- title, slug, excerpt, Markdown body, tags, and SEO metadata\n- safe text-only Markdown preview, search and status filters, and views/reads/shares analytics\n- keyboard-accessible, mobile-first dark/gold UI with no new dependencies\n- README with a host integration checklist\n\nThe public repository is documentation-only and does not include the production app scaffold or package.json. I will submit the component as an isolated integration unit unless maintainers provide a host scaffold or different integration requirements. Please confirm that this scope fits bounty #7 and that the advertised Stripe payout and contributor eligibility are still available.\n\nI have not signed the CLA or claimed completion or payment in this issue; the account holder will complete any required legal and payout onboarding before acceptance.",
       "bodyPreview": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window. Proposed scope: - self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows - title, slug, excerpt, Markdown body, tags, and SEO meta"
-    },
-    {
-      "id": 6008513385,
-      "number": 95,
-      "title": "Claiming Bounty #17 - Expense Tracker ($200)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/95",
-      "rewardUsd": 200,
-      "category": "Seguridad Web3",
-      "difficulty": "Avanzado",
-      "createdAt": "2026-10-24T02:34:25Z",
-      "fullBody": "Claiming **Bounty #17** (Bounty #17: Expense Tracker ($200)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/17-expense-tracker/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
-      "bodyPreview": "Claiming **Bounty #17** (Bounty #17: Expense Tracker ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/17-expense-tracker/` following the Agent Midas Black/Gold design system and 6-layer security standards. "
     }
   ],
   "solutions": [
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T16:31:10.080Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T16:31:09.724Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T16:31:09.724Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $51,279 USD."
+    },
+    {
+      "time": "2026-10-24T16:31:07.584Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T16:31:07.582Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T16:01:11.571Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1739,31 +1764,6 @@
     },
     {
       "time": "2026-10-24T07:28:42.788Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T07:28:42.310Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T07:28:42.310Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $20,264 USD."
-    },
-    {
-      "time": "2026-10-24T07:28:39.886Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T07:28:39.885Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T06:56:35.029Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
