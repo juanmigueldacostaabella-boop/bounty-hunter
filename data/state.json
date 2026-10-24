@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T17:52:56.142Z",
-  "scanCount": 140,
+  "lastScanAt": "2026-10-24T18:12:14.238Z",
+  "scanCount": 141,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 68,
-    "totalBountyPoolUsd": 51179,
+    "totalBountiesDetected": 63,
+    "totalBountyPoolUsd": 50854,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T18:12:16.686Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T18:12:16.261Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T18:12:16.261Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,854 USD."
+    },
+    {
+      "time": "2026-10-24T18:12:14.238Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T18:12:14.236Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T17:52:58.963Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1741,31 +1766,6 @@
       "time": "2026-10-24T09:17:48.348Z",
       "level": "AUTO_SUBMIT",
       "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T09:17:48.348Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $21,256 USD."
-    },
-    {
-      "time": "2026-10-24T09:17:45.951Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T09:17:45.950Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T08:56:07.319Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13676! Recompensa en juego: $700"
-    },
-    {
-      "time": "2026-10-24T08:56:06.550Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para SecureBananaLabs/bug-bounty #13676..."
     }
   ]
 }
