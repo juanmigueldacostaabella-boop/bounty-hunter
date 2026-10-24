@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T11:34:42.063Z",
-  "scanCount": 127,
+  "lastScanAt": "2026-10-24T12:01:18.464Z",
+  "scanCount": 128,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 72,
-    "totalBountyPoolUsd": 23787,
+    "totalBountiesDetected": 71,
+    "totalBountyPoolUsd": 23627,
     "solutionsGenerated": 29,
     "potentialEarningsUsd": 14891,
     "prsSubmitted": 27
@@ -1220,6 +1220,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T12:01:20.827Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T12:01:20.416Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T12:01:20.416Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $23,627 USD."
+    },
+    {
+      "time": "2026-10-24T12:01:18.464Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T12:01:18.462Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T11:34:44.355Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1693,31 +1718,6 @@
       "time": "2026-10-24T02:56:55.615Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $20,281 USD."
-    },
-    {
-      "time": "2026-10-24T02:56:52.703Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T02:56:52.701Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T02:23:11.536Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T02:23:11.130Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T02:23:11.130Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $19,431 USD."
     }
   ]
 }
