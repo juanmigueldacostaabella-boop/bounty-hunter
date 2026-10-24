@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T10:45:11.992Z",
-  "scanCount": 125,
+  "lastScanAt": "2026-10-24T11:08:29.624Z",
+  "scanCount": 126,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 72,
-    "totalBountyPoolUsd": 21456,
-    "solutionsGenerated": 28,
-    "potentialEarningsUsd": 12865,
-    "prsSubmitted": 26
+    "totalBountiesDetected": 70,
+    "totalBountyPoolUsd": 23187,
+    "solutionsGenerated": 29,
+    "potentialEarningsUsd": 14891,
+    "prsSubmitted": 27
   },
   "activeBounties": [
     {
@@ -42,6 +42,19 @@
       "createdAt": "2026-10-23T09:14:43Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-23 09:14 UTC\n\n#### 1. [[routes] Time, moving time and speed](https://github.com/amiller/bounty-arcade/issues/12)\n- **Repository:** [amiller/bounty-arcade](https://github.com/amiller/bounty-arcade)\n- **Comments:** 7\n- **Last Updated:** 2026-10-23T09:14:11Z\n\n#### 2. [[radar] SN open bounty 2026-10-22T19:11](https://github.com/relayhop/sn-monetization-runtime/issues/1326)\n- **Repository:** [relayhop/sn-monetization-runtime](https://github.com/relayhop/sn-monetization-runtime)\n- **Comments:** 3\n- **Last Updated:** 2026-10-23T09:13:56Z\n\n#### 3. [transformers-4.19.2-py3-none-any.whl: 55 vulnerabilities (highest severity is: 9.6)](https://github.com/KOSASIH/mmsegmentation/issues/7)\n- **Repository:** [KOSASIH/mmsegmentation](https://github.com/KOSASIH/mmsegmentation)\n- **Comments:** 1\n- **Last Updated:** 2026-10-23T09:13:51Z\n\n#### 4. [pi-backend-0.1.3.tgz: 47 vulnerabilities (highest severity is: 9.3)](https://github.com/Alvaromeo999/testnet/issues/57)\n- **Repository:** [Alvaromeo999/testnet](https://github.com/Alvaromeo999/testnet)\n- **Comments:** 0\n- **Last Updated:** 2026-10-23T09:11:41Z\n\n#### 5. [[wildcard] Self-Hosted In-Process Analysis: Native Go Library Driver (x/tools/go/analysis) for Zero-Install IDE Checking and Compiler Unification](https://github.com/limitlessprojects/Go-Hybrid/issues/268)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 4\n- **Last Updated:** 2026-10-23T09:09:26Z\n\n#### 6. [[Bounty] Задача: Дописать тесты](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4081)\n- **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza)\n- **Comments:** 4\n- **Last Updated:** 2026-10-23T09:09:18Z\n\n#### 7. [stellar-sdk-4.1.0.tgz: 44 vulnerabilities (highest severity is: 9.3)](https://github.com/KOSASIH/CryptoQuests-StreamsideRO/issues/3)\n- **Repository:** [KOSASIH/CryptoQuests-StreamsideRO](https://github.com/KOSASIH/CryptoQuests-StreamsideRO)\n- **Comments:** 0\n- **Last Updated:** 2026-10-23T09:08:58Z\n\n#### 8. [soundness: `closure_scoped_envs` overwrites post-block `moved` and `non_owned_origin` of outer bindings (`HYB-E3003` / `HYB-E3004` bypass -> data race)](https://github.com/limitlessprojects/Go-Hybrid/issues/867)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T09:08:10Z\n\n####",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-23 09:14 UTC #### 1. [[routes] Time, moving time and speed](https://github.com/amiller/bounty-arcade/issues/12) - **Repository:** [amiller/bounty-arcade](https://github.com/amiller/bounty-arcade) - **Comments:** 7 - **Last U"
+    },
+    {
+      "id": 6012131420,
+      "number": 1327,
+      "title": "[radar] SN open bounty 2026-10-24T10:49",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1327",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-24T10:49:16Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1600910\tStacker_Sports\t3\t912\t2100\t8\t19.2\t232181\t4386\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,SELF_POST_OPP\tWeekly Random Sports Pick 'em\n1600829\tStacker_Sports\t3\t861\t2100\t15\t21.7\t1448206\t2598\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 2,100 sats\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1600910 Stacker_Sports 3 912 2100 8 19.2 232181 4386 recent@Stacker_Sports|top@Stacker_Sports OPEN_BOUNTY,SELF_POST_OPP Weekly Random Sports Pick 'em 1600829 Stacker_Sports 3 861 2100 15 21.7 1448206 2598 recent@Stacker_Sports|top@Stacker_Sports "
     },
     {
       "id": 5997098370,
@@ -523,22 +536,25 @@
       "createdAt": "2026-10-24T10:36:19Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-24 10:36 UTC\n\n#### 1. [[Submit] Remote MCP Server: Agent Bounty Feed (io.github.dailydollar-bot/agent-bounty-feed)](https://github.com/chatmcp/mcpso/issues/6028)\n- **Repository:** [chatmcp/mcpso](https://github.com/chatmcp/mcpso)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:35:01Z\n\n#### 2. [🎯 Bounty Alert: 7 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1650)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:32:43Z\n\n#### 3. [$200 bounty for Rekordbox export with hot cues & BPM](https://github.com/Holzhaus/rekordcrate/issues/127)\n- **Repository:** [Holzhaus/rekordcrate](https://github.com/Holzhaus/rekordcrate)\n- **Comments:** 7\n- **Last Updated:** 2026-10-24T10:30:19Z\n\n#### 4. [【intake 输入】【体验快测报告】xiaobao-dsh-employees@0.1.2：安装成功，直调触发判定与分段成立，钉钉收发未测，能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1758)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:29:12Z\n\n#### 5. [【intake 输入】【体验快测报告】dsh-mcp-tools@1.0.2：安装成功；直调连通本机 MCP 服务并逐工具启停落盘，会话内能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1757)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:28:26Z\n\n#### 6. [File Hunter x Hunter as a series with its arcs](https://github.com/cosimochellini/one-piece-zero-spoiler/issues/758)\n- **Repository:** [cosimochellini/one-piece-zero-spoiler](https://github.com/cosimochellini/one-piece-zero-spoiler)\n- **Comments:** 1\n- **Last Updated:** 2026-10-24T10:21:10Z\n\n#### 7. [Consolidate shop rules and correct purchase prediction](https://github.com/fullstacksjs/typezone/issues/21)\n- **Repository:** [fullstacksjs/typezone](https://github.com/fullstacksjs/typezone)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:21:04Z\n\n#### 8. [Flaky test in Security workflow: shared-chat-dispatch \"picks the most recently updated eligible pane\" (store ignores updatedAt, sort has no tie-break)](https://github.com/oll4com/spaceapp/issues/207)\n- **Repository:** [oll4com/spaceapp](https://github.com/oll4com/spaceapp)\n- **Comments:** 3\n- **Last Updated:** 2026-10-24T10:09:11Z\n\n#### 9. [Testbed for IETF 127: decision records and settlement records on the same #51 traces](https://github.com/ogasurfproject-jpg/horiz",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-24 10:36 UTC #### 1. [[Submit] Remote MCP Server: Agent Bounty Feed (io.github.dailydollar-bot/agent-bounty-feed)](https://github.com/chatmcp/mcpso/issues/6028) - **Repository:** [chatmcp/mcpso](https://github.com/chatmcp/mc"
-    },
-    {
-      "id": 6012004941,
-      "number": 1650,
-      "title": "🎯 Bounty Alert: 7 New Opportunityies found",
-      "repo": "dev-kp-eloper/BountyScout",
-      "htmlUrl": "https://github.com/dev-kp-eloper/BountyScout/issues/1650",
-      "rewardUsd": 200,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T10:32:43Z",
-      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-24 10:32 UTC\n\n#### 1. [$200 bounty for Rekordbox export with hot cues & BPM](https://github.com/Holzhaus/rekordcrate/issues/127)\n- **Repository:** [Holzhaus/rekordcrate](https://github.com/Holzhaus/rekordcrate)\n- **Comments:** 7\n- **Last Updated:** 2026-10-24T10:30:19Z\n\n#### 2. [【intake 输入】【体验快测报告】xiaobao-dsh-employees@0.1.2：安装成功，直调触发判定与分段成立，钉钉收发未测，能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1758)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:29:12Z\n\n#### 3. [【intake 输入】【体验快测报告】dsh-mcp-tools@1.0.2：安装成功；直调连通本机 MCP 服务并逐工具启停落盘，会话内能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1757)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:28:26Z\n\n#### 4. [File Hunter x Hunter as a series with its arcs](https://github.com/cosimochellini/one-piece-zero-spoiler/issues/758)\n- **Repository:** [cosimochellini/one-piece-zero-spoiler](https://github.com/cosimochellini/one-piece-zero-spoiler)\n- **Comments:** 1\n- **Last Updated:** 2026-10-24T10:21:10Z\n\n#### 5. [Consolidate shop rules and correct purchase prediction](https://github.com/fullstacksjs/typezone/issues/21)\n- **Repository:** [fullstacksjs/typezone](https://github.com/fullstacksjs/typezone)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:21:04Z\n\n#### 6. [Flaky test in Security workflow: shared-chat-dispatch \"picks the most recently updated eligible pane\" (store ignores updatedAt, sort has no tie-break)](https://github.com/oll4com/spaceapp/issues/207)\n- **Repository:** [oll4com/spaceapp](https://github.com/oll4com/spaceapp)\n- **Comments:** 3\n- **Last Updated:** 2026-10-24T10:09:11Z\n\n#### 7. [Testbed for IETF 127: decision records and settlement records on the same #51 traces](https://github.com/ogasurfproject-jpg/horizon-shield/issues/55)\n- **Repository:** [ogasurfproject-jpg/horizon-shield](https://github.com/ogasurfproject-jpg/horizon-shield)\n- **Comments:** 10\n- **Last Updated:** 2026-10-24T09:59:48Z\n\n",
-      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-24 10:32 UTC #### 1. [$200 bounty for Rekordbox export with hot cues & BPM](https://github.com/Holzhaus/rekordcrate/issues/127) - **Repository:** [Holzhaus/rekordcrate](https://github.com/Holzhaus/rekordcrate) - **Comments:*"
     }
   ],
   "solutions": [
+    {
+      "id": "944fe2c3-19e8-4938-96de-52b1826c3b20",
+      "bountyId": 6012131420,
+      "repo": "relayhop/sn-monetization-runtime",
+      "issueNumber": 1327,
+      "issueUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1327",
+      "rewardUsd": 2026,
+      "prTitle": "fix: resolve issue #1327 - [radar] SN open bounty 2026-10-24T10:49",
+      "prBody": "## Proposed Solution for Issue #1327\n\n### Root Cause Analysis & Fix\nThe radar parser only recognized a single comma‑free tag, so bounty lines containing multiple tags (e.g., \"OPEN_BOUNTY,SELF_POST_OPP\") were not detected as open bounties. The fix splits the tag field on commas, trims each entry, and treats any entry equal to \"OPEN_BOUNTY\" as a bounty trigger.\n\n### Proposed Code Patch\n```\n*** Begin Patch\n*** Update File: src/radar.js\n@@\n-  const tags = row[9]; // original code expects a single tag string\n-  if (tags === 'OPEN_BOUNTY') {\n-    // process open bounty\n-    handleOpenBounty(row);\n-  }\n+  // The tag column may contain multiple comma‑separated values (e.g., \"OPEN_BOUNTY,SELF_POST_OPP\").\n+  // Split on commas, trim whitespace, and check each tag individually.\n+  const rawTagField = row[9] || '';\n+  const tags = rawTagField.split(',').map(t => t.trim()).filter(Boolean);\n+  if (tags.includes('OPEN_BOUNTY')) {\n+    // process open bounty\n+    handleOpenBounty(row);\n+  }\n*** End Patch\n```\n\n---\n*Bounty Reward:* **$2026**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "*** Begin Patch\n*** Update File: src/radar.js\n@@\n-  const tags = row[9]; // original code expects a single tag string\n-  if (tags === 'OPEN_BOUNTY') {\n-    // process open bounty\n-    handleOpenBounty(row);\n-  }\n+  // The tag column may contain multiple comma‑separated values (e.g., \"OPEN_BOUNTY,SELF_POST_OPP\").\n+  // Split on commas, trim whitespace, and check each tag individually.\n+  const rawTagField = row[9] || '';\n+  const tags = rawTagField.split(',').map(t => t.trim()).filter(Boolean);\n+  if (tags.includes('OPEN_BOUNTY')) {\n+    // process open bounty\n+    handleOpenBounty(row);\n+  }\n*** End Patch",
+      "explanation": "The radar parser only recognized a single comma‑free tag, so bounty lines containing multiple tags (e.g., \"OPEN_BOUNTY,SELF_POST_OPP\") were not detected as open bounties. The fix splits the tag field on commas, trims each entry, and treats any entry equal to \"OPEN_BOUNTY\" as a bounty trigger.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-24T11:08:32.984Z",
+      "submittedAt": "2026-10-24T11:08:33.586Z",
+      "commentUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1327#issuecomment-6383471731"
+    },
     {
       "id": "6df3e184-a6a1-46dc-b29f-0a171d4c04c6",
       "bountyId": 6011002391,
@@ -986,6 +1002,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "98099743-601c-4afa-a59b-9f5d4b1f5c48",
+      "repo": "relayhop/sn-monetization-runtime",
+      "issueNumber": 1327,
+      "rewardUsd": 2026,
+      "commentUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1327#issuecomment-6383471731",
+      "submittedAt": "2026-10-24T11:08:33.586Z"
+    },
+    {
       "id": "129a3eaf-21b3-4271-9e57-4eb316e7b732",
       "repo": "SecureBananaLabs/bug-bounty",
       "issueNumber": 13676,
@@ -1195,6 +1219,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-24T11:08:33.589Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a relayhop/sn-monetization-runtime #1327! Recompensa en juego: $2026"
+    },
+    {
+      "time": "2026-10-24T11:08:32.984Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para relayhop/sn-monetization-runtime #1327..."
+    },
+    {
+      "time": "2026-10-24T11:08:32.984Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para relayhop/sn-monetization-runtime #1327 ($2026 USD) [Bug Fix / Código]"
+    },
+    {
+      "time": "2026-10-24T11:08:31.682Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $23,187 USD."
+    },
+    {
+      "time": "2026-10-24T11:08:29.624Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T11:08:29.623Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-24T10:45:14.668Z",
       "level": "ERROR",
@@ -1664,36 +1718,6 @@
       "time": "2026-10-24T01:58:50.913Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $19,431 USD."
-    },
-    {
-      "time": "2026-10-24T01:58:49.096Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T01:58:49.094Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T01:21:15.023Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T01:21:14.496Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T01:21:14.496Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $19,781 USD."
-    },
-    {
-      "time": "2026-10-24T01:21:12.154Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
   ]
 }
