@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T10:11:26.439Z",
-  "scanCount": 124,
+  "lastScanAt": "2026-10-24T10:45:11.992Z",
+  "scanCount": 125,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 72,
-    "totalBountyPoolUsd": 21156,
+    "totalBountyPoolUsd": 21456,
     "solutionsGenerated": 28,
     "potentialEarningsUsd": 12865,
     "prsSubmitted": 26
@@ -512,30 +512,30 @@
       "bodyPreview": "Claiming **Bounty #2** (Bounty #2: Deal Pipeline Board ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/02-deal-pipeline-board/` following the Agent Midas Black/Gold design system and 6-layer security stand"
     },
     {
-      "id": 5986552924,
-      "number": 4080,
-      "title": "[Bounty] 📋 2 open bounties right now",
-      "repo": "zhangjiayang6835-cyber/bounty-plaza",
-      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4080",
-      "rewardUsd": 187,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-22T20:02:23Z",
-      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/habibdxb01/bounty-watcher/issues/8\n\n### 漏洞描述 / Description\n📋 2 open bounties right now\n\nBounties that were already open when the watcher started. From now on, each new one gets its own issue.\n\n- 🔴 **$150** · [📱 Epic: BAWES Universe Mobile App (Android + iOS)](https://github.com/BAWES-Universe/workadventure-universe/issues/1)\n- 🔴 **$50** · [BOUNTY: integrate AWS Comprehend as a utility to redact data](https://github.com/arakoodev/EdgeChains/issues/290)\n\ncc @habibdxb01\n<!-- algora:gh-5878910962 -->\n<!-- algora:gh-5878910737 -->\n<!-- algora:gh-5878910506 -->\n<!-- algora:gh-5878909731 -->\n<!-- algora:gh-5878909492 -->\n<!-- algora:gh-5878908647 -->\n<!-- algora:gh-4455330769 -->\n<!-- algora:gh-4166244335 -->\n<!-- algora:gh-4043764365 -->\n<!-- algora:gh-2873015698 -->\n<!-- algora:gh-2843240829 -->\n<!-- algora:gh-2843218346 -->\n<!-- algora:gh-2567881942 -->\n<!-- algora:gh-2022440514 -->\n<!-- algora:gh-2018290060 -->\n<!-- algora:gh-2011168530 -->\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/habibdxb01/bounty-watcher/issues/8 ### 漏洞描述 / Description 📋 2 open bounties right now Bounties that were already open when the watcher started. From now on, each new one gets its own issue. - 🔴 **$150** · ["
+      "id": 6012032603,
+      "number": 6,
+      "title": "🎯 Bounty Alert: 9 New Opportunityies found",
+      "repo": "Rohank143/BountyScout",
+      "htmlUrl": "https://github.com/Rohank143/BountyScout/issues/6",
+      "rewardUsd": 200,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T10:36:19Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-24 10:36 UTC\n\n#### 1. [[Submit] Remote MCP Server: Agent Bounty Feed (io.github.dailydollar-bot/agent-bounty-feed)](https://github.com/chatmcp/mcpso/issues/6028)\n- **Repository:** [chatmcp/mcpso](https://github.com/chatmcp/mcpso)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:35:01Z\n\n#### 2. [🎯 Bounty Alert: 7 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1650)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:32:43Z\n\n#### 3. [$200 bounty for Rekordbox export with hot cues & BPM](https://github.com/Holzhaus/rekordcrate/issues/127)\n- **Repository:** [Holzhaus/rekordcrate](https://github.com/Holzhaus/rekordcrate)\n- **Comments:** 7\n- **Last Updated:** 2026-10-24T10:30:19Z\n\n#### 4. [【intake 输入】【体验快测报告】xiaobao-dsh-employees@0.1.2：安装成功，直调触发判定与分段成立，钉钉收发未测，能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1758)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:29:12Z\n\n#### 5. [【intake 输入】【体验快测报告】dsh-mcp-tools@1.0.2：安装成功；直调连通本机 MCP 服务并逐工具启停落盘，会话内能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1757)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:28:26Z\n\n#### 6. [File Hunter x Hunter as a series with its arcs](https://github.com/cosimochellini/one-piece-zero-spoiler/issues/758)\n- **Repository:** [cosimochellini/one-piece-zero-spoiler](https://github.com/cosimochellini/one-piece-zero-spoiler)\n- **Comments:** 1\n- **Last Updated:** 2026-10-24T10:21:10Z\n\n#### 7. [Consolidate shop rules and correct purchase prediction](https://github.com/fullstacksjs/typezone/issues/21)\n- **Repository:** [fullstacksjs/typezone](https://github.com/fullstacksjs/typezone)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:21:04Z\n\n#### 8. [Flaky test in Security workflow: shared-chat-dispatch \"picks the most recently updated eligible pane\" (store ignores updatedAt, sort has no tie-break)](https://github.com/oll4com/spaceapp/issues/207)\n- **Repository:** [oll4com/spaceapp](https://github.com/oll4com/spaceapp)\n- **Comments:** 3\n- **Last Updated:** 2026-10-24T10:09:11Z\n\n#### 9. [Testbed for IETF 127: decision records and settlement records on the same #51 traces](https://github.com/ogasurfproject-jpg/horiz",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-24 10:36 UTC #### 1. [[Submit] Remote MCP Server: Agent Bounty Feed (io.github.dailydollar-bot/agent-bounty-feed)](https://github.com/chatmcp/mcpso/issues/6028) - **Repository:** [chatmcp/mcpso](https://github.com/chatmcp/mc"
     },
     {
-      "id": 5995263103,
-      "number": 261,
-      "title": "📧 Daily Digest — 2026-10-23",
-      "repo": "GaspardCoche/agent-system",
-      "htmlUrl": "https://github.com/GaspardCoche/agent-system/issues/261",
-      "rewardUsd": 155,
-      "category": "Documentación / Typo",
+      "id": 6012004941,
+      "number": 1650,
+      "title": "🎯 Bounty Alert: 7 New Opportunityies found",
+      "repo": "dev-kp-eloper/BountyScout",
+      "htmlUrl": "https://github.com/dev-kp-eloper/BountyScout/issues/1650",
+      "rewardUsd": 200,
+      "category": "Validación / Tests",
       "difficulty": "Fácil",
-      "createdAt": "2026-10-23T09:23:21Z",
-      "fullBody": "# 📧 Daily Digest — 2026-10-23\n\n## Anthropic rebat les cartes : Opus 5.5 moins cher, et l'authentification des agents devient le vrai champ de bataille\n\n_Claude Opus 5.5 arrive 40% moins cher pendant que banques, 1Password et Google se battent pour sécuriser les agents qui agissent en ton nom._\n\n## ⭐ Top story\n### [Introducing Claude Opus 5.5 (avec Haiku 5.5 et Sonnet 5.5)](https://www.anthropic.com/news)\n*Anthropic* · Modeles\n\nAnthropic lance Claude Opus 5.5, son nouveau modèle phare orienté coding agentique et travail de connaissance, avec un coût d'exécution 40% inférieur à Opus 5 sur les charges typiques. Le lancement s'accompagne de Haiku 5.5 — le petit modèle le plus rapide, pensé pour le volume (résumés, subagents, usage navigateur) — et de Sonnet 5.5, 30%+ plus rapide et jusqu'à 30% moins cher. Pour une équipe qui construit chaque jour avec Claude Code et des agents GitHub Actions, c'est une baisse directe du coût au token sur les trois paliers de la gamme. La combinaison vitesse + prix rend enfin viables les architectures multi-agents (un gros modèle qui orchestre, des Haiku en subagents) qui tournaient trop cher en continu. À surveiller : les benchmarks agentiques réels et la disponibilité API / Bedrock / Vertex.\n\n> 💡 Pour toi : tes pipelines Claude Code et tes agents GitHub Actions coûtent mécaniquement moins cher, et les subagents Haiku deviennent exploitables à grande échelle.\n\n## 📈 Tendances\n\n- **L'authentification et l'isolation des agents : le vrai champ de bataille** — Banques qui bloquent les agents, 1Password qui propose la connexion sans mot de passe, Google qui isole chaque agent dans une micro-VM : sécuriser les agents qui agissent à ta place devient la priorité infra.\n- **Skills et MCP deviennent des standards ouverts et neutres** — Après le MCP, Anthropic donne Agent Skills à l'Agentic AI Foundation (Linux Foundation). Les briques des agents se standardisent, indépendamment d'un seul fournisseur.\n- **La course au coût : modèles moins chers et modèles de décision** — Opus 5.5 à -40%, Sonnet 5.5 jusqu'à -30%, plus les 'decision models' low-cost d'OpenAI : la valeur se déplace vers le prix au token et les modèles spécialisés rapides.\n- **Le ROI de l'IA sous pression** — Seules 13% des entreprises voient un retour réel (Gartner) alors que les budgets grimpent : l'avantage se joue sur l'exécution, les données et l'outillage, pas sur le choix du modèle.\n\n## 🔴 Must read\n\n### [Anthropic donne le standard Agent Skills à l'Agentic AI Found",
-      "bodyPreview": "# 📧 Daily Digest — 2026-10-23 ## Anthropic rebat les cartes : Opus 5.5 moins cher, et l'authentification des agents devient le vrai champ de bataille _Claude Opus 5.5 arrive 40% moins cher pendant que banques, 1Password et Google se battent pour sécuriser les agents qui agisse"
+      "createdAt": "2026-10-24T10:32:43Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-24 10:32 UTC\n\n#### 1. [$200 bounty for Rekordbox export with hot cues & BPM](https://github.com/Holzhaus/rekordcrate/issues/127)\n- **Repository:** [Holzhaus/rekordcrate](https://github.com/Holzhaus/rekordcrate)\n- **Comments:** 7\n- **Last Updated:** 2026-10-24T10:30:19Z\n\n#### 2. [【intake 输入】【体验快测报告】xiaobao-dsh-employees@0.1.2：安装成功，直调触发判定与分段成立，钉钉收发未测，能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1758)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:29:12Z\n\n#### 3. [【intake 输入】【体验快测报告】dsh-mcp-tools@1.0.2：安装成功；直调连通本机 MCP 服务并逐工具启停落盘，会话内能力未测](https://github.com/FuRongJun-1999/dsh-bounty/issues/1757)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:28:26Z\n\n#### 4. [File Hunter x Hunter as a series with its arcs](https://github.com/cosimochellini/one-piece-zero-spoiler/issues/758)\n- **Repository:** [cosimochellini/one-piece-zero-spoiler](https://github.com/cosimochellini/one-piece-zero-spoiler)\n- **Comments:** 1\n- **Last Updated:** 2026-10-24T10:21:10Z\n\n#### 5. [Consolidate shop rules and correct purchase prediction](https://github.com/fullstacksjs/typezone/issues/21)\n- **Repository:** [fullstacksjs/typezone](https://github.com/fullstacksjs/typezone)\n- **Comments:** 0\n- **Last Updated:** 2026-10-24T10:21:04Z\n\n#### 6. [Flaky test in Security workflow: shared-chat-dispatch \"picks the most recently updated eligible pane\" (store ignores updatedAt, sort has no tie-break)](https://github.com/oll4com/spaceapp/issues/207)\n- **Repository:** [oll4com/spaceapp](https://github.com/oll4com/spaceapp)\n- **Comments:** 3\n- **Last Updated:** 2026-10-24T10:09:11Z\n\n#### 7. [Testbed for IETF 127: decision records and settlement records on the same #51 traces](https://github.com/ogasurfproject-jpg/horizon-shield/issues/55)\n- **Repository:** [ogasurfproject-jpg/horizon-shield](https://github.com/ogasurfproject-jpg/horizon-shield)\n- **Comments:** 10\n- **Last Updated:** 2026-10-24T09:59:48Z\n\n",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-24 10:32 UTC #### 1. [$200 bounty for Rekordbox export with hot cues & BPM](https://github.com/Holzhaus/rekordcrate/issues/127) - **Repository:** [Holzhaus/rekordcrate](https://github.com/Holzhaus/rekordcrate) - **Comments:*"
     }
   ],
   "solutions": [
@@ -1196,6 +1196,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T10:45:14.668Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T10:45:14.233Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T10:45:14.233Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $21,456 USD."
+    },
+    {
+      "time": "2026-10-24T10:45:11.992Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T10:45:11.990Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T10:11:28.739Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1667,31 +1692,6 @@
     },
     {
       "time": "2026-10-24T01:21:12.154Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T01:21:12.153Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T00:31:11.841Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T00:31:11.445Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T00:31:11.445Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,781 USD."
-    },
-    {
-      "time": "2026-10-24T00:31:09.141Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
