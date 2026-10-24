@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T02:23:08.455Z",
-  "scanCount": 108,
+  "lastScanAt": "2026-10-24T02:56:52.703Z",
+  "scanCount": 109,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 62,
-    "totalBountyPoolUsd": 19431,
+    "totalBountiesDetected": 64,
+    "totalBountyPoolUsd": 20281,
     "solutionsGenerated": 27,
     "potentialEarningsUsd": 12165,
     "prsSubmitted": 25
@@ -434,6 +434,71 @@
       "bodyPreview": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window. Proposed scope: - self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows - title, slug, excerpt, Markdown body, tags, and SEO meta"
     },
     {
+      "id": 6008513385,
+      "number": 95,
+      "title": "Claiming Bounty #17 - Expense Tracker ($200)",
+      "repo": "bujiproject-art/agentmidasopendevteam",
+      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/95",
+      "rewardUsd": 200,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-24T02:34:25Z",
+      "fullBody": "Claiming **Bounty #17** (Bounty #17: Expense Tracker ($200)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/17-expense-tracker/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
+      "bodyPreview": "Claiming **Bounty #17** (Bounty #17: Expense Tracker ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/17-expense-tracker/` following the Agent Midas Black/Gold design system and 6-layer security standards. "
+    },
+    {
+      "id": 6008512221,
+      "number": 93,
+      "title": "Claiming Bounty #13 - Referral Link Manager ($200)",
+      "repo": "bujiproject-art/agentmidasopendevteam",
+      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/93",
+      "rewardUsd": 200,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-24T02:34:17Z",
+      "fullBody": "Claiming **Bounty #13** (Bounty #13: Referral Link Manager ($200)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/13-referral-link-manager/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
+      "bodyPreview": "Claiming **Bounty #13** (Bounty #13: Referral Link Manager ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/13-referral-link-manager/` following the Agent Midas Black/Gold design system and 6-layer security"
+    },
+    {
+      "id": 6008511168,
+      "number": 91,
+      "title": "Claiming Bounty #9 - Podcast Manager ($200)",
+      "repo": "bujiproject-art/agentmidasopendevteam",
+      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/91",
+      "rewardUsd": 200,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-24T02:34:10Z",
+      "fullBody": "Claiming **Bounty #9** (Bounty #9: Podcast Manager ($200)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/09-podcast-manager/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
+      "bodyPreview": "Claiming **Bounty #9** (Bounty #9: Podcast Manager ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/09-podcast-manager/` following the Agent Midas Black/Gold design system and 6-layer security standards. - "
+    },
+    {
+      "id": 6008510143,
+      "number": 89,
+      "title": "Claiming Bounty #5 - Sales Forecasting Widget ($200)",
+      "repo": "bujiproject-art/agentmidasopendevteam",
+      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/89",
+      "rewardUsd": 200,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-24T02:34:01Z",
+      "fullBody": "Claiming **Bounty #5** (Bounty #5: Sales Forecasting Widget ($200)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/05-sales-forecasting-widget/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
+      "bodyPreview": "Claiming **Bounty #5** (Bounty #5: Sales Forecasting Widget ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/05-sales-forecasting-widget/` following the Agent Midas Black/Gold design system and 6-layer secu"
+    },
+    {
+      "id": 6008509404,
+      "number": 87,
+      "title": "Claiming Bounty #2 - Deal Pipeline Board ($200)",
+      "repo": "bujiproject-art/agentmidasopendevteam",
+      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/87",
+      "rewardUsd": 200,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-24T02:33:54Z",
+      "fullBody": "Claiming **Bounty #2** (Bounty #2: Deal Pipeline Board ($200)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/02-deal-pipeline-board/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
+      "bodyPreview": "Claiming **Bounty #2** (Bounty #2: Deal Pipeline Board ($200)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/02-deal-pipeline-board/` following the Agent Midas Black/Gold design system and 6-layer security stand"
+    },
+    {
       "id": 5986552924,
       "number": 4080,
       "title": "[Bounty] 📋 2 open bounties right now",
@@ -470,69 +535,6 @@
       "difficulty": "Medio",
       "createdAt": "2026-10-22T15:00:27Z",
       "bodyPreview": "Bounties that were already open when the watcher started. From now on, each new one gets its own issue. - 🔴 **$150** · [📱 Epic: BAWES Universe Mobile App (Android + iOS)](https://github.com/BAWES-Universe/workadventure-universe/issues/1) - 🔴 **$50** · [BOUNTY: integrate AWS C"
-    },
-    {
-      "id": 5984355770,
-      "number": 1143,
-      "title": "[demand] high-priority 2026-10-22T17:33",
-      "repo": "relayhop/ClaudeEarnSelf-runtime",
-      "htmlUrl": "https://github.com/relayhop/ClaudeEarnSelf-runtime/issues/1143",
-      "rewardUsd": 150,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-22T17:33:25Z",
-      "bodyPreview": "Demand-side radar 高優先訊號: ``` 5 github 2.5 $150 OPEN_ISSUE,LOW_COMP https://github.com/habibdxb01/bounty-watcher/issues/8 📋 2 open bounties right now ```"
-    },
-    {
-      "id": 6001194914,
-      "number": 1198,
-      "title": "[BOUNTY] Medium: Startup sync_onchain_stakes zero-stake race in register_validator_with_wallet, cross-asset cosign_settlement bypass, scan commitment dedup, and 9-account initialize_validator_registry",
-      "repo": "paraloom-labs/paraloom-core",
-      "htmlUrl": "https://github.com/paraloom-labs/paraloom-core/issues/1198",
-      "rewardUsd": 150,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T16:04:25Z",
-      "fullBody": "## Summary\n\nAudit of the Stage 1 in-scope consensus, settlement co-signing, note scan-store, and Solana bridge stack (`src/consensus/transact.rs`, `src/node/mod.rs`, `src/bridge/solana/program.rs`, `src/bridge/solana/instructions.rs`, `src/bin/init_validator_registry.rs`) uncovered four concrete defects:\n\n1. **Startup `sync_onchain_stakes` -> `Discovery` Race Leaves Newly Registered Validators at Zero Leader-Selection Stake (`src/consensus/transact.rs:630-653`, `src/node/mod.rs:1734-1752`)**:\n   - On node startup (`Node::run`, `src/node/mod.rs:1734-1752`), `transact.sync_onchain_stakes(map, registry_total)` runs synchronously at `t = 0` before any peer `Message::Discovery` arrives (and the 60-second background reconciler's immediate first tick also fires at `t = 0` while `leader_selector` has no peers).\n   - When peers subsequently announce via `Message::Discovery` (`register_validator_with_wallet`), `register_validator_with_wallet` passes the `self.onchain_wallets` allowlist gate using the already-populated startup snapshot, but then registers the validator into `leader_selector` with hardcoded `stake_amount = 0` (`ValidatorInfo::new(validator, 0, 1000).with_wallet(wallet_pubkey)`) and also leaves `stake_amount = 0` when attaching a wallet to an existing wallet-less entry (`existing.with_wallet(wallet_pubkey)`), completely ignoring `self.onchain_stakes`.\n   - As a result, every validator discovered after the `t = 0` startup snapshot (or joining between 60-second reconciler ticks) enters `leader_selector` with `stake_amount = 0` and `selection_weight() = 0`, causing `LeaderSelector::select_leader` to fail with `\"All validators have zero weight\"` until the next 60-second background poll.\n\n2. **Cross-Asset Co-Sign Approval Bypass in `cosign_settlement` (`src/node/mod.rs:980-1003`)**:\n   - In `cosign_settlement`, the `SettlementParams::TransactSpl` arm (`src/node/mod.rs:1035-1042`) binds the asset by checking `req.mint == Some(*mint)`.\n   - However, the native-SOL `SettlementParams::Transact` arm (`src/node/mod.rs:992-998`) only checks `req.recipient`, `req.nullifiers`, `req.output_commitments`, `req.root`, and `req.ext_amount` against `verified_transacts`, omitting `&& req.mint.is_none()`.\n   - Because `cosign_settlement` does not compare the 256-byte uncompressed wire proof in `SettlementParams` against the 129-byte tagged compressed proof in `TransactVerificationRequest`, any validator that verified an SPL token spend (`req.mint == Some(mint)`) and cached ",
-      "bodyPreview": "## Summary Audit of the Stage 1 in-scope consensus, settlement co-signing, note scan-store, and Solana bridge stack (`src/consensus/transact.rs`, `src/node/mod.rs`, `src/bridge/solana/program.rs`, `src/bridge/solana/instructions.rs`, `src/bin/init_validator_registry.rs`) uncover"
-    },
-    {
-      "id": 6003476725,
-      "number": 20,
-      "title": "Bounty payout status — Medium report credited 2026-10-14 (mgal.ghifari04)",
-      "repo": "hifriendbot/agentwallet-mcp",
-      "htmlUrl": "https://github.com/hifriendbot/agentwallet-mcp/issues/20",
-      "rewardUsd": 150,
-      "category": "Seguridad Web3",
-      "difficulty": "Avanzado",
-      "createdAt": "2026-10-23T18:37:42Z",
-      "fullBody": "Hi — I reported a Medium-severity issue privately on Oct 13 (the multi-process ledger budget bypass, fixed in 1.14.2), acknowledged in SECURITY.md on 2026-10-14.\n\nI followed up by email on Oct 18 with my payment details, but haven't heard back yet, so reposting them here:\n\n- **Network:** Base\n- **Address:** `0x086A8184c9FbfB66D1eDf2406a5d20576911f5Fe`\n\nSince the issue is fixed and already publicly described in SECURITY.md, I hope it's OK to ask administratively: is there anything else needed from my side to process the $150 USDC payout per the published tiers? Happy to continue via email if preferred.\n\nThanks — and thanks for the quick fix turnaround.\n",
-      "bodyPreview": "Hi — I reported a Medium-severity issue privately on Oct 13 (the multi-process ledger budget bypass, fixed in 1.14.2), acknowledged in SECURITY.md on 2026-10-14. I followed up by email on Oct 18 with my payment details, but haven't heard back yet, so reposting them here: - **Ne"
-    },
-    {
-      "id": 6004857118,
-      "number": 4107,
-      "title": "[Bounty] USDC-quoted pairs not having the correct marketcap displayed in tools",
-      "repo": "zhangjiayang6835-cyber/bounty-plaza",
-      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4107",
-      "rewardUsd": 125,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-23T20:20:52Z",
-      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/blake-guthrie/GLASS/issues/1\n\n### 漏洞描述 / Description\nUSDC-quoted pairs not having the correct marketcap displayed in tools\n\nFix this problem to get paid in fees of $100\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/blake-guthrie/GLASS/issues/1 ### 漏洞描述 / Description USDC-quoted pairs not having the correct marketcap displayed in tools Fix this problem to get paid in fees of $100 ### 积分币奖励 / Coin Reward 125 coins ### 真实"
-    },
-    {
-      "id": 5979160793,
-      "number": 3730,
-      "title": "[Bounty] Answer the 2 linked question(s)",
-      "repo": "Ikalus1988/MisakaNet",
-      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/3730",
-      "rewardUsd": 100,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-22T12:19:43Z",
-      "bodyPreview": "<!-- misakanet-question-bounty:anchor-3653 --> # [Bounty] Answer the 2 linked question(s) ## Context These intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_ma"
     }
   ],
   "solutions": [
@@ -1169,6 +1171,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T02:56:56.054Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T02:56:55.616Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T02:56:55.615Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $20,281 USD."
+    },
+    {
+      "time": "2026-10-24T02:56:52.703Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T02:56:52.701Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T02:23:11.536Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1640,31 +1667,6 @@
     },
     {
       "time": "2026-10-23T17:18:02.150Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T16:49:53.445Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13537! Recompensa en juego: $800"
-    },
-    {
-      "time": "2026-10-23T16:49:52.364Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para SecureBananaLabs/bug-bounty #13537..."
-    },
-    {
-      "time": "2026-10-23T16:49:52.364Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,365 USD."
-    },
-    {
-      "time": "2026-10-23T16:49:49.581Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T16:49:49.580Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
