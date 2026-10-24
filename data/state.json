@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T08:23:04.467Z",
-  "scanCount": 120,
+  "lastScanAt": "2026-10-24T08:56:02.526Z",
+  "scanCount": 121,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,10 +11,10 @@
   },
   "metrics": {
     "totalBountiesDetected": 70,
-    "totalBountyPoolUsd": 20406,
-    "solutionsGenerated": 27,
-    "potentialEarningsUsd": 12165,
-    "prsSubmitted": 25
+    "totalBountyPoolUsd": 21256,
+    "solutionsGenerated": 28,
+    "potentialEarningsUsd": 12865,
+    "prsSubmitted": 26
   },
   "activeBounties": [
     {
@@ -120,6 +120,19 @@
       "createdAt": "2026-10-23T15:38:24Z",
       "fullBody": "References #11892, #743.\n\n## Feature Description\nDisplaying transaction summaries, wallet addresses, event logs, and user profile bios in frontend cards, notifications, and logging pipes requires a robust, unicode-aware `truncate(str, length, options)` utility with ellipsis and word-boundary preservation.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `truncate(str, length, options)` in `apps/api/src/utils/truncate.js`:\n   - Configurable maximum length: truncates string if length exceeds target.\n   - Configurable omission string: defaults to `'...'`, fully customizable (e.g. `'…'`, `' [more]'`).\n   - Word boundary preservation: supports `separator` (string or RegExp, e.g. `' '` or `/\\s+/`) to prevent chopping words in half.\n   - Address / Hash middle truncation: supports `middle: true` to truncate in the center (e.g. `0xE5Ab...B282`), vital for blockchain addresses and transaction hashes.\n   - Safe input coercion: gracefully handles `null`, `undefined`, numbers, and boolean inputs without throwing.\n   - Astral / Unicode / Emoji safety: avoids breaking surrogate pairs or multi-byte unicode code points.\n   - Edge case handling: handles length `<= omission.length`, empty strings, negative length.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/truncate.test.js`):\n   - Standard length truncation with default `'...'`.\n   - Custom omission indicator.\n   - Word boundary preservation with string separator.\n   - Word boundary preservation with RegExp separator.\n   - Web3 address / transaction hash middle truncation (`middle: true`).\n   - Unicode code point and emoji preservation without broken surrogate pairs.\n   - Edge cases: strings shorter than length, equal to length, length <= omission length, empty string.\n   - Non-string inputs: null, undefined, number, boolean.\n\n/bounty 800\n",
       "bodyPreview": "References #11892, #743. ## Feature Description Displaying transaction summaries, wallet addresses, event logs, and user profile bios in frontend cards, notifications, and logging pipes requires a robust, unicode-aware `truncate(str, length, options)` utility with ellipsis and w"
+    },
+    {
+      "id": 6011002391,
+      "number": 13676,
+      "title": "[Bounty #743] Validate /api/users payload before persistence",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13676",
+      "rewardUsd": 700,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T08:24:15Z",
+      "fullBody": "## Problem\n\nPOST /api/users forwards req.body directly to createUser. Any JSON object is accepted, including missing email/fullName, unknown fields, and a plaintext password. The in-memory user record then stores the unchecked payload, which can create malformed accounts and leak credentials through GET /api/users.\n\n## Requested fix\n\nAdd a Zod schema for user creation and validate the request before persistence. Accept only the fields supported by the User model (email, fullName, optional bio and role), reject malformed payloads with a 400 response, and never persist a plaintext password. Add focused route/service tests for valid input, invalid email/missing fullName, unknown fields, and password exclusion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700",
+      "bodyPreview": "## Problem POST /api/users forwards req.body directly to createUser. Any JSON object is accepted, including missing email/fullName, unknown fields, and a plaintext password. The in-memory user record then stores the unchecked payload, which can create malformed accounts and leak"
     },
     {
       "id": 5997912603,
@@ -523,21 +536,25 @@
       "createdAt": "2026-10-23T09:23:21Z",
       "fullBody": "# 📧 Daily Digest — 2026-10-23\n\n## Anthropic rebat les cartes : Opus 5.5 moins cher, et l'authentification des agents devient le vrai champ de bataille\n\n_Claude Opus 5.5 arrive 40% moins cher pendant que banques, 1Password et Google se battent pour sécuriser les agents qui agissent en ton nom._\n\n## ⭐ Top story\n### [Introducing Claude Opus 5.5 (avec Haiku 5.5 et Sonnet 5.5)](https://www.anthropic.com/news)\n*Anthropic* · Modeles\n\nAnthropic lance Claude Opus 5.5, son nouveau modèle phare orienté coding agentique et travail de connaissance, avec un coût d'exécution 40% inférieur à Opus 5 sur les charges typiques. Le lancement s'accompagne de Haiku 5.5 — le petit modèle le plus rapide, pensé pour le volume (résumés, subagents, usage navigateur) — et de Sonnet 5.5, 30%+ plus rapide et jusqu'à 30% moins cher. Pour une équipe qui construit chaque jour avec Claude Code et des agents GitHub Actions, c'est une baisse directe du coût au token sur les trois paliers de la gamme. La combinaison vitesse + prix rend enfin viables les architectures multi-agents (un gros modèle qui orchestre, des Haiku en subagents) qui tournaient trop cher en continu. À surveiller : les benchmarks agentiques réels et la disponibilité API / Bedrock / Vertex.\n\n> 💡 Pour toi : tes pipelines Claude Code et tes agents GitHub Actions coûtent mécaniquement moins cher, et les subagents Haiku deviennent exploitables à grande échelle.\n\n## 📈 Tendances\n\n- **L'authentification et l'isolation des agents : le vrai champ de bataille** — Banques qui bloquent les agents, 1Password qui propose la connexion sans mot de passe, Google qui isole chaque agent dans une micro-VM : sécuriser les agents qui agissent à ta place devient la priorité infra.\n- **Skills et MCP deviennent des standards ouverts et neutres** — Après le MCP, Anthropic donne Agent Skills à l'Agentic AI Foundation (Linux Foundation). Les briques des agents se standardisent, indépendamment d'un seul fournisseur.\n- **La course au coût : modèles moins chers et modèles de décision** — Opus 5.5 à -40%, Sonnet 5.5 jusqu'à -30%, plus les 'decision models' low-cost d'OpenAI : la valeur se déplace vers le prix au token et les modèles spécialisés rapides.\n- **Le ROI de l'IA sous pression** — Seules 13% des entreprises voient un retour réel (Gartner) alors que les budgets grimpent : l'avantage se joue sur l'exécution, les données et l'outillage, pas sur le choix du modèle.\n\n## 🔴 Must read\n\n### [Anthropic donne le standard Agent Skills à l'Agentic AI Found",
       "bodyPreview": "# 📧 Daily Digest — 2026-10-23 ## Anthropic rebat les cartes : Opus 5.5 moins cher, et l'authentification des agents devient le vrai champ de bataille _Claude Opus 5.5 arrive 40% moins cher pendant que banques, 1Password et Google se battent pour sécuriser les agents qui agisse"
-    },
-    {
-      "id": 5981846324,
-      "number": 8,
-      "title": "📋 2 open bounties right now",
-      "repo": "habibdxb01/bounty-watcher",
-      "htmlUrl": "https://github.com/habibdxb01/bounty-watcher/issues/8",
-      "rewardUsd": 150,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-22T15:00:27Z",
-      "bodyPreview": "Bounties that were already open when the watcher started. From now on, each new one gets its own issue. - 🔴 **$150** · [📱 Epic: BAWES Universe Mobile App (Android + iOS)](https://github.com/BAWES-Universe/workadventure-universe/issues/1) - 🔴 **$50** · [BOUNTY: integrate AWS C"
     }
   ],
   "solutions": [
+    {
+      "id": "6df3e184-a6a1-46dc-b29f-0a171d4c04c6",
+      "bountyId": 6011002391,
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13676,
+      "issueUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13676",
+      "rewardUsd": 700,
+      "prTitle": "fix: resolve issue #13676 - [Bounty #743] Validate /api/users payload before p",
+      "prBody": "## Proposed Solution for Issue #13676\n\n### Root Cause Analysis & Fix\nThe POST /api/users endpoint forwards the raw request body to the persistence layer, allowing arbitrary fields (including a plaintext password) to be stored, which creates malformed accounts and leaks credentials. Introducing a Zod schema that whitelists only the permitted fields (email, fullName, optional bio and role), strips any password field, and returns a 400 response on validation failure fixes the issue.\n\n### Proposed Code Patch\n```\n--- a/src/routes/users.ts\n+++ b/src/routes/users.ts\n@@\n-import { Router } from 'express';\n-import { createUser, getAllUsers } from '../services/userService';\n+import { Router } from 'express';\n+import { createUser, getAllUsers } from '../services/userService';\n+import { z } from 'zod';\n@@\n-const router = Router();\n+const router = Router();\n+\n+// Zod schema for user creation payload\n+const createUserSchema = z.object({\n+  email: z.string().email(),\n+  fullName: z.string().min(1),\n+  bio: z.string().optional(),\n+  role: z.enum(['user', 'admin']).optional(),\n+}).strict(); // reject unknown keys\n@@\n-router.post('/', async (req, res) => {\n-  const user = await createUser(req.body);\n-  res.status(201).json(user);\n-});\n+router.post('/', async (req, res) => {\n+  // Validate request payload\n+  const parseResult = createUserSchema.safeParse(req.body);\n+  if (!parseResult.success) {\n+    return res.status(400).json({ error: 'Invalid user payload', details: parseResult.error.errors });\n+  }\n+\n+  // Ensure no plaintext password is persisted even if sent accidentally\n+  const sanitizedPayload = parseResult.data;\n+\n+  const user = await createUser(sanitizedPayload);\n+  res.status(201).json(user);\n+});\n*** End of File ***\n```\n\n---\n*Bounty Reward:* **$700**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
+      "proposedCode": "--- a/src/routes/users.ts\n+++ b/src/routes/users.ts\n@@\n-import { Router } from 'express';\n-import { createUser, getAllUsers } from '../services/userService';\n+import { Router } from 'express';\n+import { createUser, getAllUsers } from '../services/userService';\n+import { z } from 'zod';\n@@\n-const router = Router();\n+const router = Router();\n+\n+// Zod schema for user creation payload\n+const createUserSchema = z.object({\n+  email: z.string().email(),\n+  fullName: z.string().min(1),\n+  bio: z.string().optional(),\n+  role: z.enum(['user', 'admin']).optional(),\n+}).strict(); // reject unknown keys\n@@\n-router.post('/', async (req, res) => {\n-  const user = await createUser(req.body);\n-  res.status(201).json(user);\n-});\n+router.post('/', async (req, res) => {\n+  // Validate request payload\n+  const parseResult = createUserSchema.safeParse(req.body);\n+  if (!parseResult.success) {\n+    return res.status(400).json({ error: 'Invalid user payload', details: parseResult.error.errors });\n+  }\n+\n+  // Ensure no plaintext password is persisted even if sent accidentally\n+  const sanitizedPayload = parseResult.data;\n+\n+  const user = await createUser(sanitizedPayload);\n+  res.status(201).json(user);\n+});\n*** End of File ***",
+      "explanation": "The POST /api/users endpoint forwards the raw request body to the persistence layer, allowing arbitrary fields (including a plaintext password) to be stored, which creates malformed accounts and leaks credentials. Introducing a Zod schema that whitelists only the permitted fields (email, fullName, optional bio and role), strips any password field, and returns a 400 response on validation failure fixes the issue.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-24T08:56:06.550Z",
+      "submittedAt": "2026-10-24T08:56:07.318Z",
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13676#issuecomment-6382246727"
+    },
     {
       "id": "e314c4b8-3849-4ec9-ae87-29e92d7284f5",
       "bountyId": 6001143238,
@@ -969,6 +986,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "129a3eaf-21b3-4271-9e57-4eb316e7b732",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "issueNumber": 13676,
+      "rewardUsd": 700,
+      "commentUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13676#issuecomment-6382246727",
+      "submittedAt": "2026-10-24T08:56:07.318Z"
+    },
+    {
       "id": "01242d1c-7c7f-4e00-b320-5896d1594862",
       "repo": "airdropia/earn-ops",
       "issueNumber": 10,
@@ -1170,6 +1195,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-24T08:56:07.319Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a SecureBananaLabs/bug-bounty #13676! Recompensa en juego: $700"
+    },
+    {
+      "time": "2026-10-24T08:56:06.550Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para SecureBananaLabs/bug-bounty #13676..."
+    },
+    {
+      "time": "2026-10-24T08:56:06.550Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para SecureBananaLabs/bug-bounty #13676 ($700 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-24T08:56:04.765Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $21,256 USD."
+    },
+    {
+      "time": "2026-10-24T08:56:02.526Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T08:56:02.524Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-24T08:23:08.142Z",
       "level": "ERROR",
@@ -1639,36 +1694,6 @@
       "time": "2026-10-23T23:09:39.282Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T23:09:39.280Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-23T22:44:39.980Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-23T22:44:39.701Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-23T22:44:39.700Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $18,831 USD."
-    },
-    {
-      "time": "2026-10-23T22:44:37.808Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-23T22:44:37.806Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
