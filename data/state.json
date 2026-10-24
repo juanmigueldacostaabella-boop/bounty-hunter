@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T23:07:55.689Z",
-  "scanCount": 153,
+  "lastScanAt": "2026-10-24T23:29:28.086Z",
+  "scanCount": 154,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 59,
-    "totalBountyPoolUsd": 53264,
+    "totalBountiesDetected": 57,
+    "totalBountyPoolUsd": 53114,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T23:29:30.108Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T23:29:29.819Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T23:29:29.819Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,114 USD."
+    },
+    {
+      "time": "2026-10-24T23:29:28.087Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T23:29:28.085Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T23:07:58.113Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1741,31 +1766,6 @@
       "time": "2026-10-24T15:30:21.453Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T15:00:40.155Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a fum-lab/fum #362! Recompensa en juego: $25000"
-    },
-    {
-      "time": "2026-10-24T15:00:38.664Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para fum-lab/fum #362..."
-    },
-    {
-      "time": "2026-10-24T15:00:38.664Z",
-      "level": "SOLVER",
-      "msg": "Solución IA generada para fum-lab/fum #362 ($25000 USD) [Seguridad Web3]"
-    },
-    {
-      "time": "2026-10-24T15:00:36.753Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $51,228 USD."
-    },
-    {
-      "time": "2026-10-24T15:00:33.437Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
   ]
 }
