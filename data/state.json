@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T18:12:14.238Z",
-  "scanCount": 141,
+  "lastScanAt": "2026-10-24T18:47:28.581Z",
+  "scanCount": 142,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 63,
-    "totalBountyPoolUsd": 50854,
+    "totalBountiesDetected": 68,
+    "totalBountyPoolUsd": 52479,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -211,6 +211,32 @@
       "createdAt": "2026-10-24T16:02:39Z",
       "fullBody": "## Problem\n\nPOST /api/reviews forwards req.body directly to createReview without schema validation. Any JSON object is accepted, including invalid rating ranges (e.g. negative numbers or numbers > 5), missing targetId, missing reviewerId, empty or excessively long comments, and prototype pollution fields. The in-memory review store then persists malformed reviews, degrading data integrity and breaking client consumers.\n\n## Requested fix\n\nAdd a strict Zod schema for review creation and validate the request in reviewController before persistence. Accept only valid rating integers between 1 and 5, require valid reviewerId and targetId strings, sanitize and bound optional comment text (1 to 2000 chars), and reject malformed payloads with a 400 Bad Request error. Add focused route/service tests for valid payload, out-of-range rating, missing required fields, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
       "bodyPreview": "## Problem POST /api/reviews forwards req.body directly to createReview without schema validation. Any JSON object is accepted, including invalid rating ranges (e.g. negative numbers or numbers > 5), missing targetId, missing reviewerId, empty or excessively long comments, and p"
+    },
+    {
+      "id": 6016178154,
+      "number": 13787,
+      "title": "[Bounty #743] Validate /api/notifications payload before persistence",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13787",
+      "rewardUsd": 700,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T18:25:13Z",
+      "fullBody": "## Problem\n\nPOST /api/notifications forwards req.body directly to createNotification without schema validation. Any JSON object is accepted, including missing userId, missing notification type, empty message text, excessively long payloads, and prototype pollution fields. The in-memory notification store then persists malformed notification entities, degrading client notification feeds and causing runtime render errors.\n\n## Requested fix\n\nAdd a strict Zod schema for notification creation and validate the request in notificationController before persistence. Require valid userId string, require standard notification type or bounded string, require non-empty message text up to 1,000 characters, allow optional link string up to 500 characters, and reject malformed payloads with a 400 Bad Request error envelope. Add focused route/service tests for valid payload, missing fields, empty/oversized message, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
+      "bodyPreview": "## Problem POST /api/notifications forwards req.body directly to createNotification without schema validation. Any JSON object is accepted, including missing userId, missing notification type, empty message text, excessively long payloads, and prototype pollution fields. The in-"
+    },
+    {
+      "id": 6016161331,
+      "number": 13783,
+      "title": "[Bounty #743] Validate /api/messages payload before persistence",
+      "repo": "SecureBananaLabs/bug-bounty",
+      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13783",
+      "rewardUsd": 700,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-24T18:23:18Z",
+      "fullBody": "## Problem\n\nPOST /api/messages forwards req.body directly to sendMessage without schema validation. Any JSON object is accepted, including missing senderId/receiverId, empty content, oversized content, and prototype pollution fields. The in-memory message store then persists malformed message entities, corrupting conversation threads and breaking client chat interfaces.\n\n## Requested fix\n\nAdd a strict Zod schema for message creation and validate the request in messageController before persistence. Require valid senderId and receiverId strings, require non-empty content up to 5,000 characters, allow optional conversationId, and reject malformed payloads with a 400 Bad Request error envelope. Add focused route/service tests for valid payload, missing fields, empty/oversized content, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
+      "bodyPreview": "## Problem POST /api/messages forwards req.body directly to sendMessage without schema validation. Any JSON object is accepted, including missing senderId/receiverId, empty content, oversized content, and prototype pollution fields. The in-memory message store then persists malf"
     },
     {
       "id": 5997912603,
@@ -510,32 +536,6 @@
       "createdAt": "2026-10-24T00:46:46Z",
       "fullBody": "Claiming **Bounty #4** (Bounty #4: Lead Scoring Engine ($250)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/04-lead-scoring-engine/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
       "bodyPreview": "Claiming **Bounty #4** (Bounty #4: Lead Scoring Engine ($250)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/04-lead-scoring-engine/` following the Agent Midas Black/Gold design system and 6-layer security stand"
-    },
-    {
-      "id": 5997785906,
-      "number": 1304,
-      "title": "🎯 Bounty Alert: 11 New Opportunityies found",
-      "repo": "freedom-winds/BountyScout",
-      "htmlUrl": "https://github.com/freedom-winds/BountyScout/issues/1304",
-      "rewardUsd": 200,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T12:31:06Z",
-      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-23 12:31 UTC\n\n#### 1. [bounty digest 2026-10-23](https://github.com/airdropia/earn-ops/issues/9)\n- **Repository:** [airdropia/earn-ops](https://github.com/airdropia/earn-ops)\n- **Comments:** 0\n- **Last Updated:** 2026-10-23T12:30:39Z\n\n#### 2. [Web: interactive mock wallet route showing the Move flow (apps ↔ chains)](https://github.com/b-bhu/myboon/issues/433)\n- **Repository:** [b-bhu/myboon](https://github.com/b-bhu/myboon)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:29:28Z\n\n#### 3. [[GoodBounty-QA]: Testing of reserve swapping with delegation marked wallets](https://github.com/GoodDollar/GoodWeb3-Mono/issues/275)\n- **Repository:** [GoodDollar/GoodWeb3-Mono](https://github.com/GoodDollar/GoodWeb3-Mono)\n- **Comments:** 5\n- **Last Updated:** 2026-10-23T12:26:25Z\n\n#### 4. [[opt-out check] REAL INTENT INC: confirm the opt-out route works](https://github.com/lizTheDeveloper/privacy-the-game/issues/123)\n- **Repository:** [lizTheDeveloper/privacy-the-game](https://github.com/lizTheDeveloper/privacy-the-game)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:26:12Z\n\n#### 5. [Bounty #7 Blog Publishing System ($200): availability and PayPal payout](https://github.com/bujiproject-art/agentmidasopendevteam/issues/23)\n- **Repository:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam)\n- **Comments:** 1\n- **Last Updated:** 2026-10-23T12:24:37Z\n\n#### 6. [[Bug]: llm.model \"auto\" skips an installed llama3.2 and picks the first Ollama model (pythia-160m), so checks are coin flips and Laya never takes over](https://github.com/neatlogs/neatroots/issues/238)\n- **Repository:** [neatlogs/neatroots](https://github.com/neatlogs/neatroots)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:24:24Z\n\n#### 7. [/v1/providers: 114 of 122 listings are down — rotating tunnel URLs re-register as new rows and nothing prunes them](https://github.com/aibtcdev/inference-marketplace/issues/25)\n- **Repository:** [aibtcdev/inference-marketplace](https://github.com/aibtcdev/inference-marketplace)\n- **Comments:** 1\n- **Last Updated:** 2026-10-23T12:19:35Z\n\n#### 8. [Map: seelite v1 — a classic-Elite trade–fight–explore loop in the browser](https://github.com/jcfischer/seelite/issues/1)\n- **Repository:** [jcfischer/seelite](https://github.com/jcfischer/seelite)\n- **Comments:** 2\n- **Last Updated:** 2026-10-23T12:14:58Z\n\n#### 9. [[opt-out check] Quad Graphics, Inc.: confirm the opt-out rout",
-      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-23 12:31 UTC #### 1. [bounty digest 2026-10-23](https://github.com/airdropia/earn-ops/issues/9) - **Repository:** [airdropia/earn-ops](https://github.com/airdropia/earn-ops) - **Comments:** 0 - **Last Updated:** 2026-10-23T1"
-    },
-    {
-      "id": 6005248887,
-      "number": 75,
-      "title": "Claiming Bounty #7 — Blog Publishing System ($200)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/75",
-      "rewardUsd": 200,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T20:50:22Z",
-      "fullBody": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window.\n\nProposed scope:\n- self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows\n- title, slug, excerpt, Markdown body, tags, and SEO metadata\n- safe text-only Markdown preview, search and status filters, and views/reads/shares analytics\n- keyboard-accessible, mobile-first dark/gold UI with no new dependencies\n- README with a host integration checklist\n\nThe public repository is documentation-only and does not include the production app scaffold or package.json. I will submit the component as an isolated integration unit unless maintainers provide a host scaffold or different integration requirements. Please confirm that this scope fits bounty #7 and that the advertised Stripe payout and contributor eligibility are still available.\n\nI have not signed the CLA or claimed completion or payment in this issue; the account holder will complete any required legal and payout onboarding before acceptance.",
-      "bodyPreview": "I would like to claim Bounty #7 — Blog Publishing System ($200) and reserve the 14-day submission window. Proposed scope: - self-contained React/TypeScript integration unit for draft, publish-now, and scheduling workflows - title, slug, excerpt, Markdown body, tags, and SEO meta"
     }
   ],
   "solutions": [
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T18:47:30.880Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T18:47:30.471Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T18:47:30.471Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $52,479 USD."
+    },
+    {
+      "time": "2026-10-24T18:47:28.581Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T18:47:28.579Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T18:12:16.686Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1739,31 +1764,6 @@
     },
     {
       "time": "2026-10-24T09:49:24.996Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T09:49:24.996Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $21,156 USD."
-    },
-    {
-      "time": "2026-10-24T09:49:22.900Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T09:49:22.898Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T09:17:48.650Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T09:17:48.348Z",
       "level": "AUTO_SUBMIT",
       "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
     }
