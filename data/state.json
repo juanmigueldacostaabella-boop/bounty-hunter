@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-24T19:58:42.337Z",
-  "scanCount": 145,
+  "lastScanAt": "2026-10-24T20:16:49.505Z",
+  "scanCount": 146,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 66,
-    "totalBountyPoolUsd": 53929,
+    "totalBountiesDetected": 62,
+    "totalBountyPoolUsd": 53454,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-24T20:16:51.873Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-24T20:16:51.388Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-24T20:16:51.387Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,454 USD."
+    },
+    {
+      "time": "2026-10-24T20:16:49.505Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-24T20:16:49.504Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-24T19:58:45.628Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1741,31 +1766,6 @@
       "time": "2026-10-24T11:34:44.052Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $23,787 USD."
-    },
-    {
-      "time": "2026-10-24T11:34:42.064Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T11:34:42.063Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T11:08:33.589Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a relayhop/sn-monetization-runtime #1327! Recompensa en juego: $2026"
-    },
-    {
-      "time": "2026-10-24T11:08:32.984Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para relayhop/sn-monetization-runtime #1327..."
-    },
-    {
-      "time": "2026-10-24T11:08:32.984Z",
-      "level": "SOLVER",
-      "msg": "Solución IA generada para relayhop/sn-monetization-runtime #1327 ($2026 USD) [Bug Fix / Código]"
     }
   ]
 }
