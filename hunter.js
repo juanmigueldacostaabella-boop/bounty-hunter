@@ -137,8 +137,8 @@ function categorizeBounty(title, body) {
 // Generador Autónomo de Solución y Parche de Código con IA Real (Groq 120B)
 async function generateAutomatedSolution(bounty) {
   const { title, bodyPreview, fullBody, repo, number, rewardUsd, htmlUrl } = bounty;
-  const payout = state.config.payoutAddress || 'github.com/juanmigueldacostaabella-boop';
-  const payoutType = state.config.payoutType || 'GITHUB_REWARD_ACCOUNT';
+  const payout = process.env.PAYOUT_ADDRESS || state.config.payoutAddress || '0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c';
+  const payoutType = process.env.PAYOUT_TYPE || state.config.payoutType || 'USDC_EVM';
   const groqKey = process.env.GROQ_API_KEY || state.config.groqApiKey || '';
 
   let explanation = `Technical analysis and proposed resolution for ${repo} #${number}.`;
@@ -190,8 +190,8 @@ Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
     `### Proposed Code Patch\n\`\`\`\n${proposedCode}\n\`\`\`\n\n` +
     `---\n` +
     `*Bounty Reward:* **$${rewardUsd}**\n` +
-    `*Beneficiary Account:* \`${payout}\` (${payoutType})\n` +
-    `*Contributor:* @juanmigueldacostaabella-boop`;
+    `*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* \`${payout}\`\n` +
+    `*Beneficiary Account:* @juanmigueldacostaabella-boop`;
 
   return {
     id: crypto.randomUUID(),
