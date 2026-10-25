@@ -27,8 +27,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           AUTO_SUBMIT_PR: 'true'
-          PAYOUT_ADDRESS: ${{ secrets.PAYOUT_ADDRESS || 'github.com/juanmigueldacostaabella-boop' }}
-          PAYOUT_TYPE: ${{ secrets.PAYOUT_TYPE || 'GITHUB_REWARD_ACCOUNT' }}
+          PAYOUT_ADDRESS: ${{ secrets.PAYOUT_ADDRESS || '0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c' }}
+          PAYOUT_TYPE: 'USDC_EVM'
         run: node hunter.js --single-tick
 
       - name: Persist Ledger & State
