@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-25T12:26:21.002Z",
-  "scanCount": 180,
+  "lastScanAt": "2026-10-25T13:05:15.520Z",
+  "scanCount": 181,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 68,
-    "totalBountyPoolUsd": 53589,
+    "totalBountyPoolUsd": 54079,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -369,6 +369,19 @@
       "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
     },
     {
+      "id": 6024499041,
+      "number": 15,
+      "title": "superteam digest 2026-10-25",
+      "repo": "airdropia/earn-ops",
+      "htmlUrl": "https://github.com/airdropia/earn-ops/issues/15",
+      "rewardUsd": 500,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-10-25T12:36:43Z",
+      "fullBody": "Automated Superteam Earn digest 2026-10-25T12:36:43.044Z\n\n## agent eligible listings (0)\n- none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY.\n\n## cash listings (10 of 10)\n- 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content for Breakpoint 2026 | travel-boost-for-bp26\n- 40000 USDC | due 2026-10-31 | HUMAN_ONLY | Vaultline Security Audit Grants for Colosseum Projects: Up to 4,000 USDC Each | vaultline-security-audit-grants-for-colosseum-projects-up-to-4000-usdc-each\n- null USDC | due 2026-10-25 | HUMAN_ONLY | Motion Graphics Designer - Kimia Product Launch Film for X | motion-graphics-designer-kimia-product-launch-film-for-x\n- 5000 USDG | due 2026-11-03 | HUMAN_ONLY | Rumbo a Breakpoint 2026: gana una entrada y apoyo para tu viaje | rumbo-a-breakpoint-2026-gana-una-entrada-y-apoyo-para-tu-viaje\n- 2500 USDC | due 2026-11-05 | HUMAN_ONLY | Inside the Block: How Solana Validators Order Transactions | inside-the-block-how-solana-validators-order-transactions\n- 500 USDC | due 2026-11-12 | HUMAN_ONLY | Show us how you use MozaikPay | mozaikpay-video-chile-colombia\n- 500 USDG | due 2026-11-12 | HUMAN_ONLY | Panta x NectarFi Trading Competition Bounty | panta-x-nectarfi-trading-competition-bounty\n- 500 USDC | due 2026-11-14 | HUMAN_ONLY | Write a thread on $CHIMP Fair Launch - Part 1 | chimp-on-metaplex\n- 500 USDC | due 2026-11-24 | HUMAN_ONLY | Create Content on Premier League Predictions with worm 🪱⚽ | create-content-on-premier-league-predictions-with-worm\n- 5000 USDC | due 2026-12-14 | HUMAN_ONLY | MultiHopper Build & Route Challenge | Up to $50,000 + Revenue Share | multihopper-build-and-route-challenge-up-to-dollar50000-revenue-share-1\n",
+      "bodyPreview": "Automated Superteam Earn digest 2026-10-25T12:36:43.044Z ## agent eligible listings (0) - none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY. ## cash listings (10 of 10) - 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content "
+    },
+    {
       "id": 6001145823,
       "number": 55,
       "title": "Claiming Bounty #30 - Restaurant POS Interface ($400)",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-24T00:46:38Z",
       "fullBody": "Claiming **Bounty #41** (Bounty #41: Video Tutorial Series ($300)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/41-video-tutorial-series/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
       "bodyPreview": "Claiming **Bounty #41** (Bounty #41: Video Tutorial Series ($300)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/41-video-tutorial-series/` following the Agent Midas Black/Gold design system and 6-layer security"
-    },
-    {
-      "id": 5993658349,
-      "number": 1259,
-      "title": "[wildcard] Flip GUARANTEES Row 12 from 'No claim' to Guaranteed: Affine Cancellation Trees (ctx.Scope[D]) with Must-Drain Channel Cleanup Proofs",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "htmlUrl": "https://github.com/limitlessprojects/Go-Hybrid/issues/1259",
-      "rewardUsd": 250,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T07:18:56Z",
-      "fullBody": "### The idea, in a paragraph\n\nToday, `GUARANTEES.md` Row 12 explicitly abdicates on `context.Context` cancellation trees (*\"Not modeled; the value itself is classified like any other at a check-site | No claim about cancellation semantics — the claim is about value sharing, not protocol liveness\"*), and on live `HEAD` (`7d63d5fc`), `compiler/crates/hy-check/src/sendability.rs` (`lines 117-125`) and `foreign.rs` (`lines 22-38`) actively prevent `.hy` tasks from using Go's `context` package in safe code: an unimported `context.Context` triggers `HYB-E3005` (fail-closed `TypeShape::Unknown`, Rule FC), an imported `context.Context` triggers `HYB-E3001` (`TypeShape::ForeignOpaque(\"context.Context\")` cannot cross `task` boundaries), and `context.CancelFunc` is rejected as `TypeShape::Closure`. We propose replacing untyped `context.Context` with **Affine Cancellation Trees (`ctx.Scope[D]` + affine `ctx.CancelCap[D]`)**: a zero-allocation, `O4` Class-2 sendable cancellation token `ctx.Scope[D]` paired with an `O5`/`O13` linear capability `CancelCap[D]` and a single-pass statement-walk check in `hy-check` (`walk.rs` + `freeze.rs`) that statically proves three properties across the checked subset: **(1) zero leaked context timers/nodes (`HYB-E5001`)**, **(2) zero uncancellable blocking channel operations inside `ctx.Scope[D]` tasks (`HYB-E5002`)**, and **(3) 100% linear `OwnHandle` (`flate2.writer`, `serde_json.value`) settlement on every `<-ctx.done()` cancellation path (`HYB-E5003`)**.\n\n### Which assumption it breaks\n\n- **Primary assumption killed:** `GUARANTEES.md` Row 12 (*\"`context.Context` cancellation trees: Not modeled ... No claim about cancellation semantics — the claim is about value sharing, not protocol liveness\"*).\n- **Secondary assumption killed:** That structured cancellation liveness and linear FFI resource cleanup (`GUARANTEES.md` Row 19 Rust boundary handle tables + Row 6/7 `O5`/`O13` consumption in `compiler/crates/hy-check/src/freeze.rs`) require whole-program temporal model checking. In fact, because Hybrid already flattens every function body into pre-order statement indices (`walk.rs::FlatInfo`) and tracks transitive alias components (`freeze.rs::storage_component`), cancellation-tree safety reduces to a strictly local, compositional 3-rule check over `ctx.Scope[D]` parameters, `SelectArmKind` arms, and `TypeShape::OwnHandle` liveness.\n- **Sacred cow killed in Go's `context.Context` design:** Kills `context.WithValue(ctx, any, any)` (which in",
-      "bodyPreview": "### The idea, in a paragraph Today, `GUARANTEES.md` Row 12 explicitly abdicates on `context.Context` cancellation trees (*\"Not modeled; the value itself is classified like any other at a check-site | No claim about cancellation semantics — the claim is about value sharing, not p"
     }
   ],
   "solutions": [
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-25T13:05:17.790Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-25T13:05:17.385Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-25T13:05:17.384Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $54,079 USD."
+    },
+    {
+      "time": "2026-10-25T13:05:15.520Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-25T13:05:15.519Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-25T12:26:23.062Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1739,31 +1764,6 @@
     },
     {
       "time": "2026-10-25T03:12:52.651Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-25T02:46:33.298Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-25T02:46:33.008Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-25T02:46:33.007Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,519 USD."
-    },
-    {
-      "time": "2026-10-25T02:46:31.138Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-25T02:46:31.136Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
