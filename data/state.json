@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-25T06:12:33.429Z",
-  "scanCount": 168,
+  "lastScanAt": "2026-10-25T06:57:14.635Z",
+  "scanCount": 169,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 66,
-    "totalBountyPoolUsd": 53599,
+    "totalBountyPoolUsd": 53579,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-25T06:57:16.896Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-25T06:57:16.635Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-25T06:57:16.634Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,579 USD."
+    },
+    {
+      "time": "2026-10-25T06:57:14.636Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-25T06:57:14.634Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-25T06:12:35.735Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1739,31 +1764,6 @@
     },
     {
       "time": "2026-10-24T21:59:26.997Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-24T21:30:30.593Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-24T21:30:30.284Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-24T21:30:30.284Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,604 USD."
-    },
-    {
-      "time": "2026-10-24T21:30:28.085Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-24T21:30:28.083Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
