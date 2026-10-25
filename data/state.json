@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-25T16:01:24.938Z",
-  "scanCount": 187,
+  "lastScanAt": "2026-10-25T16:31:58.608Z",
+  "scanCount": 188,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 53829,
-    "solutionsGenerated": 31,
-    "potentialEarningsUsd": 41917,
-    "prsSubmitted": 29
+    "totalBountiesDetected": 66,
+    "totalBountyPoolUsd": 55855,
+    "solutionsGenerated": 32,
+    "potentialEarningsUsd": 43943,
+    "prsSubmitted": 30
   },
   "activeBounties": [
     {
@@ -81,6 +81,19 @@
       "createdAt": "2026-10-24T13:32:39Z",
       "fullBody": "Demand-side radar 高優先訊號:\n\n```\n5\tsn/bitcoin\t1.7\t$60\tOPEN_NEED\thttps://stacker.news/items/1601368\tBTC vote: $60K or $100K? Which Comes First?\n5\tgithub\t0.3\t$100\tOPEN_ISSUE,LOW_COMP\thttps://github.com/alfrexo95/bounty-bot/issues/28\t💰 Bounty Seguro ($$100): 💰 Bounty Seguro ($$100): [Bounty] 💰 Bounty Seguro \n5\tgithub\t2.7\t100 sats\tOPEN_ISSUE,LOW_COMP\thttps://github.com/relayhop/sn-monetization-runtime/issues/1327\t[radar] SN open bounty 2026-10-24T10:49\n```",
       "bodyPreview": "Demand-side radar 高優先訊號: ``` 5 sn/bitcoin 1.7 $60 OPEN_NEED https://stacker.news/items/1601368 BTC vote: $60K or $100K? Which Comes First? 5 github 0.3 $100 OPEN_ISSUE,LOW_COMP https://github.com/alfrexo95/bounty-bot/issues/28 💰 Bounty Seguro ($$100): 💰 Bounty Seguro ($$100): "
+    },
+    {
+      "id": 6026417530,
+      "number": 1329,
+      "title": "[radar] SN open bounty 2026-10-25T16:02",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1329",
+      "rewardUsd": 2026,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-25T16:02:35Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t266\t10000\t5\t3.9\t9274\t28889\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1601866 Stacker_Stocks 2 266 10000 5 3.9 9274 28889 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats! ```"
     },
     {
       "id": 5997098370,
@@ -523,22 +536,25 @@
       "createdAt": "2026-10-23T16:43:05Z",
       "fullBody": "Claiming **Bounty #8 — Social Media Scheduler** ($300).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
       "bodyPreview": "Claiming **Bounty #8 — Social Media Scheduler** ($300). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`"
-    },
-    {
-      "id": 6001800748,
-      "number": 65,
-      "title": "Claiming Bounty #3 - Email Campaign Builder ($300)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/65",
-      "rewardUsd": 300,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-23T16:43:00Z",
-      "fullBody": "Claiming **Bounty #3 — Email Campaign Builder** ($300).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
-      "bodyPreview": "Claiming **Bounty #3 — Email Campaign Builder** ($300). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`"
     }
   ],
   "solutions": [
+    {
+      "id": "10e13438-f4d0-4fa2-ae67-d44ab61ceaca",
+      "bountyId": 6026417530,
+      "repo": "relayhop/sn-monetization-runtime",
+      "issueNumber": 1329,
+      "issueUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1329",
+      "rewardUsd": 2026,
+      "prTitle": "fix: resolve issue #1329 - [radar] SN open bounty 2026-10-25T16:02",
+      "prBody": "## Proposed Solution for Issue #1329\n\n### Root Cause Analysis & Fix\nThe parser only accepted a predefined set of tags and threw an error when encountering the newly introduced OPEN_BOUNTY tag, causing the bounty entry to be dropped. Adding OPEN_BOUNTY to the allowed tag list and updating the tag‑matching logic resolves the issue.\n\n### Proposed Code Patch\n```\n--- a/src/event_parser.rs\n+++ b/src/event_parser.rs\n@@\n-    const VALID_TAGS: &[&str] = &[\"LOW_COMP\", \"SIGNAL\", \"SELF_POST_OPP\", \"OTHER\"]; // existing tags\n+    // Added OPEN_BOUNTY to support the new bounty detection format\n+    const VALID_TAGS: &[&str] = &[\"LOW_COMP\", \"SIGNAL\", \"SELF_POST_OPP\", \"OTHER\", \"OPEN_BOUNTY\"]; // existing tags\n*** End Patch\n```\n\n---\n*Bounty Reward:* **$2026**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
+      "proposedCode": "--- a/src/event_parser.rs\n+++ b/src/event_parser.rs\n@@\n-    const VALID_TAGS: &[&str] = &[\"LOW_COMP\", \"SIGNAL\", \"SELF_POST_OPP\", \"OTHER\"]; // existing tags\n+    // Added OPEN_BOUNTY to support the new bounty detection format\n+    const VALID_TAGS: &[&str] = &[\"LOW_COMP\", \"SIGNAL\", \"SELF_POST_OPP\", \"OTHER\", \"OPEN_BOUNTY\"]; // existing tags\n*** End Patch",
+      "explanation": "The parser only accepted a predefined set of tags and threw an error when encountering the newly introduced OPEN_BOUNTY tag, causing the bounty entry to be dropped. Adding OPEN_BOUNTY to the allowed tag list and updating the tag‑matching logic resolves the issue.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-25T16:32:02.223Z",
+      "submittedAt": "2026-10-25T16:32:02.829Z",
+      "commentUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1329#issuecomment-6400210668"
+    },
     {
       "id": "b45007d6-04e0-4250-b03d-591107c912a9",
       "bountyId": 6014147462,
@@ -1034,6 +1050,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "1dbc85db-8097-4fbb-9b3b-7ba248f19e96",
+      "repo": "relayhop/sn-monetization-runtime",
+      "issueNumber": 1329,
+      "rewardUsd": 2026,
+      "commentUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1329#issuecomment-6400210668",
+      "submittedAt": "2026-10-25T16:32:02.829Z"
+    },
+    {
       "id": "7f4312cb-ece4-4224-ba8e-bdf2f473a212",
       "repo": "fum-lab/fum",
       "issueNumber": 362,
@@ -1267,6 +1291,36 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-25T16:32:02.831Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a relayhop/sn-monetization-runtime #1329! Recompensa en juego: $2026"
+    },
+    {
+      "time": "2026-10-25T16:32:02.223Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para relayhop/sn-monetization-runtime #1329..."
+    },
+    {
+      "time": "2026-10-25T16:32:02.223Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para relayhop/sn-monetization-runtime #1329 ($2026 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-25T16:32:00.600Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $55,855 USD."
+    },
+    {
+      "time": "2026-10-25T16:31:58.608Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-25T16:31:58.607Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-25T16:01:27.643Z",
       "level": "ERROR",
@@ -1736,36 +1790,6 @@
       "time": "2026-10-25T06:57:14.636Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-25T06:57:14.634Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-25T06:12:35.735Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-25T06:12:35.426Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-25T06:12:35.426Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,599 USD."
-    },
-    {
-      "time": "2026-10-25T06:12:33.429Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-25T06:12:33.428Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
