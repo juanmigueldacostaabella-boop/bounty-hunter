@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-25T22:05:45.006Z",
-  "scanCount": 201,
+  "lastScanAt": "2026-10-25T22:27:10.278Z",
+  "scanCount": 202,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -1364,6 +1364,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-25T22:27:12.653Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-25T22:27:12.256Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-25T22:27:12.256Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $60,818 USD."
+    },
+    {
+      "time": "2026-10-25T22:27:10.278Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-25T22:27:10.276Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-25T22:05:47.134Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1835,31 +1860,6 @@
     },
     {
       "time": "2026-10-25T14:01:20.228Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-25T14:01:19.709Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-25T14:01:19.709Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,839 USD."
-    },
-    {
-      "time": "2026-10-25T14:01:17.776Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-25T14:01:17.775Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-25T13:33:24.273Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
