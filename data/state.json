@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-25T14:01:17.776Z",
-  "scanCount": 183,
+  "lastScanAt": "2026-10-25T14:30:21.885Z",
+  "scanCount": 184,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 68,
-    "totalBountyPoolUsd": 53839,
+    "totalBountyPoolUsd": 54229,
     "solutionsGenerated": 31,
     "potentialEarningsUsd": 41917,
     "prsSubmitted": 29
@@ -434,6 +434,19 @@
       "bodyPreview": "Claiming **Bounty #15 — Team Genealogy Tree** ($400). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0"
     },
     {
+      "id": 6025346910,
+      "number": 475,
+      "title": "[Parked] Automated Fee Collection & Tutor/Centre Payout Rails (FPS → Stripe Connect → Hold-until-Confirm)",
+      "repo": "keyframesfound/matchmaxhk",
+      "htmlUrl": "https://github.com/keyframesfound/matchmaxhk/issues/475",
+      "rewardUsd": 400,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-25T14:08:25Z",
+      "fullBody": "# [Parked] Automated Fee Collection & Tutor/Centre Payout Rails (FPS → Stripe Connect → Hold-until-Confirm)\n\n> **Payer lock:** Issues lock **tutor pays** 1.5-lesson admin (#464). Live ToS/guide may still say parent pays until #444 ships. Build against tutor-pays. #475 Phase1 Collect Tuition (parent→tutor) OK before #444; automated admin collection waits on #444.\n\n> **Status: On Hold / Later — NOT V1 Urgent.**  \n> Do **not** pull into the urgent set. Desk matching + `#459` / `#461A` / `#466` / `#467` ship first.  \n> **Does not change** the tutor-pays **1.5-lesson** admin lock or **0% after L2** economics (#464).\n\n## CEO locks (2026-10-25 — ADOPT; do not drift)\n\n| # | Lock |\n| --- | --- |\n| 1 | **Phase 0 (now):** Manual FPS for MatchMax admin fee + notes-shop manual cashier. Keep shipping reminders / mark-paid; do **not** rebuild payment rails yet. |\n| 2 | **Phase 1 (after `#459` + `#461A`):** **Collect Tuition** tool on tutor `/dashboard#earnings` (centres under `/business/`). Parent pays tutor via **FPS QR** and/or **Stripe Payment Link**. **MatchMax does not touch the money.** Completing payment updates the **Unpaid tuition** bucket only. |\n| 3 | **Phase 2 (later):** **Stripe Connect** — tutors/centres as Connected Accounts; MatchMax may take `application_fee` only for admin L1/L2 where applicable; **tutor/centre is the payee**. Hong Kong supported — prefer Connect over inventing a MatchMax bank escrow. |\n| 4 | **Phase 3 (later still):** **Delayed payout / hold-until-confirmed** (Stripe Connect delayed payout or similar) — **not** MatchMax corporate bank escrow. **HK solicitor + Cap.57 review REQUIRED** before any hold on tutoring tuition. |\n| 5 | **NEVER** hold client tuition in MatchMax’s own bank account early. |\n| 6 | **NEVER** become Merchant of Record (MoR) for ongoing L3+ tuition without counsel. |\n| 7 | Do **not** change 1.5 / short-case 20% / **0% after L2** economics just to enable payments. |\n| 8 | **Cap.57:** MatchMax = matching + **optional** payment tools. Tutors remain independent contractors. Not an employment agency; no EA licence. |\n| 9 | Centres use the **same** collection flow under `/business/` (org payout account). |\n| 10 | **Hours ledger ≠ payment status.** `#459` VerifiedHoursLedger writes from lesson complete / confirm; unpaid/paid tuition is a separate money state on `#461`. |\n\n---\n\n## Critical conflict — document before any public automation\n\n| Source | Who pays MatchMax **admin** fee (1.5) today / as locked |\n| --- | --- |\n| **",
+      "bodyPreview": "# [Parked] Automated Fee Collection & Tutor/Centre Payout Rails (FPS → Stripe Connect → Hold-until-Confirm) > **Payer lock:** Issues lock **tutor pays** 1.5-lesson admin (#464). Live ToS/guide may still say parent pays until #444 ships. Build against tutor-pays. #475 Phase1 Coll"
+    },
+    {
       "id": 6001799536,
       "number": 63,
       "title": "Claiming Bounty #31 - Real Estate Listing Portal ($350)",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-23T16:43:00Z",
       "fullBody": "Claiming **Bounty #3 — Email Campaign Builder** ($300).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
       "bodyPreview": "Claiming **Bounty #3 — Email Campaign Builder** ($300). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`"
-    },
-    {
-      "id": 6007648241,
-      "number": 77,
-      "title": "Claiming Bounty #41 - Video Tutorial Series ($300)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/77",
-      "rewardUsd": 300,
-      "category": "Seguridad Web3",
-      "difficulty": "Avanzado",
-      "createdAt": "2026-10-24T00:46:38Z",
-      "fullBody": "Claiming **Bounty #41** (Bounty #41: Video Tutorial Series ($300)) per `BOUNTIES.md`.\n\n- **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/41-video-tutorial-series/` following the Agent Midas Black/Gold design system and 6-layer security standards.\n- **Payout**: PayPal (`xaductrung@gmail.com`) / Bank Wire.",
-      "bodyPreview": "Claiming **Bounty #41** (Bounty #41: Video Tutorial Series ($300)) per `BOUNTIES.md`. - **Implementation**: Self-contained React + TypeScript + Tailwind CSS package under `bounties/41-video-tutorial-series/` following the Agent Midas Black/Gold design system and 6-layer security"
     }
   ],
   "solutions": [
@@ -1268,6 +1268,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-25T14:30:24.514Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-25T14:30:24.044Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-25T14:30:24.044Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $54,229 USD."
+    },
+    {
+      "time": "2026-10-25T14:30:21.886Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-25T14:30:21.884Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-25T14:01:20.228Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1739,31 +1764,6 @@
     },
     {
       "time": "2026-10-25T04:51:23.849Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-25T04:17:22.211Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-25T04:17:21.888Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-25T04:17:21.888Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $53,589 USD."
-    },
-    {
-      "time": "2026-10-25T04:17:20.014Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-25T04:17:20.012Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
