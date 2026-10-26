@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-26T18:21:57.758Z",
-  "scanCount": 230,
+  "lastScanAt": "2026-10-26T19:13:48.905Z",
+  "scanCount": 231,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 69,
-    "totalBountyPoolUsd": 69388,
+    "totalBountiesDetected": 70,
+    "totalBountyPoolUsd": 71414,
     "solutionsGenerated": 36,
     "potentialEarningsUsd": 52047,
     "prsSubmitted": 34
@@ -198,6 +198,19 @@
       "createdAt": "2026-10-26T12:48:24Z",
       "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t22\t24.6\t9274\t28921\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```",
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1601866 Stacker_Stocks 2 319 10000 22 24.6 9274 28921 recent@Stacker_Stocks OPEN_BOUNTY Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats! ```"
+    },
+    {
+      "id": 6046438098,
+      "number": 1340,
+      "title": "[radar] SN open bounty 2026-10-26T19:11",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1340",
+      "rewardUsd": 2026,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-26T19:11:09Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t5.0\t9274\t28931\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n1601866\tStacker_Stocks\t2\t319\t10000\t23\t31.0\t9274\t28931\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 5.0 9274 28931 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP,SIGNAL Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 1601866 Stacker_Stocks 2 319 10000 23 31.0 9274 28931 recent@Stack"
     },
     {
       "id": 5997098370,
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-25T21:25:34Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-25 21:25 UTC\n\n#### 1. [Railway 赏金：有 2 条值得抢](https://github.com/HCTDIP/corps-jobs/issues/123)\n- **Repository:** [HCTDIP/corps-jobs](https://github.com/HCTDIP/corps-jobs)\n- **Comments:** 0\n- **Last Updated:** 2026-10-25T21:15:00Z\n\n#### 2. [Claiming Bounty #34 - Healthcare Appointment System ($500)](https://github.com/bujiproject-art/agentmidasopendevteam/issues/51)\n- **Repository:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T21:00:46Z\n\n#### 3. [Claiming Bounty #18 - Revenue Dashboard ($500)](https://github.com/bujiproject-art/agentmidasopendevteam/issues/49)\n- **Repository:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam)\n- **Comments:** 0\n- **Last Updated:** 2026-10-25T20:59:18Z\n\n#### 4. [Claiming Bounty #12 - Affiliate Dashboard Pro ($500)](https://github.com/bujiproject-art/agentmidasopendevteam/issues/47)\n- **Repository:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam)\n- **Comments:** 0\n- **Last Updated:** 2026-10-25T20:57:49Z\n\n#### 5. [5.3.0/5.4.0 - OTT in header](https://github.com/WietseWind/Xaman-App/issues/315)\n- **Repository:** [WietseWind/Xaman-App](https://github.com/WietseWind/Xaman-App)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T20:57:36Z\n\n#### 6. [bounty-watch 2026-10-25: 0 new, 0 resumed, 2 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/173)\n- **Repository:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Comments:** 0\n- **Last Updated:** 2026-10-25T20:55:43Z\n\n#### 7. [Farming](https://github.com/OpenRune/OpenRune-Server/issues/61)\n- **Repository:** [OpenRune/OpenRune-Server](https://github.com/OpenRune/OpenRune-Server)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T20:55:59Z\n\n",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-25 21:25 UTC #### 1. [Railway 赏金：有 2 条值得抢](https://github.com/HCTDIP/corps-jobs/issues/123) - **Repository:** [HCTDIP/corps-jobs](https://github.com/HCTDIP/corps-jobs) - **Comments:** 0 - **Last Updated:** 2026-10-25T21:15:0"
-    },
-    {
-      "id": 6033374659,
-      "number": 20,
-      "title": "🎯 Bounty Alert: 7 New Opportunityies found",
-      "repo": "Rohank143/BountyScout",
-      "htmlUrl": "https://github.com/Rohank143/BountyScout/issues/20",
-      "rewardUsd": 500,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-26T04:31:07Z",
-      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-26 04:31 UTC\n\n#### 1. [fix(consensus): prevent duplicate Fury assignments from double-weighting votes](https://github.com/4444J99/peer-audited--behavioral-blockchain/issues/1035)\n- **Repository:** [4444J99/peer-audited--behavioral-blockchain](https://github.com/4444J99/peer-audited--behavioral-blockchain)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:27:49Z\n\n#### 2. [Neutral camps and capturable sites: give the map something worth fighting over](https://github.com/mcali-dreamin/uptime-wars/issues/160)\n- **Repository:** [mcali-dreamin/uptime-wars](https://github.com/mcali-dreamin/uptime-wars)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:19:30Z\n\n#### 3. [Feature proposal: show GenAI message content sent as OTel events (logs and span events)](https://github.com/neatlogs/neatroots/issues/248)\n- **Repository:** [neatlogs/neatroots](https://github.com/neatlogs/neatroots)\n- **Comments:** 2\n- **Last Updated:** 2026-10-26T04:19:01Z\n\n#### 4. [🌐 AI 官方内容追踪报告 2026-09-26](https://github.com/96loveslife/big_model_radar/issues/550)\n- **Repository:** [96loveslife/big_model_radar](https://github.com/96loveslife/big_model_radar)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:15:37Z\n\n#### 5. [💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver](https://github.com/alfrexo95/bounty-bot/issues/45)\n- **Repository:** [alfrexo95/bounty-bot](https://github.com/alfrexo95/bounty-bot)\n- **Comments:** 1\n- **Last Updated:** 2026-10-26T04:15:16Z\n\n#### 6. [[AGENTE] Checklist submission bounty Mermail ($500 USDC)](https://github.com/perria080925-bot/agente-bountie/issues/1)\n- **Repository:** [perria080925-bot/agente-bountie](https://github.com/perria080925-bot/agente-bountie)\n- **Comments:** 3\n- **Last Updated:** 2026-10-26T04:09:07Z\n\n#### 7. [[PILOT / OPT-IN] Gangkor isolated security & interoperability lab with Wasim](https://github.com/MyZubster-Ecosystem/myzubster/issues/1659)\n- **Repository:** [MyZubster-Ecosystem/myzubster](https://github.com/MyZubster-Ecosystem/myzubster)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:05:39Z\n\n",
-      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-26 04:31 UTC #### 1. [fix(consensus): prevent duplicate Fury assignments from double-weighting votes](https://github.com/4444J99/peer-audited--behavioral-blockchain/issues/1035) - **Repository:** [4444J99/peer-audited--behav"
     }
   ],
   "solutions": [
@@ -1388,6 +1388,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-26T19:13:51.334Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-26T19:13:51.013Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-26T19:13:51.013Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $71,414 USD."
+    },
+    {
+      "time": "2026-10-26T19:13:48.905Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-26T19:13:48.903Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-26T18:22:00.499Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1859,31 +1884,6 @@
     },
     {
       "time": "2026-10-26T03:36:16.467Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-26T03:02:32.833Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-26T03:02:32.457Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-26T03:02:32.456Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $63,179 USD."
-    },
-    {
-      "time": "2026-10-26T03:02:30.445Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-26T03:02:30.444Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
