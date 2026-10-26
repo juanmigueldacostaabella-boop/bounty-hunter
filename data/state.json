@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-26T11:44:18.604Z",
-  "scanCount": 224,
+  "lastScanAt": "2026-10-26T14:06:48.940Z",
+  "scanCount": 225,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 68,
-    "totalBountyPoolUsd": 66209,
+    "totalBountiesDetected": 72,
+    "totalBountyPoolUsd": 70238,
     "solutionsGenerated": 36,
     "potentialEarningsUsd": 52047,
     "prsSubmitted": 34
@@ -172,6 +172,32 @@
       "createdAt": "2026-10-26T08:35:02Z",
       "fullBody": "Timezone radar — 亞洲日間 first-mover 機會:\n\n```\nFRESH_LOW_COMP\tgithub\t2.6\t0\t0\thttps://github.com/relayhop/sn-monetization-runtime/issues/1337\t[radar] SN open bounty 2026-10-26T06:01\n```",
       "bodyPreview": "Timezone radar — 亞洲日間 first-mover 機會: ``` FRESH_LOW_COMP github 2.6 0 0 https://github.com/relayhop/sn-monetization-runtime/issues/1337 [radar] SN open bounty 2026-10-26T06:01 ```"
+    },
+    {
+      "id": 6039972215,
+      "number": 1339,
+      "title": "[radar] SN open bounty 2026-10-26T12:48",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1339",
+      "rewardUsd": 2026,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-26T12:48:58Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t22\t24.7\t9274\t28921\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1601866 Stacker_Stocks 2 319 10000 22 24.7 9274 28921 recent@Stacker_Stocks OPEN_BOUNTY Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats! ```"
+    },
+    {
+      "id": 6039962974,
+      "number": 1338,
+      "title": "[radar] SN open bounty 2026-10-26T12:48",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1338",
+      "rewardUsd": 2026,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-26T12:48:24Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t22\t24.6\t9274\t28921\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1601866 Stacker_Stocks 2 319 10000 22 24.6 9274 28921 recent@Stacker_Stocks OPEN_BOUNTY Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats! ```"
     },
     {
       "id": 5997098370,
@@ -510,32 +536,6 @@
       "createdAt": "2026-10-26T04:31:07Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-26 04:31 UTC\n\n#### 1. [fix(consensus): prevent duplicate Fury assignments from double-weighting votes](https://github.com/4444J99/peer-audited--behavioral-blockchain/issues/1035)\n- **Repository:** [4444J99/peer-audited--behavioral-blockchain](https://github.com/4444J99/peer-audited--behavioral-blockchain)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:27:49Z\n\n#### 2. [Neutral camps and capturable sites: give the map something worth fighting over](https://github.com/mcali-dreamin/uptime-wars/issues/160)\n- **Repository:** [mcali-dreamin/uptime-wars](https://github.com/mcali-dreamin/uptime-wars)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:19:30Z\n\n#### 3. [Feature proposal: show GenAI message content sent as OTel events (logs and span events)](https://github.com/neatlogs/neatroots/issues/248)\n- **Repository:** [neatlogs/neatroots](https://github.com/neatlogs/neatroots)\n- **Comments:** 2\n- **Last Updated:** 2026-10-26T04:19:01Z\n\n#### 4. [🌐 AI 官方内容追踪报告 2026-09-26](https://github.com/96loveslife/big_model_radar/issues/550)\n- **Repository:** [96loveslife/big_model_radar](https://github.com/96loveslife/big_model_radar)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:15:37Z\n\n#### 5. [💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver](https://github.com/alfrexo95/bounty-bot/issues/45)\n- **Repository:** [alfrexo95/bounty-bot](https://github.com/alfrexo95/bounty-bot)\n- **Comments:** 1\n- **Last Updated:** 2026-10-26T04:15:16Z\n\n#### 6. [[AGENTE] Checklist submission bounty Mermail ($500 USDC)](https://github.com/perria080925-bot/agente-bountie/issues/1)\n- **Repository:** [perria080925-bot/agente-bountie](https://github.com/perria080925-bot/agente-bountie)\n- **Comments:** 3\n- **Last Updated:** 2026-10-26T04:09:07Z\n\n#### 7. [[PILOT / OPT-IN] Gangkor isolated security & interoperability lab with Wasim](https://github.com/MyZubster-Ecosystem/myzubster/issues/1659)\n- **Repository:** [MyZubster-Ecosystem/myzubster](https://github.com/MyZubster-Ecosystem/myzubster)\n- **Comments:** 0\n- **Last Updated:** 2026-10-26T04:05:39Z\n\n",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-26 04:31 UTC #### 1. [fix(consensus): prevent duplicate Fury assignments from double-weighting votes](https://github.com/4444J99/peer-audited--behavioral-blockchain/issues/1035) - **Repository:** [4444J99/peer-audited--behav"
-    },
-    {
-      "id": 6001145823,
-      "number": 55,
-      "title": "Claiming Bounty #30 - Restaurant POS Interface ($400)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/55",
-      "rewardUsd": 400,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-23T16:01:21Z",
-      "fullBody": "Claiming **Bounty #30 — Restaurant POS Interface** ($400).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
-      "bodyPreview": "Claiming **Bounty #30 — Restaurant POS Interface** ($400). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System"
-    },
-    {
-      "id": 6001144572,
-      "number": 53,
-      "title": "Claiming Bounty #33 - Law Firm Case Manager ($400)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/53",
-      "rewardUsd": 400,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-23T16:01:16Z",
-      "fullBody": "Claiming **Bounty #33 — Law Firm Case Manager** ($400).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
-      "bodyPreview": "Claiming **Bounty #33 — Law Firm Case Manager** ($400). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`"
     }
   ],
   "solutions": [
@@ -1388,6 +1388,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-26T14:06:51.857Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-26T14:06:51.438Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-26T14:06:51.438Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $70,238 USD."
+    },
+    {
+      "time": "2026-10-26T14:06:48.940Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-26T14:06:48.939Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-26T11:44:21.433Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1859,31 +1884,6 @@
     },
     {
       "time": "2026-10-25T23:55:11.107Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-25T23:55:11.105Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-25T23:30:09.617Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-25T23:30:09.339Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-25T23:30:09.339Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $61,268 USD."
-    },
-    {
-      "time": "2026-10-25T23:30:07.692Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
