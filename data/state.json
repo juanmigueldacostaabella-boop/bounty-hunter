@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-27T04:30:21.967Z",
-  "scanCount": 248,
+  "lastScanAt": "2026-10-27T05:10:12.362Z",
+  "scanCount": 249,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 72,
-    "totalBountyPoolUsd": 77267,
+    "totalBountyPoolUsd": 79144,
     "solutionsGenerated": 36,
     "potentialEarningsUsd": 52047,
     "prsSubmitted": 34
@@ -263,6 +263,19 @@
       "createdAt": "2026-10-27T01:54:05Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-27 01:54 UTC\n\n#### 1. [Bug bounty follow-up: lost connection targets, wrong-PC vow rewards, Chronicle identity, and stale recaps](https://github.com/jamesrmedford-alt/starforged-companion/issues/301)\n- **Repository:** [jamesrmedford-alt/starforged-companion](https://github.com/jamesrmedford-alt/starforged-companion)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:46:52Z\n\n#### 2. [[intake 输入][缺陷报告] 测评页面 inline_md 将行内代码中的 ** 当粗体，改写代码原文](https://github.com/FuRongJun-1999/dsh-bounty/issues/1833)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:33:05Z\n\n#### 3. [[radar] SN open bounty 2026-10-26T23:46](https://github.com/relayhop/sn-monetization-runtime/issues/1341)\n- **Repository:** [relayhop/sn-monetization-runtime](https://github.com/relayhop/sn-monetization-runtime)\n- **Comments:** 3\n- **Last Updated:** 2026-10-27T01:31:12Z\n\n#### 4. [showcase ability targeting area better [bounty: 16 XTR]](https://github.com/FreezingMoon/AncientBeast/issues/1772)\n- **Repository:** [FreezingMoon/AncientBeast](https://github.com/FreezingMoon/AncientBeast)\n- **Comments:** 5\n- **Last Updated:** 2026-10-27T01:22:34Z\n\n#### 5. [🎯 Bounty Alert: 16 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1677)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:16:35Z\n\n#### 6. [🎯 Bounty Alert: 19 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1332)\n- **Repository:** [freedom-winds/BountyScout](https://github.com/freedom-winds/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:07:54Z\n\n#### 7. [Node page cosmetic updates + widgets](https://github.com/getAlby/hub/issues/1963)\n- **Repository:** [getAlby/hub](https://github.com/getAlby/hub)\n- **Comments:** 2\n- **Last Updated:** 2026-10-27T00:59:59Z\n\n",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-27 01:54 UTC #### 1. [Bug bounty follow-up: lost connection targets, wrong-PC vow rewards, Chronicle identity, and stale recaps](https://github.com/jamesrmedford-alt/starforged-companion/issues/301) - **Repository:** [jamesr"
+    },
+    {
+      "id": 6053098118,
+      "number": 1342,
+      "title": "[radar] SN open bounty 2026-10-27T04:52",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1342",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-27T04:52:16Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t14.6\t9274\t28952\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 14.6 9274 28952 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 ```"
     },
     {
       "id": 5997098370,
@@ -522,19 +535,6 @@
       "difficulty": "Fácil",
       "createdAt": "2026-10-24T18:50:43Z",
       "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\nThe hyb-default checks in `tools/check-versions.sh` search the entire `compiler/crates/hyb/src/main.rs` for a quoted version. They do not inspect the fallback arm of the named constant. In a temporary copy of the real input files, change `PINNED_GO`'s `None` arm from `go1.26.9` to `go1.26.8`, then append `// Previous pin: \"go1.26.9\"`. The guard still exits 0, says the default matches, and prints `versions: CONSISTENT`. The same happens for stale `PINNED_RUST` with an unrelated `\"1.99.0\"` comment. No actual drift in current main or runtime bypass is claimed: the defect is a false certification under this explicit source-edit condition.\n\nThe patch scopes the check to the existing named constant's match block and matches its exact `None` arm. It deliberately fails closed if that declaration format changes, prompting a guard update. Two tests run the real shell guard against copied files. Original: **15 pass, 2 fail**; patched: **17 tests pass**, including existing literal-version, historical PLAN, probe-status and no-toolchain controls. `bash -n` and `git diff --check` pass.\n\nDuplicate review: PR #122 fixed regex/substring boundaries and PLAN history; its hyb check remains a whole-file quoted-literal grep. PR #1066 concerns CLI flags and malformed source-of-truth pins. This report addresses constant identity rather than those behaviors. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `pins.patch`:\n```sh\ngit apply --check pins.patch\ngit apply pins.patch\npython3 -m unittest discover -s tools -p test_check_versions.py -v\nbash -n tools/check-versions.sh\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualific",
-      "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
-    },
-    {
-      "id": 6016398388,
-      "number": 1595,
-      "title": "[tooling] Example acceptance runner reports ALL PASS for an unsupported program (tested patch)",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "htmlUrl": "https://github.com/limitlessprojects/Go-Hybrid/issues/1595",
-      "rewardUsd": 500,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T18:50:23Z",
-      "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\nWhen a requested directory has `program.hy` and the build exits 0, but the directory is outside the ten hardcoded acceptance cases, `tools/run_examples.sh` prints `SKIP` and then exits 0 with `examples: ALL PASS ()`. No runtime-output oracle was executed. This can mislead a contributor testing a new example. The default ten-example invocation is not alleged to hit this condition today.\n\nThe regression copies the runner into a temporary fixture repository, creates `examples/11-new-example/program.hy`, and uses a shell builder fixture that exits 0. It tests the acceptance runner, not the compiler. Original output:\n```text\n--- 11-new-example\nSKIP 11-new-example (not in the MVP-0 emittable set)\n\nexamples: ALL PASS ()\n```\nThe smallest fix changes an explicitly requested unsupported case to a named failure and sets `FAIL=1`. Existing supported cases retain their oracles. Unpatched source: **19 pass, 1 failure**; patched source: **20 tests pass**, including existing stdout, exit-status, package and timing controls. `bash -n` and `git diff --check` pass.\n\nDuplicate review: searched issue/PR references to run_examples and skipped examples. PR #258 concerns runtime exit/output checks for supported cases, not the unsupported-case branch. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `examples.patch`:\n```sh\ngit apply --check examples.patch\ngit apply examples.patch\npython3 -m unittest discover -s tools -p test_run_examples.py -v\nbash -n tools/run_examples.sh\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualification, rank and payout. If selected, USDC on Base or PayPal are my preferred options, subject to the ",
       "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
     }
   ],
@@ -1388,6 +1388,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-27T05:10:16.610Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-27T05:10:16.265Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-27T05:10:16.265Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $79,144 USD."
+    },
+    {
+      "time": "2026-10-27T05:10:12.362Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-27T05:10:12.360Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-27T04:30:24.566Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1859,31 +1884,6 @@
     },
     {
       "time": "2026-10-26T18:21:57.757Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-26T17:50:00.849Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-26T17:50:00.485Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-26T17:50:00.485Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $69,488 USD."
-    },
-    {
-      "time": "2026-10-26T17:49:58.051Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-26T17:49:58.049Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
