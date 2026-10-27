@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-27T14:37:27.488Z",
-  "scanCount": 263,
+  "lastScanAt": "2026-10-27T15:24:56.432Z",
+  "scanCount": 264,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 69,
-    "totalBountyPoolUsd": 96448,
+    "totalBountiesDetected": 66,
+    "totalBountyPoolUsd": 94098,
     "solutionsGenerated": 40,
     "potentialEarningsUsd": 64047,
-    "prsSubmitted": 36
+    "prsSubmitted": 37
   },
   "activeBounties": [
     {
@@ -566,8 +566,10 @@
       "prBody": "## Proposed Solution for Issue #1681\n\n### Root Cause Analysis & Fix\nThe scan output contains malformed titles because the formatter wraps the original issue title in brackets without first stripping any existing brackets, resulting in duplicated \"[[\" and \" ]]\" characters. The fix normalises the title by removing leading/trailing brackets before applying the standard \"[... ]\" wrapper, ensuring clean, single‑bracket titles.\n\n### Proposed Code Patch\n```\n--- a/src/scanner.py\n+++ b/src/scanner.py\n@@\n-    def format_title(self, raw_title: str) -> str:\n-        \"\"\"Wrap the raw title in square brackets for display.\n-\n-        Args:\n-            raw_title: The original issue title.\n-\n-        Returns:\n-            A formatted title string.\n-        \"\"\"\n-        return f\"[{raw_title}]\"\n+    def format_title(self, raw_title: str) -> str:\n+        \"\"\"Wrap the raw title in square brackets after sanitising existing brackets.\n+\n+        The original implementation naively added brackets, which produced duplicated\n+        brackets when the source title already contained them (e.g. \"[[Bounty $3000] ...]\").\n+        This method now strips any leading or trailing square brackets before wrapping\n+        the title, guaranteeing a single pair of brackets in the final output.\n+        \"\"\"\n+        # Remove leading and trailing square brackets to avoid duplication\n+        sanitized = raw_title.strip()\n+        while sanitized.startswith('[') and sanitized.endswith(']'):\n+            sanitized = sanitized[1:-1].strip()\n+        return f\"[{sanitized}]\"\n\n```\n\n---\n*Bounty Reward:* **$3000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "--- a/src/scanner.py\n+++ b/src/scanner.py\n@@\n-    def format_title(self, raw_title: str) -> str:\n-        \"\"\"Wrap the raw title in square brackets for display.\n-\n-        Args:\n-            raw_title: The original issue title.\n-\n-        Returns:\n-            A formatted title string.\n-        \"\"\"\n-        return f\"[{raw_title}]\"\n+    def format_title(self, raw_title: str) -> str:\n+        \"\"\"Wrap the raw title in square brackets after sanitising existing brackets.\n+\n+        The original implementation naively added brackets, which produced duplicated\n+        brackets when the source title already contained them (e.g. \"[[Bounty $3000] ...]\").\n+        This method now strips any leading or trailing square brackets before wrapping\n+        the title, guaranteeing a single pair of brackets in the final output.\n+        \"\"\"\n+        # Remove leading and trailing square brackets to avoid duplication\n+        sanitized = raw_title.strip()\n+        while sanitized.startswith('[') and sanitized.endswith(']'):\n+            sanitized = sanitized[1:-1].strip()\n+        return f\"[{sanitized}]\"\n",
       "explanation": "The scan output contains malformed titles because the formatter wraps the original issue title in brackets without first stripping any existing brackets, resulting in duplicated \"[[\" and \" ]]\" characters. The fix normalises the title by removing leading/trailing brackets before applying the standard \"[... ]\" wrapper, ensuring clean, single‑bracket titles.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-27T14:37:33.938Z"
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-27T14:37:33.938Z",
+      "submittedAt": "2026-10-27T15:24:59.925Z",
+      "commentUrl": "https://github.com/dev-kp-eloper/BountyScout/issues/1681#issuecomment-6446013989"
     },
     {
       "id": "1cc3d136-fe2a-46ed-b7cc-fb56395c66ed",
@@ -1174,6 +1176,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "866226e2-7c85-46e9-be6c-c86c66e3c5e1",
+      "repo": "dev-kp-eloper/BountyScout",
+      "issueNumber": 1681,
+      "rewardUsd": 3000,
+      "commentUrl": "https://github.com/dev-kp-eloper/BountyScout/issues/1681#issuecomment-6446013989",
+      "submittedAt": "2026-10-27T15:24:59.925Z"
+    },
+    {
       "id": "2a26f727-1108-4a09-9b3f-7dd371a089da",
       "repo": "freedom-winds/BountyScout",
       "issueNumber": 1335,
@@ -1463,6 +1473,31 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-27T15:24:59.926Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a dev-kp-eloper/BountyScout #1681! Recompensa en juego: $3000"
+    },
+    {
+      "time": "2026-10-27T15:24:58.950Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para dev-kp-eloper/BountyScout #1681..."
+    },
+    {
+      "time": "2026-10-27T15:24:58.950Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $94,098 USD."
+    },
+    {
+      "time": "2026-10-27T15:24:56.432Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-27T15:24:56.430Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-27T14:37:38.431Z",
       "level": "CLAIM",
@@ -1935,31 +1970,6 @@
     },
     {
       "time": "2026-10-27T02:53:26.684Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-27T02:53:26.140Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-27T02:53:26.140Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $77,068 USD."
-    },
-    {
-      "time": "2026-10-27T02:53:24.122Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-27T02:53:24.120Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-27T02:18:02.889Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
