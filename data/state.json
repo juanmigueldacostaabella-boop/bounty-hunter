@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-27T01:47:41.891Z",
-  "scanCount": 243,
+  "lastScanAt": "2026-10-27T02:18:00.293Z",
+  "scanCount": 244,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 71,
-    "totalBountyPoolUsd": 76042,
+    "totalBountiesDetected": 70,
+    "totalBountyPoolUsd": 77518,
     "solutionsGenerated": 36,
     "potentialEarningsUsd": 52047,
     "prsSubmitted": 34
@@ -250,6 +250,19 @@
       "createdAt": "2026-10-27T01:16:35Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-27 01:16 UTC\n\n#### 1. [🎯 Bounty Alert: 7 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1655)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:12:24Z\n\n#### 2. [Make skipFor ci/headless work and count skipped tests in test-suite](https://github.com/hanzoai/mcp/issues/14)\n- **Repository:** [hanzoai/mcp](https://github.com/hanzoai/mcp)\n- **Comments:** 4\n- **Last Updated:** 2026-10-27T01:09:48Z\n\n#### 3. [🎯 Bounty Alert: 19 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1332)\n- **Repository:** [freedom-winds/BountyScout](https://github.com/freedom-winds/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:07:54Z\n\n#### 4. [Realistic attacks: break agents before attackers do (scoring, realistic jobs, tradecraft, adaptive attacker, every vector)](https://github.com/ddboy19912/bonded/issues/244)\n- **Repository:** [ddboy19912/bonded](https://github.com/ddboy19912/bonded)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:07:00Z\n\n#### 5. [Make the agent counts in README.md match the files](https://github.com/hanzoai/agents/issues/8)\n- **Repository:** [hanzoai/agents](https://github.com/hanzoai/agents)\n- **Comments:** 3\n- **Last Updated:** 2026-10-27T01:04:53Z\n\n#### 6. [[radar] SN open bounty 2026-10-26T23:46](https://github.com/relayhop/sn-monetization-runtime/issues/1341)\n- **Repository:** [relayhop/sn-monetization-runtime](https://github.com/relayhop/sn-monetization-runtime)\n- **Comments:** 2\n- **Last Updated:** 2026-10-27T01:04:31Z\n\n#### 7. [Fix the README docs link and complete the Packages table](https://github.com/hanzoai/orm/issues/7)\n- **Repository:** [hanzoai/orm](https://github.com/hanzoai/orm)\n- **Comments:** 1\n- **Last Updated:** 2026-10-27T00:59:10Z\n\n#### 8. [NEWS CANDIDATE: Trump offers $1 million reward for tips resulting in voter fraud convictions](https://github.com/BREXAtlas/WorldLeaderChat/issues/1663)\n- **Repository:** [BREXAtlas/WorldLeaderChat](https://github.com/BREXAtlas/WorldLeaderChat)\n- **Comments:** 1\n- **Last Updated:** 2026-10-27T00:57:32Z\n\n#### 9. [Node page cosmetic updates + widgets](https://github.com/getAlby/hub/issues/1963)\n- **Repository:** [getAlby/hub](https://github.com/getAlby/hub)\n- **Comments:** 2\n- **Last Updated:** 2026-10-27T00:59:59Z\n\n#### 10. [[bounty] Run-133: C1 factorization is assumed by its a",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-27 01:16 UTC #### 1. [🎯 Bounty Alert: 7 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1655) - **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout) - **Com"
+    },
+    {
+      "id": 6051426561,
+      "number": 25,
+      "title": "🎯 Bounty Alert: 7 New Opportunityies found",
+      "repo": "Rohank143/BountyScout",
+      "htmlUrl": "https://github.com/Rohank143/BountyScout/issues/25",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-27T01:54:05Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-27 01:54 UTC\n\n#### 1. [Bug bounty follow-up: lost connection targets, wrong-PC vow rewards, Chronicle identity, and stale recaps](https://github.com/jamesrmedford-alt/starforged-companion/issues/301)\n- **Repository:** [jamesrmedford-alt/starforged-companion](https://github.com/jamesrmedford-alt/starforged-companion)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:46:52Z\n\n#### 2. [[intake 输入][缺陷报告] 测评页面 inline_md 将行内代码中的 ** 当粗体，改写代码原文](https://github.com/FuRongJun-1999/dsh-bounty/issues/1833)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:33:05Z\n\n#### 3. [[radar] SN open bounty 2026-10-26T23:46](https://github.com/relayhop/sn-monetization-runtime/issues/1341)\n- **Repository:** [relayhop/sn-monetization-runtime](https://github.com/relayhop/sn-monetization-runtime)\n- **Comments:** 3\n- **Last Updated:** 2026-10-27T01:31:12Z\n\n#### 4. [showcase ability targeting area better [bounty: 16 XTR]](https://github.com/FreezingMoon/AncientBeast/issues/1772)\n- **Repository:** [FreezingMoon/AncientBeast](https://github.com/FreezingMoon/AncientBeast)\n- **Comments:** 5\n- **Last Updated:** 2026-10-27T01:22:34Z\n\n#### 5. [🎯 Bounty Alert: 16 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1677)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:16:35Z\n\n#### 6. [🎯 Bounty Alert: 19 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1332)\n- **Repository:** [freedom-winds/BountyScout](https://github.com/freedom-winds/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:07:54Z\n\n#### 7. [Node page cosmetic updates + widgets](https://github.com/getAlby/hub/issues/1963)\n- **Repository:** [getAlby/hub](https://github.com/getAlby/hub)\n- **Comments:** 2\n- **Last Updated:** 2026-10-27T00:59:59Z\n\n",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-27 01:54 UTC #### 1. [Bug bounty follow-up: lost connection targets, wrong-PC vow rewards, Chronicle identity, and stale recaps](https://github.com/jamesrmedford-alt/starforged-companion/issues/301) - **Repository:** [jamesr"
     },
     {
       "id": 5997098370,
@@ -522,19 +535,6 @@
       "difficulty": "Fácil",
       "createdAt": "2026-10-24T18:50:23Z",
       "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\nWhen a requested directory has `program.hy` and the build exits 0, but the directory is outside the ten hardcoded acceptance cases, `tools/run_examples.sh` prints `SKIP` and then exits 0 with `examples: ALL PASS ()`. No runtime-output oracle was executed. This can mislead a contributor testing a new example. The default ten-example invocation is not alleged to hit this condition today.\n\nThe regression copies the runner into a temporary fixture repository, creates `examples/11-new-example/program.hy`, and uses a shell builder fixture that exits 0. It tests the acceptance runner, not the compiler. Original output:\n```text\n--- 11-new-example\nSKIP 11-new-example (not in the MVP-0 emittable set)\n\nexamples: ALL PASS ()\n```\nThe smallest fix changes an explicitly requested unsupported case to a named failure and sets `FAIL=1`. Existing supported cases retain their oracles. Unpatched source: **19 pass, 1 failure**; patched source: **20 tests pass**, including existing stdout, exit-status, package and timing controls. `bash -n` and `git diff --check` pass.\n\nDuplicate review: searched issue/PR references to run_examples and skipped examples. PR #258 concerns runtime exit/output checks for supported cases, not the unsupported-case branch. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `examples.patch`:\n```sh\ngit apply --check examples.patch\ngit apply examples.patch\npython3 -m unittest discover -s tools -p test_run_examples.py -v\nbash -n tools/run_examples.sh\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualification, rank and payout. If selected, USDC on Base or PayPal are my preferred options, subject to the ",
-      "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
-    },
-    {
-      "id": 6016395231,
-      "number": 1594,
-      "title": "[tooling] Conflict-marker gate skips Go bridge assembly sources (tested patch)",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "htmlUrl": "https://github.com/limitlessprojects/Go-Hybrid/issues/1594",
-      "rewardUsd": 500,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T18:50:03Z",
-      "fullBody": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent human code review is claimed.\n\n`tools/check_conflict_markers.py` filters by `TEXT_EXTS`, which omits `.s`. The repository's `runtime/go/hybridge/call_amd64.s` and `call_arm64.s` are therefore skipped. In a synthetic temporary tree with the same path, a full column-zero conflict block returns exit 0 and `conflict markers: none`. This demonstrates a hole in this gate; I am not claiming an actual corrupted assembly file is currently committed or that other build checks miss it.\n\nThe patch adds `.s` to the allowlist (uppercase `.S` is covered by the existing `.lower()`). Real CLI regressions cover both cases, and a clean assembly/binary-file control preserves binary exclusion. On unpatched source the new test fails in both subcases with exit 0; with the patch all **27 tests pass**.\n\nDuplicate review: searched issues and PRs for the tool, assembly and extension coverage. PR #512 concerns YAML workflow support, not assembly; issue #1037 concerns read failures, which this patch does not change. Final duplicate determination remains with the maintainer.\n\nRun after saving the complete diff as `assembly.patch`:\n```sh\ngit apply --check assembly.patch\ngit apply assembly.patch\npython3 -m unittest discover -s tools -p test_check_conflict_markers.py -v\ngit diff --check\n```\n\nThe regression tests extend existing test files already selected by quick CI. Full pinned Go/Rust compiler builds, real Hybrid corpus/differential/example executions and upstream Actions were **not run** here (the pinned compilers are unavailable). Please reproduce and run upstream CI before accepting or landing the patch. This is a tested report with an attached patch, not a claim of merge readiness.\n\nPlease consider the useful-improvements bounty track. I understand the $500 cycle pool is competitive and the maintainer decides qualification, rank and payout. If selected, USDC on Base or PayPal are my preferred options, subject to the program's confirmed rails; no private payout details or award are claimed.\n\n## Complete patch\n\n```diff\ndiff --git a/tools/check_conflict_markers.py b/tools/check_conflict_markers.py\nindex 641d3e7..2166fdc 100644\n--- a/tools/check_conflict_markers.py\n+++ b/tools/check_conflict_markers.py\n@@ -44,",
       "bodyPreview": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's authorization; no independent"
     }
   ],
@@ -1388,6 +1388,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-27T02:18:02.889Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-27T02:18:02.464Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-27T02:18:02.464Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $77,518 USD."
+    },
+    {
+      "time": "2026-10-27T02:18:00.294Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-27T02:18:00.292Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-27T01:47:44.564Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1859,31 +1884,6 @@
     },
     {
       "time": "2026-10-26T14:06:48.939Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-26T11:44:21.433Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-26T11:44:21.103Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-26T11:44:21.102Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $66,209 USD."
-    },
-    {
-      "time": "2026-10-26T11:44:18.604Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-26T11:44:18.602Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
