@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-27T11:38:35.603Z",
-  "scanCount": 259,
+  "lastScanAt": "2026-10-27T12:14:17.764Z",
+  "scanCount": 260,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 70,
-    "totalBountyPoolUsd": 83272,
+    "totalBountyPoolUsd": 85298,
     "solutionsGenerated": 36,
     "potentialEarningsUsd": 52047,
     "prsSubmitted": 34
@@ -317,6 +317,19 @@
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 20.2 9274 28955 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 ```"
     },
     {
+      "id": 6058761459,
+      "number": 1344,
+      "title": "[radar] SN open bounty 2026-10-27T12:01",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1344",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-27T12:01:01Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t21.8\t9274\t28961\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 21.8 9274 28961 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 ```"
+    },
+    {
       "id": 5997098370,
       "number": 161,
       "title": "New in-scope 2026-10-23: 3 program(s) added targets",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-23T16:01:11Z",
       "fullBody": "Claiming **Bounty #34 — Healthcare Appointment System** ($500).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
       "bodyPreview": "Claiming **Bounty #34 — Healthcare Appointment System** ($500). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design S"
-    },
-    {
-      "id": 6001142064,
-      "number": 49,
-      "title": "Claiming Bounty #18 - Revenue Dashboard ($500)",
-      "repo": "bujiproject-art/agentmidasopendevteam",
-      "htmlUrl": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/49",
-      "rewardUsd": 500,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-23T16:01:06Z",
-      "fullBody": "Claiming **Bounty #18 — Revenue Dashboard** ($500).\n\n- **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies).\n- **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0A0A` / `#D4AF37`).\n- **Payout:** PayPal (`xaductrung@gmail.com`) / Stripe / International Wire (`5135146320807 (SWIFT: MSCBVNVX - XA DUC TRUNG)`).",
-      "bodyPreview": "Claiming **Bounty #18 — Revenue Dashboard** ($500). - **CLA:** Read and agreed to `CONTRIBUTOR_LICENSE_AGREEMENT.md` (Version 1.0, MIT license, zero external dependencies). - **Tech Stack:** Strict TypeScript, React 19 Client Component, Agent Midas Dark/Gold Design System (`#0A0"
     }
   ],
   "solutions": [
@@ -1388,6 +1388,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-27T12:14:20.557Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-27T12:14:20.188Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-27T12:14:20.188Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $85,298 USD."
+    },
+    {
+      "time": "2026-10-27T12:14:17.764Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-27T12:14:17.762Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-27T11:38:38.832Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1859,31 +1884,6 @@
     },
     {
       "time": "2026-10-27T00:18:11.971Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-26T23:53:48.464Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-26T23:53:48.169Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-26T23:53:48.169Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $72,660 USD."
-    },
-    {
-      "time": "2026-10-26T23:53:46.075Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-26T23:53:46.074Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
