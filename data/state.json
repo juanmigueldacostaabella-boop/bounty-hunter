@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-27T15:24:56.432Z",
-  "scanCount": 264,
+  "lastScanAt": "2026-10-27T16:07:56.173Z",
+  "scanCount": 265,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 66,
-    "totalBountyPoolUsd": 94098,
+    "totalBountiesDetected": 69,
+    "totalBountyPoolUsd": 94348,
     "solutionsGenerated": 40,
     "potentialEarningsUsd": 64047,
-    "prsSubmitted": 37
+    "prsSubmitted": 38
   },
   "activeBounties": [
     {
@@ -582,8 +582,10 @@
       "prBody": "## Proposed Solution for Issue #27\n\n### Root Cause Analysis & Fix\nThe scanner truncated the final bounty entry because its regular expression stopped at the first whitespace, cutting off the URL and title. Updating the pattern to capture all characters up to the closing parenthesis fixes the parsing and preserves the full Markdown link.\n\n### Proposed Code Patch\n```\n--- a/bounty_scanner.py\n+++ b/bounty_scanner.py\n@@\n-        match = re.search(r\"\\[\\[(.*?)\\]\\]\\((https?://[^\\s]+)\\)\", line)\n+        # Updated regex to capture the complete URL (including any characters until the closing ')')\n+        match = re.search(r\"\\[\\[(.*?)\\]\\]\\((https?://[^)]+)\\)\", line)\n*** End Patch ***\n```\n\n---\n*Bounty Reward:* **$3000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "--- a/bounty_scanner.py\n+++ b/bounty_scanner.py\n@@\n-        match = re.search(r\"\\[\\[(.*?)\\]\\]\\((https?://[^\\s]+)\\)\", line)\n+        # Updated regex to capture the complete URL (including any characters until the closing ')')\n+        match = re.search(r\"\\[\\[(.*?)\\]\\]\\((https?://[^)]+)\\)\", line)\n*** End Patch ***",
       "explanation": "The scanner truncated the final bounty entry because its regular expression stopped at the first whitespace, cutting off the URL and title. Updating the pattern to capture all characters up to the closing parenthesis fixes the parsing and preserves the full Markdown link.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-27T14:37:32.079Z"
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-10-27T14:37:32.079Z",
+      "submittedAt": "2026-10-27T16:07:59.703Z",
+      "commentUrl": "https://github.com/Rohank143/BountyScout/issues/27#issuecomment-6447026687"
     },
     {
       "id": "728963e0-3ad1-4b63-ab65-88dffbe4ff09",
@@ -1176,6 +1178,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "629f3626-7a03-4d97-a2cd-06276ab80b04",
+      "repo": "Rohank143/BountyScout",
+      "issueNumber": 27,
+      "rewardUsd": 3000,
+      "commentUrl": "https://github.com/Rohank143/BountyScout/issues/27#issuecomment-6447026687",
+      "submittedAt": "2026-10-27T16:07:59.704Z"
+    },
+    {
       "id": "866226e2-7c85-46e9-be6c-c86c66e3c5e1",
       "repo": "dev-kp-eloper/BountyScout",
       "issueNumber": 1681,
@@ -1473,6 +1483,31 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-10-27T16:07:59.705Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a Rohank143/BountyScout #27! Recompensa en juego: $3000"
+    },
+    {
+      "time": "2026-10-27T16:07:58.820Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para Rohank143/BountyScout #27..."
+    },
+    {
+      "time": "2026-10-27T16:07:58.820Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $94,348 USD."
+    },
+    {
+      "time": "2026-10-27T16:07:56.173Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-27T16:07:56.171Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-10-27T15:24:59.926Z",
       "level": "CLAIM",
@@ -1945,31 +1980,6 @@
     },
     {
       "time": "2026-10-27T03:21:45.935Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-27T03:21:45.583Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-27T03:21:45.583Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $77,318 USD."
-    },
-    {
-      "time": "2026-10-27T03:21:42.935Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-27T03:21:42.933Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-27T02:53:26.684Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
     }
