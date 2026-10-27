@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-27T00:18:11.972Z",
-  "scanCount": 241,
+  "lastScanAt": "2026-10-27T01:09:59.978Z",
+  "scanCount": 242,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 71,
-    "totalBountyPoolUsd": 72510,
+    "totalBountiesDetected": 72,
+    "totalBountyPoolUsd": 74566,
     "solutionsGenerated": 36,
     "potentialEarningsUsd": 52047,
     "prsSubmitted": 34
@@ -224,6 +224,19 @@
       "createdAt": "2026-10-26T23:46:22Z",
       "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t9.5\t9274\t28948\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n1601866\tStacker_Stocks\t2\t319\t10000\t26\t35.6\t9274\t28948\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```",
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 9.5 9274 28948 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP,SIGNAL Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 1601866 Stacker_Stocks 2 319 10000 26 35.6 9274 28948 recent@Stack"
+    },
+    {
+      "id": 6050987098,
+      "number": 1332,
+      "title": "🎯 Bounty Alert: 19 New Opportunityies found",
+      "repo": "freedom-winds/BountyScout",
+      "htmlUrl": "https://github.com/freedom-winds/BountyScout/issues/1332",
+      "rewardUsd": 2026,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-27T01:07:54Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-27 01:07 UTC\n\n#### 1. [Realistic attacks: break agents before attackers do (scoring, realistic jobs, tradecraft, adaptive attacker, every vector)](https://github.com/ddboy19912/bonded/issues/244)\n- **Repository:** [ddboy19912/bonded](https://github.com/ddboy19912/bonded)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T01:07:00Z\n\n#### 2. [Make skipFor ci/headless work and count skipped tests in test-suite](https://github.com/hanzoai/mcp/issues/14)\n- **Repository:** [hanzoai/mcp](https://github.com/hanzoai/mcp)\n- **Comments:** 3\n- **Last Updated:** 2026-10-27T01:05:51Z\n\n#### 3. [Make the agent counts in README.md match the files](https://github.com/hanzoai/agents/issues/8)\n- **Repository:** [hanzoai/agents](https://github.com/hanzoai/agents)\n- **Comments:** 3\n- **Last Updated:** 2026-10-27T01:04:53Z\n\n#### 4. [[radar] SN open bounty 2026-10-26T23:46](https://github.com/relayhop/sn-monetization-runtime/issues/1341)\n- **Repository:** [relayhop/sn-monetization-runtime](https://github.com/relayhop/sn-monetization-runtime)\n- **Comments:** 2\n- **Last Updated:** 2026-10-27T01:04:31Z\n\n#### 5. [Fix the README docs link and complete the Packages table](https://github.com/hanzoai/orm/issues/7)\n- **Repository:** [hanzoai/orm](https://github.com/hanzoai/orm)\n- **Comments:** 1\n- **Last Updated:** 2026-10-27T00:59:10Z\n\n#### 6. [NEWS CANDIDATE: Trump offers $1 million reward for tips resulting in voter fraud convictions](https://github.com/BREXAtlas/WorldLeaderChat/issues/1663)\n- **Repository:** [BREXAtlas/WorldLeaderChat](https://github.com/BREXAtlas/WorldLeaderChat)\n- **Comments:** 1\n- **Last Updated:** 2026-10-27T00:57:32Z\n\n#### 7. [[opt-out check] American Express: marketing opt-out page says \"currently not available\"](https://github.com/lizTheDeveloper/privacy-the-game/issues/417)\n- **Repository:** [lizTheDeveloper/privacy-the-game](https://github.com/lizTheDeveloper/privacy-the-game)\n- **Comments:** 6\n- **Last Updated:** 2026-10-27T00:53:54Z\n\n#### 8. [[find opt-out] Vintel AI: find the official opt-out route](https://github.com/lizTheDeveloper/privacy-the-game/issues/413)\n- **Repository:** [lizTheDeveloper/privacy-the-game](https://github.com/lizTheDeveloper/privacy-the-game)\n- **Comments:** 3\n- **Last Updated:** 2026-10-27T00:53:54Z\n\n#### 9. [[find opt-out] United One Resources, Inc.: find the official opt-out route](https://github.com/lizTheDeveloper/privacy-the-game/issues/412)\n- **Repository:** [lizTheDevelope",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-27 01:07 UTC #### 1. [Realistic attacks: break agents before attackers do (scoring, realistic jobs, tradecraft, adaptive attacker, every vector)](https://github.com/ddboy19912/bonded/issues/244) - **Repository:** [ddboy19912"
     },
     {
       "id": 5997098370,
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-25T12:36:43Z",
       "fullBody": "Automated Superteam Earn digest 2026-10-25T12:36:43.044Z\n\n## agent eligible listings (0)\n- none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY.\n\n## cash listings (10 of 10)\n- 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content for Breakpoint 2026 | travel-boost-for-bp26\n- 40000 USDC | due 2026-10-31 | HUMAN_ONLY | Vaultline Security Audit Grants for Colosseum Projects: Up to 4,000 USDC Each | vaultline-security-audit-grants-for-colosseum-projects-up-to-4000-usdc-each\n- null USDC | due 2026-10-25 | HUMAN_ONLY | Motion Graphics Designer - Kimia Product Launch Film for X | motion-graphics-designer-kimia-product-launch-film-for-x\n- 5000 USDG | due 2026-11-03 | HUMAN_ONLY | Rumbo a Breakpoint 2026: gana una entrada y apoyo para tu viaje | rumbo-a-breakpoint-2026-gana-una-entrada-y-apoyo-para-tu-viaje\n- 2500 USDC | due 2026-11-05 | HUMAN_ONLY | Inside the Block: How Solana Validators Order Transactions | inside-the-block-how-solana-validators-order-transactions\n- 500 USDC | due 2026-11-12 | HUMAN_ONLY | Show us how you use MozaikPay | mozaikpay-video-chile-colombia\n- 500 USDG | due 2026-11-12 | HUMAN_ONLY | Panta x NectarFi Trading Competition Bounty | panta-x-nectarfi-trading-competition-bounty\n- 500 USDC | due 2026-11-14 | HUMAN_ONLY | Write a thread on $CHIMP Fair Launch - Part 1 | chimp-on-metaplex\n- 500 USDC | due 2026-11-24 | HUMAN_ONLY | Create Content on Premier League Predictions with worm 🪱⚽ | create-content-on-premier-league-predictions-with-worm\n- 5000 USDC | due 2026-12-14 | HUMAN_ONLY | MultiHopper Build & Route Challenge | Up to $50,000 + Revenue Share | multihopper-build-and-route-challenge-up-to-dollar50000-revenue-share-1\n",
       "bodyPreview": "Automated Superteam Earn digest 2026-10-25T12:36:43.044Z ## agent eligible listings (0) - none right now. The agent feed only shows listings marked AGENT_ALLOWED or AGENT_ONLY. ## cash listings (10 of 10) - 6000 USDG | due 2026-10-25 | HUMAN_ONLY | Travel boost: Create Content "
-    },
-    {
-      "id": 6029582560,
-      "number": 17,
-      "title": "🎯 Bounty Alert: 9 New Opportunityies found",
-      "repo": "Rohank143/BountyScout",
-      "htmlUrl": "https://github.com/Rohank143/BountyScout/issues/17",
-      "rewardUsd": 500,
-      "category": "Nueva Función",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-25T21:33:09Z",
-      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-25 21:33 UTC\n\n#### 1. [[Feature] Add Pydantic Monty as a lightweight sandbox execution backend](https://github.com/cuga-project/cuga-agent/issues/997)\n- **Repository:** [cuga-project/cuga-agent](https://github.com/cuga-project/cuga-agent)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T21:30:03Z\n\n#### 2. [Support simple arithmetic expressions in posting amounts](https://github.com/hledgerorg/hledger/issues/2648)\n- **Repository:** [hledgerorg/hledger](https://github.com/hledgerorg/hledger)\n- **Comments:** 23\n- **Last Updated:** 2026-10-25T21:27:21Z\n\n#### 3. [🎯 Bounty Alert: 7 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1324)\n- **Repository:** [freedom-winds/BountyScout](https://github.com/freedom-winds/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-25T21:25:34Z\n\n#### 4. [Railway 赏金：有 2 条值得抢](https://github.com/HCTDIP/corps-jobs/issues/123)\n- **Repository:** [HCTDIP/corps-jobs](https://github.com/HCTDIP/corps-jobs)\n- **Comments:** 0\n- **Last Updated:** 2026-10-25T21:15:00Z\n\n#### 5. [Statement review wanted: do the Lean statements match the papers? (Runs 127, 129, 130)](https://github.com/jdhart81/viridis-canon/issues/121)\n- **Repository:** [jdhart81/viridis-canon](https://github.com/jdhart81/viridis-canon)\n- **Comments:** 10\n- **Last Updated:** 2026-10-25T21:31:16Z\n\n#### 6. [Claiming Bounty #34 - Healthcare Appointment System ($500)](https://github.com/bujiproject-art/agentmidasopendevteam/issues/51)\n- **Repository:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T21:00:46Z\n\n#### 7. [5.3.0/5.4.0 - OTT in header](https://github.com/WietseWind/Xaman-App/issues/315)\n- **Repository:** [WietseWind/Xaman-App](https://github.com/WietseWind/Xaman-App)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T20:57:36Z\n\n#### 8. [Farming](https://github.com/OpenRune/OpenRune-Server/issues/61)\n- **Repository:** [OpenRune/OpenRune-Server](https://github.com/OpenRune/OpenRune-Server)\n- **Comments:** 1\n- **Last Updated:** 2026-10-25T20:55:59Z\n\n#### 9. [Automate a bounded malicious-code scan and skill publication](https://github.com/SlopDotCash/slopdotcash/issues/909)\n- **Repository:** [SlopDotCash/slopdotcash](https://github.com/SlopDotCash/slopdotcash)\n- **Comments:** 23\n- **Last Updated:** 2026-10-25T21:03:48Z\n\n",
-      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-25 21:33 UTC #### 1. [[Feature] Add Pydantic Monty as a lightweight sandbox execution backend](https://github.com/cuga-project/cuga-agent/issues/997) - **Repository:** [cuga-project/cuga-agent](https://github.com/cuga-projec"
     }
   ],
   "solutions": [
@@ -1388,6 +1388,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-27T01:10:02.781Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-27T01:10:02.452Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
+    },
+    {
+      "time": "2026-10-27T01:10:02.452Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $74,566 USD."
+    },
+    {
+      "time": "2026-10-27T01:09:59.978Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-27T01:09:59.977Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-27T00:18:14.634Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1859,31 +1884,6 @@
     },
     {
       "time": "2026-10-26T11:04:56.273Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-26T10:25:26.342Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-26T10:25:25.995Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-26T10:25:25.994Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $66,261 USD."
-    },
-    {
-      "time": "2026-10-26T10:25:24.110Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-26T10:25:24.109Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
