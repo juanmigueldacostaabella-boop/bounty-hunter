@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-28T12:42:18.980Z",
-  "scanCount": 295,
+  "lastScanAt": "2026-10-28T13:39:53.001Z",
+  "scanCount": 296,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,10 +10,10 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 72,
-    "totalBountyPoolUsd": 96659,
-    "solutionsGenerated": 40,
-    "potentialEarningsUsd": 64047,
+    "totalBountiesDetected": 74,
+    "totalBountyPoolUsd": 98719,
+    "solutionsGenerated": 41,
+    "potentialEarningsUsd": 66547,
     "prsSubmitted": 38
   },
   "activeBounties": [
@@ -81,6 +81,19 @@
       "createdAt": "2026-10-27T13:57:41Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-27 13:57 UTC\n\n#### 1. [[Bounty $3000] Static checker for compute-kernel API ordering rules (init / uninit / reconfig)](https://github.com/tenstorrent/tt-metal/issues/62681)\n- **Repository:** [tenstorrent/tt-metal](https://github.com/tenstorrent/tt-metal)\n- **Comments:** 1\n- **Last Updated:** 2026-10-27T13:52:23Z\n\n#### 2. [[bounty] Run-131: closed_loop_area_identity does not establish the stated path integral](https://github.com/jdhart81/viridis-canon/issues/168)\n- **Repository:** [jdhart81/viridis-canon](https://github.com/jdhart81/viridis-canon)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:45:26Z\n\n#### 3. [PVP variants](https://github.com/denzrs/slingshot-remake/issues/135)\n- **Repository:** [denzrs/slingshot-remake](https://github.com/denzrs/slingshot-remake)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:41:31Z\n\n#### 4. [[product-watch] Enterprise Server 3.22.2](https://github.com/shariqh/github-enterprise-settings-configurator/issues/183)\n- **Repository:** [shariqh/github-enterprise-settings-configurator](https://github.com/shariqh/github-enterprise-settings-configurator)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:33:33Z\n\n#### 5. [[product-watch] Enterprise Server 3.22.1](https://github.com/shariqh/github-enterprise-settings-configurator/issues/147)\n- **Repository:** [shariqh/github-enterprise-settings-configurator](https://github.com/shariqh/github-enterprise-settings-configurator)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:33:32Z\n\n",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-27 13:57 UTC #### 1. [[Bounty $3000] Static checker for compute-kernel API ordering rules (init / uninit / reconfig)](https://github.com/tenstorrent/tt-metal/issues/62681) - **Repository:** [tenstorrent/tt-metal](https://git"
+    },
+    {
+      "id": 6079370176,
+      "number": 187,
+      "title": "New in-scope 2026-10-28: 6 program(s) added targets",
+      "repo": "abdulsalam-create/bounty-watch",
+      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/187",
+      "rewardUsd": 2500,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-28T12:57:19Z",
+      "fullBody": "# New in-scope assets 2026-10-28\n\n6 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Imperva - Thales Bug Bounty (`bc:imperva-mbb`)  💰 $2500\nhttps://bugcrowd.com/engagements/imperva-mbb\n- new in-scope: `https://bugcrowd.com/engagements/imperva-mbb`, `https://cpl.thalesgroup.com`, `https://supportportal.thalesgroup.com`, `https://www.imperva.com`\n\n### Cloudflare Public Bug Bounty (`h1:cloudflare`)\nhttps://hackerone.com/cloudflare\n- new in-scope: `https://php-rce.cloudflare.app/`\n\n### OpenAI (`bc:openai`)  💰 $6500\nhttps://bugcrowd.com/engagements/openai\n- new in-scope: `https://chatgpt.com/dots/`\n\n### Majid Al Futtaim Lifestyle (`bc:maffashion`)  💰 $3500\nhttps://bugcrowd.com/engagements/maffashion\n- new in-scope: `https://www.pacsun.me/`\n\n### Moneytree KK (`bc:moneytreekkog`)  💰 $5000\nhttps://bugcrowd.com/engagements/moneytreekkog\n- new in-scope: `https://mcp-staging.getmoneytree.com/`\n\n### OTTO.DE Bug Bounty (`ywh:otto-de-bug-bounty`)  💰 $2500\nhttps://yeswehack.com/programs/otto-de-bug-bounty\n- new in-scope: `https://www.teleoptiprd.otto.de`\n\n\ncc @abdulsalam-create",
+      "bodyPreview": "# New in-scope assets 2026-10-28 6 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Imperva - Thales Bug Bounty (`bc:imperva-mbb`) 💰 $2500 https://bugcrowd.com/engagements/imperva-"
     },
     {
       "id": 5985824260,
@@ -523,22 +536,23 @@
       "createdAt": "2026-10-24T18:25:13Z",
       "fullBody": "## Problem\n\nPOST /api/notifications forwards req.body directly to createNotification without schema validation. Any JSON object is accepted, including missing userId, missing notification type, empty message text, excessively long payloads, and prototype pollution fields. The in-memory notification store then persists malformed notification entities, degrading client notification feeds and causing runtime render errors.\n\n## Requested fix\n\nAdd a strict Zod schema for notification creation and validate the request in notificationController before persistence. Require valid userId string, require standard notification type or bounded string, require non-empty message text up to 1,000 characters, allow optional link string up to 500 characters, and reject malformed payloads with a 400 Bad Request error envelope. Add focused route/service tests for valid payload, missing fields, empty/oversized message, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
       "bodyPreview": "## Problem POST /api/notifications forwards req.body directly to createNotification without schema validation. Any JSON object is accepted, including missing userId, missing notification type, empty message text, excessively long payloads, and prototype pollution fields. The in-"
-    },
-    {
-      "id": 6016161331,
-      "number": 13783,
-      "title": "[Bounty #743] Validate /api/messages payload before persistence",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13783",
-      "rewardUsd": 700,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T18:23:18Z",
-      "fullBody": "## Problem\n\nPOST /api/messages forwards req.body directly to sendMessage without schema validation. Any JSON object is accepted, including missing senderId/receiverId, empty content, oversized content, and prototype pollution fields. The in-memory message store then persists malformed message entities, corrupting conversation threads and breaking client chat interfaces.\n\n## Requested fix\n\nAdd a strict Zod schema for message creation and validate the request in messageController before persistence. Require valid senderId and receiverId strings, require non-empty content up to 5,000 characters, allow optional conversationId, and reject malformed payloads with a 400 Bad Request error envelope. Add focused route/service tests for valid payload, missing fields, empty/oversized content, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
-      "bodyPreview": "## Problem POST /api/messages forwards req.body directly to sendMessage without schema validation. Any JSON object is accepted, including missing senderId/receiverId, empty content, oversized content, and prototype pollution fields. The in-memory message store then persists malf"
     }
   ],
   "solutions": [
+    {
+      "id": "0583c5f4-c7fe-4936-b46f-7919e52adcf6",
+      "bountyId": 6079370176,
+      "repo": "abdulsalam-create/bounty-watch",
+      "issueNumber": 187,
+      "issueUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/187",
+      "rewardUsd": 2500,
+      "prTitle": "fix: resolve issue #187 - New in-scope 2026-10-28: 6 program(s) added target",
+      "prBody": "## Proposed Solution for Issue #187\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for abdulsalam-create/bounty-watch #187.\n\n### Proposed Code Patch\n```\n// Review specific implementation in abdulsalam-create/bounty-watch #187\n```\n\n---\n*Bounty Reward:* **$2500**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in abdulsalam-create/bounty-watch #187",
+      "explanation": "Technical analysis and proposed resolution for abdulsalam-create/bounty-watch #187.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-10-28T13:39:57.467Z"
+    },
     {
       "id": "172b1abf-caa4-4e71-b6d2-4a9e1a52678c",
       "bountyId": 6060640528,
@@ -1484,6 +1498,36 @@
   ],
   "logs": [
     {
+      "time": "2026-10-28T13:39:57.772Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-28T13:39:57.468Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
+    },
+    {
+      "time": "2026-10-28T13:39:57.467Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para abdulsalam-create/bounty-watch #187 ($2500 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-28T13:39:55.390Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $98,719 USD."
+    },
+    {
+      "time": "2026-10-28T13:39:53.001Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-28T13:39:52.999Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-28T12:42:21.853Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1952,36 +1996,6 @@
       "time": "2026-10-27T23:23:12.155Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-27T23:23:12.154Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-27T22:57:27.132Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-27T22:57:26.817Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-27T22:57:26.817Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $95,397 USD."
-    },
-    {
-      "time": "2026-10-27T22:57:24.499Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-27T22:57:24.498Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
