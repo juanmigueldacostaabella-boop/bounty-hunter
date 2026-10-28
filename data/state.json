@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-28T16:15:38.551Z",
-  "scanCount": 299,
+  "lastScanAt": "2026-10-28T17:03:18.274Z",
+  "scanCount": 300,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 74,
-    "totalBountyPoolUsd": 98229,
+    "totalBountiesDetected": 72,
+    "totalBountyPoolUsd": 98019,
     "solutionsGenerated": 41,
     "potentialEarningsUsd": 66547,
     "prsSubmitted": 38
@@ -1498,6 +1498,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-28T17:03:20.833Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-28T17:03:20.486Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
+    },
+    {
+      "time": "2026-10-28T17:03:20.486Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $98,019 USD."
+    },
+    {
+      "time": "2026-10-28T17:03:18.274Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-28T17:03:18.273Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-28T16:15:41.580Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1969,31 +1994,6 @@
     },
     {
       "time": "2026-10-28T02:15:37.830Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-28T02:15:37.829Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-28T01:28:48.631Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-28T01:28:48.371Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-28T01:28:48.371Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $95,557 USD."
-    },
-    {
-      "time": "2026-10-28T01:28:46.298Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
