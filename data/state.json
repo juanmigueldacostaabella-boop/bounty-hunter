@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-29T12:07:18.858Z",
-  "scanCount": 326,
+  "lastScanAt": "2026-10-29T12:57:18.094Z",
+  "scanCount": 327,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 76,
-    "totalBountyPoolUsd": 103183,
+    "totalBountiesDetected": 74,
+    "totalBountyPoolUsd": 104597,
     "solutionsGenerated": 43,
     "potentialEarningsUsd": 71547,
     "prsSubmitted": 40
@@ -421,6 +421,19 @@
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 21.8 9274 28961 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 ```"
     },
     {
+      "id": 6099765466,
+      "number": 36,
+      "title": "🎯 Bounty Alert: 13 New Opportunityies found",
+      "repo": "Rohank143/BountyScout",
+      "htmlUrl": "https://github.com/Rohank143/BountyScout/issues/36",
+      "rewardUsd": 2026,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-29T12:35:58Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-29 12:35 UTC\n\n#### 1. [Add \"CMS Comparison\" page: WordPress, Webflow and other CMSs on popularity, growth, talent pool, ease of use, ecosystem, features, performance, cost and TCO, and security, with time-series, bar and radar charts](https://github.com/albertoirurueta/docs/issues/351)\n- **Repository:** [albertoirurueta/docs](https://github.com/albertoirurueta/docs)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:35:04Z\n\n#### 2. [[tooling] the triage board never promotes land-candidates to triage:pareto, so 391 scored PRs are unprotected and due for the sweep](https://github.com/limitlessprojects/Go-Hybrid/issues/2218)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:33:46Z\n\n#### 3. [Tie agent spending limits to confirmed on-chain funding and prevent concurrent overspend](https://github.com/I-am-Esmart/HumanLayer/issues/7)\n- **Repository:** [I-am-Esmart/HumanLayer](https://github.com/I-am-Esmart/HumanLayer)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:32:53Z\n\n#### 4. [[staging] ZecHub zh glossary+menus FULL native review](https://github.com/zwang1111/agenttab-celo/issues/2)\n- **Repository:** [zwang1111/agenttab-celo](https://github.com/zwang1111/agenttab-celo)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T12:31:52Z\n\n#### 5. [[intake 输入] lingshu #1139：结构服务整帧读取期限与连接槽回收交付](https://github.com/FuRongJun-1999/dsh-bounty/issues/1975)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T12:30:41Z\n\n#### 6. [[player hnejdu] Revealing the mission \"Rogue Squadron Raid\" in Corellia displays the message \"Ro](https://github.com/johnchampaign/star-wars-rebellion/issues/824)\n- **Repository:** [johnchampaign/star-wars-rebellion](https://github.com/johnchampaign/star-wars-rebellion)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T12:30:38Z\n\n#### 7. [parse_duration ignores uppercase units and returns 0 for invalid input](https://github.com/isearchxsolve/bounty-proof/issues/1)\n- **Repository:** [isearchxsolve/bounty-proof](https://github.com/isearchxsolve/bounty-proof)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:30:37Z\n\n#### 8. [5 USDC bounty: best public agent-facing guide or demo for Agent Bounty Feed (deadline 2026-11-12)](https://github.com/dailydollar-bot/agent-bounty-feed/issues/3)\n- **Repository:** [dailydolla",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-29 12:35 UTC #### 1. [Add \"CMS Comparison\" page: WordPress, Webflow and other CMSs on popularity, growth, talent pool, ease of use, ecosystem, features, performance, cost and TCO, and security, with time-series, bar and rada"
+    },
+    {
       "id": 5997098370,
       "number": 161,
       "title": "New in-scope 2026-10-23: 3 program(s) added targets",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-24T08:24:15Z",
       "fullBody": "## Problem\n\nPOST /api/users forwards req.body directly to createUser. Any JSON object is accepted, including missing email/fullName, unknown fields, and a plaintext password. The in-memory user record then stores the unchecked payload, which can create malformed accounts and leak credentials through GET /api/users.\n\n## Requested fix\n\nAdd a Zod schema for user creation and validate the request before persistence. Accept only the fields supported by the User model (email, fullName, optional bio and role), reject malformed payloads with a 400 response, and never persist a plaintext password. Add focused route/service tests for valid input, invalid email/missing fullName, unknown fields, and password exclusion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700",
       "bodyPreview": "## Problem POST /api/users forwards req.body directly to createUser. Any JSON object is accepted, including missing email/fullName, unknown fields, and a plaintext password. The in-memory user record then stores the unchecked payload, which can create malformed accounts and leak"
-    },
-    {
-      "id": 6012320659,
-      "number": 13679,
-      "title": "[Bounty #743] Validate /api/payments payload before intent creation",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13679",
-      "rewardUsd": 700,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T11:13:02Z",
-      "fullBody": "## Problem\n\nPOST /api/payments forwards `req.body` directly to `createPaymentIntent` without schema or bounds validation. Any arbitrary JSON payload is accepted, including negative or zero amounts, missing amounts, invalid currency identifiers, and excessive unbounded fields. In addition, unhandled validation errors or bad types can lead to malformed payment records and runtime unhandled exceptions.\n\n## Requested fix\n\n1. Implement a strict Zod validation schema (`createPaymentSchema`) in `apps/api/src/validators/payment.js` enforcing:\n   - `amount`: positive finite number (greater than 0).\n   - `currency`: strict enum supported currencies (`usd`, `eur`, `gbp`, `usdc`) with a sensible default (`usd`).\n   - `jobId`: optional string with bounded length (1 to 128 characters).\n   - `recipientId`: optional string with bounded length (1 to 128 characters).\n   - `description`: optional string with maximum 500 characters.\n   - `metadata`: optional key-value record for contextual routing.\n   - Strict rejection of unrecognized/arbitrary keys (`.strict()`).\n2. Update `paymentController.js` (`createPayment`) to parse and validate `req.body`, returning a structured HTTP 400 Bad Request error if validation fails.\n3. Add a comprehensive automated test suite (`apps/api/src/tests/payment.test.js`) using Node's native test runner (`node:test`, `node:assert/strict`) covering:\n   - Valid payment intent creation (returns 201 with payment intent details).\n   - Rejection of missing amount (400).\n   - Rejection of negative or zero amount (400).\n   - Rejection of unsupported currency strings (400).\n   - Rejection of unknown extraneous properties (400).\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
-      "bodyPreview": "## Problem POST /api/payments forwards `req.body` directly to `createPaymentIntent` without schema or bounds validation. Any arbitrary JSON payload is accepted, including negative or zero amounts, missing amounts, invalid currency identifiers, and excessive unbounded fields. In "
     }
   ],
   "solutions": [
@@ -1546,6 +1546,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-29T12:57:21.250Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-29T12:57:20.848Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
+    },
+    {
+      "time": "2026-10-29T12:57:20.848Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $104,597 USD."
+    },
+    {
+      "time": "2026-10-29T12:57:18.094Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-29T12:57:18.093Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-29T12:07:21.496Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2017,31 +2042,6 @@
     },
     {
       "time": "2026-10-28T22:30:31.223Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-28T22:30:31.221Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-28T21:58:36.717Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-28T21:58:36.370Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
-    },
-    {
-      "time": "2026-10-28T21:58:36.370Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $100,269 USD."
-    },
-    {
-      "time": "2026-10-28T21:58:33.989Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
