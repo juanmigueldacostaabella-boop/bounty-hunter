@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-29T01:21:02.819Z",
-  "scanCount": 312,
+  "lastScanAt": "2026-10-29T02:14:17.650Z",
+  "scanCount": 313,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 74,
-    "totalBountyPoolUsd": 100630,
+    "totalBountiesDetected": 75,
+    "totalBountyPoolUsd": 101830,
     "solutionsGenerated": 42,
     "potentialEarningsUsd": 69047,
     "prsSubmitted": 39
@@ -421,6 +421,19 @@
       "bodyPreview": "# New in-scope assets 2026-10-23 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Databricks (`h1:databricks`) https://hackerone.com/databricks - new in-scope: `login.databricks.co"
     },
     {
+      "id": 6091193282,
+      "number": 1344,
+      "title": "🎯 Bounty Alert: 8 New Opportunityies found",
+      "repo": "freedom-winds/BountyScout",
+      "htmlUrl": "https://github.com/freedom-winds/BountyScout/issues/1344",
+      "rewardUsd": 1000,
+      "category": "Nueva Función",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-29T02:05:18Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-29 02:05 UTC\n\n#### 1. [KOTH: new GVK KOTH Torch plugin (replaces the KOTH mod and DevPlugin)](https://github.com/GV-Server-Mods/GVK-Settings/issues/741)\n- **Repository:** [GV-Server-Mods/GVK-Settings](https://github.com/GV-Server-Mods/GVK-Settings)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T02:00:59Z\n\n#### 2. [BendTT mismatch for opaque higher-order template with dependent equality result](https://github.com/bendlang/bend/issues/1182)\n- **Repository:** [bendlang/bend](https://github.com/bendlang/bend)\n- **Comments:** 8\n- **Last Updated:** 2026-10-29T01:52:38Z\n\n#### 3. [[demand] high-priority 2026-10-29T01:43](https://github.com/relayhop/ClaudeEarnSelf-runtime/issues/1167)\n- **Repository:** [relayhop/ClaudeEarnSelf-runtime](https://github.com/relayhop/ClaudeEarnSelf-runtime)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T01:43:03Z\n\n#### 4. [Feature proposal: show what a run, a project and a period cost, from a bundled price table and the tokens already stored (bounty requested)](https://github.com/neatlogs/neatroots/issues/288)\n- **Repository:** [neatlogs/neatroots](https://github.com/neatlogs/neatroots)\n- **Comments:** 8\n- **Last Updated:** 2026-10-29T01:34:13Z\n\n#### 5. [[BOUNTY] API3 DAO - Use of first-party oracles [$1000]](https://github.com/ethereumzurich/sponsor-bounties/issues/3)\n- **Repository:** [ethereumzurich/sponsor-bounties](https://github.com/ethereumzurich/sponsor-bounties)\n- **Comments:** 2\n- **Last Updated:** 2026-10-29T01:32:43Z\n\n#### 6. [💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ](https://github.com/alfrexo95/bounty-bot/issues/58)\n- **Repository:** [alfrexo95/bounty-bot](https://github.com/alfrexo95/bounty-bot)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T01:32:14Z\n\n#### 7. [[tooling] preflight can never pass: `go build ./...` runs at the repo root, which has no Go module](https://github.com/limitlessprojects/Go-Hybrid/issues/2168)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T01:24:59Z\n\n#### 8. [Golden Goose candidate 001: B2B settlement eligibility preflight (WATCH)](https://github.com/P00NSMASHER/github-value-hunt-ledger/issues/863)\n- **Repository:** [P00NSMASHER/github-value-hunt-ledger](https://github.com/P00NSMASHER/github-value-hunt-ledger)\n- **Comments:** 4\n- **Last Updated:** 2026-10-29T01:38:41Z\n\n",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-29 02:05 UTC #### 1. [KOTH: new GVK KOTH Torch plugin (replaces the KOTH mod and DevPlugin)](https://github.com/GV-Server-Mods/GVK-Settings/issues/741) - **Repository:** [GV-Server-Mods/GVK-Settings](https://github.com/GV-Se"
+    },
+    {
       "id": 5998665702,
       "number": 13524,
       "title": "feat(utils): implement human-readable file size formatter formatBytes (ref #11876, #743)",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-24T12:04:53Z",
       "fullBody": "## Problem\n\nPOST /api/proposals forwards `req.body` directly to `createProposal` without schema or bounds validation. Any arbitrary JSON object is accepted into the in-memory proposals store, including negative or zero bid amounts, missing cover letters, missing jobId associations, and arbitrary injected fields. Furthermore, unhandled validation errors or malformed payloads can corrupt proposal records and lead to unexpected runtime failures.\n\n## Requested fix\n\n1. Implement a strict Zod validation schema (`createProposalSchema`) in `apps/api/src/validators/proposal.js` enforcing:\n   - `jobId`: required string with bounds (1 to 128 characters).\n   - `coverLetter`: required string with bounds (min 10 characters, max 5000 characters).\n   - `bidAmount`: positive finite number (strictly greater than 0).\n   - `estimatedDuration`: optional string with maximum 100 characters.\n   - `freelancerId`: optional string with maximum 128 characters.\n   - Rejection of unrecognized/arbitrary keys (`.strict()`).\n2. Update `apps/api/src/controllers/proposalController.js` (`postProposal`) to parse and validate `req.body` with `createProposalSchema`, returning structured HTTP 400 Bad Request error if validation fails.\n3. Add a comprehensive automated test suite (`apps/api/src/tests/proposal.test.js`) using Node's native test runner (`node:test`, `node:assert/strict`) covering:\n   - Valid proposal submission (returns 201 with generated proposal id).\n   - Rejection of missing jobId (400).\n   - Rejection of missing or too short cover letter (400).\n   - Rejection of negative or zero bid amount (400).\n   - Rejection of unknown extraneous properties (400).\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
       "bodyPreview": "## Problem POST /api/proposals forwards `req.body` directly to `createProposal` without schema or bounds validation. Any arbitrary JSON object is accepted into the in-memory proposals store, including negative or zero bid amounts, missing cover letters, missing jobId association"
-    },
-    {
-      "id": 6014847160,
-      "number": 13762,
-      "title": "[Bounty #743] Validate /api/reviews payload before persistence",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13762",
-      "rewardUsd": 700,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T16:02:39Z",
-      "fullBody": "## Problem\n\nPOST /api/reviews forwards req.body directly to createReview without schema validation. Any JSON object is accepted, including invalid rating ranges (e.g. negative numbers or numbers > 5), missing targetId, missing reviewerId, empty or excessively long comments, and prototype pollution fields. The in-memory review store then persists malformed reviews, degrading data integrity and breaking client consumers.\n\n## Requested fix\n\nAdd a strict Zod schema for review creation and validate the request in reviewController before persistence. Accept only valid rating integers between 1 and 5, require valid reviewerId and targetId strings, sanitize and bound optional comment text (1 to 2000 chars), and reject malformed payloads with a 400 Bad Request error. Add focused route/service tests for valid payload, out-of-range rating, missing required fields, and unknown property rejection.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700\n",
-      "bodyPreview": "## Problem POST /api/reviews forwards req.body directly to createReview without schema validation. Any JSON object is accepted, including invalid rating ranges (e.g. negative numbers or numbers > 5), missing targetId, missing reviewerId, empty or excessively long comments, and p"
     }
   ],
   "solutions": [
@@ -1522,6 +1522,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-29T02:14:20.472Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-29T02:14:20.160Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
+    },
+    {
+      "time": "2026-10-29T02:14:20.160Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $101,830 USD."
+    },
+    {
+      "time": "2026-10-29T02:14:17.650Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-29T02:14:17.648Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-29T01:21:05.323Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -1995,31 +2020,6 @@
       "time": "2026-10-28T11:59:50.987Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $96,909 USD."
-    },
-    {
-      "time": "2026-10-28T11:59:48.390Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-28T11:59:48.388Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-28T11:18:16.803Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-28T11:18:16.483Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #161..."
-    },
-    {
-      "time": "2026-10-28T11:18:16.483Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $96,859 USD."
     }
   ]
 }
