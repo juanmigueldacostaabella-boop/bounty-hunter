@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-29T12:57:18.094Z",
-  "scanCount": 327,
+  "lastScanAt": "2026-10-29T13:50:01.984Z",
+  "scanCount": 328,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,10 +10,10 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 74,
-    "totalBountyPoolUsd": 104597,
-    "solutionsGenerated": 43,
-    "potentialEarningsUsd": 71547,
+    "totalBountiesDetected": 75,
+    "totalBountyPoolUsd": 108797,
+    "solutionsGenerated": 44,
+    "potentialEarningsUsd": 76547,
     "prsSubmitted": 40
   },
   "activeBounties": [
@@ -29,6 +29,19 @@
       "createdAt": "2026-10-24T14:46:10Z",
       "fullBody": "**FUM Codex**\n\nПредложение пользователя от 24 октября: можем ли мы использовать AI-исследования уязвимостей для самофинансирования по примеру [кейса XBOW](https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit), присланного через [Cybersecurity News](https://cybersecuritynews.com/google-chrome-exploit-gpt-5-6/).\n\nЭто конкретный кандидат для существующего [пилота экономики оплачиваемого результата — #28](https://github.com/fum-lab/fum/issues/28), с бюджетом [#26](https://github.com/fum-lab/fum/issues/26), экономическим паспортом [#25](https://github.com/fum-lab/fum/issues/25) и проверкой получателя/платежей [#27](https://github.com/fum-lab/fum/issues/27). Новую независимую финансовую модель не создавать.\n\nXBOW сообщает о $250000 награды и $40000 вычислений за шесть дней вместе с четырьмя опытными исследователями. Это не полная себестоимость и не доказанная ожидаемая прибыль: труд, предшествующие попытки и вероятность успеха не раскрыты. В [действующих правилах Google](https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/chrome-friends/chrome-vulnerability-reward-program-rules.md#legal-points) выплаты находящимся в России исключены, Крым отдельно указан среди ограниченных территорий; все четыре специальных full-chain бонуса уже выданы. Обычная Chrome VRP продолжается, но доступный доход FUM из неё сейчас не предполагается.\n\nСледующий ограниченный результат — сравнительная записка по программам с реальной возможностью участия и выплаты нашему выбранному получателю. Первичный кандидат: [Яндекс, включая отдельные правила для AI-агентов](https://yandex.ru/bugbounty/i/llms.txt); [платёжный FAQ](https://yandex.ru/bugbounty/i/blog/faq). Наличие страницы программы не доказывает нашу персональную допустимость.\n\nДо исследования конкретных целей:\n\n- проверить актуальные scope, AI/автоматизацию, получателя, документы и платёжный маршрут; учитывать правила раскрытия и конфиденциальности отдельно от открытой лицензии FUM;\n- выбрать одну узкую разрешённую задачу, ограничить деньги/часы/попытки и заранее задать прекращение; не начинать с дорогой полной цепочки только из-за размера чужой награды;\n- считать все расходы и неудачи, дубликаты, независимое воспроизведение, переписку и задержку оплаты; награда назначена и деньги получены — разные состояния;\n- сохранять полезные проверяемые инструменты/регрессии для защиты FUMA и повторного применения; не публиковать неустранённые уязвимости и приватные материалы автоматически;\n- итог: доступен огран",
       "bodyPreview": "**FUM Codex** Предложение пользователя от 24 октября: можем ли мы использовать AI-исследования уязвимостей для самофинансирования по примеру [кейса XBOW](https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit), присланного через [Cybersecurity News](https://cybersecurityne"
+    },
+    {
+      "id": 6100286541,
+      "number": 192,
+      "title": "New in-scope 2026-10-29: 3 program(s) added targets",
+      "repo": "abdulsalam-create/bounty-watch",
+      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/192",
+      "rewardUsd": 5000,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-29T13:06:13Z",
+      "fullBody": "# New in-scope assets 2026-10-29\n\n3 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Water-Link (`it:waterlink/water-link`)  💰 $5000\nhttps://www.intigriti.com/programs/waterlink/water-link/detail\n- new in-scope: `*.aww.be`, `*.water-link.be`, `adelta.be`, `aquawardsoperate.water-link.be`, `aquawardsspatial.water-link.be`, `aww.eu`, `desktop.water-link.be`, `induss.eu`, `indussiibis.water-link.be`, `pit.water-link.be`, `rio-link.be`, `water-kracht-levering.be`, `water-kracht-levering.eu`, `water-link-jaarverslag.be`, `waterkracht-levering.be`, `waterkracht-levering.eu`, `waterlink.be`, `waterstoringen.be`\n\n### DevAcrobats (`bc:devacrobats-market`)  💰 $1500\nhttps://bugcrowd.com/engagements/devacrobats-market\n- new in-scope: `https://marketplace.atlassian.com/apps/1218655/performance-charts-and-reports-for-jira-dashboards?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/1218655/performance-charts-and-reports-for-jira-dashboards?hosting=datacenter&tab=overview`\n\n### Databricks (`h1:databricks`)\nhttps://hackerone.com/databricks\n- new in-scope: `https://github.com/databricks/*`\n\n\ncc @abdulsalam-create",
+      "bodyPreview": "# New in-scope assets 2026-10-29 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Water-Link (`it:waterlink/water-link`) 💰 $5000 https://www.intigriti.com/programs/waterlink/wate"
     },
     {
       "id": 6060494985,
@@ -523,22 +536,23 @@
       "createdAt": "2026-10-23T15:38:24Z",
       "fullBody": "References #11892, #743.\n\n## Feature Description\nDisplaying transaction summaries, wallet addresses, event logs, and user profile bios in frontend cards, notifications, and logging pipes requires a robust, unicode-aware `truncate(str, length, options)` utility with ellipsis and word-boundary preservation.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `truncate(str, length, options)` in `apps/api/src/utils/truncate.js`:\n   - Configurable maximum length: truncates string if length exceeds target.\n   - Configurable omission string: defaults to `'...'`, fully customizable (e.g. `'…'`, `' [more]'`).\n   - Word boundary preservation: supports `separator` (string or RegExp, e.g. `' '` or `/\\s+/`) to prevent chopping words in half.\n   - Address / Hash middle truncation: supports `middle: true` to truncate in the center (e.g. `0xE5Ab...B282`), vital for blockchain addresses and transaction hashes.\n   - Safe input coercion: gracefully handles `null`, `undefined`, numbers, and boolean inputs without throwing.\n   - Astral / Unicode / Emoji safety: avoids breaking surrogate pairs or multi-byte unicode code points.\n   - Edge case handling: handles length `<= omission.length`, empty strings, negative length.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/truncate.test.js`):\n   - Standard length truncation with default `'...'`.\n   - Custom omission indicator.\n   - Word boundary preservation with string separator.\n   - Word boundary preservation with RegExp separator.\n   - Web3 address / transaction hash middle truncation (`middle: true`).\n   - Unicode code point and emoji preservation without broken surrogate pairs.\n   - Edge cases: strings shorter than length, equal to length, length <= omission length, empty string.\n   - Non-string inputs: null, undefined, number, boolean.\n\n/bounty 800\n",
       "bodyPreview": "References #11892, #743. ## Feature Description Displaying transaction summaries, wallet addresses, event logs, and user profile bios in frontend cards, notifications, and logging pipes requires a robust, unicode-aware `truncate(str, length, options)` utility with ellipsis and w"
-    },
-    {
-      "id": 6011002391,
-      "number": 13676,
-      "title": "[Bounty #743] Validate /api/users payload before persistence",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13676",
-      "rewardUsd": 700,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-24T08:24:15Z",
-      "fullBody": "## Problem\n\nPOST /api/users forwards req.body directly to createUser. Any JSON object is accepted, including missing email/fullName, unknown fields, and a plaintext password. The in-memory user record then stores the unchecked payload, which can create malformed accounts and leak credentials through GET /api/users.\n\n## Requested fix\n\nAdd a Zod schema for user creation and validate the request before persistence. Accept only the fields supported by the User model (email, fullName, optional bio and role), reject malformed payloads with a 400 response, and never persist a plaintext password. Add focused route/service tests for valid input, invalid email/missing fullName, unknown fields, and password exclusion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\nThis issue is created under the Low Handing Fruit Automation bounty. I will submit a PR that references this issue and issue #743.\n\n/bounty $700",
-      "bodyPreview": "## Problem POST /api/users forwards req.body directly to createUser. Any JSON object is accepted, including missing email/fullName, unknown fields, and a plaintext password. The in-memory user record then stores the unchecked payload, which can create malformed accounts and leak"
     }
   ],
   "solutions": [
+    {
+      "id": "0ccf3267-8dfe-41b4-8ded-8ed58cf65c04",
+      "bountyId": 6100286541,
+      "repo": "abdulsalam-create/bounty-watch",
+      "issueNumber": 192,
+      "issueUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/192",
+      "rewardUsd": 5000,
+      "prTitle": "fix: resolve issue #192 - New in-scope 2026-10-29: 3 program(s) added target",
+      "prBody": "## Proposed Solution for Issue #192\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for abdulsalam-create/bounty-watch #192.\n\n### Proposed Code Patch\n```\n// Review specific implementation in abdulsalam-create/bounty-watch #192\n```\n\n---\n*Bounty Reward:* **$5000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in abdulsalam-create/bounty-watch #192",
+      "explanation": "Technical analysis and proposed resolution for abdulsalam-create/bounty-watch #192.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-10-29T13:50:06.885Z"
+    },
     {
       "id": "f7c2e2ba-39b9-4b0e-9f04-937cddcde3cc",
       "bountyId": 6094420680,
@@ -1546,6 +1560,36 @@
   ],
   "logs": [
     {
+      "time": "2026-10-29T13:50:07.238Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-29T13:50:06.885Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-10-29T13:50:06.885Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para abdulsalam-create/bounty-watch #192 ($5000 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-10-29T13:50:04.785Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $108,797 USD."
+    },
+    {
+      "time": "2026-10-29T13:50:01.984Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-29T13:50:01.983Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-29T12:57:21.250Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2014,36 +2058,6 @@
       "time": "2026-10-28T23:11:35.052Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $100,359 USD."
-    },
-    {
-      "time": "2026-10-28T23:11:32.502Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-28T23:11:32.501Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-28T22:30:33.684Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-28T22:30:33.280Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
-    },
-    {
-      "time": "2026-10-28T22:30:33.280Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $100,219 USD."
-    },
-    {
-      "time": "2026-10-28T22:30:31.223Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
   ]
 }
