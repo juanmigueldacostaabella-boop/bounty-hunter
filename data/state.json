@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-29T14:40:09.698Z",
-  "scanCount": 329,
+  "lastScanAt": "2026-10-29T15:30:33.936Z",
+  "scanCount": 330,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 74,
-    "totalBountyPoolUsd": 108547,
+    "totalBountyPoolUsd": 109497,
     "solutionsGenerated": 44,
     "potentialEarningsUsd": 76547,
     "prsSubmitted": 40
@@ -473,6 +473,19 @@
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-29 02:05 UTC #### 1. [KOTH: new GVK KOTH Torch plugin (replaces the KOTH mod and DevPlugin)](https://github.com/GV-Server-Mods/GVK-Settings/issues/741) - **Repository:** [GV-Server-Mods/GVK-Settings](https://github.com/GV-Se"
     },
     {
+      "id": 6102391765,
+      "number": 40,
+      "title": "[Analysis] HEX Revival client mod: features and what to adopt",
+      "repo": "Criesener/hex-server",
+      "htmlUrl": "https://github.com/Criesener/hex-server/issues/40",
+      "rewardUsd": 1000,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-29T14:58:44Z",
+      "fullBody": "Analysis of the community project [Theveninm/Hex-shard-of-fates-revival](https://github.com/Theveninm/Hex-shard-of-fates-revival) (HEX Revival, v1.2.6): which of its features make sense for this server, and how we would build them. Report only; each feature gets its own issue once approved.\n\n## Architecture: why we can't take its code 1:1\n- **HEX Revival is a client mod.** It is C#, BepInEx 5 + Harmony patches on `Assembly-CSharp.dll`. It switches the client to `GameConfig.Standalone`, so rules and AI run locally in `StandaloneSession`. Campaign, store, FRA, Battlegrounds and Siege are answered by prefixes on `ClientCampaignManager` / `EscrowService` / `TournamentsService` / `Execution.IssueRequest`. Saves are text files in `HexRevivalSaves/`.\n- **Its PvP server** (`server/`, .NET 8) only does lobby, chat and relay. The host's client runs the rules.\n- **Its own windows are drawn into the client with IMGUI:** Configure the AIs, Deck Modifiers, AI level and randomness, New Account with \"Unlock everything\", Host a game. We serve the **unmodified client**, so we cannot add such windows. We can port the **logic, data and values** into our Python handlers. Settings would go through chat commands, data JSON, or a page on our web proxy (`:8081`, next to `/register`).\n- **License:** MIT for its code only (no HEX content). Its values carry source tags (`Progression.Src`: Game, Video, Wiki2019, Forum2017, HexTCG2018, … and `HexServer`, i.e. values it took from our upstream). `docs/PLACEHOLDERS.md` lists every unsourced value.\n\n## Screenshots (viewed)\n| Screenshot | Shows | For us |\n|---|---|---|\n| alachian-sea | AZ2 world map with the ship on it, hubs, quests, dungeon icons, legend | AZ2 runtime is missing |\n| sea-voyages | \"Prepare for Battle\": the ship \"Seas the Day\" vs Charybdis (Whirlpool / Bottom of the Depths) | ship battles are missing |\n| battlegrounds | Standard Constructed Ladder plus Constructed, Draft and Sealed Gauntlets (\"Already Registered W/L\"), Limited and Constructed rank with stars | bot gauntlets and ladder are missing |\n| siege | Siege Attack list: keeper name, wins, cost to attack (530–806 gold), rewards (gold + 15/16 Siege Sacks) | Siege is a stub |\n| store | gold-priced boosters (2000, Qty 1/3/10), \"Primal Chance\" badge, tabs Decks / Prize Exchange / Special | Prize Exchange and Battleboards are missing |\n| frost-ring-arena | FRA hall with the \"Configure the AIs\" button | FRA exists here; buffs and challenges are missing |\n| configure-ais | pe",
+      "bodyPreview": "Analysis of the community project [Theveninm/Hex-shard-of-fates-revival](https://github.com/Theveninm/Hex-shard-of-fates-revival) (HEX Revival, v1.2.6): which of its features make sense for this server, and how we would build them. Report only; each feature gets its own issue onc"
+    },
+    {
       "id": 5998665702,
       "number": 13524,
       "title": "feat(utils): implement human-readable file size formatter formatBytes (ref #11876, #743)",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-23T15:34:44Z",
       "fullBody": "References #11890, #743.\n\n## Feature Description\nDeeply cloning multi-layered nested configurations, Web3 transaction payloads, Solana instruction objects, and state snapshots requires an industrial-grade, prototype-pollution resistant `cloneDeep` utility that correctly isolates mutable references, supports native types (Date, RegExp, Map, Set), and safely handles circular references.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `cloneDeep(value)` in `apps/api/src/utils/cloneDeep.js`:\n   - Deeply clones plain objects, nested objects, and arrays with full structural fidelity.\n   - Preserves primitive values (numbers, strings, booleans, bigints, symbols, null, undefined).\n   - Handles standard native types:\n     - `Date`: returns a new Date with identical timestamp.\n     - `RegExp`: returns a new RegExp with matching source and flags.\n     - `Map`: deeply clones all keys and values into a fresh Map instance.\n     - `Set`: deeply clones all members into a fresh Set instance.\n   - Prevents Prototype Pollution attacks: skips `__proto__` and blocks tampering with `constructor` or `prototype`.\n   - Circular reference defense: tracks seen objects via `WeakMap` to cleanly clone cyclic graphs without `RangeError: Maximum call stack size exceeded`.\n   - Supports `Object.create(null)` dictionary objects cleanly without relying on `Object.prototype`.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/cloneDeep.test.js`):\n   - Primitive preservation tests.\n   - Deep mutation isolation (mutating cloned object does not mutate source).\n   - Array and nested array deep cloning.\n   - Date and RegExp clone tests.\n   - Map and Set deep clone tests.\n   - Cyclic reference graph cloning tests.\n   - `Object.create(null)` object cloning tests.\n   - Prototype pollution defense tests (`__proto__`, `constructor`).\n   - Complex blockchain transaction receipt payload cloning.\n\n/bounty 800\n",
       "bodyPreview": "References #11890, #743. ## Feature Description Deeply cloning multi-layered nested configurations, Web3 transaction payloads, Solana instruction objects, and state snapshots requires an industrial-grade, prototype-pollution resistant `cloneDeep` utility that correctly isolates "
-    },
-    {
-      "id": 6000790721,
-      "number": 13537,
-      "title": "feat(utils): implement word-boundary and multi-byte safe string truncation utility truncate (ref #11892, #743)",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13537",
-      "rewardUsd": 800,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T15:38:24Z",
-      "fullBody": "References #11892, #743.\n\n## Feature Description\nDisplaying transaction summaries, wallet addresses, event logs, and user profile bios in frontend cards, notifications, and logging pipes requires a robust, unicode-aware `truncate(str, length, options)` utility with ellipsis and word-boundary preservation.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `truncate(str, length, options)` in `apps/api/src/utils/truncate.js`:\n   - Configurable maximum length: truncates string if length exceeds target.\n   - Configurable omission string: defaults to `'...'`, fully customizable (e.g. `'…'`, `' [more]'`).\n   - Word boundary preservation: supports `separator` (string or RegExp, e.g. `' '` or `/\\s+/`) to prevent chopping words in half.\n   - Address / Hash middle truncation: supports `middle: true` to truncate in the center (e.g. `0xE5Ab...B282`), vital for blockchain addresses and transaction hashes.\n   - Safe input coercion: gracefully handles `null`, `undefined`, numbers, and boolean inputs without throwing.\n   - Astral / Unicode / Emoji safety: avoids breaking surrogate pairs or multi-byte unicode code points.\n   - Edge case handling: handles length `<= omission.length`, empty strings, negative length.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/truncate.test.js`):\n   - Standard length truncation with default `'...'`.\n   - Custom omission indicator.\n   - Word boundary preservation with string separator.\n   - Word boundary preservation with RegExp separator.\n   - Web3 address / transaction hash middle truncation (`middle: true`).\n   - Unicode code point and emoji preservation without broken surrogate pairs.\n   - Edge cases: strings shorter than length, equal to length, length <= omission length, empty string.\n   - Non-string inputs: null, undefined, number, boolean.\n\n/bounty 800\n",
-      "bodyPreview": "References #11892, #743. ## Feature Description Displaying transaction summaries, wallet addresses, event logs, and user profile bios in frontend cards, notifications, and logging pipes requires a robust, unicode-aware `truncate(str, length, options)` utility with ellipsis and w"
     }
   ],
   "solutions": [
@@ -1560,6 +1560,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-29T15:30:37.447Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-29T15:30:37.030Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-10-29T15:30:37.029Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $109,497 USD."
+    },
+    {
+      "time": "2026-10-29T15:30:33.936Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-29T15:30:33.934Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-29T14:40:13.038Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2031,31 +2056,6 @@
     },
     {
       "time": "2026-10-29T00:18:33.240Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $100,471 USD."
-    },
-    {
-      "time": "2026-10-29T00:18:30.370Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-29T00:18:30.368Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-28T23:48:57.082Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-28T23:48:56.711Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #187..."
-    },
-    {
-      "time": "2026-10-28T23:48:56.711Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $100,471 USD."
     }
