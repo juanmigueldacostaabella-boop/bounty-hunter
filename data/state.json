@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-30T20:26:14.057Z",
-  "scanCount": 368,
+  "lastScanAt": "2026-10-30T21:06:33.732Z",
+  "scanCount": 369,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 76,
-    "totalBountyPoolUsd": 107884,
+    "totalBountyPoolUsd": 109509,
     "solutionsGenerated": 44,
     "potentialEarningsUsd": 76547,
     "prsSubmitted": 40
@@ -486,6 +486,19 @@
       "bodyPreview": "Analysis of the community project [Theveninm/Hex-shard-of-fates-revival](https://github.com/Theveninm/Hex-shard-of-fates-revival) (HEX Revival, v1.2.6): which of its features make sense for this server, and how we would build them. Report only; each feature gets its own issue onc"
     },
     {
+      "id": 6126681819,
+      "number": 1,
+      "title": "$1000 Bounty",
+      "repo": "eleectrum/eleectrum.github.io",
+      "htmlUrl": "https://github.com/eleectrum/eleectrum.github.io/issues/1",
+      "rewardUsd": 1000,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-30T20:45:16Z",
+      "fullBody": "If you find some bugs on my website, I will pay $1000 bounty",
+      "bodyPreview": "If you find some bugs on my website, I will pay $1000 bounty"
+    },
+    {
       "id": 5998665702,
       "number": 13524,
       "title": "feat(utils): implement human-readable file size formatter formatBytes (ref #11876, #743)",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-23T14:18:57Z",
       "fullBody": "References #11886, #743.\n\n## Feature Description\nRunning mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exhaustion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `pLimit(concurrency)` in `apps/api/src/utils/pLimit.js`:\n   - Accepts `concurrency` (positive integer).\n   - Validates concurrency: throws `TypeError` if concurrency is not a positive finite integer (e.g. `<= 0`, non-integer, or `NaN`).\n   - Returns a `limit(fn, ...args)` wrapper function that executes an async function respecting the maximum active execution limit.\n   - Provides getter properties:\n     - `limit.activeCount`: number of currently executing async tasks.\n     - `limit.pendingCount`: number of promises queued awaiting execution.\n   - Provides helper methods:\n     - `limit.clearQueue()`: clears all queued/pending tasks, rejecting them with an abort/cancellation error.\n   - Handles rejections and resolutions properly without stalling queue drainage.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/pLimit.test.js`):\n   - Concurrency throttling verification (maximum N concurrent tasks executing at any point in time).\n   - Correct task ordering / FIFO resolution.\n   - `activeCount` and `pendingCount` metric accuracy throughout lifecycle.\n   - Forwarding returned values and thrown errors.\n   - Forwarding arguments to the wrapped function.\n   - `clearQueue()` behavior and queue draining.\n   - Validation and error handling for invalid concurrency parameters.\n\n/bounty 800\n",
       "bodyPreview": "References #11886, #743. ## Feature Description Running mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exha"
-    },
-    {
-      "id": 6000731417,
-      "number": 13535,
-      "title": "feat(utils): implement prototype-safe deep clone utility cloneDeep (ref #11890, #743)",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13535",
-      "rewardUsd": 800,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T15:34:44Z",
-      "fullBody": "References #11890, #743.\n\n## Feature Description\nDeeply cloning multi-layered nested configurations, Web3 transaction payloads, Solana instruction objects, and state snapshots requires an industrial-grade, prototype-pollution resistant `cloneDeep` utility that correctly isolates mutable references, supports native types (Date, RegExp, Map, Set), and safely handles circular references.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `cloneDeep(value)` in `apps/api/src/utils/cloneDeep.js`:\n   - Deeply clones plain objects, nested objects, and arrays with full structural fidelity.\n   - Preserves primitive values (numbers, strings, booleans, bigints, symbols, null, undefined).\n   - Handles standard native types:\n     - `Date`: returns a new Date with identical timestamp.\n     - `RegExp`: returns a new RegExp with matching source and flags.\n     - `Map`: deeply clones all keys and values into a fresh Map instance.\n     - `Set`: deeply clones all members into a fresh Set instance.\n   - Prevents Prototype Pollution attacks: skips `__proto__` and blocks tampering with `constructor` or `prototype`.\n   - Circular reference defense: tracks seen objects via `WeakMap` to cleanly clone cyclic graphs without `RangeError: Maximum call stack size exceeded`.\n   - Supports `Object.create(null)` dictionary objects cleanly without relying on `Object.prototype`.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/cloneDeep.test.js`):\n   - Primitive preservation tests.\n   - Deep mutation isolation (mutating cloned object does not mutate source).\n   - Array and nested array deep cloning.\n   - Date and RegExp clone tests.\n   - Map and Set deep clone tests.\n   - Cyclic reference graph cloning tests.\n   - `Object.create(null)` object cloning tests.\n   - Prototype pollution defense tests (`__proto__`, `constructor`).\n   - Complex blockchain transaction receipt payload cloning.\n\n/bounty 800\n",
-      "bodyPreview": "References #11890, #743. ## Feature Description Deeply cloning multi-layered nested configurations, Web3 transaction payloads, Solana instruction objects, and state snapshots requires an industrial-grade, prototype-pollution resistant `cloneDeep` utility that correctly isolates "
     }
   ],
   "solutions": [
@@ -1560,6 +1560,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-30T21:06:36.153Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-30T21:06:35.844Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-10-30T21:06:35.844Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $109,509 USD."
+    },
+    {
+      "time": "2026-10-30T21:06:33.732Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-30T21:06:33.730Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-30T20:26:16.934Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2031,31 +2056,6 @@
     },
     {
       "time": "2026-10-30T06:36:50.562Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-30T05:57:09.828Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-30T05:57:09.524Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-10-30T05:57:09.524Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $107,816 USD."
-    },
-    {
-      "time": "2026-10-30T05:57:07.147Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-30T05:57:07.145Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
