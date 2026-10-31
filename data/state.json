@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-31T17:03:36.587Z",
-  "scanCount": 400,
+  "lastScanAt": "2026-10-31T17:34:48.380Z",
+  "scanCount": 401,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 73,
-    "totalBountyPoolUsd": 113713,
+    "totalBountiesDetected": 68,
+    "totalBountyPoolUsd": 114273,
     "solutionsGenerated": 44,
     "potentialEarningsUsd": 76547,
     "prsSubmitted": 40
@@ -1560,6 +1560,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-31T17:34:50.972Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-31T17:34:50.650Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-10-31T17:34:50.650Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $114,273 USD."
+    },
+    {
+      "time": "2026-10-31T17:34:48.381Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-31T17:34:48.378Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-31T17:03:39.404Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2031,31 +2056,6 @@
     },
     {
       "time": "2026-10-31T05:43:23.335Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-31T05:08:02.112Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-31T05:08:01.834Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-10-31T05:08:01.833Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $109,174 USD."
-    },
-    {
-      "time": "2026-10-31T05:08:00.055Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-31T05:08:00.053Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
