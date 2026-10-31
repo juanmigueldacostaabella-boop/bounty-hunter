@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-31T11:48:41.147Z",
-  "scanCount": 391,
+  "lastScanAt": "2026-10-31T12:19:50.375Z",
+  "scanCount": 392,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 75,
-    "totalBountyPoolUsd": 109399,
+    "totalBountiesDetected": 71,
+    "totalBountyPoolUsd": 113801,
     "solutionsGenerated": 44,
     "potentialEarningsUsd": 76547,
     "prsSubmitted": 40
@@ -447,6 +447,32 @@
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-29 12:35 UTC #### 1. [Add \"CMS Comparison\" page: WordPress, Webflow and other CMSs on popularity, growth, talent pool, ease of use, ecosystem, features, performance, cost and TCO, and security, with time-series, bar and rada"
     },
     {
+      "id": 6134668905,
+      "number": 1346,
+      "title": "[radar] SN open bounty 2026-10-31T12:13",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1346",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-31T12:13:27Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1605336\tStacker_Sports\t3\t1069\t4200\t18\t21.4\t1448206\t2652\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 4.200 double bounty\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1605336 Stacker_Sports 3 1069 4200 18 21.4 1448206 2652 recent@Stacker_Sports|top@Stacker_Sports OPEN_BOUNTY,HOT,SELF_POST_OPP 🏈 Sunday Leaders Bounty • 4.200 double bounty ```"
+    },
+    {
+      "id": 6134658663,
+      "number": 1345,
+      "title": "[radar] SN open bounty 2026-10-31T12:12",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1345",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-10-31T12:12:21Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1605944\thistory\t2\t21\t10000\t0\t0.2\t9274\t29131\trecent@history|top@history\tOPEN_BOUNTY,LOW_COMP,FRESH\tIYKYK:  Can you guess what this is about?\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1605944 history 2 21 10000 0 0.2 9274 29131 recent@history|top@history OPEN_BOUNTY,LOW_COMP,FRESH IYKYK: Can you guess what this is about? ```"
+    },
+    {
       "id": 5997098370,
       "number": 161,
       "title": "New in-scope 2026-10-23: 3 program(s) added targets",
@@ -510,32 +536,6 @@
       "createdAt": "2026-10-23T13:28:58Z",
       "fullBody": "References #11876, #743.\n\n## Feature Description\nFile upload attachments, storage quota meters, and media transfer metrics require a reliable human-readable byte size formatter with configurable decimal precision and safe fallback behavior. Standard floating-point calculations frequently produce unrounded fractions or crash on non-numeric or negative values. A hardened, fail-safe `formatBytes(bytes, decimals)` utility is required.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Created `apps/api/src/utils/formatBytes.js`:\n   - Computes standard binary scaling (1024 base) across `B`, `KB`, `MB`, `GB`, `TB`, `PB`.\n   - Supports configurable decimal places (default: 2) and optional options object.\n   - Automatically eliminates redundant trailing decimal zeros (e.g. `1.50 KB` -> `1.5 KB`) while supporting explicit `preserveTrailingZeros: true`.\n   - Fail-safe fallback: returns `\"0 B\"` for negative numbers, `NaN`, non-finite (`Infinity`), `null`, `undefined`, empty strings, and non-numeric types.\n   - Safely parses numeric strings (e.g. `\"1048576\"` -> `\"1 MB\"`).\n   - Allows customizable unit lists and separators.\n   - Exported complementary `parseBytes(str)` utility to convert formatted human-readable size strings back into exact integer bytes.\n2. Monorepo Test Discovery Alignment:\n   - Configured `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test discovery.\n3. Comprehensive Unit Test Suite:\n   - Created `apps/api/src/tests/formatBytes.test.js` validating:\n     - Exact threshold conversions across all binary powers (B, KB, MB, GB, TB, PB).\n     - Decimal precision configurations (0, 1, 2, 3 decimals, negative clamping, trailing zero preservation).\n     - Fail-safe formatting on negative numbers, non-numeric strings, `null`, `undefined`, `NaN`, `Infinity`, and booleans.\n     - Numeric string parsing.\n     - Custom units and custom separator strings.\n     - Reverse byte parsing with `parseBytes` (100% test pass).\n\n/bounty 800\n",
       "bodyPreview": "References #11876, #743. ## Feature Description File upload attachments, storage quota meters, and media transfer metrics require a reliable human-readable byte size formatter with configurable decimal precision and safe fallback behavior. Standard floating-point calculations fr"
-    },
-    {
-      "id": 5998585863,
-      "number": 13522,
-      "title": "fix(api): sanitize uploaded original filenames in upload metadata response (ref #5859, #743)",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13522",
-      "rewardUsd": 800,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T13:23:52Z",
-      "fullBody": "References #5859, #743.\n\n## Feature / Vulnerability Description\n`uploadFile` returns `req.file.originalname` directly in the JSON response. Multipart clients can submit filenames containing path separators (`/`, `\\`) or control characters such as `../secret.txt`, `C:\\Windows\\System32\\calc.exe`, null bytes, or newline-delimited strings. Returning raw uploaded filenames can lead to path traversal perception, log injection, or downstream metadata parsing risks.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Created `apps/api/src/utils/sanitizeFilename.js`:\n   - Normalizes uploaded filenames using Unicode NFC.\n   - Strips POSIX and Windows path separators and retains only the final filename segment.\n   - Strips Windows drive letters (e.g. `C:`, `D:`).\n   - Eliminates directory traversal tokens (`.`, `..`, `...`).\n   - Removes null bytes (`\\0`), control characters (0x00-0x1F, 0x7F-0x9F), and invalid filesystem characters (`<`, `>`, `:`, `\"`, `|`, `?`, `*`).\n   - Trims surrounding whitespace and trailing dots/spaces.\n   - Enforces configurable metadata-safe length capping (default 100 characters) while preserving file extensions.\n   - Provides safe fallback (`\"file\"`) for empty, non-string, or stripped names.\n   - Exports `isValidFilename(filename)` validation helper.\n2. Integrated `sanitizeFilename` into `apps/api/src/controllers/uploadController.js`:\n   - Sanitizes `req.file.originalname` before returning in `201` response payload.\n   - Preserves `null` filename for missing file uploads (`status: \"no-file\"`).\n3. Monorepo Test Discovery Alignment:\n   - Configured `\"test\": \"node --test\"` in `apps/api/package.json` for reliable test execution.\n4. Comprehensive Unit Test Suite:\n   - Created `apps/api/src/tests/sanitizeFilename.test.js` validating:\n     - Standard filenames and spaces\n     - POSIX and Windows absolute/relative path traversal prevention\n     - Control character, newline, and null-byte elimination\n     - Unsafe filesystem characters and trailing dots/spaces trimming\n     - Length capping with and without extension preservation\n     - Empty, null, undefined, and custom fallback handling\n     - `uploadController` integration with 100% test pass (10/10 passing).\n\n/bounty 800\n",
-      "bodyPreview": "References #5859, #743. ## Feature / Vulnerability Description `uploadFile` returns `req.file.originalname` directly in the JSON response. Multipart clients can submit filenames containing path separators (`/`, `\\`) or control characters such as `../secret.txt`, `C:\\Windows\\Syst"
-    },
-    {
-      "id": 5999483828,
-      "number": 13530,
-      "title": "feat(utils): implement asynchronous concurrency limiter pLimit (ref #11886, #743)",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13530",
-      "rewardUsd": 800,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T14:18:57Z",
-      "fullBody": "References #11886, #743.\n\n## Feature Description\nRunning mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exhaustion.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Implement `pLimit(concurrency)` in `apps/api/src/utils/pLimit.js`:\n   - Accepts `concurrency` (positive integer).\n   - Validates concurrency: throws `TypeError` if concurrency is not a positive finite integer (e.g. `<= 0`, non-integer, or `NaN`).\n   - Returns a `limit(fn, ...args)` wrapper function that executes an async function respecting the maximum active execution limit.\n   - Provides getter properties:\n     - `limit.activeCount`: number of currently executing async tasks.\n     - `limit.pendingCount`: number of promises queued awaiting execution.\n   - Provides helper methods:\n     - `limit.clearQueue()`: clears all queued/pending tasks, rejecting them with an abort/cancellation error.\n   - Handles rejections and resolutions properly without stalling queue drainage.\n2. Monorepo Test Discovery Alignment:\n   - Configure `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test execution.\n3. Comprehensive Unit Test Suite (`apps/api/src/tests/pLimit.test.js`):\n   - Concurrency throttling verification (maximum N concurrent tasks executing at any point in time).\n   - Correct task ordering / FIFO resolution.\n   - `activeCount` and `pendingCount` metric accuracy throughout lifecycle.\n   - Forwarding returned values and thrown errors.\n   - Forwarding arguments to the wrapped function.\n   - `clearQueue()` behavior and queue draining.\n   - Validation and error handling for invalid concurrency parameters.\n\n/bounty 800\n",
-      "bodyPreview": "References #11886, #743. ## Feature Description Running mass background verification tasks, webhook deliveries, image thumbnail generations, and parallel RPC queries requires a robust asynchronous concurrency limiter to prevent event loop starvation, rate limits, and memory exha"
     }
   ],
   "solutions": [
@@ -1560,6 +1560,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-31T12:19:52.791Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-31T12:19:52.500Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-10-31T12:19:52.499Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $113,801 USD."
+    },
+    {
+      "time": "2026-10-31T12:19:50.375Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-31T12:19:50.373Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-31T11:48:43.748Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2031,31 +2056,6 @@
     },
     {
       "time": "2026-10-30T23:22:22.143Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-30T22:53:44.460Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-30T22:53:44.106Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-10-30T22:53:44.106Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $109,099 USD."
-    },
-    {
-      "time": "2026-10-30T22:53:42.152Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-30T22:53:42.149Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
