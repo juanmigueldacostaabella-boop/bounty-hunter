@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-10-31T12:19:50.375Z",
-  "scanCount": 392,
+  "lastScanAt": "2026-10-31T13:13:52.489Z",
+  "scanCount": 393,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 71,
-    "totalBountyPoolUsd": 113801,
+    "totalBountiesDetected": 72,
+    "totalBountyPoolUsd": 113526,
     "solutionsGenerated": 44,
     "potentialEarningsUsd": 76547,
     "prsSubmitted": 40
@@ -473,6 +473,19 @@
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1605944 history 2 21 10000 0 0.2 9274 29131 recent@history|top@history OPEN_BOUNTY,LOW_COMP,FRESH IYKYK: Can you guess what this is about? ```"
     },
     {
+      "id": 6134854237,
+      "number": 201,
+      "title": "New in-scope 2026-10-31: 2 program(s) added targets",
+      "repo": "abdulsalam-create/bounty-watch",
+      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/201",
+      "rewardUsd": 1500,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-10-31T12:35:22Z",
+      "fullBody": "# New in-scope assets 2026-10-31\n\n2 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### StonikByte (`bc:stonikbyte`)  💰 $1500\nhttps://bugcrowd.com/engagements/stonikbyte\n- new in-scope: `https://marketplace.atlassian.com/apps/1157161318/countdown-regional-clock?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/1855294554/pivot-tables-charts-heatmaps-for-jira-agile-reporting?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/2113139725/formula-cards-gauge-charts-rag-reports-custom-kpis?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/2194903109/cycle-time-lead-time-time-in-status-charts-for-agile?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/3937617820/team-wallboard-for-agile-scrum-kanban-itsm-dashboards?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/4240011577/work-breakdown-structure-link-hierarchy-dependency-tree?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/89496753/pivot-worklog-reports-timesheets-charts-heatmaps?hosting=cloud&tab=overview`\n\n### Vercel (`h1:vercel`)\nhttps://hackerone.com/vercel\n- new in-scope: `https://github.com/better-auth/better-auth`\n\n\ncc @abdulsalam-create",
+      "bodyPreview": "# New in-scope assets 2026-10-31 2 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### StonikByte (`bc:stonikbyte`) 💰 $1500 https://bugcrowd.com/engagements/stonikbyte - new in-scope:"
+    },
+    {
       "id": 5997098370,
       "number": 161,
       "title": "New in-scope 2026-10-23: 3 program(s) added targets",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-30T20:45:16Z",
       "fullBody": "If you find some bugs on my website, I will pay $1000 bounty",
       "bodyPreview": "If you find some bugs on my website, I will pay $1000 bounty"
-    },
-    {
-      "id": 5998665702,
-      "number": 13524,
-      "title": "feat(utils): implement human-readable file size formatter formatBytes (ref #11876, #743)",
-      "repo": "SecureBananaLabs/bug-bounty",
-      "htmlUrl": "https://github.com/SecureBananaLabs/bug-bounty/issues/13524",
-      "rewardUsd": 800,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T13:28:58Z",
-      "fullBody": "References #11876, #743.\n\n## Feature Description\nFile upload attachments, storage quota meters, and media transfer metrics require a reliable human-readable byte size formatter with configurable decimal precision and safe fallback behavior. Standard floating-point calculations frequently produce unrounded fractions or crash on non-numeric or negative values. A hardened, fail-safe `formatBytes(bytes, decimals)` utility is required.\n\nThis issue is limited only to the creator of this issue. This means that only the issue author can attempt to solve this issue. If you would like to work on it, please create another issue with the same contents and refer to issue #743 for more information.\n\n## Implementation Details\n1. Created `apps/api/src/utils/formatBytes.js`:\n   - Computes standard binary scaling (1024 base) across `B`, `KB`, `MB`, `GB`, `TB`, `PB`.\n   - Supports configurable decimal places (default: 2) and optional options object.\n   - Automatically eliminates redundant trailing decimal zeros (e.g. `1.50 KB` -> `1.5 KB`) while supporting explicit `preserveTrailingZeros: true`.\n   - Fail-safe fallback: returns `\"0 B\"` for negative numbers, `NaN`, non-finite (`Infinity`), `null`, `undefined`, empty strings, and non-numeric types.\n   - Safely parses numeric strings (e.g. `\"1048576\"` -> `\"1 MB\"`).\n   - Allows customizable unit lists and separators.\n   - Exported complementary `parseBytes(str)` utility to convert formatted human-readable size strings back into exact integer bytes.\n2. Monorepo Test Discovery Alignment:\n   - Configured `\"test\": \"node --test\"` in `apps/api/package.json` for reliable cross-platform test discovery.\n3. Comprehensive Unit Test Suite:\n   - Created `apps/api/src/tests/formatBytes.test.js` validating:\n     - Exact threshold conversions across all binary powers (B, KB, MB, GB, TB, PB).\n     - Decimal precision configurations (0, 1, 2, 3 decimals, negative clamping, trailing zero preservation).\n     - Fail-safe formatting on negative numbers, non-numeric strings, `null`, `undefined`, `NaN`, `Infinity`, and booleans.\n     - Numeric string parsing.\n     - Custom units and custom separator strings.\n     - Reverse byte parsing with `parseBytes` (100% test pass).\n\n/bounty 800\n",
-      "bodyPreview": "References #11876, #743. ## Feature Description File upload attachments, storage quota meters, and media transfer metrics require a reliable human-readable byte size formatter with configurable decimal precision and safe fallback behavior. Standard floating-point calculations fr"
     }
   ],
   "solutions": [
@@ -1560,6 +1560,31 @@
   ],
   "logs": [
     {
+      "time": "2026-10-31T13:13:54.996Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-10-31T13:13:54.668Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-10-31T13:13:54.668Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $113,526 USD."
+    },
+    {
+      "time": "2026-10-31T13:13:52.489Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-10-31T13:13:52.488Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-10-31T12:19:52.791Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2031,31 +2056,6 @@
     },
     {
       "time": "2026-10-30T23:57:07.213Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-10-30T23:22:24.533Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-10-30T23:22:24.179Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-10-30T23:22:24.179Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $109,874 USD."
-    },
-    {
-      "time": "2026-10-30T23:22:22.145Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-10-30T23:22:22.143Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
