@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-01T14:52:27.208Z",
-  "scanCount": 433,
+  "lastScanAt": "2026-11-01T15:22:43.991Z",
+  "scanCount": 434,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 71,
-    "totalBountyPoolUsd": 126634,
+    "totalBountiesDetected": 72,
+    "totalBountyPoolUsd": 128410,
     "solutionsGenerated": 45,
     "potentialEarningsUsd": 86547,
     "prsSubmitted": 41
@@ -486,6 +486,19 @@
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1605944 history 2 21 10000 0 0.2 9274 29131 recent@history|top@history OPEN_BOUNTY,LOW_COMP,FRESH IYKYK: Can you guess what this is about? ```"
     },
     {
+      "id": 6148359581,
+      "number": 1348,
+      "title": "[radar] SN open bounty 2026-11-01T14:58",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1348",
+      "rewardUsd": 2026,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-01T14:58:35Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t218\t10000\t3\t1.3\t9274\t29168\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 218 10000 3 1.3 9274 29168 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
+    },
+    {
       "id": 6134854237,
       "number": 201,
       "title": "New in-scope 2026-10-31: 2 program(s) added targets",
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-23T11:41:44Z",
       "fullBody": "# New in-scope assets 2026-10-23\n\n3 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Databricks (`h1:databricks`)\nhttps://hackerone.com/databricks\n- new in-scope: `login.databricks.com`, `ui-assets.cloud.databricks.com`\n\n### Visa (`h1:visa`)\nhttps://hackerone.com/visa\n- new in-scope: `https://ebc2test.cybersource.com/settings`\n\n### Nexuzhealth Web PACS (`it:uz leuven/nexuzhealthwebpacs`)  💰 $1000\nhttps://www.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs/detail\n- new in-scope: `idp-url.nexuzhealth.be`\n\n\ncc @abdulsalam-create",
       "bodyPreview": "# New in-scope assets 2026-10-23 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Databricks (`h1:databricks`) https://hackerone.com/databricks - new in-scope: `login.databricks.co"
-    },
-    {
-      "id": 6091193282,
-      "number": 1344,
-      "title": "🎯 Bounty Alert: 8 New Opportunityies found",
-      "repo": "freedom-winds/BountyScout",
-      "htmlUrl": "https://github.com/freedom-winds/BountyScout/issues/1344",
-      "rewardUsd": 1000,
-      "category": "Nueva Función",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-29T02:05:18Z",
-      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-29 02:05 UTC\n\n#### 1. [KOTH: new GVK KOTH Torch plugin (replaces the KOTH mod and DevPlugin)](https://github.com/GV-Server-Mods/GVK-Settings/issues/741)\n- **Repository:** [GV-Server-Mods/GVK-Settings](https://github.com/GV-Server-Mods/GVK-Settings)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T02:00:59Z\n\n#### 2. [BendTT mismatch for opaque higher-order template with dependent equality result](https://github.com/bendlang/bend/issues/1182)\n- **Repository:** [bendlang/bend](https://github.com/bendlang/bend)\n- **Comments:** 8\n- **Last Updated:** 2026-10-29T01:52:38Z\n\n#### 3. [[demand] high-priority 2026-10-29T01:43](https://github.com/relayhop/ClaudeEarnSelf-runtime/issues/1167)\n- **Repository:** [relayhop/ClaudeEarnSelf-runtime](https://github.com/relayhop/ClaudeEarnSelf-runtime)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T01:43:03Z\n\n#### 4. [Feature proposal: show what a run, a project and a period cost, from a bundled price table and the tokens already stored (bounty requested)](https://github.com/neatlogs/neatroots/issues/288)\n- **Repository:** [neatlogs/neatroots](https://github.com/neatlogs/neatroots)\n- **Comments:** 8\n- **Last Updated:** 2026-10-29T01:34:13Z\n\n#### 5. [[BOUNTY] API3 DAO - Use of first-party oracles [$1000]](https://github.com/ethereumzurich/sponsor-bounties/issues/3)\n- **Repository:** [ethereumzurich/sponsor-bounties](https://github.com/ethereumzurich/sponsor-bounties)\n- **Comments:** 2\n- **Last Updated:** 2026-10-29T01:32:43Z\n\n#### 6. [💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ](https://github.com/alfrexo95/bounty-bot/issues/58)\n- **Repository:** [alfrexo95/bounty-bot](https://github.com/alfrexo95/bounty-bot)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T01:32:14Z\n\n#### 7. [[tooling] preflight can never pass: `go build ./...` runs at the repo root, which has no Go module](https://github.com/limitlessprojects/Go-Hybrid/issues/2168)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T01:24:59Z\n\n#### 8. [Golden Goose candidate 001: B2B settlement eligibility preflight (WATCH)](https://github.com/P00NSMASHER/github-value-hunt-ledger/issues/863)\n- **Repository:** [P00NSMASHER/github-value-hunt-ledger](https://github.com/P00NSMASHER/github-value-hunt-ledger)\n- **Comments:** 4\n- **Last Updated:** 2026-10-29T01:38:41Z\n\n",
-      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-29 02:05 UTC #### 1. [KOTH: new GVK KOTH Torch plugin (replaces the KOTH mod and DevPlugin)](https://github.com/GV-Server-Mods/GVK-Settings/issues/741) - **Repository:** [GV-Server-Mods/GVK-Settings](https://github.com/GV-Se"
     }
   ],
   "solutions": [
@@ -1584,6 +1584,31 @@
   ],
   "logs": [
     {
+      "time": "2026-11-01T15:22:46.225Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-11-01T15:22:45.910Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-11-01T15:22:45.910Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $128,410 USD."
+    },
+    {
+      "time": "2026-11-01T15:22:43.991Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-01T15:22:43.989Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-01T14:52:29.544Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2055,31 +2080,6 @@
     },
     {
       "time": "2026-11-01T01:47:46.266Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-01T01:47:46.264Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-01T00:46:49.493Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-01T00:46:49.100Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-11-01T00:46:49.100Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $115,950 USD."
-    },
-    {
-      "time": "2026-11-01T00:46:46.966Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
