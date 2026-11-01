@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-01T19:17:45.290Z",
-  "scanCount": 441,
+  "lastScanAt": "2026-11-01T19:52:48.612Z",
+  "scanCount": 442,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 75,
-    "totalBountyPoolUsd": 126260,
+    "totalBountiesDetected": 73,
+    "totalBountyPoolUsd": 127249,
     "solutionsGenerated": 45,
     "potentialEarningsUsd": 86547,
     "prsSubmitted": 41
@@ -499,6 +499,19 @@
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 218 10000 3 1.3 9274 29168 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
     },
     {
+      "id": 6151132817,
+      "number": 1349,
+      "title": "[radar] SN open bounty 2026-11-01T19:32",
+      "repo": "relayhop/sn-monetization-runtime",
+      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1349",
+      "rewardUsd": 2026,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-01T19:32:21Z",
+      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t250\t10000\t5\t5.8\t9274\t29185\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```",
+      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 250 10000 5 5.8 9274 29185 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
+    },
+    {
       "id": 6134854237,
       "number": 201,
       "title": "New in-scope 2026-10-31: 2 program(s) added targets",
@@ -523,19 +536,6 @@
       "createdAt": "2026-11-01T12:36:56Z",
       "fullBody": "# 🏆 Hall of Fame — November 2026\n\n## 🥇 Top Contributors\n\n| 排名 | 参与者 | 总收入 |\n|:---:|:------:|:-----:|\n| 🥇 | @Rachaelisa | **$1410** (0 tasks) |\n| 🥈 | @zydd123 | **$675** (9 tasks) |\n| 🥉 | @yk578 | **$575** (0 tasks) |\n| #4 | @hero-infosec | **$525** (0 tasks) |\n| #5 | @danielalanbates | **$515** (5 tasks) |\n| #6 | @namdamdoi68-oss | **$300** (4 tasks) |\n| #7 | @voladoradepapantla-netizen | **$225** (3 tasks) |\n| #8 | @foxyManTou | **$220** (0 tasks) |\n| #9 | @JHON12091986 | **$150** (2 tasks) |\n| #10 | @ZachDreamZ | **$150** (2 tasks) |\n\n## ⚡ Fastest Fixes\n\n| 参与者 | Issue | 耗时 |\n|:-----:|:----:|:----:|\n| @test | #1 | 1m 0s |\n| @danielalanbates | #201 | 1h 0m |\n| @danielalanbates | #203 | 1h 0m |\n| @danielalanbates | #204 | 1h 0m |\n| @danielalanbates | #206 | 1h 0m |\n\n## 📋 Recent Merged PRs (0)\n\n\n## 📊 Monthly Stats\n\n| Metric | Value |\n|:------|:-----:|\n| Total Contributors | 15 |\n| Total Bounty Distributed | **$4770** |\n| PRs Merged This Month | 0 |\n| Fastest Fix | 1m |\n\n---\n> 💡 虚拟代币仅供学习排名使用，不可兑换为现金或加密货币。感谢每一位参与者的贡献！🚀\n",
       "bodyPreview": "# 🏆 Hall of Fame — November 2026 ## 🥇 Top Contributors | 排名 | 参与者 | 总收入 | |:---:|:------:|:-----:| | 🥇 | @Rachaelisa | **$1410** (0 tasks) | | 🥈 | @zydd123 | **$675** (9 tasks) | | 🥉 | @yk578 | **$575** (0 tasks) | | #4 | @hero-infosec | **$525** (0 tasks) | | #5 | @daniel"
-    },
-    {
-      "id": 5997098370,
-      "number": 161,
-      "title": "New in-scope 2026-10-23: 3 program(s) added targets",
-      "repo": "abdulsalam-create/bounty-watch",
-      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/161",
-      "rewardUsd": 1000,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-23T11:41:44Z",
-      "fullBody": "# New in-scope assets 2026-10-23\n\n3 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Databricks (`h1:databricks`)\nhttps://hackerone.com/databricks\n- new in-scope: `login.databricks.com`, `ui-assets.cloud.databricks.com`\n\n### Visa (`h1:visa`)\nhttps://hackerone.com/visa\n- new in-scope: `https://ebc2test.cybersource.com/settings`\n\n### Nexuzhealth Web PACS (`it:uz leuven/nexuzhealthwebpacs`)  💰 $1000\nhttps://www.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs/detail\n- new in-scope: `idp-url.nexuzhealth.be`\n\n\ncc @abdulsalam-create",
-      "bodyPreview": "# New in-scope assets 2026-10-23 3 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Databricks (`h1:databricks`) https://hackerone.com/databricks - new in-scope: `login.databricks.co"
     }
   ],
   "solutions": [
@@ -1584,6 +1584,31 @@
   ],
   "logs": [
     {
+      "time": "2026-11-01T19:52:50.997Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-11-01T19:52:50.497Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-11-01T19:52:50.497Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $127,249 USD."
+    },
+    {
+      "time": "2026-11-01T19:52:48.612Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-01T19:52:48.611Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-01T19:17:47.518Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2055,31 +2080,6 @@
     },
     {
       "time": "2026-11-01T08:17:03.858Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-01T08:17:03.855Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-01T07:29:27.030Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-01T07:29:26.761Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-11-01T07:29:26.761Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $116,987 USD."
-    },
-    {
-      "time": "2026-11-01T07:29:24.775Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
