@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-01T23:59:06.813Z",
-  "scanCount": 450,
+  "lastScanAt": "2026-11-02T00:47:51.323Z",
+  "scanCount": 451,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 73,
-    "totalBountyPoolUsd": 127388,
+    "totalBountiesDetected": 72,
+    "totalBountyPoolUsd": 129354,
     "solutionsGenerated": 45,
     "potentialEarningsUsd": 86547,
     "prsSubmitted": 41
@@ -525,17 +525,17 @@
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 250 10000 7 9.8 9274 29193 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,SIGNAL,SELF_POST_OPP Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
     },
     {
-      "id": 6134854237,
-      "number": 201,
-      "title": "New in-scope 2026-10-31: 2 program(s) added targets",
-      "repo": "abdulsalam-create/bounty-watch",
-      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/201",
-      "rewardUsd": 1500,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-31T12:35:22Z",
-      "fullBody": "# New in-scope assets 2026-10-31\n\n2 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### StonikByte (`bc:stonikbyte`)  💰 $1500\nhttps://bugcrowd.com/engagements/stonikbyte\n- new in-scope: `https://marketplace.atlassian.com/apps/1157161318/countdown-regional-clock?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/1855294554/pivot-tables-charts-heatmaps-for-jira-agile-reporting?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/2113139725/formula-cards-gauge-charts-rag-reports-custom-kpis?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/2194903109/cycle-time-lead-time-time-in-status-charts-for-agile?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/3937617820/team-wallboard-for-agile-scrum-kanban-itsm-dashboards?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/4240011577/work-breakdown-structure-link-hierarchy-dependency-tree?hosting=cloud&tab=overview`, `https://marketplace.atlassian.com/apps/89496753/pivot-worklog-reports-timesheets-charts-heatmaps?hosting=cloud&tab=overview`\n\n### Vercel (`h1:vercel`)\nhttps://hackerone.com/vercel\n- new in-scope: `https://github.com/better-auth/better-auth`\n\n\ncc @abdulsalam-create",
-      "bodyPreview": "# New in-scope assets 2026-10-31 2 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### StonikByte (`bc:stonikbyte`) 💰 $1500 https://bugcrowd.com/engagements/stonikbyte - new in-scope:"
+      "id": 6154023091,
+      "number": 12,
+      "title": "Argo bounty: 2–8 Nov 2026, proposed",
+      "repo": "LoneWonderer1976/argo",
+      "htmlUrl": "https://github.com/LoneWonderer1976/argo/issues/12",
+      "rewardUsd": 2026,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-11-02T00:37:30Z",
+      "fullBody": "<!-- argo-bounty: 2026-11-02 -->\n**The bounty proposed for 2–8 Nov 2026.** Thomas cannot see it until you approve it.\n\n🎯 **Get out 3 times this week: walk, ride, anything**\nReward: **Double your activity money this week (up to £5.00 extra)**\n\nHis last 12 weeks would have hit it in **1**.\nDrawn from the menu: target `outings` (bar from 2 to 3), reward `double_it`.\n\n**Reply with a line, or several** (one per line, or separated by ;):\n- **approve**: it goes on his page\n- **veto**: no bounty that week\n- **reroll**: draw another from the menu\n- **bar 8**: a different bar (once he can see it, only lower)\n- **reward £3 · reward x2 · reward week x1.5 · reward treat <what it is>**: a different reward; add cap £4 after a multiplier (once he can see it, only more of the same)\n- **target <key> · target <key> 10**: another line of the menu, and its bar if you name one\n- **propose**: draw one for a week that has none\n\nNothing reaches his page until you reply **approve**; if you never do, it lapses with the week. Once he can see it, it can only get easier or bigger. The menu is `data/bounty_targets.csv` and `data/bounty_rewards.csv` in the repository.\n",
+      "bodyPreview": "<!-- argo-bounty: 2026-11-02 --> **The bounty proposed for 2–8 Nov 2026.** Thomas cannot see it until you approve it. 🎯 **Get out 3 times this week: walk, ride, anything** Reward: **Double your activity money this week (up to £5.00 extra)** His last 12 weeks would have hit it "
     }
   ],
   "solutions": [
@@ -1584,6 +1584,31 @@
   ],
   "logs": [
     {
+      "time": "2026-11-02T00:47:53.708Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-11-02T00:47:53.217Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
+    },
+    {
+      "time": "2026-11-02T00:47:53.217Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $129,354 USD."
+    },
+    {
+      "time": "2026-11-02T00:47:51.323Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-02T00:47:51.322Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-01T23:59:08.963Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2057,31 +2082,6 @@
       "time": "2026-11-01T14:16:57.706Z",
       "level": "SYSTEM",
       "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-01T13:37:35.674Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a Trauma-Station/Trauma-Station #5225! Recompensa en juego: $10000"
-    },
-    {
-      "time": "2026-11-01T13:37:35.054Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para Trauma-Station/Trauma-Station #5225..."
-    },
-    {
-      "time": "2026-11-01T13:37:35.054Z",
-      "level": "SOLVER",
-      "msg": "Solución IA generada para Trauma-Station/Trauma-Station #5225 ($10000 USD) [Validación / Tests]"
-    },
-    {
-      "time": "2026-11-01T13:37:34.583Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $127,347 USD."
-    },
-    {
-      "time": "2026-11-01T13:37:32.278Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
   ]
 }
