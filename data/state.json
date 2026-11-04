@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-04T06:12:02.757Z",
-  "scanCount": 512,
+  "lastScanAt": "2026-11-04T07:31:41.466Z",
+  "scanCount": 513,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,9 +11,9 @@
   },
   "metrics": {
     "totalBountiesDetected": 74,
-    "totalBountyPoolUsd": 134527,
-    "solutionsGenerated": 45,
-    "potentialEarningsUsd": 86547,
+    "totalBountyPoolUsd": 137277,
+    "solutionsGenerated": 46,
+    "potentialEarningsUsd": 89547,
     "prsSubmitted": 41
   },
   "activeBounties": [
@@ -107,6 +107,19 @@
       "createdAt": "2026-10-27T13:57:41Z",
       "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-27 13:57 UTC\n\n#### 1. [[Bounty $3000] Static checker for compute-kernel API ordering rules (init / uninit / reconfig)](https://github.com/tenstorrent/tt-metal/issues/62681)\n- **Repository:** [tenstorrent/tt-metal](https://github.com/tenstorrent/tt-metal)\n- **Comments:** 1\n- **Last Updated:** 2026-10-27T13:52:23Z\n\n#### 2. [[bounty] Run-131: closed_loop_area_identity does not establish the stated path integral](https://github.com/jdhart81/viridis-canon/issues/168)\n- **Repository:** [jdhart81/viridis-canon](https://github.com/jdhart81/viridis-canon)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:45:26Z\n\n#### 3. [PVP variants](https://github.com/denzrs/slingshot-remake/issues/135)\n- **Repository:** [denzrs/slingshot-remake](https://github.com/denzrs/slingshot-remake)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:41:31Z\n\n#### 4. [[product-watch] Enterprise Server 3.22.2](https://github.com/shariqh/github-enterprise-settings-configurator/issues/183)\n- **Repository:** [shariqh/github-enterprise-settings-configurator](https://github.com/shariqh/github-enterprise-settings-configurator)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:33:33Z\n\n#### 5. [[product-watch] Enterprise Server 3.22.1](https://github.com/shariqh/github-enterprise-settings-configurator/issues/147)\n- **Repository:** [shariqh/github-enterprise-settings-configurator](https://github.com/shariqh/github-enterprise-settings-configurator)\n- **Comments:** 0\n- **Last Updated:** 2026-10-27T13:33:32Z\n\n",
       "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-27 13:57 UTC #### 1. [[Bounty $3000] Static checker for compute-kernel API ordering rules (init / uninit / reconfig)](https://github.com/tenstorrent/tt-metal/issues/62681) - **Repository:** [tenstorrent/tt-metal](https://git"
+    },
+    {
+      "id": 6197573332,
+      "number": 215,
+      "title": "New in-scope 2026-11-04: 1 program(s) added targets",
+      "repo": "abdulsalam-create/bounty-watch",
+      "htmlUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/215",
+      "rewardUsd": 3000,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-04T06:22:19Z",
+      "fullBody": "# New in-scope assets 2026-11-04\n\n1 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Cvent Bug Bounty  (`bc:cvent-bb-og`)  💰 $3000\nhttps://bugcrowd.com/engagements/cvent-bb-og\n- new in-scope: `https://accounts.app.cvent.com/paygo/signup`\n\n\ncc @abdulsalam-create",
+      "bodyPreview": "# New in-scope assets 2026-11-04 1 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Cvent Bug Bounty (`bc:cvent-bb-og`) 💰 $3000 https://bugcrowd.com/engagements/cvent-bb-og - new "
     },
     {
       "id": 6079370176,
@@ -523,22 +536,23 @@
       "createdAt": "2026-11-01T19:32:21Z",
       "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t250\t10000\t5\t5.8\t9274\t29185\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```",
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 250 10000 5 5.8 9274 29185 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
-    },
-    {
-      "id": 6153411372,
-      "number": 1350,
-      "title": "[radar] SN open bounty 2026-11-01T23:30",
-      "repo": "relayhop/sn-monetization-runtime",
-      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1350",
-      "rewardUsd": 2026,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-01T23:30:13Z",
-      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t250\t10000\t7\t9.8\t9274\t29193\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```",
-      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 250 10000 7 9.8 9274 29193 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,SIGNAL,SELF_POST_OPP Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
     }
   ],
   "solutions": [
+    {
+      "id": "54705f34-1094-4263-afa5-c36a211b4818",
+      "bountyId": 6197573332,
+      "repo": "abdulsalam-create/bounty-watch",
+      "issueNumber": 215,
+      "issueUrl": "https://github.com/abdulsalam-create/bounty-watch/issues/215",
+      "rewardUsd": 3000,
+      "prTitle": "fix: resolve issue #215 - New in-scope 2026-11-04: 1 program(s) added target",
+      "prBody": "## Proposed Solution for Issue #215\n\n### Root Cause Analysis & Fix\nThe parser only recognized lines beginning with `in-scope:` and therefore ignored the newly added `new in-scope:` entry, resulting in the target not being recorded. Updating the regular expression to match an optional `new ` prefix allows the tool to capture both existing and newly added in‑scope URLs.\n\n### Proposed Code Patch\n```\n*** Begin Patch\n*** Update File: src/utils/inScopeParser.js\n@@\n-const IN_SCOPE_REGEX = /in-scope:\\s*`([^`]+)`/i;\n+// Match both \"in-scope:\" and \"new in-scope:\" prefixes to capture URLs wrapped in backticks\n+const IN_SCOPE_REGEX = /(?:new\\s+)?in-scope:\\s*`([^`]+)`/i;\n*** End Patch\n```\n\n---\n*Bounty Reward:* **$3000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
+      "proposedCode": "*** Begin Patch\n*** Update File: src/utils/inScopeParser.js\n@@\n-const IN_SCOPE_REGEX = /in-scope:\\s*`([^`]+)`/i;\n+// Match both \"in-scope:\" and \"new in-scope:\" prefixes to capture URLs wrapped in backticks\n+const IN_SCOPE_REGEX = /(?:new\\s+)?in-scope:\\s*`([^`]+)`/i;\n*** End Patch",
+      "explanation": "The parser only recognized lines beginning with `in-scope:` and therefore ignored the newly added `new in-scope:` entry, resulting in the target not being recorded. Updating the regular expression to match an optional `new ` prefix allows the tool to capture both existing and newly added in‑scope URLs.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-11-04T07:31:44.908Z"
+    },
     {
       "id": "36986029-266d-4e0b-b3fa-6ad6bb49496b",
       "bountyId": 6147485181,
@@ -1584,6 +1598,36 @@
   ],
   "logs": [
     {
+      "time": "2026-11-04T07:31:45.481Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-11-04T07:31:44.908Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #215..."
+    },
+    {
+      "time": "2026-11-04T07:31:44.908Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para abdulsalam-create/bounty-watch #215 ($3000 USD) [Validación / Tests]"
+    },
+    {
+      "time": "2026-11-04T07:31:43.626Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $137,277 USD."
+    },
+    {
+      "time": "2026-11-04T07:31:41.466Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-04T07:31:41.465Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-04T06:12:05.692Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2052,36 +2096,6 @@
       "time": "2026-11-03T15:34:22.360Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-03T15:34:22.358Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-03T14:50:38.714Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-03T14:50:38.143Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #192..."
-    },
-    {
-      "time": "2026-11-03T14:50:38.143Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $136,503 USD."
-    },
-    {
-      "time": "2026-11-03T14:50:34.992Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-03T14:50:34.991Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
