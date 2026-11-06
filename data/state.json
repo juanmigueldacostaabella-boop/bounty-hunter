@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-06T00:35:15.228Z",
-  "scanCount": 558,
+  "lastScanAt": "2026-11-06T01:47:18.355Z",
+  "scanCount": 559,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 76,
-    "totalBountyPoolUsd": 127802,
-    "solutionsGenerated": 46,
-    "potentialEarningsUsd": 89547,
-    "prsSubmitted": 41
+    "totalBountiesDetected": 74,
+    "totalBountyPoolUsd": 159002,
+    "solutionsGenerated": 48,
+    "potentialEarningsUsd": 119547,
+    "prsSubmitted": 42
   },
   "activeBounties": [
     {
@@ -29,6 +29,32 @@
       "createdAt": "2026-10-24T14:46:10Z",
       "fullBody": "**FUM Codex**\n\nПредложение пользователя от 24 октября: можем ли мы использовать AI-исследования уязвимостей для самофинансирования по примеру [кейса XBOW](https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit), присланного через [Cybersecurity News](https://cybersecuritynews.com/google-chrome-exploit-gpt-5-6/).\n\nЭто конкретный кандидат для существующего [пилота экономики оплачиваемого результата — #28](https://github.com/fum-lab/fum/issues/28), с бюджетом [#26](https://github.com/fum-lab/fum/issues/26), экономическим паспортом [#25](https://github.com/fum-lab/fum/issues/25) и проверкой получателя/платежей [#27](https://github.com/fum-lab/fum/issues/27). Новую независимую финансовую модель не создавать.\n\nXBOW сообщает о $250000 награды и $40000 вычислений за шесть дней вместе с четырьмя опытными исследователями. Это не полная себестоимость и не доказанная ожидаемая прибыль: труд, предшествующие попытки и вероятность успеха не раскрыты. В [действующих правилах Google](https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/chrome-friends/chrome-vulnerability-reward-program-rules.md#legal-points) выплаты находящимся в России исключены, Крым отдельно указан среди ограниченных территорий; все четыре специальных full-chain бонуса уже выданы. Обычная Chrome VRP продолжается, но доступный доход FUM из неё сейчас не предполагается.\n\nСледующий ограниченный результат — сравнительная записка по программам с реальной возможностью участия и выплаты нашему выбранному получателю. Первичный кандидат: [Яндекс, включая отдельные правила для AI-агентов](https://yandex.ru/bugbounty/i/llms.txt); [платёжный FAQ](https://yandex.ru/bugbounty/i/blog/faq). Наличие страницы программы не доказывает нашу персональную допустимость.\n\nДо исследования конкретных целей:\n\n- проверить актуальные scope, AI/автоматизацию, получателя, документы и платёжный маршрут; учитывать правила раскрытия и конфиденциальности отдельно от открытой лицензии FUM;\n- выбрать одну узкую разрешённую задачу, ограничить деньги/часы/попытки и заранее задать прекращение; не начинать с дорогой полной цепочки только из-за размера чужой награды;\n- считать все расходы и неудачи, дубликаты, независимое воспроизведение, переписку и задержку оплаты; награда назначена и деньги получены — разные состояния;\n- сохранять полезные проверяемые инструменты/регрессии для защиты FUMA и повторного применения; не публиковать неустранённые уязвимости и приватные материалы автоматически;\n- итог: доступен огран",
       "bodyPreview": "**FUM Codex** Предложение пользователя от 24 октября: можем ли мы использовать AI-исследования уязвимостей для самофинансирования по примеру [кейса XBOW](https://xbow.com/blog/xbow-built-a-chrome-full-chain-exploit), присланного через [Cybersecurity News](https://cybersecurityne"
+    },
+    {
+      "id": 6234340877,
+      "number": 2249,
+      "title": "Open Grant Proposal: MockMirror Filecoin Fixtures - durable content-addressed mock API storage",
+      "repo": "filecoin-project/devgrants",
+      "htmlUrl": "https://github.com/filecoin-project/devgrants/issues/2249",
+      "rewardUsd": 15000,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-06T00:38:38Z",
+      "fullBody": "# Open Grant Proposal: MockMirror Filecoin Fixtures\n\n**Project Name:** MockMirror Filecoin Fixtures\n\n**Proposal Category:** Integrations\n\n**Individual or Entity Name:** Individual - Abdulahad Irfan Dayatar\n\n**Proposer:** abdulahaddayater\n\n**Project Repo(s)** https://github.com/abdulahaddayater (related product: https://mockmirror.vercel.app / https://api.mockmirror.dev)\n\n**(Optional) Filecoin ecosystem affiliations:** None\n\n**(Optional) Technical Sponsor:** None\n\n**Do you agree to open source all work you do on behalf of this RFP under the MIT/Apache-2 dual-license?:** Yes\n\n# Project Summary\n\nMockMirror is an Instant API Mocking product for creating temporary mock API endpoints for testing, prototypes, and demos (https://mockmirror.vercel.app). Developers spin up mock routes, sample payloads, and recorded fixtures without standing up a real backend.\n\nThis grant funds a Filecoin integration so mock definitions, recorded request/response fixtures, and shareable mock snapshots are stored as content-addressed data on Filecoin (and retrieved reliably). Today fixtures are ephemeral or tied to a single host. Filecoin storage gives teams durable, portable mocks they can pin, share by CID, and reload across CI, local machines, and collaborators without trusting a single SaaS blob store.\n\nScope of work under this Open Grant:\n1. Filecoin storage adapter for MockMirror fixtures (upload mock schema + recorded traffic as CAR-friendly packages).\n2. Retrieval path that reconstitutes a mock endpoint from a CID.\n3. CLI and web UX to pin, list, and restore Filecoin-backed fixtures.\n4. Open-source SDK/docs so other API tooling can reuse the same fixture format on Filecoin.\n5. Calibration testnet then mainnet verification with public demo CIDs.\n\n## Impact\n\n- Brings Filecoin into everyday Web2 developer workflows (API mocking, QA, demos) where storage is usually a centralized blob bucket.\n- Creates a reusable open format for mock fixtures on Filecoin that other tools (Postman-like clients, contract-test harnesses) can adopt.\n- Increases Filecoin data onboarding from developers who already generate large volumes of synthetic API traffic artifacts.\n- Lowers friction for India and global indie builders who need durable mocks without paying for proprietary storage.\n\n## Outcomes\n\n- Open-source MockMirror Filecoin adapter (MIT/Apache-2) with upload, pin metadata, and restore-from-CID.\n- Public demo: create a mock on MockMirror, persist to Filecoin, reload elsewhere via CID.\n- Documen",
+      "bodyPreview": "# Open Grant Proposal: MockMirror Filecoin Fixtures **Project Name:** MockMirror Filecoin Fixtures **Proposal Category:** Integrations **Individual or Entity Name:** Individual - Abdulahad Irfan Dayatar **Proposer:** abdulahaddayater **Project Repo(s)** https://github.com/ab"
+    },
+    {
+      "id": 6234337509,
+      "number": 2248,
+      "title": "Open Grant Proposal: MockMirror Filecoin Fixtures - durable content-addressed mock API storage",
+      "repo": "filecoin-project/devgrants",
+      "htmlUrl": "https://github.com/filecoin-project/devgrants/issues/2248",
+      "rewardUsd": 15000,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-06T00:38:20Z",
+      "fullBody": "# Open Grant Proposal: MockMirror Filecoin Fixtures\n\n**Project Name:** MockMirror Filecoin Fixtures\n\n**Proposal Category:** Integrations\n\n**Individual or Entity Name:** Individual - Abdulahad Irfan Dayatar\n\n**Proposer:** abdulahaddayater\n\n**Project Repo(s)** https://github.com/abdulahaddayater (related product: https://mockmirror.vercel.app / https://api.mockmirror.dev)\n\n**(Optional) Filecoin ecosystem affiliations:** None\n\n**(Optional) Technical Sponsor:** None\n\n**Do you agree to open source all work you do on behalf of this RFP under the MIT/Apache-2 dual-license?:** Yes\n\n# Project Summary\n\nMockMirror is an Instant API Mocking product for creating temporary mock API endpoints for testing, prototypes, and demos (https://mockmirror.vercel.app). Developers spin up mock routes, sample payloads, and recorded fixtures without standing up a real backend.\n\nThis grant funds a Filecoin integration so mock definitions, recorded request/response fixtures, and shareable mock snapshots are stored as content-addressed data on Filecoin (and retrieved reliably). Today fixtures are ephemeral or tied to a single host. Filecoin storage gives teams durable, portable mocks they can pin, share by CID, and reload across CI, local machines, and collaborators without trusting a single SaaS blob store.\n\nScope of work under this Open Grant:\n1. Filecoin storage adapter for MockMirror fixtures (upload mock schema + recorded traffic as CAR-friendly packages).\n2. Retrieval path that reconstitutes a mock endpoint from a CID.\n3. CLI and web UX to pin, list, and restore Filecoin-backed fixtures.\n4. Open-source SDK/docs so other API tooling can reuse the same fixture format on Filecoin.\n5. Calibration testnet then mainnet verification with public demo CIDs.\n\n## Impact\n\n- Brings Filecoin into everyday Web2 developer workflows (API mocking, QA, demos) where storage is usually a centralized blob bucket.\n- Creates a reusable open format for mock fixtures on Filecoin that other tools (Postman-like clients, contract-test harnesses) can adopt.\n- Increases Filecoin data onboarding from developers who already generate large volumes of synthetic API traffic artifacts.\n- Lowers friction for India and global indie builders who need durable mocks without paying for proprietary storage.\n\n## Outcomes\n\n- Open-source MockMirror Filecoin adapter (MIT/Apache-2) with upload, pin metadata, and restore-from-CID.\n- Public demo: create a mock on MockMirror, persist to Filecoin, reload elsewhere via CID.\n- Documen",
+      "bodyPreview": "# Open Grant Proposal: MockMirror Filecoin Fixtures **Project Name:** MockMirror Filecoin Fixtures **Proposal Category:** Integrations **Individual or Entity Name:** Individual - Abdulahad Irfan Dayatar **Proposer:** abdulahaddayater **Project Repo(s)** https://github.com/ab"
     },
     {
       "id": 6147485181,
@@ -510,35 +536,39 @@
       "createdAt": "2026-10-31T12:13:27Z",
       "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1605336\tStacker_Sports\t3\t1069\t4200\t18\t21.4\t1448206\t2652\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 4.200 double bounty\n```",
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1605336 Stacker_Sports 3 1069 4200 18 21.4 1448206 2652 recent@Stacker_Sports|top@Stacker_Sports OPEN_BOUNTY,HOT,SELF_POST_OPP 🏈 Sunday Leaders Bounty • 4.200 double bounty ```"
-    },
-    {
-      "id": 6134658663,
-      "number": 1345,
-      "title": "[radar] SN open bounty 2026-10-31T12:12",
-      "repo": "relayhop/sn-monetization-runtime",
-      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1345",
-      "rewardUsd": 2026,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-10-31T12:12:21Z",
-      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1605944\thistory\t2\t21\t10000\t0\t0.2\t9274\t29131\trecent@history|top@history\tOPEN_BOUNTY,LOW_COMP,FRESH\tIYKYK:  Can you guess what this is about?\n```",
-      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1605944 history 2 21 10000 0 0.2 9274 29131 recent@history|top@history OPEN_BOUNTY,LOW_COMP,FRESH IYKYK: Can you guess what this is about? ```"
-    },
-    {
-      "id": 6148359581,
-      "number": 1348,
-      "title": "[radar] SN open bounty 2026-11-01T14:58",
-      "repo": "relayhop/sn-monetization-runtime",
-      "htmlUrl": "https://github.com/relayhop/sn-monetization-runtime/issues/1348",
-      "rewardUsd": 2026,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-01T14:58:35Z",
-      "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t218\t10000\t3\t1.3\t9274\t29168\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```",
-      "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1606443 Stacker_Stocks 2 218 10000 3 1.3 9274 29168 recent@Stacker_Stocks|top@Stacker_Stocks OPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL Stacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats! ```"
     }
   ],
   "solutions": [
+    {
+      "id": "f9e987bd-2261-444c-9d9e-b9b2fdfb23d0",
+      "bountyId": 6234337509,
+      "repo": "filecoin-project/devgrants",
+      "issueNumber": 2248,
+      "issueUrl": "https://github.com/filecoin-project/devgrants/issues/2248",
+      "rewardUsd": 15000,
+      "prTitle": "fix: resolve issue #2248 - Open Grant Proposal: MockMirror Filecoin Fixtures ",
+      "prBody": "## Proposed Solution for Issue #2248\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for filecoin-project/devgrants #2248.\n\n### Proposed Code Patch\n```\n// Review specific implementation in filecoin-project/devgrants #2248\n```\n\n---\n*Bounty Reward:* **$15000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in filecoin-project/devgrants #2248",
+      "explanation": "Technical analysis and proposed resolution for filecoin-project/devgrants #2248.",
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-11-06T01:47:24.608Z",
+      "submittedAt": "2026-11-06T01:47:25.500Z",
+      "commentUrl": "https://github.com/filecoin-project/devgrants/issues/2248#issuecomment-6674637199"
+    },
+    {
+      "id": "23560ea6-8e9e-4027-87e7-66bb2790ae30",
+      "bountyId": 6234340877,
+      "repo": "filecoin-project/devgrants",
+      "issueNumber": 2249,
+      "issueUrl": "https://github.com/filecoin-project/devgrants/issues/2249",
+      "rewardUsd": 15000,
+      "prTitle": "fix: resolve issue #2249 - Open Grant Proposal: MockMirror Filecoin Fixtures ",
+      "prBody": "## Proposed Solution for Issue #2249\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for filecoin-project/devgrants #2249.\n\n### Proposed Code Patch\n```\n// Review specific implementation in filecoin-project/devgrants #2249\n```\n\n---\n*Bounty Reward:* **$15000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
+      "proposedCode": "// Review specific implementation in filecoin-project/devgrants #2249",
+      "explanation": "Technical analysis and proposed resolution for filecoin-project/devgrants #2249.",
+      "status": "SOLUCIÓN_IA_REAL_LISTA",
+      "createdAt": "2026-11-06T01:47:22.493Z"
+    },
     {
       "id": "54705f34-1094-4263-afa5-c36a211b4818",
       "bountyId": 6197573332,
@@ -1268,6 +1298,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "4dee4aa5-41b1-4688-bded-1c21222f6d74",
+      "repo": "filecoin-project/devgrants",
+      "issueNumber": 2248,
+      "rewardUsd": 15000,
+      "commentUrl": "https://github.com/filecoin-project/devgrants/issues/2248#issuecomment-6674637199",
+      "submittedAt": "2026-11-06T01:47:25.500Z"
+    },
+    {
       "id": "413f2cd1-af70-469f-904b-28e58114377c",
       "repo": "Trauma-Station/Trauma-Station",
       "issueNumber": 5225,
@@ -1597,6 +1635,41 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-11-06T01:47:25.501Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a filecoin-project/devgrants #2248! Recompensa en juego: $15000"
+    },
+    {
+      "time": "2026-11-06T01:47:24.609Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para filecoin-project/devgrants #2248..."
+    },
+    {
+      "time": "2026-11-06T01:47:24.608Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para filecoin-project/devgrants #2248 ($15000 USD) [Documentación / Typo]"
+    },
+    {
+      "time": "2026-11-06T01:47:22.493Z",
+      "level": "SOLVER",
+      "msg": "Solución IA generada para filecoin-project/devgrants #2249 ($15000 USD) [Documentación / Typo]"
+    },
+    {
+      "time": "2026-11-06T01:47:20.353Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $159,002 USD."
+    },
+    {
+      "time": "2026-11-06T01:47:18.356Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-06T01:47:18.354Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-11-06T00:35:17.965Z",
       "level": "ERROR",
@@ -2061,41 +2134,6 @@
       "time": "2026-11-05T08:37:58.909Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $135,275 USD."
-    },
-    {
-      "time": "2026-11-05T08:37:56.050Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-05T08:37:56.048Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-05T07:33:25.342Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-05T07:33:24.853Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #215..."
-    },
-    {
-      "time": "2026-11-05T07:33:24.853Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $137,301 USD."
-    },
-    {
-      "time": "2026-11-05T07:33:22.442Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-05T07:33:22.440Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
