@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-06T01:47:18.355Z",
-  "scanCount": 559,
+  "lastScanAt": "2026-11-06T02:38:24.951Z",
+  "scanCount": 560,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,11 +10,11 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 74,
-    "totalBountyPoolUsd": 159002,
+    "totalBountiesDetected": 73,
+    "totalBountyPoolUsd": 154995,
     "solutionsGenerated": 48,
     "potentialEarningsUsd": 119547,
-    "prsSubmitted": 42
+    "prsSubmitted": 43
   },
   "activeBounties": [
     {
@@ -566,8 +566,10 @@
       "prBody": "## Proposed Solution for Issue #2249\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for filecoin-project/devgrants #2249.\n\n### Proposed Code Patch\n```\n// Review specific implementation in filecoin-project/devgrants #2249\n```\n\n---\n*Bounty Reward:* **$15000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "// Review specific implementation in filecoin-project/devgrants #2249",
       "explanation": "Technical analysis and proposed resolution for filecoin-project/devgrants #2249.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-11-06T01:47:22.493Z"
+      "status": "ENVIADO_A_GITHUB",
+      "createdAt": "2026-11-06T01:47:22.493Z",
+      "submittedAt": "2026-11-06T02:38:27.869Z",
+      "commentUrl": "https://github.com/filecoin-project/devgrants/issues/2249#issuecomment-6675360898"
     },
     {
       "id": "54705f34-1094-4263-afa5-c36a211b4818",
@@ -1298,6 +1300,14 @@
   ],
   "submittedClaims": [
     {
+      "id": "86521d86-d915-486f-ab22-1a004d2827b8",
+      "repo": "filecoin-project/devgrants",
+      "issueNumber": 2249,
+      "rewardUsd": 15000,
+      "commentUrl": "https://github.com/filecoin-project/devgrants/issues/2249#issuecomment-6675360898",
+      "submittedAt": "2026-11-06T02:38:27.869Z"
+    },
+    {
       "id": "4dee4aa5-41b1-4688-bded-1c21222f6d74",
       "repo": "filecoin-project/devgrants",
       "issueNumber": 2248,
@@ -1635,6 +1645,31 @@
     }
   ],
   "logs": [
+    {
+      "time": "2026-11-06T02:38:27.870Z",
+      "level": "CLAIM",
+      "msg": "¡Solución enviada con éxito a filecoin-project/devgrants #2249! Recompensa en juego: $15000"
+    },
+    {
+      "time": "2026-11-06T02:38:27.101Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para filecoin-project/devgrants #2249..."
+    },
+    {
+      "time": "2026-11-06T02:38:27.100Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $154,995 USD."
+    },
+    {
+      "time": "2026-11-06T02:38:24.951Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-06T02:38:24.949Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
     {
       "time": "2026-11-06T01:47:25.501Z",
       "level": "CLAIM",
@@ -2107,31 +2142,6 @@
     },
     {
       "time": "2026-11-05T09:35:24.282Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $135,275 USD."
-    },
-    {
-      "time": "2026-11-05T09:35:21.777Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-05T09:35:21.774Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-05T08:37:59.416Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-05T08:37:58.910Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #215..."
-    },
-    {
-      "time": "2026-11-05T08:37:58.909Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $135,275 USD."
     }
