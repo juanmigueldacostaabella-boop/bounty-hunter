@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-07T23:56:26.146Z",
-  "scanCount": 619,
+  "lastScanAt": "2026-11-08T00:36:00.067Z",
+  "scanCount": 620,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 76,
-    "totalBountyPoolUsd": 161127,
+    "totalBountyPoolUsd": 163525,
     "solutionsGenerated": 49,
     "potentialEarningsUsd": 124547,
     "prsSubmitted": 43
@@ -224,6 +224,19 @@
       "createdAt": "2026-11-05T06:51:49Z",
       "fullBody": "# New in-scope assets 2026-11-05\n\n4 bug bounty program(s) added new in-scope targets since the last check.\n\nDashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope\n\n### Stripe (`h1:stripe`)\nhttps://hackerone.com/stripe\n- new in-scope: `files.stripe.com`, `stripe.com`, `stripe.dev`\n\n### HARMAN International - Web Applications (`ywh:harman-international-web-applications`)  💰 $2500\nhttps://yeswehack.com/programs/harman-international-web-applications\n- new in-scope: `https://fi.harmankardon.com`\n\n### Resolution (`bc:resolutionde`)  💰 $1500\nhttps://bugcrowd.com/engagements/resolutionde\n- new in-scope: `https://marketplace.atlassian.com/apps/1228240/hubspot-jira-crm-issue-link-integration-collaboration?hosting=cloud&tab=overview`\n\n### Remitly (`h1:remitly`)\nhttps://hackerone.com/remitly\n- new in-scope: `api.remitly.com`\n\n\ncc @abdulsalam-create",
       "bodyPreview": "# New in-scope assets 2026-11-05 4 bug bounty program(s) added new in-scope targets since the last check. Dashboard: https://abdulsalam-create.github.io/bounty-watch/#inscope ### Stripe (`h1:stripe`) https://hackerone.com/stripe - new in-scope: `files.stripe.com`, `stripe.com`"
+    },
+    {
+      "id": 6265758569,
+      "number": 1740,
+      "title": "🎯 Bounty Alert: 8 New Opportunityies found",
+      "repo": "dev-kp-eloper/BountyScout",
+      "htmlUrl": "https://github.com/dev-kp-eloper/BountyScout/issues/1740",
+      "rewardUsd": 2048,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-08T00:16:39Z",
+      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-08 00:16 UTC\n\n#### 1. [[ops]: Sharded transpose_hc assumes (0, 0)-origin contiguous rectangular core grid in program factory and reader kernel](https://github.com/tenstorrent/tt-metal/issues/64780)\n- **Repository:** [tenstorrent/tt-metal](https://github.com/tenstorrent/tt-metal)\n- **Comments:** 1\n- **Last Updated:** 2026-11-08T00:14:32Z\n\n#### 2. [[ops]: Block-sharded create_qkv_heads, create_qkv_heads_from_separate_tensors, and split_query_key_value_and_split_heads miscompute grid dimensions on non-zero origin subgrids](https://github.com/tenstorrent/tt-metal/issues/64779)\n- **Repository:** [tenstorrent/tt-metal](https://github.com/tenstorrent/tt-metal)\n- **Comments:** 1\n- **Last Updated:** 2026-11-08T00:14:29Z\n\n#### 3. [Public record: a player who leaves after the hand has their cash-out recorded the moment the live hand ends](https://github.com/jcolter11374/rsdp-poker-live/issues/471)\n- **Repository:** [jcolter11374/rsdp-poker-live](https://github.com/jcolter11374/rsdp-poker-live)\n- **Comments:** 2\n- **Last Updated:** 2026-11-08T00:11:42Z\n\n#### 4. [tensorflow-2.16.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl: 27 vulnerabilities (highest severity is: 9.0) [main]](https://github.com/MendDemoOrga/AutoPrompt/issues/49)\n- **Repository:** [MendDemoOrga/AutoPrompt](https://github.com/MendDemoOrga/AutoPrompt)\n- **Comments:** 0\n- **Last Updated:** 2026-11-08T00:08:33Z\n\n#### 5. [keras-3.4.1-py3-none-any.whl: 19 vulnerabilities (highest severity is: 9.0) [main]](https://github.com/MendDemoOrga/AutoPrompt/issues/46)\n- **Repository:** [MendDemoOrga/AutoPrompt](https://github.com/MendDemoOrga/AutoPrompt)\n- **Comments:** 0\n- **Last Updated:** 2026-11-08T00:08:26Z\n\n#### 6. [sentence-transformers-2.2.2.tar.gz: 141 vulnerabilities (highest severity is: 10.0) [main]](https://github.com/MendDemoOrga/AutoPrompt/issues/42)\n- **Repository:** [MendDemoOrga/AutoPrompt](https://github.com/MendDemoOrga/AutoPrompt)\n- **Comments:** 0\n- **Last Updated:** 2026-11-08T00:08:14Z\n\n#### 7. [FACT_CHECK: evaluation material and an evaluator adapter](https://github.com/telegraphprotocol/bounties/issues/132)\n- **Repository:** [telegraphprotocol/bounties](https://github.com/telegraphprotocol/bounties)\n- **Comments:** 17\n- **Last Updated:** 2026-11-08T00:05:40Z\n\n#### 8. [Fiddy: Farcaster client + read node + 3-command tutorial ($2048 bounty)](https://github.com/ivcained/fiddy/issues/1)\n- **Repository:** [ivcained/fiddy](https:/",
+      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-11-08 00:16 UTC #### 1. [[ops]: Sharded transpose_hc assumes (0, 0)-origin contiguous rectangular core grid in program factory and reader kernel](https://github.com/tenstorrent/tt-metal/issues/64780) - **Repository:** [tenstorr"
     },
     {
       "id": 5985824260,
@@ -523,19 +536,6 @@
       "createdAt": "2026-10-27T12:01:01Z",
       "fullBody": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t21.8\t9274\t28961\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```",
       "bodyPreview": "New SN OPEN_BOUNTY detected: ``` 1602563 Construction_and_Engineering 2 141 5000 1 21.8 9274 28961 top@Construction_and_Engineering OPEN_BOUNTY,LOW_COMP Show Your Build Weekly #7: Post Your Proof-of-Work 🔨 ```"
-    },
-    {
-      "id": 6099765466,
-      "number": 36,
-      "title": "🎯 Bounty Alert: 13 New Opportunityies found",
-      "repo": "Rohank143/BountyScout",
-      "htmlUrl": "https://github.com/Rohank143/BountyScout/issues/36",
-      "rewardUsd": 2026,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-10-29T12:35:58Z",
-      "fullBody": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-29 12:35 UTC\n\n#### 1. [Add \"CMS Comparison\" page: WordPress, Webflow and other CMSs on popularity, growth, talent pool, ease of use, ecosystem, features, performance, cost and TCO, and security, with time-series, bar and radar charts](https://github.com/albertoirurueta/docs/issues/351)\n- **Repository:** [albertoirurueta/docs](https://github.com/albertoirurueta/docs)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:35:04Z\n\n#### 2. [[tooling] the triage board never promotes land-candidates to triage:pareto, so 391 scored PRs are unprotected and due for the sweep](https://github.com/limitlessprojects/Go-Hybrid/issues/2218)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:33:46Z\n\n#### 3. [Tie agent spending limits to confirmed on-chain funding and prevent concurrent overspend](https://github.com/I-am-Esmart/HumanLayer/issues/7)\n- **Repository:** [I-am-Esmart/HumanLayer](https://github.com/I-am-Esmart/HumanLayer)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:32:53Z\n\n#### 4. [[staging] ZecHub zh glossary+menus FULL native review](https://github.com/zwang1111/agenttab-celo/issues/2)\n- **Repository:** [zwang1111/agenttab-celo](https://github.com/zwang1111/agenttab-celo)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T12:31:52Z\n\n#### 5. [[intake 输入] lingshu #1139：结构服务整帧读取期限与连接槽回收交付](https://github.com/FuRongJun-1999/dsh-bounty/issues/1975)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T12:30:41Z\n\n#### 6. [[player hnejdu] Revealing the mission \"Rogue Squadron Raid\" in Corellia displays the message \"Ro](https://github.com/johnchampaign/star-wars-rebellion/issues/824)\n- **Repository:** [johnchampaign/star-wars-rebellion](https://github.com/johnchampaign/star-wars-rebellion)\n- **Comments:** 0\n- **Last Updated:** 2026-10-29T12:30:38Z\n\n#### 7. [parse_duration ignores uppercase units and returns 0 for invalid input](https://github.com/isearchxsolve/bounty-proof/issues/1)\n- **Repository:** [isearchxsolve/bounty-proof](https://github.com/isearchxsolve/bounty-proof)\n- **Comments:** 1\n- **Last Updated:** 2026-10-29T12:30:37Z\n\n#### 8. [5 USDC bounty: best public agent-facing guide or demo for Agent Bounty Feed (deadline 2026-11-12)](https://github.com/dailydollar-bot/agent-bounty-feed/issues/3)\n- **Repository:** [dailydolla",
-      "bodyPreview": "### Active Bounty Scan Results **Scan Time:** 2026-10-29 12:35 UTC #### 1. [Add \"CMS Comparison\" page: WordPress, Webflow and other CMSs on popularity, growth, talent pool, ease of use, ecosystem, features, performance, cost and TCO, and security, with time-series, bar and rada"
     }
   ],
   "solutions": [
@@ -1660,6 +1660,31 @@
   ],
   "logs": [
     {
+      "time": "2026-11-08T00:36:02.080Z",
+      "level": "ERROR",
+      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
+    },
+    {
+      "time": "2026-11-08T00:36:01.777Z",
+      "level": "AUTO_SUBMIT",
+      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #228..."
+    },
+    {
+      "time": "2026-11-08T00:36:01.777Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $163,525 USD."
+    },
+    {
+      "time": "2026-11-08T00:36:00.067Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-08T00:36:00.064Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-07T23:56:28.478Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
@@ -2131,31 +2156,6 @@
     },
     {
       "time": "2026-11-07T12:29:53.371Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-07T12:29:53.370Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-07T11:50:58.733Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-07T11:50:58.462Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #215..."
-    },
-    {
-      "time": "2026-11-07T11:50:58.462Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $151,425 USD."
-    },
-    {
-      "time": "2026-11-07T11:50:56.617Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
