@@ -209,7 +209,7 @@ Respond strictly in JSON format: {"explanation": "...", "code": "..."}`;
   };
 }
 
-// Filtro de Seguridad Estricto: Ignora mineros, faucets, scripts sospechosos y promociones
+// Filtro de Seguridad Estricto: Ignora mineros, faucets, scripts sospechosos, scrapers y bots de anuncios
 function isSafeBounty(title, body, repo) {
   const full = (title + ' ' + (body || '') + ' ' + repo).toLowerCase();
   const blacklist = [
@@ -226,7 +226,14 @@ function isSafeBounty(title, body, repo) {
     'join discord',
     'follow twitter',
     'retweet',
-    'giveaway'
+    'giveaway',
+    'bounty-watch',
+    'bountywatcher',
+    'bounty-watcher',
+    'bountyscout',
+    'relayhop',
+    'in-scope targets',
+    'open grant proposal'
   ];
   for (const term of blacklist) {
     if (full.includes(term)) return false;
@@ -353,6 +360,17 @@ async function submitSolution(solutionId) {
     sol.submittedAt = new Date().toISOString();
     sol.commentUrl = res.html_url;
 
+    // SILENCIAR NOTIFICACIONES DE GITHUB:
+    // Inmediatamente ignorar y cancelar suscripción para no recibir emails por respuestas de este hilo
+    try {
+      const subUrl = `https://api.github.com/repos/${sol.repo}/issues/${sol.issueNumber}/subscription`;
+      await fetchJson(subUrl, 5000, {
+        method: 'PUT',
+        body: JSON.stringify({ ignored: true })
+      });
+      await fetchJson(subUrl, 5000, { method: 'DELETE' });
+    } catch (_) {}
+
     state.submittedClaims.unshift({
       id: crypto.randomUUID(),
       repo: sol.repo,
@@ -367,7 +385,19 @@ async function submitSolution(solutionId) {
     addLog('CLAIM', `¡Solución enviada con éxito a ${sol.repo} #${sol.issueNumber}! Recompensa en juego: $${sol.rewardUsd}`);
     return { ok: true, commentUrl: res.html_url };
   } catch (err) {
-    addLog('ERROR', `Fallo al enviar a GitHub: ${err.message}`);
+    // PARCHE ANTI-ATASCO: Marcar como fallo para que pase al siguiente bounty y no se quede en bucle
+    sol.status = 'ERROR_ENVIO';
+    sol.submittedAt = new Date().toISOString();
+    sol.error = err.message;
+    saveState();
+
+    // Silenciar notificaciones por si acaso
+    try {
+      const subUrl = `https://api.github.com/repos/${sol.repo}/issues/${sol.issueNumber}/subscription`;
+      await fetchJson(subUrl, 4000, { method: 'DELETE' });
+    } catch (_) {}
+
+    addLog('ERROR', `Fallo al enviar a ${sol.repo} #${sol.issueNumber}: ${err.message} (marcado como descartado para probar otros)`);
     return { ok: false, error: err.message };
   }
 }
