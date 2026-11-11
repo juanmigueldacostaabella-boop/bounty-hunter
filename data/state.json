@@ -550,8 +550,10 @@
       "prBody": "## Proposed Solution for Issue #228\n\n### Root Cause Analysis & Fix\nThe repository stores each program's in‑scope assets in a JSON data file, and the new assets were not added, causing the dashboard to miss them. Updating the data file with the newly announced in‑scope targets resolves the discrepancy and keeps the watchlist current.\n\n### Proposed Code Patch\n```\n*** Begin Patch\n*** Update File: src/data/inScopeTargets.json\n@@\n   \"moneytreekkog\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"https://fitbit-lottery.getmoneytree.com/\"\n+    ]\n   },\n   \"anduril_industries\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"anduril.com\"\n+    ]\n   },\n   \"braze_inc\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"https://bug-bounty-mcp.k8s.tools-001.d-use-1.braze-dev.com/mcp\"\n+    ]\n   },\n   \"epicgames\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"Zenserver\"\n+    ]\n   },\n   \"fanduel\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"FanDuel Customer Support Sites\"\n+    ]\n   }\n*** End Patch\n```\n\n---\n*Bounty Reward:* **$5000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "*** Begin Patch\n*** Update File: src/data/inScopeTargets.json\n@@\n   \"moneytreekkog\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"https://fitbit-lottery.getmoneytree.com/\"\n+    ]\n   },\n   \"anduril_industries\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"anduril.com\"\n+    ]\n   },\n   \"braze_inc\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"https://bug-bounty-mcp.k8s.tools-001.d-use-1.braze-dev.com/mcp\"\n+    ]\n   },\n   \"epicgames\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"Zenserver\"\n+    ]\n   },\n   \"fanduel\": {\n-    \"targets\": []\n+    \"targets\": [\n+      \"FanDuel Customer Support Sites\"\n+    ]\n   }\n*** End Patch",
       "explanation": "The repository stores each program's in‑scope assets in a JSON data file, and the new assets were not added, causing the dashboard to miss them. Updating the data file with the newly announced in‑scope targets resolves the discrepancy and keeps the watchlist current.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-11-07T13:26:25.577Z"
+      "status": "ERROR_ENVIO",
+      "createdAt": "2026-11-07T13:26:25.577Z",
+      "submittedAt": "2026-11-11T12:33:21.733Z",
+      "error": "Filtrado: Repositorio no es un bounty real sino bot scraper"
     },
     {
       "id": "f9e987bd-2261-444c-9d9e-b9b2fdfb23d0",
@@ -596,8 +598,10 @@
       "prBody": "## Proposed Solution for Issue #215\n\n### Root Cause Analysis & Fix\nThe parser only recognized lines beginning with `in-scope:` and therefore ignored the newly added `new in-scope:` entry, resulting in the target not being recorded. Updating the regular expression to match an optional `new ` prefix allows the tool to capture both existing and newly added in‑scope URLs.\n\n### Proposed Code Patch\n```\n*** Begin Patch\n*** Update File: src/utils/inScopeParser.js\n@@\n-const IN_SCOPE_REGEX = /in-scope:\\s*`([^`]+)`/i;\n+// Match both \"in-scope:\" and \"new in-scope:\" prefixes to capture URLs wrapped in backticks\n+const IN_SCOPE_REGEX = /(?:new\\s+)?in-scope:\\s*`([^`]+)`/i;\n*** End Patch\n```\n\n---\n*Bounty Reward:* **$3000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "*** Begin Patch\n*** Update File: src/utils/inScopeParser.js\n@@\n-const IN_SCOPE_REGEX = /in-scope:\\s*`([^`]+)`/i;\n+// Match both \"in-scope:\" and \"new in-scope:\" prefixes to capture URLs wrapped in backticks\n+const IN_SCOPE_REGEX = /(?:new\\s+)?in-scope:\\s*`([^`]+)`/i;\n*** End Patch",
       "explanation": "The parser only recognized lines beginning with `in-scope:` and therefore ignored the newly added `new in-scope:` entry, resulting in the target not being recorded. Updating the regular expression to match an optional `new ` prefix allows the tool to capture both existing and newly added in‑scope URLs.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-11-04T07:31:44.908Z"
+      "status": "ERROR_ENVIO",
+      "createdAt": "2026-11-04T07:31:44.908Z",
+      "submittedAt": "2026-11-11T12:33:21.733Z",
+      "error": "Filtrado: Repositorio no es un bounty real sino bot scraper"
     },
     {
       "id": "36986029-266d-4e0b-b3fa-6ad6bb49496b",
@@ -626,8 +630,10 @@
       "prBody": "## Proposed Solution for Issue #192\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for abdulsalam-create/bounty-watch #192.\n\n### Proposed Code Patch\n```\n// Review specific implementation in abdulsalam-create/bounty-watch #192\n```\n\n---\n*Bounty Reward:* **$5000**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "// Review specific implementation in abdulsalam-create/bounty-watch #192",
       "explanation": "Technical analysis and proposed resolution for abdulsalam-create/bounty-watch #192.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-29T13:50:06.885Z"
+      "status": "ERROR_ENVIO",
+      "createdAt": "2026-10-29T13:50:06.885Z",
+      "submittedAt": "2026-11-11T12:33:21.733Z",
+      "error": "Filtrado: Repositorio no es un bounty real sino bot scraper"
     },
     {
       "id": "f7c2e2ba-39b9-4b0e-9f04-937cddcde3cc",
@@ -672,8 +678,10 @@
       "prBody": "## Proposed Solution for Issue #187\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for abdulsalam-create/bounty-watch #187.\n\n### Proposed Code Patch\n```\n// Review specific implementation in abdulsalam-create/bounty-watch #187\n```\n\n---\n*Bounty Reward:* **$2500**\n*Payout Address (EVM / USDC / Base / Polygon / Arbitrum):* `0xBD856Da8AbD2e0720e0875a8bBb235a743fb653c`\n*Beneficiary Account:* @juanmigueldacostaabella-boop",
       "proposedCode": "// Review specific implementation in abdulsalam-create/bounty-watch #187",
       "explanation": "Technical analysis and proposed resolution for abdulsalam-create/bounty-watch #187.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-28T13:39:57.467Z"
+      "status": "ERROR_ENVIO",
+      "createdAt": "2026-10-28T13:39:57.467Z",
+      "submittedAt": "2026-11-11T12:33:21.733Z",
+      "error": "Filtrado: Repositorio no es un bounty real sino bot scraper"
     },
     {
       "id": "172b1abf-caa4-4e71-b6d2-4a9e1a52678c",
@@ -1022,8 +1030,10 @@
       "prBody": "## Proposed Solution for Issue #161\n\n### Root Cause Analysis & Fix\nTechnical analysis and proposed resolution for abdulsalam-create/bounty-watch #161.\n\n### Proposed Code Patch\n```\n// Review specific implementation in abdulsalam-create/bounty-watch #161\n```\n\n---\n*Bounty Reward:* **$1000**\n*Beneficiary Account:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)\n*Contributor:* @juanmigueldacostaabella-boop",
       "proposedCode": "// Review specific implementation in abdulsalam-create/bounty-watch #161",
       "explanation": "Technical analysis and proposed resolution for abdulsalam-create/bounty-watch #161.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-23T11:50:14.132Z"
+      "status": "ERROR_ENVIO",
+      "createdAt": "2026-10-23T11:50:14.132Z",
+      "submittedAt": "2026-11-11T12:33:21.733Z",
+      "error": "Filtrado: Repositorio no es un bounty real sino bot scraper"
     },
     {
       "id": "854e6164-ddf2-41fb-8c28-71f4c19b51c2",
@@ -1308,8 +1318,10 @@
       "prBody": "## 🤖 Propuesta de Solución para Bounty #8\n\n### Análisis Técnico\nEl problema era que el watcher solo respondía a eventos de nuevas recompensas y no procesaba las que ya estaban abiertas cuando la aplicación iniciaba, por lo que esas recompensas nunca generaban issues. La solución agrega una inicialización que, al arrancar, consulta las recompensas abiertas y crea los issues correspondientes, marcándolas como procesadas.\n\n### Código / Solución Propuesta\n```\n--- a/src/bountyWatcher.ts\n+++ b/src/bountyWatcher.ts\n@@\n class BountyWatcher {\n   private processedBounties = new Set<string>();\n \n   constructor() {\n-    this.startListening();\n+    this.initializeOpenBounties();\n+    this.startListening();\n   }\n-\n-  private startListening() {\n+  /** Carga al iniciar todas las recompensas que ya están abiertas y crea issues para ellas */\n+  private async initializeOpenBounties() {\n+    const openBounties = await this.api.getOpenBounties();\n+    for (const bounty of openBounties) {\n+      if (!this.processedBounties.has(bounty.id)) {\n+        await this.createIssueForBounty(bounty);\n+        this.processedBounties.add(bounty.id);\n+      }\n+    }\n+  }\n+\n+  private startListening() {\n     this.api.on('newBounty', async (bounty) => {\n       if (this.processedBounties.has(bounty.id)) return;\n       await this.createIssueForBounty(bounty);\n       this.processedBounties.add(bounty.id);\n     });\n   }\n*** End of File ***\n```\n\n---\n*Recompensa Bounty:* **$150**\n*Cuenta Beneficiaria:* `github.com/juanmigueldacostaabella-boop` (GITHUB_REWARD_ACCOUNT)",
       "proposedCode": "--- a/src/bountyWatcher.ts\n+++ b/src/bountyWatcher.ts\n@@\n class BountyWatcher {\n   private processedBounties = new Set<string>();\n \n   constructor() {\n-    this.startListening();\n+    this.initializeOpenBounties();\n+    this.startListening();\n   }\n-\n-  private startListening() {\n+  /** Carga al iniciar todas las recompensas que ya están abiertas y crea issues para ellas */\n+  private async initializeOpenBounties() {\n+    const openBounties = await this.api.getOpenBounties();\n+    for (const bounty of openBounties) {\n+      if (!this.processedBounties.has(bounty.id)) {\n+        await this.createIssueForBounty(bounty);\n+        this.processedBounties.add(bounty.id);\n+      }\n+    }\n+  }\n+\n+  private startListening() {\n     this.api.on('newBounty', async (bounty) => {\n       if (this.processedBounties.has(bounty.id)) return;\n       await this.createIssueForBounty(bounty);\n       this.processedBounties.add(bounty.id);\n     });\n   }\n*** End of File ***",
       "explanation": "El problema era que el watcher solo respondía a eventos de nuevas recompensas y no procesaba las que ya estaban abiertas cuando la aplicación iniciaba, por lo que esas recompensas nunca generaban issues. La solución agrega una inicialización que, al arrancar, consulta las recompensas abiertas y crea los issues correspondientes, marcándolas como procesadas.",
-      "status": "SOLUCIÓN_IA_REAL_LISTA",
-      "createdAt": "2026-10-22T18:07:31.853Z"
+      "status": "ERROR_ENVIO",
+      "createdAt": "2026-10-22T18:07:31.853Z",
+      "submittedAt": "2026-11-11T12:33:21.733Z",
+      "error": "Filtrado: Repositorio no es un bounty real sino bot scraper"
     }
   ],
   "submittedClaims": [
