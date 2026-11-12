@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-12T20:15:07.344Z",
-  "scanCount": 754,
+  "lastScanAt": "2026-11-12T21:01:35.654Z",
+  "scanCount": 755,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 60,
-    "totalBountyPoolUsd": 52365,
+    "totalBountiesDetected": 59,
+    "totalBountyPoolUsd": 52315,
     "solutionsGenerated": 55,
     "potentialEarningsUsd": 127997,
     "prsSubmitted": 49
@@ -1736,6 +1736,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-12T21:01:40.043Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $52,315 USD."
+    },
+    {
+      "time": "2026-11-12T21:01:35.654Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-12T21:01:35.653Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-12T20:15:12.885Z",
       "level": "CLAIM",
       "msg": "¡Solución enviada con éxito a IES-BoilerRoom/rfc9421-http-signature-gateway #2! Recompensa en juego: $600"
@@ -2219,21 +2234,6 @@
       "time": "2026-11-11T15:21:56.290Z",
       "level": "AUTO_SUBMIT",
       "msg": "Modo 100% Autónomo: Reclamando bounty para zhangjiayang6835-cyber/bounty-plaza #4305..."
-    },
-    {
-      "time": "2026-11-11T15:21:56.290Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,015 USD."
-    },
-    {
-      "time": "2026-11-11T15:21:52.869Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-11T15:21:52.867Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
     }
   ]
 }
