@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-12T13:50:11.622Z",
-  "scanCount": 747,
+  "lastScanAt": "2026-11-12T14:44:02.132Z",
+  "scanCount": 748,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 54,
-    "totalBountyPoolUsd": 50088,
+    "totalBountyPoolUsd": 50165,
     "solutionsGenerated": 54,
     "potentialEarningsUsd": 127397,
     "prsSubmitted": 48
@@ -237,6 +237,19 @@
       "createdAt": "2026-11-11T14:41:44Z",
       "fullBody": "<!-- misakanet-question-bounty:anchor-4492 -->\n# [Bounty] Answer the 2 linked question(s)\n\n## Context\n\nThese intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_match` — so there is nothing to link the asker to, and the answer has to be written by someone who saw the failure.\n\n- #4492 — [Question] ROBOGUIDE V9.40 虚拟机器人（FRVRC）热启动时 frsock.dll 访问违例崩溃，工位无法引导。崩溃前 logfile 出现「SEC -00\n- #4687 — [Question] ESET Endpoint Security 集中管控（EraAgentSvc/PROTECT 策略下发）的机器上，本地自助添加排除项是否可行？ 场景：FANU\n\n_Shared vocabulary that grouped them: `connect`, `frsock`, `roboguide`._\n\n## Deliverable\n\n**An answer, posted as a comment on each question issue above.** No pull request is needed and none is expected — the answer is what the asker (and the next agent that hits this) needs, and it is what the FAQ is built from. `sync-question-answers.yml` copies an `answered` comment into D1, and from then on `misakanet_search` returns it as a `type: faq` hit.\n\nThe answer has to be *observed*, not generated. An answer invented by someone who never saw the failure is an invented source — that is the failure `docs/maintainer/provenance-gate-2026-09-16.md` exists to prevent. If you only have a hypothesis, say so plainly: a guess labelled as a guess is useful, a guess presented as fact is not.\n\n## How your answer reaches readers\n\n1. Post it on **each** linked question issue as a comment — not only here. The sync reads the question's own thread.\n2. A maintainer reviews it in the daily question pass and adds the `answered` label.\n3. `sync-question-answers.yml` copies the labelled comment into the FAQ (D1) within a day.\n\n## MANDATORY ACCEPTANCE CRITERIA (AC)\n\n**0. REPRODUCIBLE EVIDENCE — the condition most submissions fail**\n\n- [ ] Paste the command you ran and the output you got. Not a description of what you did — the command and its output. If you name an endpoint it must be `misakanet.org`.\n- [ ] Say what you observed yourself versus what you read somewhere.\n\n**1. The answer is complete**\n\n- [ ] It states the root cause, the fix (with the exact command or setting), and how to check it worked — the last one is a command plus the result that means success, not \"it should work\".\n- [ ] It names the version / environment it was observed on. \"Works on my machine\" without that line is unfalsifiable.\n\n**2. It is posted where the question lives**\n\n- [ ] A comment on **every** linked question iss",
       "bodyPreview": "<!-- misakanet-question-bounty:anchor-4492 --> # [Bounty] Answer the 2 linked question(s) ## Context These intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_ma"
+    },
+    {
+      "id": 6351318734,
+      "number": 4751,
+      "title": "[Bounty][$0][i18n] 多语言 README：新增 한국어 / Español / Français / Deutsch / Português(BR) / Русский（一门语言一个 PR）",
+      "repo": "Ikalus1988/MisakaNet",
+      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4751",
+      "rewardUsd": 100,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-12T13:55:20Z",
+      "fullBody": "> **Payment:** 本项目**不付钱**。`zero-bounty` / `$0` 意味着只有信用回报：merge credit、贡献者图、\n> Hall of Fame。真正的赏金只存在于有人用 Opire 的 `/reward <amount>` 资助的 issue 上。见\n> `JOIN.md` § \"Bounties & payment\"。\n\n## 背景\n\nREADME 目前只有三种语言：English（canonical）、日本語、简体中文。仓库的语料、客户端插件和 MCP\n工具已经在讲多种语言的故事（`locale/` 有 en/ja/ko/zh-CN），但**入口文档**没有跟上——一个韩语或\n西班牙语的 agent 作者，第一屏看到的是自己读不懂的 README。\n\n这个任务就是补这个缺口：**一种语言一个 PR**，从当前 `main` 的 `README.md` 完整翻译。\n\n## 可选语言（任选一种，先到先得）\n\n| 语言 | 文件名 | 备注 |\n|---|---|---|\n| 한국어 | `README.ko.md` | `locale/` 里已有 ko，术语可以对齐 |\n| Español | `README.es.md` | |\n| Français | `README.fr.md` | |\n| Deutsch | `README.de.md` | |\n| Português (Brasil) | `README.pt-BR.md` | 地区变体请带 `BR` |\n| Русский | `README.ru.md` | |\n| 其他 | 先在本 issue 里问一句 | 避免两个 PR 撞同一种语言 |\n\n## 硬性验收标准（AC）\n\n全部满足才会合；任何一条不满足都会被打回，而不是\"先合了再补\"。\n\n**AC1 · 文件与范围**\n- 新文件放在仓库根目录，命名 `README.<lang>.md`（语言代码按上表；地区变体用 `pt-BR` 这种写法）。\n- 内容是从**当前 `main`** 的 `README.md` 的完整翻译：不删章节、不合并章节、不\"摘要式翻译\"。\n- 一个 PR 只加**一种**语言。\n\n**AC2 · 徽章必须与 `README.md` 完全对齐**\n- 同一组 `<a href=\"...\">`，顺序一致；`alt` 文本可以翻译，**href 一个字符都不能改**。\n- 新增语言必须注册进 `tests/test_readme_badge_parity.py` 的 `TRANSLATIONS` 元组。\n- 自测：\n  ```console\n  $ python3 -m pytest tests/test_readme_badge_parity.py -q\n  ```\n\n**AC3 · 语言切换行**\n- 新 README 顶部要有与 `README.md` 相同的 `<div align=\"right\">` 语言列表；\n- 同时更新 `README.md`、`README.ja.md`、`README.zh-CN.md` 三处，把新语言加进去（顺序固定：\n  English | 日本語 | 简体中文 | <你的语言>）；\n- 四个链接互相可达（点进去都能打开）。\n\n**AC4 · 不要翻译的东西**\n- 代码块、命令、URL、文件路径、环境变量、徽章 href、图片路径——**原样保留**；\n- 专有名词按现有译法：`MCP`、`DCO`、`intake`、`lesson`、`node`、`E0–E4` 不翻译（或在首次出现时\n  用括号给译名）；与 `README.zh-CN.md` / `README.ja.md` 的既有译法保持一致。\n\n**AC5 · 不许写死数字**\n- README 里的课程数**只能来自 shields 徽章**（`data/badges/lessons.json`），不许手写 \"940 lessons\"\n  之类的总数——`tests/test_lesson_count_ssot.py` 会拦。\n- 自测：\n  ```console\n  $ python3 -m pytest tests/test_lesson_count_ssot.py -q\n  $ python3 scripts/sync_lesson_count.py --check\n  ```\n\n**AC6 · 图片与资源预算**\n- 图片引用与 `README.md` 一致（`promotional/*`），不新增 > 1 MB 的图片；\n- 新文件要加进 `tests/test_readme_asset_budget.py` 的 `READMES` 列表。\n- 自测：\n  ```console\n  $ python3 -m pytest tests/test_readme_asset_budget.py tests/test_readme_scope_section.py -q\n  ```\n\n**AC7 · 翻译质量**\n- 逐段校对，**不接受未校对的机翻**；明显的机翻腔（词序、量词、连接词生硬）会被要求返工。\n- 术语一致：同一术语全文只用一种译法；首次出现可括注原文。\n- 中文/日文 README 里的\"诚实边界\"段落（E4、benchmark 暂停、0 赏金）必须保义，不许美化或省略。\n\n**AC8 · 提交与流程**\n- 每个提交带 `Signed-off-by`（`git commit --signoff`），DCO 检查必须绿；\n- PR 标题：`docs(readme): add <language> translation`；\n- PR 描述里贴出上面四条自测命令的输出；\n- 先在本 issue 回 `/try` 认领，**同一时间一个开放 PR**；两周没有进展会在 issue 里问一次，仍无进展则释放。\n\n## ",
+      "bodyPreview": "> **Payment:** 本项目**不付钱**。`zero-bounty` / `$0` 意味着只有信用回报：merge credit、贡献者图、 > Hall of Fame。真正的赏金只存在于有人用 Opire 的 `/reward <amount>` 资助的 issue 上。见 > `JOIN.md` § \"Bounties & payment\"。 ## 背景 README 目前只有三种语言：English（canonical）、日本語、简体中文。仓库的语料、客户端插件和 MCP 工具已经在讲多种语言的故事（`locale/` 有 en/j"
     },
     {
       "id": 6317780548,
@@ -523,19 +536,6 @@
       "createdAt": "2023-05-23T22:02:33Z",
       "fullBody": "(PR) Description goes here: Fix empty query params\n\n<!-- POLAR PLEDGE BADGE START -->\n## Upvote & Fund\n\n- We're using [Polar.sh](http://127.0.0.1:3000/birkjernstrom) so you can upvote and help fund this issue.\n- We receive the funding once the issue is completed & confirmed by you.\n- Thank you in advance for helping prioritize & fund our backlog.\n\n<a href=\"http://127.0.0.1:3000/birkjernstrom/bp-demo/issues/3\">\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"http://127.0.0.1:3000/api/github/birkjernstrom/bp-demo/issues/3/pledge.svg?darkmode=1\">\n  <img alt=\"Fund with Polar\" src=\"http://127.0.0.1:3000/api/github/birkjernstrom/bp-demo/issues/3/pledge.svg\">\n</picture>\n</a>\n<!-- POLAR PLEDGE BADGE END -->\n",
       "bodyPreview": "(PR) Description goes here: Fix empty query params <!-- POLAR PLEDGE BADGE START --> ## Upvote & Fund - We're using [Polar.sh](http://127.0.0.1:3000/birkjernstrom) so you can upvote and help fund this issue. - We receive the funding once the issue is completed & confirmed by yo"
-    },
-    {
-      "id": 1711933287,
-      "number": 5,
-      "title": "Issue with draft PR",
-      "repo": "polarsource/open-testing",
-      "htmlUrl": "https://github.com/polarsource/open-testing/issues/5",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2023-05-16T12:33:02Z",
-      "fullBody": "\n\n<!-- POLAR PLEDGE BADGE START -->\n## Funding\n* You can sponsor this specific effort via a [Polar.sh](https://polar.sh) pledge below\n* We receive the pledge once the issue is completed & verified\n\n<a href=\"https://polar.sh/polarsource/open-testing/issues/5\">\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://polar.sh/api/github/polarsource/open-testing/issues/5/pledge.svg?darkmode=1\">\n  <img alt=\"Fund with Polar\" src=\"https://polar.sh/api/github/polarsource/open-testing/issues/5/pledge.svg\">\n</picture>\n</a>\n<!-- POLAR PLEDGE BADGE END -->\n",
-      "bodyPreview": " <!-- POLAR PLEDGE BADGE START --> ## Funding * You can sponsor this specific effort via a [Polar.sh](https://polar.sh) pledge below * We receive the pledge once the issue is completed & verified <a href=\"https://polar.sh/polarsource/open-testing/issues/5\"> <picture> <source "
     }
   ],
   "solutions": [
@@ -1728,6 +1728,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-12T14:44:05.403Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,165 USD."
+    },
+    {
+      "time": "2026-11-12T14:44:02.132Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-12T14:44:02.130Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-12T13:50:15.428Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,088 USD."
@@ -2211,21 +2226,6 @@
       "time": "2026-11-11T12:23:53.900Z",
       "level": "ERROR",
       "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-11T12:23:53.645Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #228..."
-    },
-    {
-      "time": "2026-11-11T12:23:53.645Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $157,511 USD."
-    },
-    {
-      "time": "2026-11-11T12:23:51.182Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
     }
   ]
 }
