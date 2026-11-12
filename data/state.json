@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-12T02:54:38.778Z",
-  "scanCount": 736,
+  "lastScanAt": "2026-11-12T03:40:30.504Z",
+  "scanCount": 737,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 54,
-    "totalBountyPoolUsd": 50115,
+    "totalBountiesDetected": 52,
+    "totalBountyPoolUsd": 50015,
     "solutionsGenerated": 54,
     "potentialEarningsUsd": 127397,
     "prsSubmitted": 48
@@ -1728,6 +1728,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-12T03:40:32.715Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,015 USD."
+    },
+    {
+      "time": "2026-11-12T03:40:30.504Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-12T03:40:30.502Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-12T02:54:41.397Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,115 USD."
@@ -2211,21 +2226,6 @@
       "time": "2026-11-11T06:22:25.177Z",
       "level": "INFO",
       "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-11T06:22:25.175Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-11T05:24:33.743Z",
-      "level": "ERROR",
-      "msg": "Fallo al enviar a GitHub: HTTP 422: Unprocessable Entity"
-    },
-    {
-      "time": "2026-11-11T05:24:33.425Z",
-      "level": "AUTO_SUBMIT",
-      "msg": "Modo 100% Autónomo: Reclamando bounty para abdulsalam-create/bounty-watch #228..."
     }
   ]
 }
