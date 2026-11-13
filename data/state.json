@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-13T14:37:21.878Z",
-  "scanCount": 774,
+  "lastScanAt": "2026-11-13T15:22:54.615Z",
+  "scanCount": 775,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,7 +10,7 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 66,
+    "totalBountiesDetected": 65,
     "totalBountyPoolUsd": 57715,
     "solutionsGenerated": 57,
     "potentialEarningsUsd": 131247,
@@ -382,6 +382,19 @@
       "bodyPreview": "> **Payment:** 本项目**不付钱**。`zero-bounty` / `$0` 意味着只有信用回报：merge credit、贡献者图、 > Hall of Fame。真正的赏金只存在于有人用 Opire 的 `/reward <amount>` 资助的 issue 上。见 > `JOIN.md` § \"Bounties & payment\"。 ## 背景 README 目前只有三种语言：English（canonical）、日本語、简体中文。仓库的语料、客户端插件和 MCP 工具已经在讲多种语言的故事（`locale/` 有 en/j"
     },
     {
+      "id": 6373794974,
+      "number": 4801,
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "repo": "Ikalus1988/MisakaNet",
+      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4801",
+      "rewardUsd": 100,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-13T14:53:46Z",
+      "fullBody": "<!-- misakanet-question-bounty:anchor-4498 -->\n# [Bounty] Answer the 2 linked question(s)\n\n## Context\n\nThese intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_match` — so there is nothing to link the asker to, and the answer has to be written by someone who saw the failure.\n\n- #4498 — [Question] MisakaNet search returned DNS and MCP parse failures\n- #4771 — [Question] MisakaNet helper cannot parse MCP response during preflight search for AVFoundat\n\n_Shared vocabulary that grouped them: `mcp`, `misakanet`, `parse`, `response`, `search`, `unable`._\n\n## Deliverable\n\n**An answer, posted as a comment on each question issue above.** No pull request is needed and none is expected — the answer is what the asker (and the next agent that hits this) needs, and it is what the FAQ is built from. `sync-question-answers.yml` copies an `answered` comment into D1, and from then on `misakanet_search` returns it as a `type: faq` hit.\n\nThe answer has to be *observed*, not generated. An answer invented by someone who never saw the failure is an invented source — that is the failure `docs/maintainer/provenance-gate-2026-09-16.md` exists to prevent. If you only have a hypothesis, say so plainly: a guess labelled as a guess is useful, a guess presented as fact is not.\n\n## How your answer reaches readers\n\n1. Post it on **each** linked question issue as a comment — not only here. The sync reads the question's own thread.\n2. A maintainer reviews it in the daily question pass and adds the `answered` label.\n3. `sync-question-answers.yml` copies the labelled comment into the FAQ (D1) within a day.\n\n## MANDATORY ACCEPTANCE CRITERIA (AC)\n\n**0. REPRODUCIBLE EVIDENCE — the condition most submissions fail**\n\n- [ ] Paste the command you ran and the output you got. Not a description of what you did — the command and its output. If you name an endpoint it must be `misakanet.org`.\n- [ ] Say what you observed yourself versus what you read somewhere.\n\n**1. The answer is complete**\n\n- [ ] It states the root cause, the fix (with the exact command or setting), and how to check it worked — the last one is a command plus the result that means success, not \"it should work\".\n- [ ] It names the version / environment it was observed on. \"Works on my machine\" without that line is unfalsifiable.\n\n**2. It is posted where the question lives**\n\n- [ ] A comment on **every** linked question issu",
+      "bodyPreview": "<!-- misakanet-question-bounty:anchor-4498 --> # [Bounty] Answer the 2 linked question(s) ## Context These intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_ma"
+    },
+    {
       "id": 6317780548,
       "number": 31,
       "title": "Community bounties & contributor program (open call)",
@@ -523,19 +536,6 @@
       "createdAt": "2026-11-11T10:44:32Z",
       "fullBody": "## Both published security-reporting channels are currently non-functional\n\n`security.txt` (and the bounty page §1) name two ways to report a security issue\nprivately. I tried both while preparing a report, and neither currently accepts\nanything. Opening this issue only to ask which channel to use — **I have not\nincluded any vulnerability details here**, because §1 asks that those stay private\nuntil you have a channel open.\n\n### 1. `admin@qsdm.tech` — mailbox rejects all mail\n\n```\n$ python3 - <<'PY'\nimport smtplib\ns = smtplib.SMTP('eforward1.registrar-servers.com', 25, timeout=20)\ns.ehlo('gmail.com')\ns.mail('leduckhuong2002@gmail.com')\nprint(s.rcpt('admin@qsdm.tech'))\nPY\n(554, b'5.1.1 <admin@qsdm.tech>: Recipient address rejected: undeliverable address:\n Mailbox might be disabled, full, or may not exist on the server. Reason: JFE030050')\n```\n\nThe MX records exist (`eforward{1,2,3,4,5}.registrar-servers.com`), so the domain\naccepts connections, but the recipient is refused permanently. A random local part\nis refused identically, so there is no catch-all forwarding configured:\n\n```\nrcpt('zz-probe-9f3a@qsdm.tech') -> (554, b'5.1.1 ... undeliverable address ...')\n```\n\n`security@qsdm.tech`, `support@qsdm.tech`, `contact@qsdm.tech` and\n`abuse@qsdm.tech` are all refused the same way. A `554` at `RCPT TO` is a permanent\nrejection, not greylisting or a transient deferral.\n\n### 2. GitHub private vulnerability reporting — not enabled\n\n```\n$ gh api -X POST repos/blackbeardONE/QSDM/security-advisories/reports --input - <<'JSON'\n{\"summary\":\"probe\",\"description\":\"probe\",\"severity\":\"low\"}\nJSON\n{\"message\":\"Repository does not have private vulnerability reporting enabled\",\n \"documentation_url\":\"https://docs.github.com/rest/security-advisories/repository-advisories#privately-report-a-security-vulnerability\",\n \"status\":\"403\"}\n```\n\n`security.txt` describes the advisory link as the canonical private-disclosure\nsurface, but the feature appears to be off for this repository, so the link has no\ndestination that accepts a submission.\n\n### What I'm asking\n\nWhich channel should I use?\n\n- If the intent is GitHub advisories, enabling **Settings → Code security and\n  analysis → Private vulnerability reporting** makes\n  <https://github.com/blackbeardONE/QSDM/security/advisories/new> accept reports,\n  and I will use it immediately.\n- If the intent is email, the forwarding destination for `admin@qsdm.tech` needs\n  reconfiguring at the registrar — the MX points at Namecheap forwarding but n",
       "bodyPreview": "## Both published security-reporting channels are currently non-functional `security.txt` (and the bounty page §1) name two ways to report a security issue privately. I tried both while preparing a report, and neither currently accepts anything. Opening this issue only to ask wh"
-    },
-    {
-      "id": 5059089285,
-      "number": 1592,
-      "title": "ELEC-2 — PolarMACE on the new architecture, with golden parity and the polar user surface",
-      "repo": "ACEsuit/mace",
-      "htmlUrl": "https://github.com/ACEsuit/mace/issues/1592",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-08-04T09:54:31Z",
-      "fullBody": "**Depends on:** ELEC-1 (#1591), ARCH-3 (#1562), ARCH-5 (#1633), CLI-1 (#1579), FM-00 (#1565), PAR-1 (#1572) · **Blocks:** DEP-1a (#1634), GATE-3 (#1585), FM-2 (#1587), ELEC-3 (#1593), DEP-4 (#1596), RET-4 (#1600)\n\n**Prerequisite:** the Phase 0 characterization suite is committed — goldens, fixtures and the single-source tolerance table under `tests/golden/`, characterization tests under `tests/unit/`. References of the form `P0-N` name that work.\n\n**Context:** `PolarMACE` (`mace/modules/extensions.py:666`, decorated `@compile_mode(\"script\")` at `:665`) subclasses `ScaleShiftMACE` and **overrides its forward**: it adds k-space electrostatic energies that depend on positions **and cell**, so they couple into the derivative engine (forces are `dE/dx`, stress is `dE/dstrain` — the long-range term contributes to both). `MACELES` at `:142` is the sibling ELEC-4 (#1635) owns; this ticket owns the polar model. Because these override forward and hold their own energy term, they are **models, not readouts** — the \"extending touches zero core files\" property that holds for backends/observables/losses/data-formats/readouts does **not** apply. A new model in v1 is a `MACEModel` subclass + a model-transform hook (for the field/SCF recursion). This ticket ports `PolarMACE` to that shape as a registered model, gates it on the P0-3a golden, and re-erects the polar user surface (density-cube CLI, Fukui output, polar Hessian, the polar result keys). The three published MACE-Polar artifacts are converted in FM-2 (#1587) alongside the rest of the roster — conversion runs on the FM-1 (#1586) two-step tool, which lands a phase later; what this ticket owes FM-2 (#1587) is the registered model those artifacts import onto and the electrostatics config field that records their solver. Legacy is read in place from `mace/modules/extensions.py`; reproduce its numbers, not its structure. The legacy TorchScript `@compile_mode(\"script\")` decorator does not carry over.\n\n**Interface & constraints:**\n\n1. **`PolarMACE` becomes a registered model** in `packages/mace-torch/.../models/electrostatics.py`: a `MACEModel` subclass returning `mace_core.outputs.MACEOutput`, with the polar quantities in its `extras`, registered in the model registry so config selects it by name (legacy reaches it through `--model PolarMACE`, one of the ten `--model` choices at `mace/tools/arg_parser.py:137-148`). The v1 class cannot be called `PolarMACE`: that name is on the legacy-symbol denylist of `tests/architectur",
-      "bodyPreview": "**Depends on:** ELEC-1 (#1591), ARCH-3 (#1562), ARCH-5 (#1633), CLI-1 (#1579), FM-00 (#1565), PAR-1 (#1572) · **Blocks:** DEP-1a (#1634), GATE-3 (#1585), FM-2 (#1587), ELEC-3 (#1593), DEP-4 (#1596), RET-4 (#1600) **Prerequisite:** the Phase 0 characterization suite is committed "
     }
   ],
   "solutions": [
@@ -1752,6 +1752,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-13T15:22:57.602Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,715 USD."
+    },
+    {
+      "time": "2026-11-13T15:22:54.615Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-13T15:22:54.614Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-13T14:37:24.295Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,715 USD."
@@ -2233,21 +2248,6 @@
     },
     {
       "time": "2026-11-12T11:39:27.034Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,115 USD."
-    },
-    {
-      "time": "2026-11-12T11:39:24.461Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-12T11:39:24.459Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-12T10:44:07.685Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,115 USD."
     }
