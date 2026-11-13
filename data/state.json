@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-13T10:41:59.522Z",
-  "scanCount": 770,
+  "lastScanAt": "2026-11-13T11:37:23.764Z",
+  "scanCount": 771,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 66,
-    "totalBountyPoolUsd": 57715,
+    "totalBountiesDetected": 65,
+    "totalBountyPoolUsd": 57665,
     "solutionsGenerated": 57,
     "potentialEarningsUsd": 131247,
     "prsSubmitted": 51
@@ -1752,6 +1752,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-13T11:37:25.864Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,665 USD."
+    },
+    {
+      "time": "2026-11-13T11:37:23.765Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-13T11:37:23.763Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-13T10:42:05.323Z",
       "level": "CLAIM",
       "msg": "¡Solución enviada con éxito a tenstorrent/tt-metal #65472! Recompensa en juego: $750"
@@ -2233,21 +2248,6 @@
     },
     {
       "time": "2026-11-12T07:59:07.702Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,215 USD."
-    },
-    {
-      "time": "2026-11-12T07:59:05.227Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-12T07:59:05.225Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-12T06:45:11.165Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $50,215 USD."
     }
