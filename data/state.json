@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-14T07:50:02.253Z",
-  "scanCount": 795,
+  "lastScanAt": "2026-11-14T08:33:47.491Z",
+  "scanCount": 796,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 70,
-    "totalBountyPoolUsd": 58381,
+    "totalBountyPoolUsd": 58713,
     "solutionsGenerated": 57,
     "potentialEarningsUsd": 131247,
     "prsSubmitted": 51
@@ -343,6 +343,19 @@
       "bodyPreview": " ### Bounty Details: Add P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs to it as well as have full sprites and sound effects for the item and aforementioned interactions between the Kirkinator and P. Diddy lube ### Bounty Reward: 420"
     },
     {
+      "id": 6387560590,
+      "number": 1376,
+      "title": "[每日信息流] 2026-11-14",
+      "repo": "ruohong2018/ruohong2018.github.io",
+      "htmlUrl": "https://github.com/ruohong2018/ruohong2018.github.io/issues/1376",
+      "rewardUsd": 400,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T08:28:58Z",
+      "fullBody": "# 每日安全资讯（2026-11-14）\n\n- Recent Commits to cve:main\n  - [Update Fri Nov 13 15:09:41 UTC 2026](https://github.com/trickest/cve/commit/07d53bd126a3082ff2663eb3e401c4892749df63)\n- Darknet – Hacking Tools, Hacker News & Cyber Security\n  - [Phone Phreaking – The Blind Teenager Who Whistled Free Calls](https://www.darknet.org.uk/2026/11/phone-phreaking-joe-engressia-john-draper/)\n- Paper - 知道创宇404实验室\n  - [面向移动 SQLite 数据库的上下文感知证据抽取：一个符号—神经框架](https://paper.seebug.org/3534)\n- 先知安全技术社区\n  - [WordPress Core竞争条件远程代码执行漏洞(CVE-2026-119977）](https://xz.aliyun.com/news/93320)\n- 安全客-有思想的安全新媒体\n  - [3.5万个Grok应用不用登录就能打开，泄露的是马斯克自己公司的工资表](https://www.anquanke.com/post/id/316476)\n  - [大模型狂奔三年，百度词元所重新定义AI生意](https://www.anquanke.com/post/id/316469)\n- 先知安全技术社区\n  - [WordPress Core竞争条件远程代码执行漏洞(CVE-2026-119977）](https://xz.aliyun.com/news/93320)\n- Microsoft Security Blog\n  - [SCKit abuses ScreenConnect to deploy remote access and target technician sessions](https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/)\n- Darknet – Hacking Tools, Hacker News & Cyber Security\n  - [Phone Phreaking – The Blind Teenager Who Whistled Free Calls](https://www.darknet.org.uk/2026/11/phone-phreaking-joe-engressia-john-draper/)\n- NVISO Labs\n  - [Detection Engineering: Implementing Detection-as-Code in an Existing Environment: Part 3 – Validation and Future Possibilities](https://blog.nviso.eu/2026/11/13/detection-engineering-implementing-detection-as-code-in-an-existing-environment-part-3-validation-and-future-possibilities/)\n- Project Zero\n  - [Policy and Disclosure: 2026 Edition](https://projectzero.google/2026/11/disclosure-policy.html)\n- Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!\n  - [yakit v1.4.9-1113](https://kitploit.com/en/posts/yakit-042f00195381c761)\n  - [I2Pplus](https://kitploit.com/en/tools/gitlab/i2pplus/i2p.plus)\n  - [hermes-agent v0.23.1+canary.20261113T064447Z](https://kitploit.com/en/posts/hermes-agent-7300d7908b44aff1)\n  - [CyberStrikeAI v1.8.0](https://kitploit.com/en/posts/cyberstrikeai-b42ea3cc4b2f23a2)\n  - [CubeSandbox v0.8.0](https://kitploit.com/en/posts/cubesandbox-e25acf852b422dfc)\n  - [TorBot v4.3.1](https://kitploit.com/en/posts/torbot-acd1b675e24dfed7)\n- Securelist\n  - [Ransomware at the hypervisor layer: how attackers use ESXi and vCenter features for malicious purposes](https://securelist.com/esxi-ransomware/121959/)\n- Reverse Engineering\n  - [U2cRumble – GPL",
+      "bodyPreview": "# 每日安全资讯（2026-11-14） - Recent Commits to cve:main - [Update Fri Nov 13 15:09:41 UTC 2026](https://github.com/trickest/cve/commit/07d53bd126a3082ff2663eb3e401c4892749df63) - Darknet – Hacking Tools, Hacker News & Cyber Security - [Phone Phreaking – The Blind Teenager Who Whis"
+    },
+    {
       "id": 6382917103,
       "number": 703,
       "title": "🌐 AI 官方内容追踪报告 2026-11-14",
@@ -523,19 +536,6 @@
       "createdAt": "2026-11-11T12:29:56Z",
       "fullBody": "## Problem\n\n`leonardo` is the roster's single code-review agent and owns the whole security domain in the same pass (`agents/leonardo.md` *Security agenda*: \"there is no separate security agent\"). A review then has one reader for code quality and for security, and every security verdict depends on that one reading. There is no independent second view that does not start from `leonardo`'s conclusions.\n\n## Proposal\n\nAdd a **separate security agent, `splinter`**, as a second, independent view of every code review:\n\n1. **Role.** `splinter` reviews the same pull-request head as `leonardo`, for security only: the security skills (`security-review`, `security-audit` *Diff mode*, `security-bounty-hunter`, `security-threat-analysis`, `laravel-security` and `laravel-authorization-review` where they apply, `git-history-exposure-audit` *Review mode* on a public repository) and every rule under `rules/security/**`.\n2. **Independence.** `splinter` runs in parallel with `leonardo` in the *Parallel CR round* (`agents/krang.md`), against the same head SHA, and never reads `leonardo`'s findings for the round before it hands back. It is read-only and publishes nothing itself.\n3. **Merging the two views.** `leonardo` stays the publisher of the one CR comment. A security finding from `splinter` is a finding of the round at the severity the code-review rules give it; a disagreement between the two on a security point is resolved toward the stricter verdict, and the comment says which agent raised it. Duplicates are merged into one finding.\n4. **Convergence.** A round converges only when both views are clean under the existing gate (0 Critical, no undeferred Moderate; a security finding is never deferred).\n5. **Model tier.** Declared in the agent definition per platform (`agents/splinter.md`, `codex/agents/splinter.toml`), following `rules/compound-engineering/orchestration.md` *Adaptive routing*.\n\n## The name `splinter` (owner's choice)\n\n`splinter` named the orchestrator until 2026-11-09, when it was renamed to `krang` (`docs/agents.md` *Renamed agents*; `src/InstallerAgentMigration.php` removes an **unmodified** 0.3.1 `splinter.md` / `splinter.toml` by content hash). Reusing the name requires, in the same change:\n\n- `src/InstallerAgentMigration.php`: the migration must never remove the new `splinter` definition — verify that the hash check alone guarantees it, and add an installer test that installs the new agent over an existing 0.3.1 `splinter.md` and keeps the new file.\n- `",
       "bodyPreview": "## Problem `leonardo` is the roster's single code-review agent and owns the whole security domain in the same pass (`agents/leonardo.md` *Security agenda*: \"there is no separate security agent\"). A review then has one reader for code quality and for security, and every security "
-    },
-    {
-      "id": 6328297013,
-      "number": 381,
-      "title": "archiveExpiredLease blind overwrite races concurrent settle/renew: Settled lease relabelled Expired, renewal payment destroyed",
-      "repo": "xeprotocol/xe",
-      "htmlUrl": "https://github.com/xeprotocol/xe/issues/381",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T12:20:14Z",
-      "fullBody": "# archiveExpiredLease blind overwrite races concurrent settle/renew: Settled lease relabelled Expired, renewal payment destroyed\n\n**Severity: Medium** (XE tier ceiling 2,500 XE). **CVSS 3.1: 4.8\n(AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L)** — see §7 for the scoring and the\nrenew-leg variant (I:H → 5.9, still Medium).\n\n**Target:** `github.com/xeprotocol/xe` @\n`89a542ea51d38375299aee54c6c99102e9bfa666` (\"release: testnet-0005 quorum\nwithhold fix\", 2026-11-10). Go 1.25.0.\n\n## 1. Impact (read this first)\n\nA lease that has been **settled** — escrow paid out, provider emission\nminted — is silently relabelled **Expired** by the node's own archive\nsweep, because the archive writes a stale snapshot copy with a blind\n`PutLease` and never re-reads the lease. The settled lease then disappears\nfrom settled queries, and the node logs a false \"burned N µXUSD escrow\"\nfor escrow that was already paid. The supply auditor breaks (XUSD not\nconserved, discrepancy = the escrow amount).\n\nThe renew leg is worse: a **renew that commits after the archive's\nsnapshot is overwritten the same way, and the renewal payment is\ndestroyed with no record** — a live lease is killed mid-term, its renewal\nescrow (31,000 µXUSD in the tested fixture) is deleted while the archive\nlog claims only the base escrow (62,000) burned, and the provider's\nbase+renewal settlement emission never mints. The overwritten lease is\nterminally dead: a second renew and a settle-shaped commit are both\nCAS-rejected afterwards.\n\nFund loss is bounded per lease (one renewal payment + one lease's\nemission); there is no double-spend and no unbounded drain. The trigger\nis timing-dependent and is not attacker-controlled — see §5 for the exact\nprerequisites and §7 for why this is Medium, not High.\n\n## 2. Root cause\n\n`Node.archiveExpiredLease` (`node/node.go:1880-1895`), called from\n`tryArchiveExpiredLeases` (`:1863`) in the single `settleLoop` goroutine\n(`:1757`, 10 s ticks). Per lease it does:\n\n1. Read a snapshot: `GetLeasesByState(Accepted)`.\n2. Txn 1: `DeletePendingSend(leaseHash)`.\n3. Txn 2: blind `PutLease` of a mutated copy (`State=Expired,\n   Settled=true`).\n\nThere is **no lock, no CAS, and no re-read** anywhere in this path.\n`PutLease` (`store/badger_store.go:1562-1570`) is a blind `txn.Set` that\nnever reads the key in-transaction, so Badger's optimistic concurrency\ndetects nothing. No `AddBlock` is involved, so no account or lease lock is\nheld. The settle path takes the provider account lock + lease lock and\nits in-transa",
-      "bodyPreview": "# archiveExpiredLease blind overwrite races concurrent settle/renew: Settled lease relabelled Expired, renewal payment destroyed **Severity: Medium** (XE tier ceiling 2,500 XE). **CVSS 3.1: 4.8 (AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L)** — see §7 for the scoring and the renew-leg va"
     }
   ],
   "solutions": [
@@ -1752,6 +1752,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-14T08:33:49.239Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,713 USD."
+    },
+    {
+      "time": "2026-11-14T08:33:47.491Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-14T08:33:47.489Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-14T07:50:03.996Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,381 USD."
@@ -2235,21 +2250,6 @@
       "time": "2026-11-13T04:23:53.715Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $56,765 USD."
-    },
-    {
-      "time": "2026-11-13T04:23:51.583Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-13T04:23:51.582Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-13T03:25:41.555Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $56,715 USD."
     }
   ]
 }
