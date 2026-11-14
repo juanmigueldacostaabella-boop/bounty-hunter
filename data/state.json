@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-14T05:59:53.621Z",
-  "scanCount": 793,
+  "lastScanAt": "2026-11-14T06:51:19.690Z",
+  "scanCount": 794,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 69,
-    "totalBountyPoolUsd": 58205,
+    "totalBountiesDetected": 68,
+    "totalBountyPoolUsd": 58305,
     "solutionsGenerated": 57,
     "potentialEarningsUsd": 131247,
     "prsSubmitted": 51
@@ -434,6 +434,45 @@
       "bodyPreview": "# 🐞 Bug Report ## 🔍 Describe the Bug In `@paraspell/sdk-core`, when building a cross-chain `PolkadotXcm.execute` transfer with a separate `.feeAsset(...)` (`AssetHubPolkadot` / `Hydration` when `shouldUseExecuteTransfer` is `true`), [`createBaseExecuteXcm`](https://github.com"
     },
     {
+      "id": 6386450030,
+      "number": 4876,
+      "title": "[Bounty][$0][corpus] devops 20 篇缺 verify：补一条可执行的确认，或标记失效",
+      "repo": "Ikalus1988/MisakaNet",
+      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4876",
+      "rewardUsd": 100,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T06:40:56Z",
+      "fullBody": "## 背景\n\n359 篇已发布课程**没有 `verify` 字段**——也就是\"没人写过怎么确认这条经验成立\"。语料的证据分级（`evidence_level`）因此有一半是自述。本任务从最大的一批开始：`domain: devops` 里 126 篇缺 `verify`，先取**创建时间最早的 20 篇**（越老越可能已经失效）。\n\n## 范围（20 篇）\n\n- `lessons/contrib/api-rate-limit-handling.md`\n- `lessons/contrib/gfw-tls-sni-blocking-tool-layer-ineffective.md`\n- `lessons/contrib/lesson-10-microservices-latency-math.md`\n- `lessons/contrib/lesson-11-github-commit-signing.md`\n- `lessons/contrib/lesson-13-aws-lambda-microvms.md`\n- `lessons/contrib/lesson-14-api-pagination-design.md`\n- `lessons/contrib/lesson-15-cloudflare-workflows-durable.md`\n- `lessons/contrib/lesson-16-aws-ecs-high-resolution-metrics.md`\n- `lessons/contrib/lesson-18-database-performance-indexing.md`\n- `lessons/contrib/lesson-19-grpc-openapi-rest-comparison.md`\n- `lessons/contrib/lesson-20-api-design-principles.md`\n- `lessons/contrib/lesson-9-redis-postgresql-replacement.md`\n- `lessons/contrib/lesson-review-3-devops-platform-engineering.md`\n- `lessons/contrib/lesson-review-5-eks-version-rollback.md`\n- `lessons/contrib/lesson-review-6-cloudflare-x402-monetization.md`\n- `lessons/contrib/lesson-review-7-cloudflare-saga-rollbacks.md`\n- `lessons/contrib/lesson-review-8-cloudflare-ai-traffic-options.md`\n- `lessons/contrib/multi-forum-scraping-architecture.md`\n- `lessons/contrib/lesson-quality-requirements.md`\n- `lessons/contrib/session-lesson-1-content-quality-scoring.md`\n\n## 硬性验收标准（AC）\n\n**0. 可复现证据**：`verify` 必须是**别人能跑**的东西。给出命令与输出，例如\n\n```console\n$ python3 scripts/lesson_gate.py --existing lessons/contrib/xxx.md | tail -1\n1 file(s) checked, 0 failed, 1 with warnings.\n```\n\n命令不一定要跑那条 bug——凡是能**证伪**这条经验的检查都算（例如\"该 API 今天仍返回 429\"、\"该 flag 仍存在\"、\"该路径仍不存在\"）。\n\n**1. 每篇二选一**\n\n| 处置 | 条件 |\n|---|---|\n| 补 `verify:` | 你能指出一条今天仍成立的检查；写进 frontmatter，并在正文 `## Verification` 段给出同一命令 |\n| 标记失效 | 检查**失败了**——说明这条经验已不成立：`status: stale` + 一行说明今天的行为是什么（这是同等价值的产出） |\n\n**2. 批量与形态**：≤4 个 PR，每个 ≤5 篇，只动这 20 篇。\n\n**3. 判定表**贴在本 issue 评论：`lesson | 处置 | 命令 | 输出尾部`。\n\n## 不算交付\n\n- `verify: \"see above\"` 这类不可执行的占位；\n- 只写\"已验证\"而没有命令与输出；\n- 把检查写成\"读一遍并确认合理\"（那不是判据）。\n\n## 备注\n\n`$0` = 只算信用。这一批做完后，下一批按同样的口径发（`domain: development` 67 篇）。\n\n<br/>\n<hr/>\n\n<details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can",
+      "bodyPreview": "## 背景 359 篇已发布课程**没有 `verify` 字段**——也就是\"没人写过怎么确认这条经验成立\"。语料的证据分级（`evidence_level`）因此有一半是自述。本任务从最大的一批开始：`domain: devops` 里 126 篇缺 `verify`，先取**创建时间最早的 20 篇**（越老越可能已经失效）。 ## 范围（20 篇） - `lessons/contrib/api-rate-limit-handling.md` - `lessons/contrib/gfw-tls-sni-blocking-tool-layer"
+    },
+    {
+      "id": 6386449156,
+      "number": 4875,
+      "title": "[Bounty][$0][i18n] lessons/en 镜像：20 篇确认过期、43 篇没有来源，并补一道门禁",
+      "repo": "Ikalus1988/MisakaNet",
+      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4875",
+      "rewardUsd": 100,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T06:40:50Z",
+      "fullBody": "## 背景\n\n`lessons/en/` 是主语料的英文镜像，每篇应当有 `translated_from:` 指回源课程。实测（2026-11-14）：\n\n- **20 篇的源课程在翻译之后又被改过**——译文描述的行为可能与今天的源不一致；\n- **43 篇没有 `translated_from`**——既不能判断是否过期，也说不清它在翻译什么。\n\n这是语料里唯一一处\"内容会静默落后于另一个文件\"的地方，而且没有任何门禁看着它。\n\n## 范围 A：确认过期（20 篇，机械判定，不是印象）\n\n<details><summary>点开：20 对（译文 ← 源）</summary>\n\n- `lessons/en/agent-manual-update-timeout.md` ← `lessons/contrib/agent-manual-update-timeout.md`\n- `lessons/en/api-rate-limit-handling.md` ← `lessons/contrib/api-rate-limit-handling.md`\n- `lessons/en/cloudflare-email-worker-registration-trap.md` ← `lessons/contrib/cloudflare-email-worker-registration-trap.md`\n- `lessons/en/feishu-webhook-url-env-config.md` ← `lessons/contrib/feishu-webhook-url-env-config.md`\n- `lessons/en/git-credential-helper-gh-path-mismatch.md` ← `lessons/contrib/git-credential-helper-gh-path-mismatch.md`\n- `lessons/en/git-credentials-and-node-id-setup.md` ← `lessons/contrib/git-credentials-and-node-id-setup.md`\n- `lessons/en/git-credentials-automation.md` ← `lessons/contrib/git-credentials-automation.md`\n- `lessons/en/git-merge-conflict-resolution.md` ← `lessons/contrib/git-merge-conflict-resolution.md`\n- `lessons/en/github-401-credential-lookup.md` ← `lessons/contrib/github-401-credential-lookup.md`\n- `lessons/en/json-parse-failure-handling.md` ← `lessons/contrib/json-parse-failure-handling.md`\n- `lessons/en/openai-compatible-api-call.md` ← `lessons/contrib/openai-compatible-api-call.md`\n- `lessons/en/permission-denied-fix.md` ← `lessons/contrib/permission-denied-fix.md`\n- `lessons/en/pip-install-timeout-ssl.md` ← `lessons/contrib/pip-install-timeout-ssl.md`\n- `lessons/en/python-sandbox-path-isolation.md` ← `lessons/contrib/python-sandbox-path-isolation.md`\n- `lessons/en/python-venv-tiktoken-module-not-found.md` ← `lessons/contrib/python-venv-tiktoken-module-not-found.md`\n- `lessons/en/python-venv-troubleshoot.md` ← `lessons/contrib/python-venv-troubleshoot.md`\n- `lessons/en/regex-greedy-matching.md` ← `lessons/contrib/regex-greedy-matching.md`\n- `lessons/en/shell-script-debugging.md` ← `lessons/contrib/shell-script-debugging.md`\n- `lessons/en/wsl-proxy-setup.md` ← `lessons/contrib/wsl-proxy-setup.md`\n- `lessons/en/wsl2-memory-leak-fix.md` ← `lessons/contrib/wsl2-memory-leak-fix.md`\n\n</details>\n\n复现命令：\n\n```console\n$ for f in $(git ls-files 'lessons/en/*.md'); do\n    src=$(grep -oE 'translated_from\"?[\": ]+\"?[^\"]+' \"$f\" | grep -oE 'lessons/[^\"]+' | head -1)\n    [ -n \"$src\" ] && [ \"$(git log -1 --format=%ct -- \"$f\")\" -lt \"$(git log -1 --format=%ct -",
+      "bodyPreview": "## 背景 `lessons/en/` 是主语料的英文镜像，每篇应当有 `translated_from:` 指回源课程。实测（2026-11-14）： - **20 篇的源课程在翻译之后又被改过**——译文描述的行为可能与今天的源不一致； - **43 篇没有 `translated_from`**——既不能判断是否过期，也说不清它在翻译什么。 这是语料里唯一一处\"内容会静默落后于另一个文件\"的地方，而且没有任何门禁看着它。 ## 范围 A：确认过期（20 篇，机械判定，不是印象） <details><summary>点开：20 对（译文 ←"
+    },
+    {
+      "id": 6386448661,
+      "number": 4874,
+      "title": "[Bounty][$0][corpus] 48 篇 draft：每篇给一个 promote/retire 的判据",
+      "repo": "Ikalus1988/MisakaNet",
+      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4874",
+      "rewardUsd": 100,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T06:40:47Z",
+      "fullBody": "## 背景\n\n`lessons/` 有 48 篇 `status: draft` 的课程——它们既不进评分，也没有明确的下场。这是语料里唯一一处\"写着待办、却没有判据\"的堆积。\n\n## 范围（48 篇，已在此列出）\n\n<details><summary>点开：48 个路径</summary>\n\n- `lessons/contrib/benchmark-honesty-simulated-vs-real.md`\n- `lessons/contrib/click-no-op-keyboard-works-pointer-vs-handler-triage.md`\n- `lessons/contrib/codex-mcp-tools-not-injected-despite-handshake.md`\n- `lessons/contrib/compatibility-gate-rejection-is-verdict-not-accept-risk.md`\n- `lessons/contrib/cross-repo-contribution-strategy.md`\n- `lessons/contrib/cwd-relative-tool-lookup-passes-in-tests-fails-from-shortcut.md`\n- `lessons/contrib/dsh-plugin-installation-troubleshooting.md`\n- `lessons/contrib/fanuc-alarm-code-reference.md`\n- `lessons/contrib/fanuc-communication-protocol-socket.md`\n- `lessons/contrib/fanuc-eip-omron-plc-connection.md`\n- `lessons/contrib/fanuc-handling-robot-auto-drop-diagnosis.md`\n- `lessons/contrib/fanuc-karel-core-utility-modules.md`\n- `lessons/contrib/fanuc-karel-geometry-kinematics-layer.md`\n- `lessons/contrib/fanuc-karel-http-api-webcontrol.md`\n- `lessons/contrib/fanuc-karel-ik-fk-quaternion-guide.md`\n- `lessons/contrib/fanuc-karel-intp-316-call-error-motion-lock.md`\n- `lessons/contrib/fanuc-karel-ka-boost-architecture.md`\n- `lessons/contrib/fanuc-karel-kl-pose-api-reference.md`\n- `lessons/contrib/fanuc-karel-unit-testing-kunit.md`\n- `lessons/contrib/fanuc-karel-uv-to-xyzwpr-pipeline.md`\n- `lessons/contrib/fanuc-profinet-io-software-config.md`\n- `lessons/contrib/fanuc-profinet-s7-1200-external-startup.md`\n- `lessons/contrib/fanuc-python-interface-fanucpy.md`\n- `lessons/contrib/fanuc-rsr-program-select-logic.md`\n- `lessons/contrib/frontmatter-parsing-edge-cases.md`\n- `lessons/contrib/gh-cli-empty-body-silently-wipes-pr-description.md`\n- `lessons/contrib/gitlab-squash-merge-local-master-divergent-shas.md`\n- `lessons/contrib/handoff-review-stale-snapshot-three-way-merge.md`\n- `lessons/contrib/kill-pid-by-llm-api-inference-terminates-own-turn.md`\n- `lessons/contrib/lock-yield-on-importerror-silent-noop-loses-updates.md`\n- `lessons/contrib/long-context-pollution-delegate-to-subagents-keep-only-decisions.md`\n- `lessons/contrib/maintainer-feedback-iteration.md`\n- `lessons/contrib/node-child-process-eperm-windows-sandbox-redirect-to-file.md`\n- `lessons/contrib/node-esm-drive-letter-path-parses-as-url-scheme.md`\n- `lessons/contrib/npm-file-dep-omitted-dir-dangling-symlink.md`\n- `lessons/contrib/npmjs-registry-unreachable-pin-a-mirror-never-disable-tls.md`\n- `lessons/contrib/permission-denial",
+      "bodyPreview": "## 背景 `lessons/` 有 48 篇 `status: draft` 的课程——它们既不进评分，也没有明确的下场。这是语料里唯一一处\"写着待办、却没有判据\"的堆积。 ## 范围（48 篇，已在此列出） <details><summary>点开：48 个路径</summary> - `lessons/contrib/benchmark-honesty-simulated-vs-real.md` - `lessons/contrib/click-no-op-keyboard-works-pointer-vs-handler-triage.m"
+    },
+    {
       "id": 6382443770,
       "number": 1605,
       "title": "[AddToken] `SWANUSD` on `MAINNET`",
@@ -497,45 +536,6 @@
       "createdAt": "2026-11-11T12:20:14Z",
       "fullBody": "# archiveExpiredLease blind overwrite races concurrent settle/renew: Settled lease relabelled Expired, renewal payment destroyed\n\n**Severity: Medium** (XE tier ceiling 2,500 XE). **CVSS 3.1: 4.8\n(AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L)** — see §7 for the scoring and the\nrenew-leg variant (I:H → 5.9, still Medium).\n\n**Target:** `github.com/xeprotocol/xe` @\n`89a542ea51d38375299aee54c6c99102e9bfa666` (\"release: testnet-0005 quorum\nwithhold fix\", 2026-11-10). Go 1.25.0.\n\n## 1. Impact (read this first)\n\nA lease that has been **settled** — escrow paid out, provider emission\nminted — is silently relabelled **Expired** by the node's own archive\nsweep, because the archive writes a stale snapshot copy with a blind\n`PutLease` and never re-reads the lease. The settled lease then disappears\nfrom settled queries, and the node logs a false \"burned N µXUSD escrow\"\nfor escrow that was already paid. The supply auditor breaks (XUSD not\nconserved, discrepancy = the escrow amount).\n\nThe renew leg is worse: a **renew that commits after the archive's\nsnapshot is overwritten the same way, and the renewal payment is\ndestroyed with no record** — a live lease is killed mid-term, its renewal\nescrow (31,000 µXUSD in the tested fixture) is deleted while the archive\nlog claims only the base escrow (62,000) burned, and the provider's\nbase+renewal settlement emission never mints. The overwritten lease is\nterminally dead: a second renew and a settle-shaped commit are both\nCAS-rejected afterwards.\n\nFund loss is bounded per lease (one renewal payment + one lease's\nemission); there is no double-spend and no unbounded drain. The trigger\nis timing-dependent and is not attacker-controlled — see §5 for the exact\nprerequisites and §7 for why this is Medium, not High.\n\n## 2. Root cause\n\n`Node.archiveExpiredLease` (`node/node.go:1880-1895`), called from\n`tryArchiveExpiredLeases` (`:1863`) in the single `settleLoop` goroutine\n(`:1757`, 10 s ticks). Per lease it does:\n\n1. Read a snapshot: `GetLeasesByState(Accepted)`.\n2. Txn 1: `DeletePendingSend(leaseHash)`.\n3. Txn 2: blind `PutLease` of a mutated copy (`State=Expired,\n   Settled=true`).\n\nThere is **no lock, no CAS, and no re-read** anywhere in this path.\n`PutLease` (`store/badger_store.go:1562-1570`) is a blind `txn.Set` that\nnever reads the key in-transaction, so Badger's optimistic concurrency\ndetects nothing. No `AddBlock` is involved, so no account or lease lock is\nheld. The settle path takes the provider account lock + lease lock and\nits in-transa",
       "bodyPreview": "# archiveExpiredLease blind overwrite races concurrent settle/renew: Settled lease relabelled Expired, renewal payment destroyed **Severity: Medium** (XE tier ceiling 2,500 XE). **CVSS 3.1: 4.8 (AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L)** — see §7 for the scoring and the renew-leg va"
-    },
-    {
-      "id": 6327870901,
-      "number": 1556,
-      "title": "[Supposed Regression] Cutscene script trigger softlocks on Linux and Steam Deck since latest update",
-      "repo": "Albeoris/Memoria",
-      "htmlUrl": "https://github.com/Albeoris/Memoria/issues/1556",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T11:54:29Z",
-      "fullBody": " **System Information:**\n    - **OS:** CachyOS (Desktop) & SteamOS (Steam Deck)\n    - **Memoria Version:** Latest Release and Canary (Worked fine on the previous stable release)\n    - **Game Version:** Steam (Final Fantasy IX)\n\n---\n\n > **Disclaimer regarding regression:**  \n    > I suspect this is a regression introduced in the latest update (reproduced on both latest Stable and Canary). I played through roughly 20 hours on what I believe was the previous stable release without encountering any blocking issues. With the latest update, I ran into two systematic softlocks occurring close to each other in the main quest. While I haven't downgraded to verify these exact cutscenes on the previous release, the sudden appearance of these blockers strongly suggests a regression.\n\n\n### Description\nThis appears to be a regression introduced in the latest update (reproduced on both the latest stable release and the Canary branch). I had zero issues when running what I believe was the previous stable release.\n\nCurrently, scripted in-game cutscenes frequently fail to trigger subsequent events, leading to a permanent softlock. The game engine continues running normally (ambient animations loop, music and sound effects play), but the next character action or dialogue box never triggers, leaving the player stuck with no way to progress.\n\n---\n### Observed Occurrences\n<details>\n<summary><b>Click to expand cutscene spoilers</b></summary>\n\n1. **Alexandria Castle (Brahne introduces bounty hunters):** During the scene where Lani and Amarant are introduced to Queen Brahne, at the end of\nthe dialogue, Lani fails to draw her weapon/react to the guard. The cutscene stays stuck there indefinitely.\n2. **Post-Lani Boss Fight (Fossil Roo):** Immediately following the first battle against Lani, the subsequent cutscene fails to advance.\n\n</details>\n\n---\n\n### Troubleshooting & Steps Taken\nTo isolate the issue, I tested:\n- **Mods:** Tested completely vanilla with all additional mods disabled.\n- **Language:** Tested in both French and English.\n- **Framerate:** Reverted back to the native 30 FPS cap (no high-framerate hacks).\n- **Environments:** Systematic reproduction on both a Linux desktop PC and a Steam Deck.\n\n### Workaround\nThe only way to pass these systematic softlocks was to launch the game **without Memoria** (vanilla FFIX executable). Once past the cutscene, saving and reloading with Memoria allows play to continue until the next affected sequence.\n\n---\n\n### Expected Behavior\nScrip",
-      "bodyPreview": " **System Information:** - **OS:** CachyOS (Desktop) & SteamOS (Steam Deck) - **Memoria Version:** Latest Release and Canary (Worked fine on the previous stable release) - **Game Version:** Steam (Final Fantasy IX) --- > **Disclaimer regarding regression:** >"
-    },
-    {
-      "id": 6327859924,
-      "number": 153,
-      "title": "Sobras do #127: rotulo do campeao deslocado, teste com 4+ jogadores e comentario",
-      "repo": "MateusKasuya/spqtc-tournament-manager",
-      "htmlUrl": "https://github.com/MateusKasuya/spqtc-tournament-manager/issues/153",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T11:53:52Z",
-      "fullBody": "> *This was generated by AI during triage.*\n\nSobras da revisão do PR #127 (redistribuir prêmios / posições do acordo).\n\n## 1. Rótulo \"Campeao\" do campeão deslocado pelo acordo\n\nNa Mesa ao vivo o campeão é derivado do Status, não da posição: `src/lib/mesa-panels/players.ts:81` (`participants.find((p) => p.status === \"finished\")`) e `src/lib/mesa-panels/bounty.ts:59` (`champion: p.status === \"finished\"`). Quando um acordo dá o 1º lugar a outro jogador, `applyPayoutPositions` empurra o campeão coroado para a primeira posição livre, mas a mesa continua chamando ele de \"Campeao\" (`players-panel.tsx:31`, `bounty-panel.tsx:50`).\n\n**Decisão pendente:** depois de um acordo, quem a mesa chama de Campeão? O 1º do acordo, o último em jogo (coroado), ou os dois com rótulos distintos? No Bounty Builder, o Bounty coletado na Coroação continua sendo do coroado.\n\n## 2. Teste unitário com 4 ou mais jogadores\n\n`finalPositionsAfterPayout` (`src/lib/payout-positions.ts`) só tem cenários pequenos. Falta um caso com 4+ jogadores misturando: lista do acordo, campeão coroado deslocado e eliminados renumerados pulando as posições do acordo.\n\n## 3. Comentário de `applyPayoutPositions`\n\nO comentário em `src/db/ledger/payout-positions.ts:9-10` foi apontado na revisão como impreciso; reler contra o código (o que exatamente é recalculado no Encerrado e o que o retorno significa) e ajustar.\n\n_Itens 2 e 3 estão prontos para agente; o item 1 depende da decisão acima._\n",
-      "bodyPreview": "> *This was generated by AI during triage.* Sobras da revisão do PR #127 (redistribuir prêmios / posições do acordo). ## 1. Rótulo \"Campeao\" do campeão deslocado pelo acordo Na Mesa ao vivo o campeão é derivado do Status, não da posição: `src/lib/mesa-panels/players.ts:81` (`p"
-    },
-    {
-      "id": 6327858501,
-      "number": 150,
-      "title": "UI ler regras de entrada e total pago de tournament-entries.ts",
-      "repo": "MateusKasuya/spqtc-tournament-manager",
-      "htmlUrl": "https://github.com/MateusKasuya/spqtc-tournament-manager/issues/150",
-      "rewardUsd": 50,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T11:53:47Z",
-      "fullBody": "> *This was generated by AI during triage.*\n\n## O que acontece\n\nAs regras de entrada (Rebuy, add-on, bônus) e o total pago por participante já moram em `src/lib/tournament-entries.ts` (`allowsRebuy`, `rebuyLimit`, `allowsAddon`, `allowsBonusChip`), mas a UI ainda refaz as condições por conta própria:\n\n- `src/components/tournament/participant-list.tsx` recebe `allowAddon` e `bonusChipAmount` crus e testa `allowAddon && ...` e `bonusChipAmount > 0 && ...` (linhas ~164–195); o total pago (`buyInPaid ? buyInAmount : 0 + rebuyCount * rebuyAmount + addonCount * addonAmount`, ~265) também está escrito à mão.\n- `src/app/(dashboard)/torneios/[id]/page.tsx` repassa esses campos crus e repete `tournament.allowAddon` (~187, ~202).\n- `src/components/live-table/quick-actions.tsx` repete a mesma soma do total pago em dois lugares (~228 e ~452).\n- A contagem \"com buy-in\" tem `countWithBuyIn` em `src/lib/mesa-panels/playing.ts`, mas vale conferir se outros painéis filtram `buyInPaid` à mão.\n\nSe a regra mudar (ex.: Bounty Builder com taxa diferente, limite de add-on), só o módulo é atualizado e as telas ficam erradas.\n\n## O que se quer\n\n- A UI decide quais botões mostrar e quanto cada um pagou chamando as funções de `tournament-entries.ts` (criar ali um `totalPaid(participant, tournament)` se ainda não existir, e usar nos três lugares).\n- Nenhuma mudança visível de comportamento; testes unitários do módulo cobrem o que passar a ser lido dele.\n\n_Follow-up anotado na revisão do Bounty Builder / painéis da Mesa ao vivo._\n",
-      "bodyPreview": "> *This was generated by AI during triage.* ## O que acontece As regras de entrada (Rebuy, add-on, bônus) e o total pago por participante já moram em `src/lib/tournament-entries.ts` (`allowsRebuy`, `rebuyLimit`, `allowsAddon`, `allowsBonusChip`), mas a UI ainda refaz as condiçõ"
     }
   ],
   "solutions": [
@@ -1752,6 +1752,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-14T06:51:21.502Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,305 USD."
+    },
+    {
+      "time": "2026-11-14T06:51:19.690Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-14T06:51:19.688Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-14T05:59:55.395Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,205 USD."
@@ -2235,21 +2250,6 @@
       "time": "2026-11-13T02:30:13.237Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $56,665 USD."
-    },
-    {
-      "time": "2026-11-13T02:30:10.924Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-13T02:30:10.923Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-13T01:49:15.457Z",
-      "level": "CLAIM",
-      "msg": "¡Solución enviada con éxito a zhangjiayang6835-cyber/bounty-plaza #4313! Recompensa en juego: $2500"
     }
   ]
 }
