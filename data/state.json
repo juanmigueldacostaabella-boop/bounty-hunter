@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-13T23:58:10.085Z",
-  "scanCount": 786,
+  "lastScanAt": "2026-11-14T00:44:07.856Z",
+  "scanCount": 787,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 65,
-    "totalBountyPoolUsd": 57715,
+    "totalBountiesDetected": 67,
+    "totalBountyPoolUsd": 57855,
     "solutionsGenerated": 57,
     "potentialEarningsUsd": 131247,
     "prsSubmitted": 51
@@ -395,6 +395,32 @@
       "bodyPreview": "<!-- misakanet-question-bounty:anchor-4498 --> # [Bounty] Answer the 2 linked question(s) ## Context These intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_ma"
     },
     {
+      "id": 6382443770,
+      "number": 1605,
+      "title": "[AddToken] `SWANUSD` on `MAINNET`",
+      "repo": "cowprotocol/token-lists",
+      "htmlUrl": "https://github.com/cowprotocol/token-lists/issues/1605",
+      "rewardUsd": 80,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T00:13:50Z",
+      "fullBody": "### Network\n\nMAINNET\n\n### Token Symbol\n\nSWANUSD\n\n### Token Name\n\nswanUSD\n\n### Decimals\n\n18\n\n### Address\n\n0x9bf2b2f57a2968a0e81546ed50cbbbb7c9d6e05e\n\n### Image URL\n\nhttps://www.swanusd.com/tokens/swanusd.png\n\n### Reason\n\nRefile of #1603, which failed at image optimization: the previous image URL redirected from the apex domain to www, which the optimizer appears not to follow. This URL is the direct one (512x512 PNG, image/png, no redirect).\n\nswanUSD is a decentralized stablecoin minted against wstETH collateral on Monolith, the stablecoin-as-a-service protocol built by Inverse Finance, and governed by SwanDAO. It redeems 1:1 through a Peg Stability Module holding sUSDS reserves and directly against wstETH collateral via Monolith redemptions. Live on Ethereum mainnet since October 22, 2026.\n\nLegitimacy: the contract is source-verified on Etherscan, non-upgradeable and non-pausable, and was deployed from the audited Monolith factory (Electisec, ChainSecurity, Sherlock contest and ongoing Sherlock bug bounty). swanUSD is listed on CoinGecko and its staked form is live collateral on Inverse Finance's FiRM.\n\nLiquidity: Curve swanUSD/USDC pool `0xc1488f04027afea94fa68586b4ff245098a59432` (roughly $80K as of Nov 12, 2026, growing alongside the protocol). The token already routes on aggregators via this pool when pasted by address; this request is for default-list inclusion with name and logo.\n\nLinks: https://swanusd.com | https://docs.monolith.market | https://x.com/MonolithMarket\nContact: edo@inverse.finance",
+      "bodyPreview": "### Network MAINNET ### Token Symbol SWANUSD ### Token Name swanUSD ### Decimals 18 ### Address 0x9bf2b2f57a2968a0e81546ed50cbbbb7c9d6e05e ### Image URL https://www.swanusd.com/tokens/swanusd.png ### Reason Refile of #1603, which failed at image optimization: the pre"
+    },
+    {
+      "id": 6382449808,
+      "number": 1606,
+      "title": "[AddToken] `SWAN` on `MAINNET`",
+      "repo": "cowprotocol/token-lists",
+      "htmlUrl": "https://github.com/cowprotocol/token-lists/issues/1606",
+      "rewardUsd": 60,
+      "category": "Documentación / Typo",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T00:14:23Z",
+      "fullBody": "### Network\n\nMAINNET\n\n### Token Symbol\n\nSWAN\n\n### Token Name\n\nSwanDAO\n\n### Decimals\n\n18\n\n### Address\n\n0xD0a32F6d4850F9D6DF7d4F8f84af1Fcd3Cf993CC\n\n### Image URL\n\nhttps://www.swanusd.com/tokens/swan.png\n\n### Reason\n\nRefile of #1604, which failed at image optimization: the previous image URL redirected from the apex domain to www, which the optimizer appears not to follow. This URL is the direct one (512x512 PNG, image/png, no redirect). Companion refile for swanUSD: #1605.\n\nSWAN is the governance token of SwanDAO, the DAO that owns and governs the swanUSD stablecoin on Monolith, the stablecoin-as-a-service protocol built by Inverse Finance. Fixed supply of 10,000,000 SWAN, confirmed on-chain. Staked SWAN (sSWAN) receives the DAO's share of protocol revenue paid in swanUSD and votes on parameters, the interest-rate controller, and treasury actions. Live on Ethereum mainnet since October 22, 2026.\n\nLegitimacy: the contract is source-verified on Etherscan, non-upgradeable and non-pausable, and was deployed from the audited Monolith governance factory (Electisec, ChainSecurity, Sherlock contest and ongoing Sherlock bug bounty). Note this is SwanDAO's SWAN at the address above, unrelated to Swan Chain's SWAN (`0x43e3De6745fad70127d7935198311386449fD9dd`) that may already appear in token searches.\n\nLiquidity: Curve SWAN/WETH pool `0x6AE289f469292fcE7feddA74c6D411D4527fa239` (roughly $60K as of Nov 12, 2026, growing alongside the protocol). The token already routes via this pool when pasted by address; this request is for default-list inclusion with name and logo.\n\nLinks: https://swanusd.com | https://docs.monolith.market | https://x.com/MonolithMarket\nContact: edo@inverse.finance",
+      "bodyPreview": "### Network MAINNET ### Token Symbol SWAN ### Token Name SwanDAO ### Decimals 18 ### Address 0xD0a32F6d4850F9D6DF7d4F8f84af1Fcd3Cf993CC ### Image URL https://www.swanusd.com/tokens/swan.png ### Reason Refile of #1604, which failed at image optimization: the previous "
+    },
+    {
       "id": 6317780548,
       "number": 31,
       "title": "Community bounties & contributor program (open call)",
@@ -510,32 +536,6 @@
       "createdAt": "2026-11-11T11:06:07Z",
       "fullBody": "## Problem\n\n**A new objective type touches five branches.** `quest_type` is compared as a string at `game/services/quest_service.py:140`, `:197`, `:232`, `:250` and `:404`, plus the quest window. Escort, \"gather from a node\" or \"talk to\" each mean editing all of them.\n\n**Generated quests are code with one case each.** The kill generator knows one event and one creature: `GEN_WOLF_EVENT_ID = \"wolves_spotted\"` and template `\"wolf\"` (`quest_service.py:46`, `:305-335`). Bandits, boars or a fever cannot produce a request without new Python.\n\n**A generated offer never goes away.** Nothing withdraws it once its cause is gone:\n\n```\nEastmoor bread stock 0      -> offer \"Shortage of Loaf of Breads\" appears\nstock back at 11.4, three in-game days later -> the offer is still open and still pays\n```\n\nSince settlements now import what they lack within days, stale requests pile up on the boards.\n\n**Rewards are gold only** (`reward_gold: int`, `quest_service.py:58`), and quest state is a bare string.\n\n## Suggested approach\n\n- **Objective registry.** An enum key maps to a small object that answers `ready()`, `on_kill()`, `on_arrival()` and `turn_in()`. `QuestService` keeps the lifecycle and stops knowing the types.\n- **Generators as data.** A `quest_generators.json` with a trigger (a shortage, or a chronicle event id), an objective template and a reward rule. The wolf hunt becomes one entry; a bandit bounty is a second one without code.\n- **Expiry.** An offer whose cause no longer holds is withdrawn; an accepted quest stays.\n- **Reward list.** Gold, items, reputation. With the effect pipeline, a reward can simply be an effect list (`docs/EFFECT_PIPELINE_CONCEPT.md`, section 8).\n\nBinding a quest to a specific giver NPC, a ROADMAP candidate, needs #107 first.\n\n## Done when\n\n- A new generated quest kind is a JSON entry.\n- A new objective type is one class and one registry line.\n- An offer disappears when its shortage is resolved (test).",
       "bodyPreview": "## Problem **A new objective type touches five branches.** `quest_type` is compared as a string at `game/services/quest_service.py:140`, `:197`, `:232`, `:250` and `:404`, plus the quest window. Escort, \"gather from a node\" or \"talk to\" each mean editing all of them. **Generate"
-    },
-    {
-      "id": 6326868447,
-      "number": 10181,
-      "title": "[Feature]: Support Model Runner V2 for HunyuanImage-3.0 AR on Ascend NPU",
-      "repo": "vllm-project/vllm-omni",
-      "htmlUrl": "https://github.com/vllm-project/vllm-omni/issues/10181",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T10:52:33Z",
-      "fullBody": "### 🚀 The feature, motivation and pitch\n\nAdd Model Runner V2 (MRv2) support for the autoregressive stage (AR) of tencent/HunyuanImage-3.0-Instruct on Ascend NPUs.\nHunyuanImage-3.0 is already integrated into vLLM-Omni with an AR + DiT pipeline. However, its AR stage on Ascend NPU still relies on Model Runner V1 (MRv1) and has not yet been adapted to MRv2.\n\nSupporting MRv2 is important for:\n- Framework evolution: Enable HunyuanImage-3.0 to adopt the newer vLLM-Omni execution architecture and benefit from future MRv2 improvements.\n- Unified integration: Reuse the existing NPU MRv2 infrastructure and Model State integration mechanism, avoiding duplicated model-specific implementations.\n- Maintainability: Reduce adaptation and maintenance costs as vLLM-Omni and vLLM-Ascend continue to evolve.\n\nThis should be an incremental extension rather than a replacement of MRv1. Both versions must remain supported, with MRv1 retained as the default to ensure backward compatibility.\nThe implementation should meet the following requirements:\n- NPU-compatible Model State: Provide a compatible Model State that preserves the Omni request lifecycle, builds Ascend-compatible attention metadata, and retains existing multimodal and MRoPE behavior.\n- Model-specific Sampling: Preserve HunyuanImage-3.0's sampling semantics, including comprehension-mode token restrictions, stage-transition token forcing, image-ratio selection, and EOS handling.\n- Per-request Task Modes: Ensure request-specific task modes are correctly propagated and handled throughout the MRv2 sampling path.\n- AR-to-DiT KV Handoff: Preserve the existing inter-stage KV transfer lifecycle, including extraction acknowledgements on transfer-only steps.\n\nRunner Selection: Support explicitly selecting MRv1 or MRv2 for the NPU AR stage without affecting the DiT execution path or other platforms.\n\nBackward compatibility requirements:\n- MRv1 remains the default unless MRv2 is explicitly enabled.\n- Existing deployment configurations must continue to work without modification.\n- Existing MRv1 sampling, multimodal processing, KV handoff, and request lifecycle behavior must remain unchanged.\n- Users must be able to switch back to MRv1 through configuration.\n\nThis feature is limited to the AR stage (LLM_AR). It does not require replacing the DiT execution path or introducing a new inter-stage transport/data-plane architecture.\n\n### Alternatives\n\n_No response_\n\n### Additional context\n\n**Related PRs:**\n#9106: Introduced the general N",
-      "bodyPreview": "### 🚀 The feature, motivation and pitch Add Model Runner V2 (MRv2) support for the autoregressive stage (AR) of tencent/HunyuanImage-3.0-Instruct on Ascend NPUs. HunyuanImage-3.0 is already integrated into vLLM-Omni with an AR + DiT pipeline. However, its AR stage on Ascend NPU"
-    },
-    {
-      "id": 6326737334,
-      "number": 188,
-      "title": "Both published security-reporting channels are currently non-functional (admin@qsdm.tech returns 554; PVR disabled)",
-      "repo": "blackbeardONE/QSDM",
-      "htmlUrl": "https://github.com/blackbeardONE/QSDM/issues/188",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T10:44:32Z",
-      "fullBody": "## Both published security-reporting channels are currently non-functional\n\n`security.txt` (and the bounty page §1) name two ways to report a security issue\nprivately. I tried both while preparing a report, and neither currently accepts\nanything. Opening this issue only to ask which channel to use — **I have not\nincluded any vulnerability details here**, because §1 asks that those stay private\nuntil you have a channel open.\n\n### 1. `admin@qsdm.tech` — mailbox rejects all mail\n\n```\n$ python3 - <<'PY'\nimport smtplib\ns = smtplib.SMTP('eforward1.registrar-servers.com', 25, timeout=20)\ns.ehlo('gmail.com')\ns.mail('leduckhuong2002@gmail.com')\nprint(s.rcpt('admin@qsdm.tech'))\nPY\n(554, b'5.1.1 <admin@qsdm.tech>: Recipient address rejected: undeliverable address:\n Mailbox might be disabled, full, or may not exist on the server. Reason: JFE030050')\n```\n\nThe MX records exist (`eforward{1,2,3,4,5}.registrar-servers.com`), so the domain\naccepts connections, but the recipient is refused permanently. A random local part\nis refused identically, so there is no catch-all forwarding configured:\n\n```\nrcpt('zz-probe-9f3a@qsdm.tech') -> (554, b'5.1.1 ... undeliverable address ...')\n```\n\n`security@qsdm.tech`, `support@qsdm.tech`, `contact@qsdm.tech` and\n`abuse@qsdm.tech` are all refused the same way. A `554` at `RCPT TO` is a permanent\nrejection, not greylisting or a transient deferral.\n\n### 2. GitHub private vulnerability reporting — not enabled\n\n```\n$ gh api -X POST repos/blackbeardONE/QSDM/security-advisories/reports --input - <<'JSON'\n{\"summary\":\"probe\",\"description\":\"probe\",\"severity\":\"low\"}\nJSON\n{\"message\":\"Repository does not have private vulnerability reporting enabled\",\n \"documentation_url\":\"https://docs.github.com/rest/security-advisories/repository-advisories#privately-report-a-security-vulnerability\",\n \"status\":\"403\"}\n```\n\n`security.txt` describes the advisory link as the canonical private-disclosure\nsurface, but the feature appears to be off for this repository, so the link has no\ndestination that accepts a submission.\n\n### What I'm asking\n\nWhich channel should I use?\n\n- If the intent is GitHub advisories, enabling **Settings → Code security and\n  analysis → Private vulnerability reporting** makes\n  <https://github.com/blackbeardONE/QSDM/security/advisories/new> accept reports,\n  and I will use it immediately.\n- If the intent is email, the forwarding destination for `admin@qsdm.tech` needs\n  reconfiguring at the registrar — the MX points at Namecheap forwarding but n",
-      "bodyPreview": "## Both published security-reporting channels are currently non-functional `security.txt` (and the bounty page §1) name two ways to report a security issue privately. I tried both while preparing a report, and neither currently accepts anything. Opening this issue only to ask wh"
     }
   ],
   "solutions": [
@@ -1752,6 +1752,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-14T00:44:09.957Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,855 USD."
+    },
+    {
+      "time": "2026-11-14T00:44:07.856Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-14T00:44:07.854Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-13T23:58:13.077Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,715 USD."
@@ -2233,21 +2248,6 @@
     },
     {
       "time": "2026-11-12T21:47:14.521Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $52,315 USD."
-    },
-    {
-      "time": "2026-11-12T21:47:12.058Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-12T21:47:12.055Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-12T21:01:40.043Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $52,315 USD."
     }
