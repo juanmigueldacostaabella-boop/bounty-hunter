@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-14T08:33:47.491Z",
-  "scanCount": 796,
+  "lastScanAt": "2026-11-14T09:23:08.489Z",
+  "scanCount": 797,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 70,
-    "totalBountyPoolUsd": 58713,
+    "totalBountiesDetected": 68,
+    "totalBountyPoolUsd": 60513,
     "solutionsGenerated": 57,
     "potentialEarningsUsd": 131247,
     "prsSubmitted": 51
@@ -213,6 +213,32 @@
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Reconcile structured-field dictionary serialization across proxy hops (`rfc9421-http-signature-gateway`) > **A"
     },
     {
+      "id": 6387963928,
+      "number": 2,
+      "title": "[Escrowed $600 USDC] Align Posted/Non-Posted header credit wrap mask under 256B FLIT packing (`pcie-tlp-credit-flow-gate`)",
+      "repo": "IES-BoilerRoom/pcie-tlp-credit-flow-gate",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/2",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T09:10:54Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\nCalibrate `FLIT_FLOW_CONTROL_MODE`, `PH_CREDIT_LIMIT_MASK`, and `NPH_CONSUMED_XOR_TAG` in `dl_layer/fc_credit_ledger.py` across all 64 specification shards so `python3 tests/validate_pcie6_flits.py --strict-ci` exits `0`.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - *"
+    },
+    {
+      "id": 6387963817,
+      "number": 2,
+      "title": "[Escrowed $600 USDC] Prevent aliasing mutable ref-cell bitmask collision across depth-4 CPI frames (`solana-svm-cpi-conformance`)",
+      "repo": "IES-BoilerRoom/solana-svm-cpi-conformance",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/2",
+      "rewardUsd": 600,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-11-14T09:10:53Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\nCalibrate `SVM_ISOLATION_PROFILE`, `ACCOUNT_BORROW_BITMASK`, and `RENT_EPOCH_CARRY_KEY` in `rbpf_vm/borrow_mask_guard.py` across all 64 specification shards so `python3 conformance/verify_cpi_reentrancy.py --strict-ci` exits `0`.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev -"
+    },
+    {
       "id": 6319566173,
       "number": 4308,
       "title": "[Bounty] [Escrowed $450 USDC] Fix canonical string frame ceiling and align deterministic ",
@@ -315,6 +341,32 @@
       "createdAt": "2026-11-13T00:41:12Z",
       "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway/issues/1\n\n### 漏洞描述 / Description\n[Escrowed $450 USDC] Fix signature-base line wrapping ceiling and align `@signature-params` witness (`canonicalize_http_sig_frames`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `IETF RFC 9421 / RFC 8941 Structured Fields` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\n### Problem Summary\n\n1. `canonicalize_http_sig_frames` in `http_sig/signature_base_builder.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `SIGNATURE_PARAMS_NONCE` and `COVERED_DIGEST_ANCHOR` in `http_sig/signature_base_builder.py` (without modifying `suite/verify_rfc9421_quorum.py`) until `python3 suite/verify_rfc9421_quorum.py` passes all 24 vectors.\n\n### 积分币奖励 / Coin Reward\n562 coins\n\n### 真实赏金（USD）/ Real Reward\n$450\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Fix signature-base line wrapping ceiling and align `@signature-params` witness (`canonicalize_http_sig_frames`)"
+    },
+    {
+      "id": 6387963878,
+      "number": 1,
+      "title": "[Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`)",
+      "repo": "IES-BoilerRoom/pcie-tlp-credit-flow-gate",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1",
+      "rewardUsd": 450,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T09:10:53Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\n### Problem Summary\n\n1. `reassemble_tlp_flit_frames` in `dl_layer/fc_credit_ledger.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `PH_CREDIT_LIMIT_MASK` and `NPH_CONSUMED_XOR_TAG` in `dl_layer/fc_credit_ledger.py` (without modifying `tests/validate_pcie6_flits.py`) until `python3 tests/validate_pcie6_flits.py` passes all 24 vectors.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - **"
+    },
+    {
+      "id": 6387963760,
+      "number": 1,
+      "title": "[Escrowed $450 USDC] Fix CPI frame ceiling boundary and satisfy 64-bit account borrow-mask transfer equation (`decode_cpi_instruction_frames`)",
+      "repo": "IES-BoilerRoom/solana-svm-cpi-conformance",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/1",
+      "rewardUsd": 450,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-11-14T09:10:52Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\n### Problem Summary\n\n1. `decode_cpi_instruction_frames` in `rbpf_vm/borrow_mask_guard.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `ACCOUNT_BORROW_BITMASK` and `RENT_EPOCH_CARRY_KEY` in `rbpf_vm/borrow_mask_guard.py` (without modifying `conformance/verify_cpi_reentrancy.py`) until `python3 conformance/verify_cpi_reentrancy.py` passes all 24 vectors.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - "
     },
     {
       "id": 6319566278,
@@ -484,58 +536,6 @@
       "createdAt": "2026-11-14T06:40:47Z",
       "fullBody": "## 背景\n\n`lessons/` 有 48 篇 `status: draft` 的课程——它们既不进评分，也没有明确的下场。这是语料里唯一一处\"写着待办、却没有判据\"的堆积。\n\n## 范围（48 篇，已在此列出）\n\n<details><summary>点开：48 个路径</summary>\n\n- `lessons/contrib/benchmark-honesty-simulated-vs-real.md`\n- `lessons/contrib/click-no-op-keyboard-works-pointer-vs-handler-triage.md`\n- `lessons/contrib/codex-mcp-tools-not-injected-despite-handshake.md`\n- `lessons/contrib/compatibility-gate-rejection-is-verdict-not-accept-risk.md`\n- `lessons/contrib/cross-repo-contribution-strategy.md`\n- `lessons/contrib/cwd-relative-tool-lookup-passes-in-tests-fails-from-shortcut.md`\n- `lessons/contrib/dsh-plugin-installation-troubleshooting.md`\n- `lessons/contrib/fanuc-alarm-code-reference.md`\n- `lessons/contrib/fanuc-communication-protocol-socket.md`\n- `lessons/contrib/fanuc-eip-omron-plc-connection.md`\n- `lessons/contrib/fanuc-handling-robot-auto-drop-diagnosis.md`\n- `lessons/contrib/fanuc-karel-core-utility-modules.md`\n- `lessons/contrib/fanuc-karel-geometry-kinematics-layer.md`\n- `lessons/contrib/fanuc-karel-http-api-webcontrol.md`\n- `lessons/contrib/fanuc-karel-ik-fk-quaternion-guide.md`\n- `lessons/contrib/fanuc-karel-intp-316-call-error-motion-lock.md`\n- `lessons/contrib/fanuc-karel-ka-boost-architecture.md`\n- `lessons/contrib/fanuc-karel-kl-pose-api-reference.md`\n- `lessons/contrib/fanuc-karel-unit-testing-kunit.md`\n- `lessons/contrib/fanuc-karel-uv-to-xyzwpr-pipeline.md`\n- `lessons/contrib/fanuc-profinet-io-software-config.md`\n- `lessons/contrib/fanuc-profinet-s7-1200-external-startup.md`\n- `lessons/contrib/fanuc-python-interface-fanucpy.md`\n- `lessons/contrib/fanuc-rsr-program-select-logic.md`\n- `lessons/contrib/frontmatter-parsing-edge-cases.md`\n- `lessons/contrib/gh-cli-empty-body-silently-wipes-pr-description.md`\n- `lessons/contrib/gitlab-squash-merge-local-master-divergent-shas.md`\n- `lessons/contrib/handoff-review-stale-snapshot-three-way-merge.md`\n- `lessons/contrib/kill-pid-by-llm-api-inference-terminates-own-turn.md`\n- `lessons/contrib/lock-yield-on-importerror-silent-noop-loses-updates.md`\n- `lessons/contrib/long-context-pollution-delegate-to-subagents-keep-only-decisions.md`\n- `lessons/contrib/maintainer-feedback-iteration.md`\n- `lessons/contrib/node-child-process-eperm-windows-sandbox-redirect-to-file.md`\n- `lessons/contrib/node-esm-drive-letter-path-parses-as-url-scheme.md`\n- `lessons/contrib/npm-file-dep-omitted-dir-dangling-symlink.md`\n- `lessons/contrib/npmjs-registry-unreachable-pin-a-mirror-never-disable-tls.md`\n- `lessons/contrib/permission-denial",
       "bodyPreview": "## 背景 `lessons/` 有 48 篇 `status: draft` 的课程——它们既不进评分，也没有明确的下场。这是语料里唯一一处\"写着待办、却没有判据\"的堆积。 ## 范围（48 篇，已在此列出） <details><summary>点开：48 个路径</summary> - `lessons/contrib/benchmark-honesty-simulated-vs-real.md` - `lessons/contrib/click-no-op-keyboard-works-pointer-vs-handler-triage.m"
-    },
-    {
-      "id": 6382443770,
-      "number": 1605,
-      "title": "[AddToken] `SWANUSD` on `MAINNET`",
-      "repo": "cowprotocol/token-lists",
-      "htmlUrl": "https://github.com/cowprotocol/token-lists/issues/1605",
-      "rewardUsd": 80,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T00:13:50Z",
-      "fullBody": "### Network\n\nMAINNET\n\n### Token Symbol\n\nSWANUSD\n\n### Token Name\n\nswanUSD\n\n### Decimals\n\n18\n\n### Address\n\n0x9bf2b2f57a2968a0e81546ed50cbbbb7c9d6e05e\n\n### Image URL\n\nhttps://www.swanusd.com/tokens/swanusd.png\n\n### Reason\n\nRefile of #1603, which failed at image optimization: the previous image URL redirected from the apex domain to www, which the optimizer appears not to follow. This URL is the direct one (512x512 PNG, image/png, no redirect).\n\nswanUSD is a decentralized stablecoin minted against wstETH collateral on Monolith, the stablecoin-as-a-service protocol built by Inverse Finance, and governed by SwanDAO. It redeems 1:1 through a Peg Stability Module holding sUSDS reserves and directly against wstETH collateral via Monolith redemptions. Live on Ethereum mainnet since October 22, 2026.\n\nLegitimacy: the contract is source-verified on Etherscan, non-upgradeable and non-pausable, and was deployed from the audited Monolith factory (Electisec, ChainSecurity, Sherlock contest and ongoing Sherlock bug bounty). swanUSD is listed on CoinGecko and its staked form is live collateral on Inverse Finance's FiRM.\n\nLiquidity: Curve swanUSD/USDC pool `0xc1488f04027afea94fa68586b4ff245098a59432` (roughly $80K as of Nov 12, 2026, growing alongside the protocol). The token already routes on aggregators via this pool when pasted by address; this request is for default-list inclusion with name and logo.\n\nLinks: https://swanusd.com | https://docs.monolith.market | https://x.com/MonolithMarket\nContact: edo@inverse.finance",
-      "bodyPreview": "### Network MAINNET ### Token Symbol SWANUSD ### Token Name swanUSD ### Decimals 18 ### Address 0x9bf2b2f57a2968a0e81546ed50cbbbb7c9d6e05e ### Image URL https://www.swanusd.com/tokens/swanusd.png ### Reason Refile of #1603, which failed at image optimization: the pre"
-    },
-    {
-      "id": 6382449808,
-      "number": 1606,
-      "title": "[AddToken] `SWAN` on `MAINNET`",
-      "repo": "cowprotocol/token-lists",
-      "htmlUrl": "https://github.com/cowprotocol/token-lists/issues/1606",
-      "rewardUsd": 60,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T00:14:23Z",
-      "fullBody": "### Network\n\nMAINNET\n\n### Token Symbol\n\nSWAN\n\n### Token Name\n\nSwanDAO\n\n### Decimals\n\n18\n\n### Address\n\n0xD0a32F6d4850F9D6DF7d4F8f84af1Fcd3Cf993CC\n\n### Image URL\n\nhttps://www.swanusd.com/tokens/swan.png\n\n### Reason\n\nRefile of #1604, which failed at image optimization: the previous image URL redirected from the apex domain to www, which the optimizer appears not to follow. This URL is the direct one (512x512 PNG, image/png, no redirect). Companion refile for swanUSD: #1605.\n\nSWAN is the governance token of SwanDAO, the DAO that owns and governs the swanUSD stablecoin on Monolith, the stablecoin-as-a-service protocol built by Inverse Finance. Fixed supply of 10,000,000 SWAN, confirmed on-chain. Staked SWAN (sSWAN) receives the DAO's share of protocol revenue paid in swanUSD and votes on parameters, the interest-rate controller, and treasury actions. Live on Ethereum mainnet since October 22, 2026.\n\nLegitimacy: the contract is source-verified on Etherscan, non-upgradeable and non-pausable, and was deployed from the audited Monolith governance factory (Electisec, ChainSecurity, Sherlock contest and ongoing Sherlock bug bounty). Note this is SwanDAO's SWAN at the address above, unrelated to Swan Chain's SWAN (`0x43e3De6745fad70127d7935198311386449fD9dd`) that may already appear in token searches.\n\nLiquidity: Curve SWAN/WETH pool `0x6AE289f469292fcE7feddA74c6D411D4527fa239` (roughly $60K as of Nov 12, 2026, growing alongside the protocol). The token already routes via this pool when pasted by address; this request is for default-list inclusion with name and logo.\n\nLinks: https://swanusd.com | https://docs.monolith.market | https://x.com/MonolithMarket\nContact: edo@inverse.finance",
-      "bodyPreview": "### Network MAINNET ### Token Symbol SWAN ### Token Name SwanDAO ### Decimals 18 ### Address 0xD0a32F6d4850F9D6DF7d4F8f84af1Fcd3Cf993CC ### Image URL https://www.swanusd.com/tokens/swan.png ### Reason Refile of #1604, which failed at image optimization: the previous "
-    },
-    {
-      "id": 6317780548,
-      "number": 31,
-      "title": "Community bounties & contributor program (open call)",
-      "repo": "coreguard-global/CoreGuard",
-      "htmlUrl": "https://github.com/coreguard-global/CoreGuard/issues/31",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-10T23:09:39Z",
-      "fullBody": "## Community bounties & contributor program (Stellar/CoreGuard)\n\n**Type intent:** launch a clear, welcoming bounty/contributor track so developers, auditors, and technical writers can ship high-impact work and get recognized.\n\n### Goal\nCreate a structured program for community contributions aligned with CoreGuard’s execution-truth mission (with honest scope and evidence-based outcomes).\n\n### Bounty tracks (initial)\n- [ ] **Integrations:** Stellar wallet integration example (#27), DEX integration example (#26), Soroban dApp adapters\n- [ ] **Verification & DX:** reviewer kit improvements (#28), `--verify` runners, docs, tutorials (EN/AR), sample apps\n- [ ] **Security & correctness:** fuzz/property tests for canonicalization/verifier, negative-case corpus, threat-model writeups (audit-prep)\n- [ ] **Ecosystem content:** technical deep-dives, demo videos/scripts, integration guides for partners (Freighter, Soroban DEXs, anchors)\n- [ ] **CI/tooling:** reproducibility, supply-chain hardening, developer ergonomics\n\n### Program design (to define)\n- [ ] Contribution guidelines & claim process (comment-to-claim, acceptance criteria, review SLA)\n- [ ] Bounty sizing/tiers and reward mechanism (owner-approved; transparent; no promises before funded/approved)\n- [ ] Recognition: contributor credits, badges/attestations where evidence-backed (no inflated claims)\n- [ ] Labels & boards: `bounty`, `good first issue`, `help wanted`, `open-call`, difficulty/track tags\n\n### Acceptance & honesty\n- Bounties paid/rewarded **only** when scope, funding, and approval are explicit (no implied guarantees here)\n- Merged work must pass CI/claims/release gates and keep `docs/state-snapshot.json` and STATUS consistent\n- Execution proof ≠ security audit; contributions must not introduce over-claims\n\n### References\n- Issues: [#14 pilot](https://github.com/coreguard-global/CoreGuard/issues/14) · [#26 DEX example](https://github.com/coreguard-global/CoreGuard/issues/26) · [#27 wallet example](https://github.com/coreguard-global/CoreGuard/issues/27) · [#28 reviewer kit](https://github.com/coreguard-global/CoreGuard/issues/28)\n- Discussions: [#16 pilot](https://github.com/orgs/coreguard-global/discussions/16) · [#19 deep-dive](https://github.com/orgs/coreguard-global/discussions/19) · [#20 agent economy](https://github.com/orgs/coreguard-global/discussions/20)\n\n**Open call:** developers, researchers, and technical writers — comment with the track you want to pick up. We’ll scope it into a concret",
-      "bodyPreview": "## Community bounties & contributor program (Stellar/CoreGuard) **Type intent:** launch a clear, welcoming bounty/contributor track so developers, auditors, and technical writers can ship high-impact work and get recognized. ### Goal Create a structured program for community co"
-    },
-    {
-      "id": 6328460732,
-      "number": 379,
-      "title": "feat(agents): add splinter as a separate, independent security reviewer in every code review",
-      "repo": "pekral/ai-olympus",
-      "htmlUrl": "https://github.com/pekral/ai-olympus/issues/379",
-      "rewardUsd": 50,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T12:29:56Z",
-      "fullBody": "## Problem\n\n`leonardo` is the roster's single code-review agent and owns the whole security domain in the same pass (`agents/leonardo.md` *Security agenda*: \"there is no separate security agent\"). A review then has one reader for code quality and for security, and every security verdict depends on that one reading. There is no independent second view that does not start from `leonardo`'s conclusions.\n\n## Proposal\n\nAdd a **separate security agent, `splinter`**, as a second, independent view of every code review:\n\n1. **Role.** `splinter` reviews the same pull-request head as `leonardo`, for security only: the security skills (`security-review`, `security-audit` *Diff mode*, `security-bounty-hunter`, `security-threat-analysis`, `laravel-security` and `laravel-authorization-review` where they apply, `git-history-exposure-audit` *Review mode* on a public repository) and every rule under `rules/security/**`.\n2. **Independence.** `splinter` runs in parallel with `leonardo` in the *Parallel CR round* (`agents/krang.md`), against the same head SHA, and never reads `leonardo`'s findings for the round before it hands back. It is read-only and publishes nothing itself.\n3. **Merging the two views.** `leonardo` stays the publisher of the one CR comment. A security finding from `splinter` is a finding of the round at the severity the code-review rules give it; a disagreement between the two on a security point is resolved toward the stricter verdict, and the comment says which agent raised it. Duplicates are merged into one finding.\n4. **Convergence.** A round converges only when both views are clean under the existing gate (0 Critical, no undeferred Moderate; a security finding is never deferred).\n5. **Model tier.** Declared in the agent definition per platform (`agents/splinter.md`, `codex/agents/splinter.toml`), following `rules/compound-engineering/orchestration.md` *Adaptive routing*.\n\n## The name `splinter` (owner's choice)\n\n`splinter` named the orchestrator until 2026-11-09, when it was renamed to `krang` (`docs/agents.md` *Renamed agents*; `src/InstallerAgentMigration.php` removes an **unmodified** 0.3.1 `splinter.md` / `splinter.toml` by content hash). Reusing the name requires, in the same change:\n\n- `src/InstallerAgentMigration.php`: the migration must never remove the new `splinter` definition — verify that the hash check alone guarantees it, and add an installer test that installs the new agent over an existing 0.3.1 `splinter.md` and keeps the new file.\n- `",
-      "bodyPreview": "## Problem `leonardo` is the roster's single code-review agent and owns the whole security domain in the same pass (`agents/leonardo.md` *Security agenda*: \"there is no separate security agent\"). A review then has one reader for code quality and for security, and every security "
     }
   ],
   "solutions": [
@@ -1752,6 +1752,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-14T09:23:10.874Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $60,513 USD."
+    },
+    {
+      "time": "2026-11-14T09:23:08.489Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-14T09:23:08.488Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-14T08:33:49.239Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,713 USD."
@@ -2235,21 +2250,6 @@
       "time": "2026-11-13T05:25:33.419Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $56,965 USD."
-    },
-    {
-      "time": "2026-11-13T05:25:30.765Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-13T05:25:30.764Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-13T04:23:53.715Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $56,765 USD."
     }
   ]
 }
