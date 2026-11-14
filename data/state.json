@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-14T15:03:52.382Z",
-  "scanCount": 805,
+  "lastScanAt": "2026-11-14T15:39:43.378Z",
+  "scanCount": 806,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 69,
-    "totalBountyPoolUsd": 76165,
+    "totalBountyPoolUsd": 78015,
     "solutionsGenerated": 59,
     "potentialEarningsUsd": 146747,
     "prsSubmitted": 53
@@ -265,6 +265,32 @@
       "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev -"
     },
     {
+      "id": 6391738580,
+      "number": 4338,
+      "title": "[Bounty] [Escrowed $600 USDC] Align Posted/Non-Posted header credit wrap mask under 256B ",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4338",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T15:06:02Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/2\n\n### 漏洞描述 / Description\n[Escrowed $600 USDC] Align Posted/Non-Posted header credit wrap mask under 256B FLIT packing (`pcie-tlp-credit-flow-gate`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\nCalibrate `FLIT_FLOW_CONTROL_MODE`, `PH_CREDIT_LIMIT_MASK`, and `NPH_CONSUMED_XOR_TAG` in `dl_layer/fc_credit_ledger.py` across all 64 specification shards so `python3 tests/validate_pcie6_flits.py --strict-ci` exits `0`.\n\n### 积分币奖励 / Coin Reward\n750 coins\n\n### 真实赏金（USD）/ Real Reward\n$600\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Align Posted/Non-Posted header credit wrap mask under 256B FLIT packing (`pcie-tlp-credit-flow-gate`) > **Automated"
+    },
+    {
+      "id": 6391738714,
+      "number": 4339,
+      "title": "[Bounty] [Escrowed $600 USDC] Prevent aliasing mutable ref-cell bitmask collision across ",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4339",
+      "rewardUsd": 600,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-11-14T15:06:02Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/2\n\n### 漏洞描述 / Description\n[Escrowed $600 USDC] Prevent aliasing mutable ref-cell bitmask collision across depth-4 CPI frames (`solana-svm-cpi-conformance`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\nCalibrate `SVM_ISOLATION_PROFILE`, `ACCOUNT_BORROW_BITMASK`, and `RENT_EPOCH_CARRY_KEY` in `rbpf_vm/borrow_mask_guard.py` across all 64 specification shards so `python3 conformance/verify_cpi_reentrancy.py --strict-ci` exits `0`.\n\n### 积分币奖励 / Coin Reward\n750 coins\n\n### 真实赏金（USD）/ Real Reward\n$600\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Prevent aliasing mutable ref-cell bitmask collision across depth-4 CPI frames (`solana-svm-cpi-conformance`) > **A"
+    },
+    {
       "id": 6319566173,
       "number": 4308,
       "title": "[Bounty] [Escrowed $450 USDC] Fix canonical string frame ceiling and align deterministic ",
@@ -395,6 +421,32 @@
       "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - "
     },
     {
+      "id": 6391738893,
+      "number": 4341,
+      "title": "[Bounty] [Escrowed $450 USDC] Fix CPI frame ceiling boundary and satisfy 64-bit account b",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4341",
+      "rewardUsd": 450,
+      "category": "Seguridad Web3",
+      "difficulty": "Avanzado",
+      "createdAt": "2026-11-14T15:06:03Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/1\n\n### 漏洞描述 / Description\n[Escrowed $450 USDC] Fix CPI frame ceiling boundary and satisfy 64-bit account borrow-mask transfer equation (`decode_cpi_instruction_frames`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\n### Problem Summary\n\n1. `decode_cpi_instruction_frames` in `rbpf_vm/borrow_mask_guard.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `ACCOUNT_BORROW_BITMASK` and `RENT_EPOCH_CARRY_KEY` in `rbpf_vm/borrow_mask_guard.py` (without modifying `conformance/verify_cpi_reentrancy.py`) until `python3 conformance/verify_cpi_reentrancy.py` passes all 24 vectors.\n\n### 积分币奖励 / Coin Reward\n562 coins\n\n### 真实赏金（USD）/ Real Reward\n$450\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Fix CPI frame ceiling boundary and satisfy 64-bit account borrow-mask transfer equation (`decode_cpi_instruction_fr"
+    },
+    {
+      "id": 6391738799,
+      "number": 4340,
+      "title": "[Bounty] [Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4340",
+      "rewardUsd": 450,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-14T15:06:03Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\n### 漏洞描述 / Description\n[Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\n### Problem Summary\n\n1. `reassemble_tlp_flit_frames` in `dl_layer/fc_credit_ledger.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `PH_CREDIT_LIMIT_MASK` and `NPH_CONSUMED_XOR_TAG` in `dl_layer/fc_credit_ledger.py` (without modifying `tests/validate_pcie6_flits.py`) until `python3 tests/validate_pcie6_flits.py` passes all 24 vectors.\n\n### 积分币奖励 / Coin Reward\n562 coins\n\n### 真实赏金（USD）/ Real Reward\n$450\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`) > **A"
+    },
+    {
       "id": 6319566278,
       "number": 4309,
       "title": "[Bounty] [BOUNTY][$420][ADD] P. Diddy Lube",
@@ -484,58 +536,6 @@
       "createdAt": "2026-11-12T13:55:20Z",
       "fullBody": "> **Payment:** 本项目**不付钱**。`zero-bounty` / `$0` 意味着只有信用回报：merge credit、贡献者图、\n> Hall of Fame。真正的赏金只存在于有人用 Opire 的 `/reward <amount>` 资助的 issue 上。见\n> `JOIN.md` § \"Bounties & payment\"。\n\n## 背景\n\nREADME 目前只有三种语言：English（canonical）、日本語、简体中文。仓库的语料、客户端插件和 MCP\n工具已经在讲多种语言的故事（`locale/` 有 en/ja/ko/zh-CN），但**入口文档**没有跟上——一个韩语或\n西班牙语的 agent 作者，第一屏看到的是自己读不懂的 README。\n\n这个任务就是补这个缺口：**一种语言一个 PR**，从当前 `main` 的 `README.md` 完整翻译。\n\n## 可选语言（任选一种，先到先得）\n\n| 语言 | 文件名 | 备注 |\n|---|---|---|\n| 한국어 | `README.ko.md` | `locale/` 里已有 ko，术语可以对齐 |\n| Español | `README.es.md` | |\n| Français | `README.fr.md` | |\n| Deutsch | `README.de.md` | |\n| Português (Brasil) | `README.pt-BR.md` | 地区变体请带 `BR` |\n| Русский | `README.ru.md` | |\n| 其他 | 先在本 issue 里问一句 | 避免两个 PR 撞同一种语言 |\n\n## 硬性验收标准（AC）\n\n全部满足才会合；任何一条不满足都会被打回，而不是\"先合了再补\"。\n\n**AC1 · 文件与范围**\n- 新文件放在仓库根目录，命名 `README.<lang>.md`（语言代码按上表；地区变体用 `pt-BR` 这种写法）。\n- 内容是从**当前 `main`** 的 `README.md` 的完整翻译：不删章节、不合并章节、不\"摘要式翻译\"。\n- 一个 PR 只加**一种**语言。\n\n**AC2 · 徽章必须与 `README.md` 完全对齐**\n- 同一组 `<a href=\"...\">`，顺序一致；`alt` 文本可以翻译，**href 一个字符都不能改**。\n- 新增语言必须注册进 `tests/test_readme_badge_parity.py` 的 `TRANSLATIONS` 元组。\n- 自测：\n  ```console\n  $ python3 -m pytest tests/test_readme_badge_parity.py -q\n  ```\n\n**AC3 · 语言切换行**\n- 新 README 顶部要有与 `README.md` 相同的 `<div align=\"right\">` 语言列表；\n- 同时更新 `README.md`、`README.ja.md`、`README.zh-CN.md` 三处，把新语言加进去（顺序固定：\n  English | 日本語 | 简体中文 | <你的语言>）；\n- 四个链接互相可达（点进去都能打开）。\n\n**AC4 · 不要翻译的东西**\n- 代码块、命令、URL、文件路径、环境变量、徽章 href、图片路径——**原样保留**；\n- 专有名词按现有译法：`MCP`、`DCO`、`intake`、`lesson`、`node`、`E0–E4` 不翻译（或在首次出现时\n  用括号给译名）；与 `README.zh-CN.md` / `README.ja.md` 的既有译法保持一致。\n\n**AC5 · 不许写死数字**\n- README 里的课程数**只能来自 shields 徽章**（`data/badges/lessons.json`），不许手写 \"940 lessons\"\n  之类的总数——`tests/test_lesson_count_ssot.py` 会拦。\n- 自测：\n  ```console\n  $ python3 -m pytest tests/test_lesson_count_ssot.py -q\n  $ python3 scripts/sync_lesson_count.py --check\n  ```\n\n**AC6 · 图片与资源预算**\n- 图片引用与 `README.md` 一致（`promotional/*`），不新增 > 1 MB 的图片；\n- 新文件要加进 `tests/test_readme_asset_budget.py` 的 `READMES` 列表。\n- 自测：\n  ```console\n  $ python3 -m pytest tests/test_readme_asset_budget.py tests/test_readme_scope_section.py -q\n  ```\n\n**AC7 · 翻译质量**\n- 逐段校对，**不接受未校对的机翻**；明显的机翻腔（词序、量词、连接词生硬）会被要求返工。\n- 术语一致：同一术语全文只用一种译法；首次出现可括注原文。\n- 中文/日文 README 里的\"诚实边界\"段落（E4、benchmark 暂停、0 赏金）必须保义，不许美化或省略。\n\n**AC8 · 提交与流程**\n- 每个提交带 `Signed-off-by`（`git commit --signoff`），DCO 检查必须绿；\n- PR 标题：`docs(readme): add <language> translation`；\n- PR 描述里贴出上面四条自测命令的输出；\n- 先在本 issue 回 `/try` 认领，**同一时间一个开放 PR**；两周没有进展会在 issue 里问一次，仍无进展则释放。\n\n## ",
       "bodyPreview": "> **Payment:** 本项目**不付钱**。`zero-bounty` / `$0` 意味着只有信用回报：merge credit、贡献者图、 > Hall of Fame。真正的赏金只存在于有人用 Opire 的 `/reward <amount>` 资助的 issue 上。见 > `JOIN.md` § \"Bounties & payment\"。 ## 背景 README 目前只有三种语言：English（canonical）、日本語、简体中文。仓库的语料、客户端插件和 MCP 工具已经在讲多种语言的故事（`locale/` 有 en/j"
-    },
-    {
-      "id": 6373794974,
-      "number": 4801,
-      "title": "[Bounty] Answer the 2 linked question(s)",
-      "repo": "Ikalus1988/MisakaNet",
-      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4801",
-      "rewardUsd": 100,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-13T14:53:46Z",
-      "fullBody": "<!-- misakanet-question-bounty:anchor-4498 -->\n# [Bounty] Answer the 2 linked question(s)\n\n## Context\n\nThese intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_match` — so there is nothing to link the asker to, and the answer has to be written by someone who saw the failure.\n\n- #4498 — [Question] MisakaNet search returned DNS and MCP parse failures\n- #4771 — [Question] MisakaNet helper cannot parse MCP response during preflight search for AVFoundat\n\n_Shared vocabulary that grouped them: `mcp`, `misakanet`, `parse`, `response`, `search`, `unable`._\n\n## Deliverable\n\n**An answer, posted as a comment on each question issue above.** No pull request is needed and none is expected — the answer is what the asker (and the next agent that hits this) needs, and it is what the FAQ is built from. `sync-question-answers.yml` copies an `answered` comment into D1, and from then on `misakanet_search` returns it as a `type: faq` hit.\n\nThe answer has to be *observed*, not generated. An answer invented by someone who never saw the failure is an invented source — that is the failure `docs/maintainer/provenance-gate-2026-09-16.md` exists to prevent. If you only have a hypothesis, say so plainly: a guess labelled as a guess is useful, a guess presented as fact is not.\n\n## How your answer reaches readers\n\n1. Post it on **each** linked question issue as a comment — not only here. The sync reads the question's own thread.\n2. A maintainer reviews it in the daily question pass and adds the `answered` label.\n3. `sync-question-answers.yml` copies the labelled comment into the FAQ (D1) within a day.\n\n## MANDATORY ACCEPTANCE CRITERIA (AC)\n\n**0. REPRODUCIBLE EVIDENCE — the condition most submissions fail**\n\n- [ ] Paste the command you ran and the output you got. Not a description of what you did — the command and its output. If you name an endpoint it must be `misakanet.org`.\n- [ ] Say what you observed yourself versus what you read somewhere.\n\n**1. The answer is complete**\n\n- [ ] It states the root cause, the fix (with the exact command or setting), and how to check it worked — the last one is a command plus the result that means success, not \"it should work\".\n- [ ] It names the version / environment it was observed on. \"Works on my machine\" without that line is unfalsifiable.\n\n**2. It is posted where the question lives**\n\n- [ ] A comment on **every** linked question issu",
-      "bodyPreview": "<!-- misakanet-question-bounty:anchor-4498 --> # [Bounty] Answer the 2 linked question(s) ## Context These intakes ask about something no lesson covers. Measured through the production retrieval path (BM25 plus the IDF-weighted relevance floor), every one of them returns `no_ma"
-    },
-    {
-      "id": 6384859334,
-      "number": 2521,
-      "title": "[Bug bounty] Swap execute-path: ExchangeAsset sets maximal: false without separate feeAsset, permanently trapping unspent input funds in PolkadotXcm.AssetTrap",
-      "repo": "paraspell/xcm-tools",
-      "htmlUrl": "https://github.com/paraspell/xcm-tools/issues/2521",
-      "rewardUsd": 100,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T03:58:08Z",
-      "fullBody": "# 🐞 Bug Report\n\n## 🔍 Describe the Bug\n\nIn `@paraspell/sdk-core`, [`createExchangeInstructions`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/sdk-core/src/utils/transfer/execute/createSwapExecuteXcm.ts#L47-L98) sets `ExchangeAsset.maximal = hasSeparateFeeAsset` (`separateFeeAssetInfo !== undefined`) for both single-hop swaps and hop 1 of multi-hop swaps:\n\n```ts\nconst hasSeparateFeeAsset = separateFeeAssetInfo !== undefined\n\nif (!needsMultiHop) {\n  return [\n    {\n      ExchangeAsset: {\n        give: createAssetsFilter(assetFrom, version),\n        want: [assetTo],\n        maximal: hasSeparateFeeAsset\n      }\n    }\n  ]\n}\n...\n// Multi-hop hop 1:\n{\n  ExchangeAsset: {\n    give: createAssetsFilter(assetFrom, version),\n    want: [assetNative],\n    maximal: hasSeparateFeeAsset\n  }\n},\n// Multi-hop hop 2:\n{\n  ExchangeAsset: {\n    ...\n    want: [assetTo],\n    maximal: true\n  }\n}\n```\n\nWhenever a user performs a standard swap without a separate `.feeAsset(...)` (`hasSeparateFeeAsset === false`), `ExchangeAsset.maximal` is set to `false`.\n\nIn XCM (`StagingXcmExecutor` / `ExchangeAsset`), `maximal: false` executes an **ExactOut** swap (`BuyExecuted` / `swap_tokens_for_exact_tokens`): it only sells enough of `give` (`assetFrom`) to buy the exact `want` amount (`minAmountOut`), and leaves the unspent `assetFrom` remainder in the XCM Holding register.\n\nBecause `want` (`minAmountOut`) has already been reduced by:\n1. `totalFees` (`originReserveFee + exchangeFee` with +20% padding) in `handleSwapExecuteTransfer`,\n2. `DEST_FEE_BUFFER_PCT` (`-1%` when `origin` is set) in [`HydrationExchange.getAmountOut`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/swap/src/exchanges/Hydration/HydrationExchange.ts#L159-L174) / [`AssetHubExchange.getAmountOut`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/swap/src/exchanges/AssetHub/AssetHubExchange.ts#L141-L158), and\n3. `-slippagePct` (default `1%`, or higher user slippage such as `5%`) in `HydrationExchange.getAmountOut`,\n\n`ExchangeAsset(..., maximal: false)` consistently leaves **~2%+ (at default 1% slippage) to 6%+ (at 5% slippage)** of the user's `assetFrom` unspent in Holding.\n\nHowever, all subsequent instructions in [`createSwapExecuteXcm`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/sdk-core/src/utils/transfer/execute/createSwapExecuteXcm.ts#L2",
-      "bodyPreview": "# 🐞 Bug Report ## 🔍 Describe the Bug In `@paraspell/sdk-core`, [`createExchangeInstructions`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/sdk-core/src/utils/transfer/execute/createSwapExecuteXcm.ts#L47-L98) sets `ExchangeAsset"
-    },
-    {
-      "id": 6385108942,
-      "number": 2525,
-      "title": "[Bug bounty] Execute-path transfer: createDirectExecuteXcm omits depositFeeAsset, permanently trapping leftover feeAsset in PolkadotXcm.AssetTrap",
-      "repo": "paraspell/xcm-tools",
-      "htmlUrl": "https://github.com/paraspell/xcm-tools/issues/2525",
-      "rewardUsd": 100,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T04:22:51Z",
-      "fullBody": "# 🐞 Bug Report\n\n## 🔍 Describe the Bug\n\nIn `@paraspell/sdk-core`, when building a cross-chain `PolkadotXcm.execute` transfer with a separate `.feeAsset(...)` (`AssetHubPolkadot` / `Hydration` when `shouldUseExecuteTransfer` is `true`), [`createBaseExecuteXcm`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/sdk-core/src/utils/transfer/execute/createBaseExecuteXcm.ts#L153-L156) withdraws both the main transfer asset and `feeAssetTotal = originFee + reserveFee + destFee` (each padded by `+40%`, plus `reserveFee = 1400n` when there is no intermediate hop) and forwards both assets to the destination chain using `Wild(AllCounted(2))`:\n\n```ts\nconst createRoutingFilter = (asset: TAsset) =>\n  feeAsset ? createAllCountedFilter(2) : createAssetsFilter(asset, version)\n```\n\nHowever, [`createDirectExecuteXcm`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/sdk-core/src/utils/transfer/execute/createExecuteXcm.ts#L28) calls [`prepareCommonExecuteXcm(options)`](https://github.com/paraspell/xcm-tools/blob/4ba41bdbcee05d2630bba1dc6aa5de7a5074d3a7/packages/sdk-core/src/utils/transfer/execute/prepareCommonExecuteXcm.ts#L11-L56) without passing the `depositFeeAsset` argument (which defaults to `false`):\n\n```ts\n// createExecuteXcm.ts:28\nconst { prefix, depositInstruction } = prepareCommonExecuteXcm(options)\n```\n\n```ts\n// prepareCommonExecuteXcm.ts:48-56\nconst depositInstruction = {\n  DepositAsset: {\n    assets:\n      depositFeeAsset || edDeposit !== undefined\n        ? createAllCountedFilter(2)\n        : createAssetsFilter(assetToDeposit ?? assetLocalizedToDest, version),\n    beneficiary\n  }\n}\n```\n\nWhenever `edDeposit === undefined` (the standard case when the recipient account already has an existential deposit on `AssetHub*`, or whenever `destChain` is not `AssetHub*` and `feeAsset` is not the destination chain's native asset), `DepositAsset` on the destination chain only claims `Wild(AllOf(asset))` and ignores the unspent `feeAsset` remainder in the XCM Holding register.\n\nAs a result, the entire unspent `feeAsset` surplus (`~40% of originFee + reserveFee + ~40% of destFee`) falls into `PolkadotXcm.AssetTrap` (`AssetsTrapped`) on the destination chain under the origin parachain's sovereign location (`{ parents: 1, interior: { X1: { Parachain: originParaId } } }`) with no `SetAssetClaimer`, making the leftover fee asset permanently unclaimable by the user.\n\n(By contrast, [`createSwapE",
-      "bodyPreview": "# 🐞 Bug Report ## 🔍 Describe the Bug In `@paraspell/sdk-core`, when building a cross-chain `PolkadotXcm.execute` transfer with a separate `.feeAsset(...)` (`AssetHubPolkadot` / `Hydration` when `shouldUseExecuteTransfer` is `true`), [`createBaseExecuteXcm`](https://github.com"
-    },
-    {
-      "id": 6386450030,
-      "number": 4876,
-      "title": "[Bounty][$0][corpus] devops 20 篇缺 verify：补一条可执行的确认，或标记失效",
-      "repo": "Ikalus1988/MisakaNet",
-      "htmlUrl": "https://github.com/Ikalus1988/MisakaNet/issues/4876",
-      "rewardUsd": 100,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T06:40:56Z",
-      "fullBody": "## 背景\n\n359 篇已发布课程**没有 `verify` 字段**——也就是\"没人写过怎么确认这条经验成立\"。语料的证据分级（`evidence_level`）因此有一半是自述。本任务从最大的一批开始：`domain: devops` 里 126 篇缺 `verify`，先取**创建时间最早的 20 篇**（越老越可能已经失效）。\n\n## 范围（20 篇）\n\n- `lessons/contrib/api-rate-limit-handling.md`\n- `lessons/contrib/gfw-tls-sni-blocking-tool-layer-ineffective.md`\n- `lessons/contrib/lesson-10-microservices-latency-math.md`\n- `lessons/contrib/lesson-11-github-commit-signing.md`\n- `lessons/contrib/lesson-13-aws-lambda-microvms.md`\n- `lessons/contrib/lesson-14-api-pagination-design.md`\n- `lessons/contrib/lesson-15-cloudflare-workflows-durable.md`\n- `lessons/contrib/lesson-16-aws-ecs-high-resolution-metrics.md`\n- `lessons/contrib/lesson-18-database-performance-indexing.md`\n- `lessons/contrib/lesson-19-grpc-openapi-rest-comparison.md`\n- `lessons/contrib/lesson-20-api-design-principles.md`\n- `lessons/contrib/lesson-9-redis-postgresql-replacement.md`\n- `lessons/contrib/lesson-review-3-devops-platform-engineering.md`\n- `lessons/contrib/lesson-review-5-eks-version-rollback.md`\n- `lessons/contrib/lesson-review-6-cloudflare-x402-monetization.md`\n- `lessons/contrib/lesson-review-7-cloudflare-saga-rollbacks.md`\n- `lessons/contrib/lesson-review-8-cloudflare-ai-traffic-options.md`\n- `lessons/contrib/multi-forum-scraping-architecture.md`\n- `lessons/contrib/lesson-quality-requirements.md`\n- `lessons/contrib/session-lesson-1-content-quality-scoring.md`\n\n## 硬性验收标准（AC）\n\n**0. 可复现证据**：`verify` 必须是**别人能跑**的东西。给出命令与输出，例如\n\n```console\n$ python3 scripts/lesson_gate.py --existing lessons/contrib/xxx.md | tail -1\n1 file(s) checked, 0 failed, 1 with warnings.\n```\n\n命令不一定要跑那条 bug——凡是能**证伪**这条经验的检查都算（例如\"该 API 今天仍返回 429\"、\"该 flag 仍存在\"、\"该路径仍不存在\"）。\n\n**1. 每篇二选一**\n\n| 处置 | 条件 |\n|---|---|\n| 补 `verify:` | 你能指出一条今天仍成立的检查；写进 frontmatter，并在正文 `## Verification` 段给出同一命令 |\n| 标记失效 | 检查**失败了**——说明这条经验已不成立：`status: stale` + 一行说明今天的行为是什么（这是同等价值的产出） |\n\n**2. 批量与形态**：≤4 个 PR，每个 ≤5 篇，只动这 20 篇。\n\n**3. 判定表**贴在本 issue 评论：`lesson | 处置 | 命令 | 输出尾部`。\n\n## 不算交付\n\n- `verify: \"see above\"` 这类不可执行的占位；\n- 只写\"已验证\"而没有命令与输出；\n- 把检查写成\"读一遍并确认合理\"（那不是判据）。\n\n## 备注\n\n`$0` = 只算信用。这一批做完后，下一批按同样的口径发（`domain: development` 67 篇）。\n\n<br/>\n<hr/>\n\n<details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can",
-      "bodyPreview": "## 背景 359 篇已发布课程**没有 `verify` 字段**——也就是\"没人写过怎么确认这条经验成立\"。语料的证据分级（`evidence_level`）因此有一半是自述。本任务从最大的一批开始：`domain: devops` 里 126 篇缺 `verify`，先取**创建时间最早的 20 篇**（越老越可能已经失效）。 ## 范围（20 篇） - `lessons/contrib/api-rate-limit-handling.md` - `lessons/contrib/gfw-tls-sni-blocking-tool-layer"
     }
   ],
   "solutions": [
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-14T15:39:45.309Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,015 USD."
+    },
+    {
+      "time": "2026-11-14T15:39:43.378Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-14T15:39:43.376Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-14T15:03:56.765Z",
       "level": "CLAIM",
       "msg": "¡Solución enviada con éxito a Space-Stories/space-stories-14 #470! Recompensa en juego: $2500"
@@ -2249,21 +2264,6 @@
     },
     {
       "time": "2026-11-13T15:22:57.602Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,715 USD."
-    },
-    {
-      "time": "2026-11-13T15:22:54.615Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-13T15:22:54.614Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-13T14:37:24.295Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $57,715 USD."
     }
