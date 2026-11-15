@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-15T09:58:28.987Z",
-  "scanCount": 831,
+  "lastScanAt": "2026-11-15T10:37:34.045Z",
+  "scanCount": 832,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -499,6 +499,19 @@
       "bodyPreview": "# 每日安全资讯（2026-11-14） - Recent Commits to cve:main - [Update Fri Nov 13 15:09:41 UTC 2026](https://github.com/trickest/cve/commit/07d53bd126a3082ff2663eb3e401c4892749df63) - Darknet – Hacking Tools, Hacker News & Cyber Security - [Phone Phreaking – The Blind Teenager Who Whis"
     },
     {
+      "id": 6402759459,
+      "number": 58,
+      "title": "[bounty] lt-logs-shipper",
+      "repo": "bad-antics/lateralus-lang",
+      "htmlUrl": "https://github.com/bad-antics/lateralus-lang/issues/58",
+      "rewardUsd": 350,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-11-15T10:16:31Z",
+      "fullBody": "Hi, I can help build the log shipper described in BOUNTIES.md for the listed $350. I'd take on one bounty this quarter, so this is an alternative to #2.\n\nCould you confirm that this task is available, that the scope in BOUNTIES.md is current, and that you can pay $350 in BTC on the Bitcoin network after acceptance? I'll start once we've agreed.\n\nDima Mak / ub3dqy",
+      "bodyPreview": "Hi, I can help build the log shipper described in BOUNTIES.md for the listed $350. I'd take on one bounty this quarter, so this is an alternative to #2. Could you confirm that this task is available, that the scope in BOUNTIES.md is current, and that you can pay $350 in BTC on t"
+    },
+    {
       "id": 6397124105,
       "number": 43,
       "title": "Question: lsp-hover-signatures bounty eligibility and payout",
@@ -523,19 +536,6 @@
       "createdAt": "2026-11-15T05:05:52Z",
       "fullBody": "The widget grid can only be used with a mouse. Keyboard users can't move between widgets or tell which one has focus.\n\n## Acceptance criteria\n- Arrow keys move focus between widgets in reading order.\n- The focused widget shows a visible focus ring with at least 3:1 contrast.\n- Tab enters and leaves the grid once instead of stopping on every widget.\n- Screen readers announce each widget's title.\n\n## Bounty\n300 tUSDC (testnet), paid by [Mandate Bounty Agent](https://mandate-bounty-agent.vercel.app) once a merged PR closes this issue and both proofs check out. Put `mba-payee: <your wallet>` in the PR description.",
       "bodyPreview": "The widget grid can only be used with a mouse. Keyboard users can't move between widgets or tell which one has focus. ## Acceptance criteria - Arrow keys move focus between widgets in reading order. - The focused widget shows a visible focus ring with at least 3:1 contrast. - Ta"
-    },
-    {
-      "id": 6397562769,
-      "number": 46,
-      "title": "Question: benchmark-ingest bounty availability and acceptance",
-      "repo": "bad-antics/lateralus-lang",
-      "htmlUrl": "https://github.com/bad-antics/lateralus-lang/issues/46",
-      "rewardUsd": 250,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T23:44:25Z",
-      "fullBody": "### Component\n\nOther\n\n### Problem or motivation\n\nHello, I'm interested in the $250 benchmark-ingest task in BOUNTIES.md. Before I claim or start implementation, could you confirm that it is still available and funded, and which backends and reference libraries must pass for acceptance? Are results from a documented Linux CPU environment sufficient?\n\nCan you pay an individual contributor through direct PayPal, and what fees would be deducted? I cannot use a Stripe-connected receiving account. Are there any tooling/contribution restrictions beyond the published bounty rules?\n\nI tried the questions email listed in BOUNTIES.md, but the server returned 550 5.1.1 Address does not exist, so I'm using the issue channel suggested there. This is an availability inquiry, not a reservation or a claim of completed work.\n\n### Proposed solution\n\nI checked benchmarks/run_benchmarks.py and would extend the existing harness with the five specified workloads, shared deterministic inputs and expected-output checks, plus reproducible results in benchmarks/results/stdlib_results.md. Scope and acceptance would be agreed before implementation.\n\nThank you,\nKonstantin\n\n### Code examples\n\n```lateralus\n\n```\n\n### Alternatives considered\n\n_No response_\n\n### Is this a breaking change?\n\nNo",
-      "bodyPreview": "### Component Other ### Problem or motivation Hello, I'm interested in the $250 benchmark-ingest task in BOUNTIES.md. Before I claim or start implementation, could you confirm that it is still available and funded, and which backends and reference libraries must pass for accep"
     }
   ],
   "solutions": [
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-15T10:37:35.887Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,727 USD."
+    },
+    {
+      "time": "2026-11-15T10:37:34.045Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-15T10:37:34.044Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-15T09:58:30.843Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,727 USD."
@@ -2251,21 +2266,6 @@
       "time": "2026-11-14T12:02:08.349Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $60,285 USD."
-    },
-    {
-      "time": "2026-11-14T12:02:06.102Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-14T12:02:06.100Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-14T11:24:58.830Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $60,263 USD."
     }
   ]
 }
