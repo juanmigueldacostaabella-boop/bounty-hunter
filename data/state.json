@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-15T05:20:38.481Z",
-  "scanCount": 826,
+  "lastScanAt": "2026-11-15T06:16:04.012Z",
+  "scanCount": 827,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -11,7 +11,7 @@
   },
   "metrics": {
     "totalBountiesDetected": 67,
-    "totalBountyPoolUsd": 78892,
+    "totalBountyPoolUsd": 78572,
     "solutionsGenerated": 59,
     "potentialEarningsUsd": 146747,
     "prsSubmitted": 53
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-15T06:16:06.096Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,572 USD."
+    },
+    {
+      "time": "2026-11-15T06:16:04.012Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-15T06:16:04.010Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-15T05:20:40.531Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,892 USD."
@@ -2251,21 +2266,6 @@
       "time": "2026-11-14T08:33:49.239Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,713 USD."
-    },
-    {
-      "time": "2026-11-14T08:33:47.491Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-14T08:33:47.489Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-14T07:50:03.996Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $58,381 USD."
     }
   ]
 }
