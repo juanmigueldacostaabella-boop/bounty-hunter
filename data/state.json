@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-16T08:59:36.915Z",
-  "scanCount": 857,
+  "lastScanAt": "2026-11-16T10:35:04.532Z",
+  "scanCount": 858,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 76,
-    "totalBountyPoolUsd": 80817,
+    "totalBountiesDetected": 64,
+    "totalBountyPoolUsd": 80890,
     "solutionsGenerated": 59,
     "potentialEarningsUsd": 146747,
     "prsSubmitted": 53
@@ -317,6 +317,32 @@
       "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.d"
     },
     {
+      "id": 6418284718,
+      "number": 4363,
+      "title": "[Bounty] [Escrowed $600 USDC] Enforce linear resource drop safety across loop back-edges ",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4363",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-16T09:32:04Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/2\n\n### 漏洞描述 / Description\n[Escrowed $600 USDC] Enforce linear resource drop safety across loop back-edges (`MoveVM-bytecode-ability-checker`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1\n\nCalibrate `MOVE_VERIFIER_MODE`, `ABILITY_LOCALS_SIGNATURE`, and `BORROW_GRAPH_GAS_KEY` in `move_verifier/reference_safety.py` across all 64 specification shards so `python3 suite/check_ability_constraints.py --strict-ci` exits `0`.\n\n### 积分币奖励 / Coin Reward\n750 coins\n\n### 真实赏金（USD）/ Real Reward\n$600\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Enforce linear resource drop safety across loop back-edges (`MoveVM-bytecode-ability-checker`) > **Automated "
+    },
+    {
+      "id": 6418284864,
+      "number": 4364,
+      "title": "[Bounty] [Escrowed $600 USDC] Stabilize min-RTT filter window across shallow-buffer ECN m",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4364",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-16T09:32:04Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2\n\n### 漏洞描述 / Description\n[Escrowed $600 USDC] Stabilize min-RTT filter window across shallow-buffer ECN marking bursts (`tcp-bbrv3-pacing-verifier`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1\n\nCalibrate `PACING_GAIN_CYCLE`, `BBR_INFLIGHT_HI_SCALE`, and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` across all 64 specification shards so `python3 ns_sim/validate_pacing_gain.py --strict-ci` exits `0`.\n\n### 积分币奖励 / Coin Reward\n750 coins\n\n### 真实赏金（USD）/ Real Reward\n$600\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Stabilize min-RTT filter window across shallow-buffer ECN marking bursts (`tcp-bbrv3-pacing-verifier`) > **Automate"
+    },
+    {
       "id": 6403559877,
       "number": 67,
       "title": "[bounty] aoc-2024-all-25",
@@ -510,32 +536,6 @@
       "createdAt": "2026-11-16T08:07:37Z",
       "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1\n\n### Problem Summary\n\n1. `segment_bbr_ack_frames` in `congestion/bbr_bw_probe.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `BBR_INFLIGHT_HI_SCALE` and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` (without modifying `ns_sim/validate_pacing_gain.py`) until `python3 ns_sim/validate_pacing_gain.py` passes all 24 vectors.",
       "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.de"
-    },
-    {
-      "id": 6319566278,
-      "number": 4309,
-      "title": "[Bounty] [BOUNTY][$420][ADD] P. Diddy Lube",
-      "repo": "zhangjiayang6835-cyber/bounty-plaza",
-      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4309",
-      "rewardUsd": 420,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-11T01:28:12Z",
-      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/theselfish/SlopStation13/issues/40\n\n### 漏洞描述 / Description\n[BOUNTY][$420][ADD] P. Diddy Lube\n\n\n### Bounty Details:\nAdd P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs to it as well as have full sprites and sound effects for the item and aforementioned interactions between the Kirkinator and P. Diddy lube\n\n\n### Bounty Reward:\n420 Vietnamese Dong will be paid out via ZaloPay upon completion of this bounty, however you must be present at the Finnish Embassy in Canberra (Australia) to receive it due to geological spacetime continuum difficulties between Karl Marx and Che Guevara which has disrupted ZaloPay's ecological network system. \n\n### Requirements for bounty payout:\n1. Your pull request must pass all Continuous Integration checks.\n2. Your pull request must include all required spritework in the proper relevant .dmi files.\n3. I might not feel like paying you at all, please contact me via WeChat to negotiate if you want to be paid.\n4.  All conversations regarding the bounty should occur either on this issue, or on the pull request you open yourself.\n5. You must speak in mandarin while conversing about anything regarding the bounty.\n6. You must receive permission from Sean Combs to add this to the repository. \n\n\n### 积分币奖励 / Coin Reward\n525 coins\n\n### 真实赏金（USD）/ Real Reward\n$420\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/theselfish/SlopStation13/issues/40 ### 漏洞描述 / Description [BOUNTY][$420][ADD] P. Diddy Lube ### Bounty Details: Add P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs "
-    },
-    {
-      "id": 6317090701,
-      "number": 40,
-      "title": "[BOUNTY][$420][ADD] P. Diddy Lube",
-      "repo": "theselfish/SlopStation13",
-      "htmlUrl": "https://github.com/theselfish/SlopStation13/issues/40",
-      "rewardUsd": 420,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-10T22:23:18Z",
-      "fullBody": "\n### Bounty Details:\nAdd P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs to it as well as have full sprites and sound effects for the item and aforementioned interactions between the Kirkinator and P. Diddy lube\n\n\n### Bounty Reward:\n420 Vietnamese Dong will be paid out via ZaloPay upon completion of this bounty, however you must be present at the Finnish Embassy in Canberra (Australia) to receive it due to geological spacetime continuum difficulties between Karl Marx and Che Guevara which has disrupted ZaloPay's ecological network system. \n\n### Requirements for bounty payout:\n1. Your pull request must pass all Continuous Integration checks.\n2. Your pull request must include all required spritework in the proper relevant .dmi files.\n3. I might not feel like paying you at all, please contact me via WeChat to negotiate if you want to be paid.\n4.  All conversations regarding the bounty should occur either on this issue, or on the pull request you open yourself.\n5. You must speak in mandarin while conversing about anything regarding the bounty.\n6. You must receive permission from Sean Combs to add this to the repository. \n",
-      "bodyPreview": " ### Bounty Details: Add P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs to it as well as have full sprites and sound effects for the item and aforementioned interactions between the Kirkinator and P. Diddy lube ### Bounty Reward: 420"
     }
   ],
   "solutions": [
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-16T10:35:07.039Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $80,890 USD."
+    },
+    {
+      "time": "2026-11-16T10:35:04.532Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-16T10:35:04.531Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-16T08:59:39.736Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $80,817 USD."
@@ -2251,21 +2266,6 @@
       "time": "2026-11-15T04:26:14.293Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $77,992 USD."
-    },
-    {
-      "time": "2026-11-15T04:26:11.861Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-15T04:26:11.860Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-15T03:29:18.819Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,292 USD."
     }
   ]
 }
