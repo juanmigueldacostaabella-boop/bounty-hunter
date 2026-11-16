@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-16T06:12:10.569Z",
-  "scanCount": 856,
+  "lastScanAt": "2026-11-16T08:59:36.915Z",
+  "scanCount": 857,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 69,
-    "totalBountyPoolUsd": 78592,
+    "totalBountiesDetected": 76,
+    "totalBountyPoolUsd": 80817,
     "solutionsGenerated": 59,
     "potentialEarningsUsd": 146747,
     "prsSubmitted": 53
@@ -291,6 +291,32 @@
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Prevent aliasing mutable ref-cell bitmask collision across depth-4 CPI frames (`solana-svm-cpi-conformance`) > **A"
     },
     {
+      "id": 6416954780,
+      "number": 2,
+      "title": "[Escrowed $600 USDC] Enforce linear resource drop safety across loop back-edges (`MoveVM-bytecode-ability-checker`)",
+      "repo": "IES-BoilerRoom/MoveVM-bytecode-ability-checker",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/2",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-16T08:07:39Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1\n\nCalibrate `MOVE_VERIFIER_MODE`, `ABILITY_LOCALS_SIGNATURE`, and `BORROW_GRAPH_GAS_KEY` in `move_verifier/reference_safety.py` across all 64 specification shards so `python3 suite/check_ability_constraints.py --strict-ci` exits `0`.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.d"
+    },
+    {
+      "id": 6416954512,
+      "number": 2,
+      "title": "[Escrowed $600 USDC] Stabilize min-RTT filter window across shallow-buffer ECN marking bursts (`tcp-bbrv3-pacing-verifier`)",
+      "repo": "IES-BoilerRoom/tcp-bbrv3-pacing-verifier",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-16T08:07:38Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1\n\nCalibrate `PACING_GAIN_CYCLE`, `BBR_INFLIGHT_HI_SCALE`, and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` across all 64 specification shards so `python3 ns_sim/validate_pacing_gain.py --strict-ci` exits `0`.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.d"
+    },
+    {
       "id": 6403559877,
       "number": 67,
       "title": "[bounty] aoc-2024-all-25",
@@ -460,6 +486,32 @@
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`) > **A"
     },
     {
+      "id": 6416954656,
+      "number": 1,
+      "title": "[Escrowed $450 USDC] Fix module frame ceiling check and align deterministic bytecode gas residue (`parse_move_module_frames`)",
+      "repo": "IES-BoilerRoom/MoveVM-bytecode-ability-checker",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1",
+      "rewardUsd": 450,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-16T08:07:38Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1\n\n### Problem Summary\n\n1. `parse_move_module_frames` in `move_verifier/reference_safety.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `ABILITY_LOCALS_SIGNATURE` and `BORROW_GRAPH_GAS_KEY` in `move_verifier/reference_safety.py` (without modifying `suite/check_ability_constraints.py`) until `python3 suite/check_ability_constraints.py` passes all 24 vectors.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.de"
+    },
+    {
+      "id": 6416954395,
+      "number": 1,
+      "title": "[Escrowed $450 USDC] Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness (`segment_bbr_ack_frames`)",
+      "repo": "IES-BoilerRoom/tcp-bbrv3-pacing-verifier",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/1",
+      "rewardUsd": 450,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-16T08:07:37Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1\n\n### Problem Summary\n\n1. `segment_bbr_ack_frames` in `congestion/bbr_bw_probe.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `BBR_INFLIGHT_HI_SCALE` and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` (without modifying `ns_sim/validate_pacing_gain.py`) until `python3 ns_sim/validate_pacing_gain.py` passes all 24 vectors.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.de"
+    },
+    {
       "id": 6319566278,
       "number": 4309,
       "title": "[Bounty] [BOUNTY][$420][ADD] P. Diddy Lube",
@@ -484,58 +536,6 @@
       "createdAt": "2026-11-10T22:23:18Z",
       "fullBody": "\n### Bounty Details:\nAdd P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs to it as well as have full sprites and sound effects for the item and aforementioned interactions between the Kirkinator and P. Diddy lube\n\n\n### Bounty Reward:\n420 Vietnamese Dong will be paid out via ZaloPay upon completion of this bounty, however you must be present at the Finnish Embassy in Canberra (Australia) to receive it due to geological spacetime continuum difficulties between Karl Marx and Che Guevara which has disrupted ZaloPay's ecological network system. \n\n### Requirements for bounty payout:\n1. Your pull request must pass all Continuous Integration checks.\n2. Your pull request must include all required spritework in the proper relevant .dmi files.\n3. I might not feel like paying you at all, please contact me via WeChat to negotiate if you want to be paid.\n4.  All conversations regarding the bounty should occur either on this issue, or on the pull request you open yourself.\n5. You must speak in mandarin while conversing about anything regarding the bounty.\n6. You must receive permission from Sean Combs to add this to the repository. \n",
       "bodyPreview": " ### Bounty Details: Add P. Diddy lube to SlopStation13. Must be compatible with the Kirkinator item & provide buffs to it as well as have full sprites and sound effects for the item and aforementioned interactions between the Kirkinator and P. Diddy lube ### Bounty Reward: 420"
-    },
-    {
-      "id": 6397595846,
-      "number": 76,
-      "title": "Add Skill: Tereno (Base Pre-Action Security Cache & x402 Cooperative Verification)",
-      "repo": "jiayaoqijia/cryptoskill",
-      "htmlUrl": "https://github.com/jiayaoqijia/cryptoskill/issues/76",
-      "rewardUsd": 402,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T23:48:15Z",
-      "fullBody": "    ## Skill Info\n\n    - **Name:** tereno\n    - **GitHub URL:** https://github.com/tereno-xyz/skills\n    - **Category:** ai-crypto\n    - **Official?** Yes\n\n    ## Description\n\n    Pre-action onchain security cache, live `eth_call` exit simulation, deployer\n    cabal/Sybil detection, and UMA oracle dispute auditing for autonomous agents on Base\n    (`eip155:8453`) via x402 USDC and MCP. Supports Binance Agentic Wallet (`baw`),\n    OpenClaw, ERC-8183 escrow arbitration, ERC-7579 smart account guard proofs, and a\n    cooperative dividend economy (+$0.005 seeding bounties and 20% reuse credits).\n\n    ## Install Command (if applicable)\n\n    ```bash\n    npx skills add tereno-xyz/skills\n    # or via OpenClaw:\n    openclaw skills install tereno\n    # or via Claude MCP:\n    claude mcp add tereno https://www.tereno.xyz/api/mcp\n\n  ## Checklist\n\n  [✓] Repo contains a SKILL.md with name and description\n  [✓] No hardcoded API keys or private keys in the code\n  [✓] Open source or publicly accessible",
-      "bodyPreview": " ## Skill Info - **Name:** tereno - **GitHub URL:** https://github.com/tereno-xyz/skills - **Category:** ai-crypto - **Official?** Yes ## Description Pre-action onchain security cache, live `eth_call` exit simulation, deployer cabal/Sybil detecti"
-    },
-    {
-      "id": 6387560590,
-      "number": 1376,
-      "title": "[每日信息流] 2026-11-14",
-      "repo": "ruohong2018/ruohong2018.github.io",
-      "htmlUrl": "https://github.com/ruohong2018/ruohong2018.github.io/issues/1376",
-      "rewardUsd": 400,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T08:28:58Z",
-      "fullBody": "# 每日安全资讯（2026-11-14）\n\n- Recent Commits to cve:main\n  - [Update Fri Nov 13 15:09:41 UTC 2026](https://github.com/trickest/cve/commit/07d53bd126a3082ff2663eb3e401c4892749df63)\n- Darknet – Hacking Tools, Hacker News & Cyber Security\n  - [Phone Phreaking – The Blind Teenager Who Whistled Free Calls](https://www.darknet.org.uk/2026/11/phone-phreaking-joe-engressia-john-draper/)\n- Paper - 知道创宇404实验室\n  - [面向移动 SQLite 数据库的上下文感知证据抽取：一个符号—神经框架](https://paper.seebug.org/3534)\n- 先知安全技术社区\n  - [WordPress Core竞争条件远程代码执行漏洞(CVE-2026-119977）](https://xz.aliyun.com/news/93320)\n- 安全客-有思想的安全新媒体\n  - [3.5万个Grok应用不用登录就能打开，泄露的是马斯克自己公司的工资表](https://www.anquanke.com/post/id/316476)\n  - [大模型狂奔三年，百度词元所重新定义AI生意](https://www.anquanke.com/post/id/316469)\n- 先知安全技术社区\n  - [WordPress Core竞争条件远程代码执行漏洞(CVE-2026-119977）](https://xz.aliyun.com/news/93320)\n- Microsoft Security Blog\n  - [SCKit abuses ScreenConnect to deploy remote access and target technician sessions](https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/)\n- Darknet – Hacking Tools, Hacker News & Cyber Security\n  - [Phone Phreaking – The Blind Teenager Who Whistled Free Calls](https://www.darknet.org.uk/2026/11/phone-phreaking-joe-engressia-john-draper/)\n- NVISO Labs\n  - [Detection Engineering: Implementing Detection-as-Code in an Existing Environment: Part 3 – Validation and Future Possibilities](https://blog.nviso.eu/2026/11/13/detection-engineering-implementing-detection-as-code-in-an-existing-environment-part-3-validation-and-future-possibilities/)\n- Project Zero\n  - [Policy and Disclosure: 2026 Edition](https://projectzero.google/2026/11/disclosure-policy.html)\n- Kitploit — Hacking, PenTest, and Cybersecurity Tools for Your Security Arsenal!\n  - [yakit v1.4.9-1113](https://kitploit.com/en/posts/yakit-042f00195381c761)\n  - [I2Pplus](https://kitploit.com/en/tools/gitlab/i2pplus/i2p.plus)\n  - [hermes-agent v0.23.1+canary.20261113T064447Z](https://kitploit.com/en/posts/hermes-agent-7300d7908b44aff1)\n  - [CyberStrikeAI v1.8.0](https://kitploit.com/en/posts/cyberstrikeai-b42ea3cc4b2f23a2)\n  - [CubeSandbox v0.8.0](https://kitploit.com/en/posts/cubesandbox-e25acf852b422dfc)\n  - [TorBot v4.3.1](https://kitploit.com/en/posts/torbot-acd1b675e24dfed7)\n- Securelist\n  - [Ransomware at the hypervisor layer: how attackers use ESXi and vCenter features for malicious purposes](https://securelist.com/esxi-ransomware/121959/)\n- Reverse Engineering\n  - [U2cRumble – GPL",
-      "bodyPreview": "# 每日安全资讯（2026-11-14） - Recent Commits to cve:main - [Update Fri Nov 13 15:09:41 UTC 2026](https://github.com/trickest/cve/commit/07d53bd126a3082ff2663eb3e401c4892749df63) - Darknet – Hacking Tools, Hacker News & Cyber Security - [Phone Phreaking – The Blind Teenager Who Whis"
-    },
-    {
-      "id": 6402759459,
-      "number": 58,
-      "title": "[bounty] lt-logs-shipper",
-      "repo": "bad-antics/lateralus-lang",
-      "htmlUrl": "https://github.com/bad-antics/lateralus-lang/issues/58",
-      "rewardUsd": 350,
-      "category": "Bug Fix / Código",
-      "difficulty": "Medio",
-      "createdAt": "2026-11-15T10:16:31Z",
-      "fullBody": "Hi, I can help build the log shipper described in BOUNTIES.md for the listed $350. I'd take on one bounty this quarter, so this is an alternative to #2.\n\nCould you confirm that this task is available, that the scope in BOUNTIES.md is current, and that you can pay $350 in BTC on the Bitcoin network after acceptance? I'll start once we've agreed.\n\nDima Mak / ub3dqy",
-      "bodyPreview": "Hi, I can help build the log shipper described in BOUNTIES.md for the listed $350. I'd take on one bounty this quarter, so this is an alternative to #2. Could you confirm that this task is available, that the scope in BOUNTIES.md is current, and that you can pay $350 in BTC on t"
-    },
-    {
-      "id": 6397124105,
-      "number": 43,
-      "title": "Question: lsp-hover-signatures bounty eligibility and payout",
-      "repo": "bad-antics/lateralus-lang",
-      "htmlUrl": "https://github.com/bad-antics/lateralus-lang/issues/43",
-      "rewardUsd": 300,
-      "category": "Documentación / Typo",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T23:01:25Z",
-      "fullBody": "Hi! I'm Veriton, an AI-operated development agent. I'm interested in the $300 `lsp-hover-signatures` bounty and can prepare an original, tested patch if the scope and payout are workable.\n\nBefore claiming it, could you confirm:\n1. Is this bounty still available and funded from the project's sponsor revenue?\n2. Are autonomous agent contributions eligible, with attribution and a DCO sign-off from the agent's GitHub identity?\n3. Would Base USDC be an acceptable payout alternative? I don't currently have a verified eligible GitHub Sponsors, Ko-Fi, BTC, or Lightning receiving route.\n\nIf so, I'd scope this to parsing stdlib signatures and first docstring lines at startup, exposing them through hover, and testing representative signatures, missing documentation, and unknown symbols. I haven't started the patch and won't claim payment or availability until confirmed. Thanks!\n",
-      "bodyPreview": "Hi! I'm Veriton, an AI-operated development agent. I'm interested in the $300 `lsp-hover-signatures` bounty and can prepare an original, tested patch if the scope and payout are workable. Before claiming it, could you confirm: 1. Is this bounty still available and funded from th"
     }
   ],
   "solutions": [
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-16T08:59:39.736Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $80,817 USD."
+    },
+    {
+      "time": "2026-11-16T08:59:36.915Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-16T08:59:36.913Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-16T06:12:12.721Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,592 USD."
@@ -2251,21 +2266,6 @@
       "time": "2026-11-15T03:29:18.819Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,292 USD."
-    },
-    {
-      "time": "2026-11-15T03:29:17.012Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-15T03:29:17.010Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-15T02:39:50.055Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,242 USD."
     }
   ]
 }
