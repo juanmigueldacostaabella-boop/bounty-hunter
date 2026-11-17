@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-17T19:39:41.934Z",
-  "scanCount": 890,
+  "lastScanAt": "2026-11-17T20:28:40.020Z",
+  "scanCount": 891,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 70,
-    "totalBountyPoolUsd": 80865,
+    "totalBountiesDetected": 67,
+    "totalBountyPoolUsd": 81650,
     "solutionsGenerated": 59,
     "potentialEarningsUsd": 146747,
     "prsSubmitted": 53
@@ -369,6 +369,19 @@
       "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - "
     },
     {
+      "id": 6452884976,
+      "number": 4369,
+      "title": "[Bounty] [Escrowed $600 USDC] Align WGSL constant-eval Horner polynomial rounding with ru",
+      "repo": "zhangjiayang6835-cyber/bounty-plaza",
+      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4369",
+      "rewardUsd": 600,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-11-17T19:54:33Z",
+      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2\n\n### 漏洞描述 / Description\n[Escrowed $600 USDC] Align WGSL constant-eval Horner polynomial rounding with runtime pipeline (`wgsl-transcendental-math-core`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix/issues/1\n\nCalibrate `PRECISION_TIER`, `PAYNE_HANEK_MANTISSA_KEY`, and `CW_REDUCTION_OFFSET` in `shader_math/payne_hanek_fold.py` across all 64 specification shards so `python3 harness/validate_wgsl_ulp.py --strict-ci` exits `0`.\n\n### 积分币奖励 / Coin Reward\n750 coins\n\n### 真实赏金（USD）/ Real Reward\n$600\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Align WGSL constant-eval Horner polynomial rounding with runtime pipeline (`wgsl-transcendental-math-core`) > *"
+    },
+    {
       "id": 6403559877,
       "number": 67,
       "title": "[bounty] aoc-2024-all-25",
@@ -523,19 +536,6 @@
       "createdAt": "2026-11-14T15:06:03Z",
       "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/1\n\n### 漏洞描述 / Description\n[Escrowed $450 USDC] Fix CPI frame ceiling boundary and satisfy 64-bit account borrow-mask transfer equation (`decode_cpi_instruction_frames`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `SVM Runtime ABI & Account Borrow Spec v2.1` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\n### Problem Summary\n\n1. `decode_cpi_instruction_frames` in `rbpf_vm/borrow_mask_guard.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `ACCOUNT_BORROW_BITMASK` and `RENT_EPOCH_CARRY_KEY` in `rbpf_vm/borrow_mask_guard.py` (without modifying `conformance/verify_cpi_reentrancy.py`) until `python3 conformance/verify_cpi_reentrancy.py` passes all 24 vectors.\n\n### 积分币奖励 / Coin Reward\n562 coins\n\n### 真实赏金（USD）/ Real Reward\n$450\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/solana-svm-cpi-conformance/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Fix CPI frame ceiling boundary and satisfy 64-bit account borrow-mask transfer equation (`decode_cpi_instruction_fr"
-    },
-    {
-      "id": 6391738799,
-      "number": 4340,
-      "title": "[Bounty] [Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit",
-      "repo": "zhangjiayang6835-cyber/bounty-plaza",
-      "htmlUrl": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4340",
-      "rewardUsd": 450,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-14T15:06:03Z",
-      "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\n### 漏洞描述 / Description\n[Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\n### Problem Summary\n\n1. `reassemble_tlp_flit_frames` in `dl_layer/fc_credit_ledger.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `PH_CREDIT_LIMIT_MASK` and `NPH_CONSUMED_XOR_TAG` in `dl_layer/fc_credit_ledger.py` (without modifying `tests/validate_pcie6_flits.py`) until `python3 tests/validate_pcie6_flits.py` passes all 24 vectors.\n\n### 积分币奖励 / Coin Reward\n562 coins\n\n### 真实赏金（USD）/ Real Reward\n$450\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`) > **A"
     }
   ],
   "solutions": [
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-17T20:28:42.380Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $81,650 USD."
+    },
+    {
+      "time": "2026-11-17T20:28:40.020Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-17T20:28:40.019Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-17T19:39:44.684Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $80,865 USD."
@@ -2251,21 +2266,6 @@
       "time": "2026-11-16T10:35:07.039Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $80,890 USD."
-    },
-    {
-      "time": "2026-11-16T10:35:04.532Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-16T10:35:04.531Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-16T08:59:39.736Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $80,817 USD."
     }
   ]
 }
