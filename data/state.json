@@ -1,7 +1,7 @@
 {
   "startedAt": "2026-10-22T17:42:39.917Z",
-  "lastScanAt": "2026-11-17T16:44:31.859Z",
-  "scanCount": 887,
+  "lastScanAt": "2026-11-17T17:44:15.873Z",
+  "scanCount": 888,
   "config": {
     "githubToken": "",
     "payoutAddress": "github.com/juanmigueldacostaabella-boop",
@@ -10,8 +10,8 @@
     "minBountyUsd": 20
   },
   "metrics": {
-    "totalBountiesDetected": 69,
-    "totalBountyPoolUsd": 79710,
+    "totalBountiesDetected": 73,
+    "totalBountyPoolUsd": 81840,
     "solutionsGenerated": 59,
     "potentialEarningsUsd": 146747,
     "prsSubmitted": 53
@@ -343,6 +343,32 @@
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2 ### 漏洞描述 / Description [Escrowed $600 USDC] Stabilize min-RTT filter window across shallow-buffer ECN marking bursts (`tcp-bbrv3-pacing-verifier`) > **Automate"
     },
     {
+      "id": 6449897012,
+      "number": 2,
+      "title": "[Escrowed $600 USDC] Eliminate ABA generation counter skew across heterogeneous ring capacities (`tokio-ringbuffer-seqcst-matrix`)",
+      "repo": "IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix/issues/2",
+      "rewardUsd": 600,
+      "category": "Validación / Tests",
+      "difficulty": "Fácil",
+      "createdAt": "2026-11-17T17:06:10Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `C11 / Rust Atomic Memory Model §SeqCst-Ring` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway/issues/1\n\nCalibrate `FENCE_ORDERING_MODEL`, `SEQCST_EPOCH_RESIDUE`, and `WRAP_MODULUS_ANCHOR` in `mpsc/seqcst_slot_ring.py` across all 64 specification shards so `python3 conformance/check_aba_epoch.py --strict-ci` exits `0`.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `C11 / Rust Atomic Memory Model §SeqCst-Ring` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev "
+    },
+    {
+      "id": 6449896381,
+      "number": 2,
+      "title": "[Escrowed $600 USDC] Align WGSL constant-eval Horner polynomial rounding with runtime pipeline (`wgsl-transcendental-math-core`)",
+      "repo": "IES-BoilerRoom/wgsl-transcendental-math-core",
+      "htmlUrl": "https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2",
+      "rewardUsd": 600,
+      "category": "Bug Fix / Código",
+      "difficulty": "Medio",
+      "createdAt": "2026-11-17T17:06:08Z",
+      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix/issues/1\n\nCalibrate `PRECISION_TIER`, `PAYNE_HANEK_MANTISSA_KEY`, and `CW_REDUCTION_OFFSET` in `shader_math/payne_hanek_fold.py` across all 64 specification shards so `python3 harness/validate_wgsl_ulp.py --strict-ci` exits `0`.",
+      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - "
+    },
+    {
       "id": 6403559877,
       "number": 67,
       "title": "[bounty] aoc-2024-all-25",
@@ -510,32 +536,6 @@
       "createdAt": "2026-11-14T15:06:03Z",
       "fullBody": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1\n\n### 漏洞描述 / Description\n[Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`)\n\n> **Automated CI Conformance Mirror Notice**: Automated `PCI Express Base Specification r6.1 §2.6` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\n### Problem Summary\n\n1. `reassemble_tlp_flit_frames` in `dl_layer/fc_credit_ledger.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `PH_CREDIT_LIMIT_MASK` and `NPH_CONSUMED_XOR_TAG` in `dl_layer/fc_credit_ledger.py` (without modifying `tests/validate_pcie6_flits.py`) until `python3 tests/validate_pcie6_flits.py` passes all 24 vectors.\n\n### 积分币奖励 / Coin Reward\n562 coins\n\n### 真实赏金（USD）/ Real Reward\n$450\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "bodyPreview": "### 赏金平台 / Platform GitHub ### 原始链接 / Source URL https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1 ### 漏洞描述 / Description [Escrowed $450 USDC] Resolve TLP frame ceiling boundary and infinite-wrap credit bitvector identity (`reassemble_tlp_flit_frames`) > **A"
-    },
-    {
-      "id": 6416954656,
-      "number": 1,
-      "title": "[Escrowed $450 USDC] Fix module frame ceiling check and align deterministic bytecode gas residue (`parse_move_module_frames`)",
-      "repo": "IES-BoilerRoom/MoveVM-bytecode-ability-checker",
-      "htmlUrl": "https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1",
-      "rewardUsd": 450,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-16T08:07:38Z",
-      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1\n\n### Problem Summary\n\n1. `parse_move_module_frames` in `move_verifier/reference_safety.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `ABILITY_LOCALS_SIGNATURE` and `BORROW_GRAPH_GAS_KEY` in `move_verifier/reference_safety.py` (without modifying `suite/check_ability_constraints.py`) until `python3 suite/check_ability_constraints.py` passes all 24 vectors.",
-      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.de"
-    },
-    {
-      "id": 6416954395,
-      "number": 1,
-      "title": "[Escrowed $450 USDC] Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness (`segment_bbr_ack_frames`)",
-      "repo": "IES-BoilerRoom/tcp-bbrv3-pacing-verifier",
-      "htmlUrl": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/1",
-      "rewardUsd": 450,
-      "category": "Validación / Tests",
-      "difficulty": "Fácil",
-      "createdAt": "2026-11-16T08:07:37Z",
-      "fullBody": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (released automatically on green CI quorum)\n- **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json`\n- **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1\n\n### Problem Summary\n\n1. `segment_bbr_ack_frames` in `congestion/bbr_bw_probe.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`).\n2. Align `BBR_INFLIGHT_HI_SCALE` and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` (without modifying `ns_sim/validate_pacing_gain.py`) until `python3 ns_sim/validate_pacing_gain.py` passes all 24 vectors.",
-      "bodyPreview": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.de"
     }
   ],
   "solutions": [
@@ -1768,6 +1768,21 @@
   ],
   "logs": [
     {
+      "time": "2026-11-17T17:44:18.328Z",
+      "level": "INFO",
+      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $81,840 USD."
+    },
+    {
+      "time": "2026-11-17T17:44:15.873Z",
+      "level": "INFO",
+      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
+    },
+    {
+      "time": "2026-11-17T17:44:15.872Z",
+      "level": "SYSTEM",
+      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
+    },
+    {
       "time": "2026-11-17T16:44:34.462Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $79,710 USD."
@@ -2251,21 +2266,6 @@
       "time": "2026-11-16T05:04:08.905Z",
       "level": "INFO",
       "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,342 USD."
-    },
-    {
-      "time": "2026-11-16T05:04:05.610Z",
-      "level": "INFO",
-      "msg": "Iniciando escaneo 24/7 de bounties abiertos y seguros..."
-    },
-    {
-      "time": "2026-11-16T05:04:05.609Z",
-      "level": "SYSTEM",
-      "msg": "Iniciando NEXUS BOUNTY HUNTER 24/7..."
-    },
-    {
-      "time": "2026-11-16T02:34:32.963Z",
-      "level": "INFO",
-      "msg": "Escaneo completado: 40 bounties activos con un pozo total de $78,792 USD."
     }
   ]
 }
